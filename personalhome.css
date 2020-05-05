@@ -1,0 +1,284 @@
+/* Home Page Styling */
+@media (min-width: 300px) and (max-width: 499px) {
+    html {
+        border: 12px solid #204969;
+    }
+    
+    #aboutportrait { 
+        display: grid;
+        grid-row: 1 / -1;
+        grid-column: 1 / -1;
+        height: 440px;
+        margin-top: 30px;
+        box-shadow: 0px 4px 8px 0px gray;
+    }
+    
+    .left {
+        display: grid;
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+    }
+    
+    .right {
+        grid-column: 1 / -1;
+        grid-row: 3 / -1;
+    }
+    
+    .rcb1 {
+        line-height: 1em;
+    }
+    
+    .rcb1 p {
+    color: #204969;
+    font-size: 1.5em;
+    text-align: center;
+    }
+    
+    .homebuttons {
+        margin-left: 24%
+    }
+}
+
+@media (min-width: 500px) and (max-width: 649px) {
+    html {
+        border: 12px solid #204969;
+    }
+    
+    #aboutportrait { 
+        display: grid;
+        grid-row: 1 / -1;
+        grid-column: 1 / -1;
+        height: 450px;
+        margin-top: 30px;
+        box-shadow: 0px 4px 8px 0px gray;
+    }
+    
+    .left {
+        display: grid;
+        grid-column: 3 / 8;
+        grid-row: 2 / 3;
+    }
+    
+    .right {
+        grid-column: 1 / -1;
+        grid-row: 3 / -1;
+    }
+    
+    .rcb1 {
+        line-height: 1em;
+    }
+    
+    .rcb1 p {
+    color: #204969;
+    font-size: 1.5em;
+    text-align: center;
+    }
+    
+    .homebuttons {
+        margin-left: 20%
+    }
+}
+
+@media (min-width: 650px) and (max-width: 749px) {
+    html {
+        border: 12px solid #204969;
+    }
+    
+    #aboutportrait { 
+        display: grid;
+        grid-row: 1 / -1;
+        grid-column: 1 / -1;
+        height: 450px;
+        margin-top: 30px;
+        box-shadow: 0px 4px 8px 0px gray;
+    }
+    
+    .left {
+        display: grid;
+        margin-left: 10px;
+        grid-column: 4 / -1;
+        grid-row: 2 / 3;
+    }
+    
+    .right {
+        grid-column: 1 / -1;
+        grid-row: 3 / -1;
+    }
+    
+    .rcb1 {
+        line-height: 1em;
+    }
+    
+    .rcb1 p {
+    color: #204969;
+    font-size: 1.5em;
+    text-align: center;
+    }
+    
+    .homebuttons {
+        margin-left: 27%
+    }
+}
+
+@media (min-width: 749px) and (max-width: 859px) {
+    html {
+        border: 12px solid #204969;
+    }
+    
+    #aboutportrait { 
+        display: grid;
+        grid-row: 1 / -1;
+        grid-column: 1 / 12;
+        height: 470px;
+        margin-top: 30px;
+        box-shadow: 0px 4px 8px 0px gray;
+    }
+    
+    .left {
+        display: grid;
+        grid-column: 5 / -1;
+        grid-row: 2 / 3;
+    }
+    
+    .right {
+        grid-column: 1 / -1;
+        grid-row: 3 / -1;
+    }
+    
+    .rcb1 {
+        line-height: 1em;
+    }
+    
+    .rcb1 p {
+    color: #204969;
+    font-size: 1.5em;
+    text-align: center;
+    }
+    
+    .homebuttons {
+        margin-left: 35%;
+    }
+}
+    
+@media (min-width: 860px) and (max-width: 1019px) {
+    html {
+        border: 12px solid #204969;
+    }
+    
+    #aboutportrait { 
+        display: grid;
+        grid-row: 1 / -1;
+        grid-column: 1 / 7;
+        height: 600px;
+        margin-top: 50px;
+        box-shadow: 0px 4px 8px 0px gray;
+    }
+    
+    .left {
+        grid-column: 1 / 7;
+        grid-row: 2 / -1;
+    }
+    
+    .right {
+         margin-top: 275px;
+        grid-column: 8 / -1;
+        grid-row: 2 / -1;
+    }
+    
+    .rcb1 {
+        line-height: 1em;
+    }
+    
+    .rcb1 p {
+        color: #204969;
+        font-size: 2.3em;
+        text-align: center;
+    }
+    
+    .homebuttons {
+        margin-left: 13%
+    }
+}
+
+@media (min-width: 1020px) and (max-width: 1399px) {
+    html {
+        border: 12px solid #204969;
+    }
+    
+    #aboutportrait { 
+        height: 675px;
+        margin-top: 50px;
+        box-shadow: 0px 4px 8px 0px gray;
+    }
+
+    .left {
+        grid-column: 1 / 6;
+        grid-row: 2 / -1;
+    }
+
+    .right {
+        grid-column: 7 / -1;
+        grid-row: 2 / 3;
+    }
+
+    .rcb1 {
+        line-height: 2em;
+        margin-top: 300px;
+    }
+
+    .rcb1 p {
+        color: #204969;
+        font-size: 3.2em;
+        text-align: center;
+    }
+
+    .homebuttons {
+        margin-left: 24%;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 3000px) {
+    html {
+        border: 12.75px solid #204969;
+    }
+    
+    #aboutportrait { 
+        height: 675px;
+        margin-top: 50px;
+        box-shadow: 0px 4px 8px 0px gray;
+    }
+
+    .left {
+        grid-column: 2 / 6;
+        grid-row: 2 / -1;
+    }
+
+    .right {
+        grid-column: 6 / -1;
+        grid-row: 2 / 3;
+    }
+
+    .rcb1 {
+        line-height: 2em;
+        margin-top: 275px;
+    }
+
+    .rcb1 p {
+        color: #204969;
+        font-size: 3.75em;
+        text-align: center;
+    }
+
+    .homebuttons {
+        margin-left: 29%;
+    }
+    
+    .homebuttons a {
+        padding-left: 10px;
+        display: inline-block;
+    }
+    
+    .homebuttons button {
+        cursor: pointer;
+    }
+}
