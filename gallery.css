@@ -15,13 +15,14 @@ h1, h2 {
     .coming-soon-1 {
         display: grid;
         grid-row: 1 / 2;
-        grid-column: 3 / 10;
+        grid-column: 1 / -1;
+        font-size: 1rem;
         text-align: center;
     }
     .coming-soon-2 {
         display: grid;
         grid-row: 3 / -1;
-        grid-column: 4 / 9;
+        grid-column: 1 / -1;
         text-align: center;
     }
     .coming-soon-img {
@@ -29,6 +30,7 @@ h1, h2 {
         display: grid;
         grid-row: 2 / 3;
         grid-column: 2 / 6;
+        font-size: 1rem;
     }
 }
 
@@ -114,7 +116,7 @@ h1, h2 {
         width: 500px;
         display: grid;
         grid-row: 2 / 3;
-        grid-column: 4 / -1;
+        grid-column: 3 / -1;
         margin-left: 80px;
     }
 }
