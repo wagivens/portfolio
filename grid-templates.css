@@ -22,3 +22,10 @@
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: auto auto auto auto;
     }
+
+.grid-container-fluid {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, auto);
+}
