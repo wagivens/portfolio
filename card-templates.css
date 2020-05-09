@@ -1,0 +1,43 @@
+/* Vertical Card Styling */
+.card-vertical {
+    width: 400px;
+    height: 550px;
+    background-color: F6F3F3;
+    box-shadow: 0px 4px 8px 0px darkgray;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card-vertical > * {
+    display: block;
+    width: 100%;
+}
+
+.card-image {
+    width: 100%;
+}
+
+.card-description {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.card-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.github-logo {
+    height: auto;
+    width: 50px;
+}
+
+.project-link {
+    font-size: 1rem;
+    padding-top: 5px;
+}
