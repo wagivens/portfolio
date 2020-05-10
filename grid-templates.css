@@ -24,8 +24,8 @@
     }
 
 .grid-container-fluid {
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: repeat(auto-fit, auto);
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(401px, 1fr));
+        grid-row-gap: 10px;
+        justify-items: center;
 }
