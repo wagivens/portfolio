@@ -1,0 +1,11 @@
+html {
+    background-color: var(--cloud);
+}
+
+@media (max-width: 749px) {
+    
+}
+
+@media (min-width: 750px) {
+    
+}
