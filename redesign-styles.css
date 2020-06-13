@@ -20,7 +20,7 @@
 .main {
     background-image: url("portfolio-imgs/site-background-black-opt.png");
     background-size: cover;
-    height: 100vh;
+    height: 100%;
 }
 
 body {
@@ -149,10 +149,11 @@ button:hover {
     }
     
     .home__name {
-        font-size: 3.27em;
+        font-size: 4em;
         font-family: "Syncopate", sans-serif;
         letter-spacing: -7px;
         line-height: 0.7em;
+        margin: 0px;
     }
     
     .navigation__link {
@@ -285,11 +286,11 @@ button:hover {
     }
     
     .photo-block--portrait {
-        height: 300px;
+        height: 320px;
         background-color: gray;
         overflow: hidden;
         position: relative;
-        bottom: 70px;
+        bottom: 18px;
         left: 5px;
         z-index: -1;
     }
@@ -309,7 +310,7 @@ button:hover {
         width: calc(100% - 20px);
         margin-left: 2%;
         line-height: 20px;
-        font-size: 0.9em;
+        font-size: 0.85em;
     }
 }
 
