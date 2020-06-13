@@ -26,6 +26,7 @@
 body {
     padding: 0px;
     margin: 0px;
+    height: 100%;
 }
 
 .page__title {
@@ -81,10 +82,14 @@ a {
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
+    height: content;
 }
 
 .content {
     margin-bottom: 10px;
+    line-height: 0.5px;
+    display: flex;
+    flex-direction: column;
 }
 
 .socialmedia {
@@ -281,7 +286,7 @@ button:hover {
     }
     
     .photo-block--portrait {
-        height: 350px;
+        height: 300px;
         background-color: gray;
         overflow: hidden;
         position: relative;
