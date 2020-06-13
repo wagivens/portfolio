@@ -310,6 +310,7 @@ button:hover {
         width: calc(100% - 20px);
         margin-left: 2%;
         line-height: 25px;
+        font-size: 0.9em;
     }
 }
 
