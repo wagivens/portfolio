@@ -149,11 +149,10 @@ button:hover {
     }
     
     .home__name {
-        font-size: 4em;
+        font-size: 3.27em;
         font-family: "Syncopate", sans-serif;
-        letter-spacing: -11px;
+        letter-spacing: -7px;
         line-height: 0.7em;
-        grid-column: 2 / 12;
     }
     
     .navigation__link {
