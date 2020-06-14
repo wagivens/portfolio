@@ -7,7 +7,7 @@
         }
 }
 
-@media (main-width: 750px) {
+@media (min-width: 750px) {
     .content__text {
             margin-left: 2%;
             line-height: 25px;
