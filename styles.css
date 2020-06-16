@@ -282,6 +282,7 @@ button:hover {
     }
     
     .socials {
+        padding: 0px;
         display: flex;
         justify-content: flex-start;
         text-align: center;
