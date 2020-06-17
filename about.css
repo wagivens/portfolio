@@ -5,7 +5,6 @@
     }
     
     .content__text {
-        margin-left: 3%;
         line-height: 20px;
         font-size: 0.8em;
         grid-column: 1 / 12;
