@@ -99,8 +99,8 @@ a {
     width: calc(100% - 30px);
 }
 
-.socialmedia {
-    text-align: center;
+.content__text, .social-nav {
+    margin-left: 10px;
 }
 
 .portrait {
@@ -277,7 +277,6 @@ button:hover {
         font-weight: 400;
         font-size: 20px;
         margin-top: 20px;
-        margin-left: 9px;
         grid-row: 3 / -1;
     }
     
