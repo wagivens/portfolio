@@ -1,39 +1,73 @@
 /* General Styling */
 :root {
-    --mintgreen: #69E873;
+    --cream: #F9F4EF;
+    --ghost: #FFFFFE;
+    --pumpkin: #F25042;
+    --wetsand: #716040;
     --olive: #0A0A0A;
-    --cloud: #F5F5F5;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--cream);
+    height: 100%;
+}
+
+button {
+    border: none;
+    background-color: transparent;
 }
 
 .black {
     color: var(--olive);
 }
 
-.green {
-    color: var(--mintgreen);
+.orange {
+    color: var(--pumpkin);
+}
+
+.brown {
+    color: var(--wetsand);
 }
 
 .white {
-    color: var(--cloud);
+    color: var(--ghost);
 }
 
-.main {
-    background-image: url("portfolio-imgs/site-background-black-opt.png");
-    background-size: cover;
-    height: 100%;
-}
-
-.bg-green {
-    background-color: var(--mintgreen);
-}
-
-.bg-white {
-    background-color: var(--cloud);
+.offwhite {
+    color: var(--cream);
 }
 
 body {
     padding: 0px;
     margin: 0px;
+    min-height: 100%;
+}
+
+section {
+    max-height: 100vh;
+    scroll-snap-type: y mandatory;
+}
+
+article {
+    max-height: 100vh;
+    width: 100%;
+    scroll-snap-align: start;
+}
+
+.home-role, .mobile-menu-role {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    line-height: 40px;
+}
+
+.home-role {
+    font-size: 1.8em;
+    margin-top: 40%;
 }
 
 .page__title {
@@ -47,6 +81,7 @@ body {
     list-style: none;
     margin-left: auto;
     margin-right: 20px;
+    padding-left: 20px;
 }
 
 .navigation__link {
@@ -76,6 +111,17 @@ body {
     justify-content: space-around;
 }
 
+.next {
+    position: absolute;
+    bottom: 0;
+    margin-left: 42%;
+    margin-bottom: 50px;
+}
+
+.next i {
+    font-size: 35px;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -94,13 +140,17 @@ a {
 .content {
     margin: 0px auto 10px;
     line-height: 0.5px;
-    display: flex;
-    flex-direction: column;
     width: calc(100% - 30px);
+    height: 100%;
 }
 
 .content__text, .social-nav {
     margin-left: 10px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
 }
 
 .portrait {
@@ -121,11 +171,11 @@ a {
 }
 
 .fadeIn {
-    animation: fadeIn 1s ease;
+    animation: fadeIn 1.5s ease;
 }
 
 @keyframes fadeIn {
-    0% {opacity: 0; transform: translateY(50px);}
+    0% {opacity: 0;}
     100% {opacity: 100%;}
 }
 
@@ -165,28 +215,32 @@ button:hover {
         margin: 0px;
     }
     
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    
     .navigation__link {
         display: none;
     }
     
     #burger {
-        background-color: transparent;
-        border: none;
-        margin: 0px 0px 10px auto;
+        margin: 20px 0px 10px auto;
     }
     
     #burger i {
-        font-size: 40px;
+        font-size: 25px;
     }
     
     #menu-overlay {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         z-index: 1;
         width: 100%;
         height: 100%;
-        background-color: var(--mintgreen);
+        background-color: var(--pumpkin);
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -202,27 +256,24 @@ button:hover {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        margin-left: 30px;
+        margin-left: 20px;
         padding: 0px;
     }
     
-    .menu-overlay__name {
+    .menu-overlay__name, .menu__name {
         list-style: none;
         font-family: 'Syncopate', sans-serif;
         font-weight: 700;
         font-size: 2em;
         letter-spacing: -5px;
-        margin-top: 13px;
+    }
+    
+    .menu-overlay__name {
+        margin: 20px auto 0px 0px;
     }
     
     .menu__name {
-        list-style: none;
-        font-weight: 700;
-        font-family: 'Syncopate', sans-serif;
-        font-size: 2em;
-        letter-spacing: -5px;
-        margin-top: 30px;
-        margin-left: 30px;
+        margin: 20px auto 0px 0px;
     }
     
     .copyright {
@@ -235,21 +286,13 @@ button:hover {
     }
     
     #exit {
-        margin: 10px 20px 0px auto;
-        border: none;
-        background-color: transparent;
+        margin: 15px 22px 0px auto;
         font-size: 25px;
-    }
-    
-    .role {
-        font-family: 'Oswald', sans-serif;
-        font-weight: 700;
-        font-size: 1em;
-        text-align: center;
     }
     
     .mobile-menu-role {
         margin-top: 60px;
+        font-size: 1em;
     }
     
     .mobile-navigation {
