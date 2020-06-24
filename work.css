@@ -1,86 +1,197 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>WILL GIVENS IV | Developer and Designer</title>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Syncopate:wght@700&family=Playfair+Display&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <link rel="stylesheet" type="text/css" href="work.css">
-        <meta charset="utf-8">
-        <meta name="description" content="Personal portfolio website of Willard Givens IV.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://kit.fontawesome.com/5f1ac3920a.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <nav class="menu">
-            <ul class="navigation">
-                <li class="menu__name brown"><a href="index.html">WILLGIVENS</a></li>
-                <li class="navigation__link brown">WORK</li>
-                <li class="navigation__link brown"><a href="contact.html">CONTACT</a></li>
-                <button id="burger" class="brown"><i class="fas fa-bars"></i></button>
-            </ul>
-        </nav>
-        <div id="menu-overlay">
-            <header>
-                <ul class="menu-overlay__head">
-                    <li class="menu-overlay__name offwhite"><a href="index.html">WILLGIVENS</a></li>
-                    <button id="exit"><i class="fas fa-times offwhite"></i></button>
-                </ul>
-            </header>
-            <h1 class="mobile-menu-role offwhite">FRONT-END DEVELOPER. UI/UX DESIGNER.</h1>
-            <nav>
-                <ul class="mobile-navigation">
-                    <li class="mobile-navigation-link">WORK</li>
-                    <li class="mobile-navigation-link"><a href="contact.html">CONTACT</a></li>
-                    <ul class="mobile-navigation-link socials">
-                        <li>
-                            <a href="https://medium.com/@wagivens"><i class="fab fa-medium-m"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/willardgivensiv/"><i class="fab fa-linkedin-in"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/wagivens"><i class="fab fa-github"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://instagram.com/wagivens"><i class="fab fa-instagram"></i></a>
-                        </li>
-                    </ul>
-                </ul>
-            </nav>
-            <p class="copyright offwhite">© WILL GIVENS IV 2020</p>
-        </div>
-        <section class="content">
-            <article class="main">
-                <h1 class="home-role orange">Will Givens IV is a Los Angeles-based Front End Developer and UI/UX Designer.</h1>
-<!--                <button class="next"><i class="fas fa-angle-down brown"></i></button>-->
-            </article>
-            <article class="work">
-<!--                <h2 class="work__background-text brown">MY WORK</h2>-->
-                <div class="project">
-                    <div class="project-container">
-                        <ul class="colored-buttons">
-                            <li><button class="red"></button></li>
-                            <li><button class="yellow"></button></li>
-                            <li><button class="green"></button></li>
-                        </ul>
-                        <div class="img-container">
-                            <img class="project-image" src="Screen%20Shot%202020-06-19%20at%202.06.38%20AM.png">
-                        </div>
-                    </div>
-                    <div class="project__text">
-                        <h1 class="project-title orange">PRIDE, LEGACY</h1>
-                        <p class="project-description white">This is going to be a description of the project that is featured on the page. I will include a short explanation for why I completed the project, and give the technology stack that I used for it.</p>
-                        <p class="project-stack white">Stack: HTML, CSS, Vanilla JavaScript</p>
-                        <h1 class="project-link orange">Visit Project</h1>
-                    </div>
-                </div>
-            </article>
-<!--
-            <article class="contact">
-                <h2 class="home-role orange">Will Givens IV is a Los Angeles-based Front End Developer and UI/UX Designer.</h2>
-            </article>
--->
-        </section>
-        <script src="portfolio.js"></script>
-    </body>
-</html>
+/*Work Page Styling*/
+.project {
+    margin: 0px auto 0px;
+    width: calc(100% - 10vw);
+    height: 100vh;
+    padding-top: 30px;
+}
+
+.project__text {
+    display: flex; 
+    flex-direction: column;
+}
+
+.project-title {
+    font-size: 5vh;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+}
+
+.project-link, .project-description, .project-stack {
+    font-size: 2.3vh;
+    font-weight: 400;
+}
+
+.project-description {
+    width: 90vw;
+    line-height: 1.5em;
+}
+
+.project-link {
+    margin-top: 6vh;
+}
+
+@media (max-width: 749px) {
+    .project-container {
+        width: 90vw;
+        height: 38vh;
+        overflow: hidden;
+        border-radius: 3px;
+        z-index: 1;
+    }
+
+    .project-overlay {
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        position: absolute;;
+        background-color: black;
+        width: 325px;
+        height: 203px;
+        opacity: 0;
+        z-index: 0;
+    }
+
+    .project-overlay h1 {
+        visibility: hidden;
+        color: var(--mintgreen);
+        margin-top: 80px;
+    }
+
+    .project-container:hover .project-overlay {
+        opacity: 80%;
+    }
+
+    /*
+    .project-container:active .project-overlay {
+        opacity: 80%;
+    }
+    */
+
+    .project-container:hover .project-title {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .colored-buttons {
+        display: flex;
+        list-style: none;
+        margin: 0px;
+        padding: 5px;
+        background-color: #cfcfcf;
+    }
+
+    .colored-buttons button {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: red;
+        border: none;
+        margin-left: 5px;
+    }
+
+    .colored-buttons .red {
+        background-color: red;
+    }
+
+    .colored-buttons .yellow {
+        background-color: orange;
+    }
+
+    .colored-buttons .green {
+        background-color: #5ab731;
+    }
+}
+
+@media (min-width: 750px) {
+    .grid-fluid {
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(601px, 1fr));
+        grid-template-rows: repeat(auto-fit, 1fr);
+        grid-row-gap: 40px;
+        justify-items: center;
+    }
+    
+    .project-container {
+        width: 600px;
+        height: 365px;
+        overflow: hidden;
+        border-radius: 3px;
+    }
+
+    .project-overlay {
+        position: absolute;
+        background-color: black;
+        width: 600px;
+        height: 347px;
+        opacity: 0;
+        z-index: 0;
+    }
+
+    .project-overlay h1 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 2em;
+        text-align: center;
+        visibility: hidden;
+        color: var(--mintgreen);
+        margin-top: 150px;
+    }
+
+    .project-container:hover .project-overlay {
+        opacity: 80%;
+    }
+
+    /*
+    .project-container:active .project-overlay {
+        opacity: 80%;
+    }
+    */
+
+    .project-container:hover .project-title {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        object-position: center;
+    }
+
+    .colored-buttons {
+        display: flex;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        background-color: #cfcfcf;
+    }
+
+    .colored-buttons button {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: red;
+        border: none;
+        margin-left: 5px;
+    }
+
+    .colored-buttons .red {
+        background-color: red;
+    }
+
+    .colored-buttons .yellow {
+        background-color: orange;
+    }
+
+    .colored-buttons .green {
+        background-color: #5ab731;
+    }
+}
