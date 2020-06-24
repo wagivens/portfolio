@@ -148,6 +148,7 @@ article {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    height: 12vh;
 }
 
 .next {
@@ -269,7 +270,7 @@ button:hover {
     }
     
     #burger {
-        margin: 20px 0px 10px auto;
+        margin: 2.5vh 0px 10px auto;
     }
     
     #burger i {
