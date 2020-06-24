@@ -7,35 +7,6 @@
     z-index: 1;
 }
 
-.colored-buttons {
-    display: flex;
-    list-style: none;
-    margin: 0px;
-    padding: 5px;
-    background-color: #cfcfcf;
-}
-
-.colored-buttons button {
-    width: 1vw;
-    height: 1vh;
-    border-radius: 50%;
-    background-color: red;
-    border: none;
-    margin-left: 5px;
-}
-
-.colored-buttons .red {
-    background-color: red;
-}
-
-.colored-buttons .yellow {
-    background-color: orange;
-}
-
-.colored-buttons .green {
-    background-color: #5ab731;
-}
-
 .img-container img {
         width: 100%;
     }
