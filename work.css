@@ -1,4 +1,45 @@
 /*Work Page Styling*/
+.project-container {
+    width: 90vw;
+    height: 40vh;
+    overflow: hidden;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+.colored-buttons {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 5px;
+    background-color: #cfcfcf;
+}
+
+.colored-buttons button {
+    width: 12px;
+    height: 12px;
+    border-radius: 80%;
+    background-color: red;
+    border: none;
+    margin-left: 5px;
+}
+
+.colored-buttons .red {
+    background-color: red;
+}
+
+.colored-buttons .yellow {
+    background-color: orange;
+}
+
+.colored-buttons .green {
+    background-color: #5ab731;
+}
+
+.img-container img {
+        width: 100%;
+    }
+
 .project {
     margin: 0px auto 0px;
     width: calc(100% - 10vw);
@@ -31,167 +72,12 @@
     margin-top: 6vh;
 }
 
-@media (max-width: 749px) {
+@media (min-width: 750px) {
     .project-container {
         width: 90vw;
-        height: 38vh;
+        height: 60vh;
         overflow: hidden;
         border-radius: 3px;
         z-index: 1;
-    }
-
-    .project-overlay {
-        font-family: 'Oswald', sans-serif;
-        text-align: center;
-        position: absolute;;
-        background-color: black;
-        width: 325px;
-        height: 203px;
-        opacity: 0;
-        z-index: 0;
-    }
-
-    .project-overlay h1 {
-        visibility: hidden;
-        color: var(--mintgreen);
-        margin-top: 80px;
-    }
-
-    .project-container:hover .project-overlay {
-        opacity: 80%;
-    }
-
-    /*
-    .project-container:active .project-overlay {
-        opacity: 80%;
-    }
-    */
-
-    .project-container:hover .project-title {
-        visibility: visible;
-        opacity: 1;
-    }
-
-    .img-container img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
-
-    .colored-buttons {
-        display: flex;
-        list-style: none;
-        margin: 0px;
-        padding: 5px;
-        background-color: #cfcfcf;
-    }
-
-    .colored-buttons button {
-        width: 12px;
-        height: 12px;
-        border-radius: 20%;
-        background-color: red;
-        border: none;
-        margin-left: 5px;
-    }
-
-    .colored-buttons .red {
-        background-color: red;
-    }
-
-    .colored-buttons .yellow {
-        background-color: orange;
-    }
-
-    .colored-buttons .green {
-        background-color: #5ab731;
-    }
-}
-
-@media (min-width: 750px) {
-    .grid-fluid {
-        height: 100%;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(601px, 1fr));
-        grid-template-rows: repeat(auto-fit, 1fr);
-        grid-row-gap: 40px;
-        justify-items: center;
-    }
-    
-    .project-container {
-        width: 600px;
-        height: 365px;
-        overflow: hidden;
-        border-radius: 3px;
-    }
-
-    .project-overlay {
-        position: absolute;
-        background-color: black;
-        width: 600px;
-        height: 347px;
-        opacity: 0;
-        z-index: 0;
-    }
-
-    .project-overlay h1 {
-        font-family: 'Oswald', sans-serif;
-        font-size: 2em;
-        text-align: center;
-        visibility: hidden;
-        color: var(--mintgreen);
-        margin-top: 150px;
-    }
-
-    .project-container:hover .project-overlay {
-        opacity: 80%;
-    }
-
-    /*
-    .project-container:active .project-overlay {
-        opacity: 80%;
-    }
-    */
-
-    .project-container:hover .project-title {
-        visibility: visible;
-        opacity: 1;
-    }
-
-    .img-container img {
-        width: 100%;
-        height: 100%;
-        object-fit: fill;
-        object-position: center;
-    }
-
-    .colored-buttons {
-        display: flex;
-        list-style: none;
-        margin: 0px;
-        padding: 0px;
-        background-color: #cfcfcf;
-    }
-
-    .colored-buttons button {
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        background-color: red;
-        border: none;
-        margin-left: 5px;
-    }
-
-    .colored-buttons .red {
-        background-color: red;
-    }
-
-    .colored-buttons .yellow {
-        background-color: orange;
-    }
-
-    .colored-buttons .green {
-        background-color: #5ab731;
     }
 }
