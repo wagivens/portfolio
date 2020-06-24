@@ -60,6 +60,7 @@ p {
     color: var(--cream);
 }
 
+/* Body Styling */
 body {
     padding: 0px;
     margin: 0px;
@@ -67,7 +68,7 @@ body {
 }
 
 section {
-    max-height: 100vh;
+    height: 100vh;
 /*    scroll-snap-type: y mandatory;*/
 }
 
@@ -80,7 +81,6 @@ article {
 
 .work {
     overflow: auto;
-    height: 100vh;
     width: auto;
     background-color: var(--olive);
 }
