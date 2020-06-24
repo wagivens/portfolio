@@ -16,9 +16,9 @@
 }
 
 .colored-buttons button {
-    width: 12px;
-    height: 12px;
-    border-radius: 40%;
+    width: 1vw;
+    height: 1.6vh;
+    border-radius: 35%;
     background-color: red;
     border: none;
     margin-left: 5px;
