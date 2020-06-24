@@ -90,7 +90,7 @@
     .colored-buttons button {
         width: 12px;
         height: 12px;
-        border-radius: 50%;
+        border-radius: 20%;
         background-color: red;
         border: none;
         margin-left: 5px;
