@@ -151,15 +151,15 @@ article {
     height: 12vh;
 }
 
-.next {
+.down {
     position: absolute;
     bottom: 0;
-    margin-left: 42%;
+    margin-left: 42vw;
     margin-bottom: 50px;
 }
 
-.next i {
-    font-size: 35px;
+.down i {
+    font-size: 6vh;
 }
 
 a {
@@ -190,6 +190,7 @@ a {
 
 .main {
     margin: 0px auto 0px;
+    height: 80vh;
     width: calc(100% - 30px);
     position: relative;
     overflow: hidden;
