@@ -105,7 +105,7 @@ article {
 
 .home-role {
     font-size: 1.8em;
-    margin-top: 30vh;
+    margin-top: 20vh;
 }
 
 .page__title {
@@ -269,7 +269,7 @@ button:hover {
     }
     
     #burger {
-        margin: 25px 0px 10px auto;
+        margin: 20px 0px 10px auto;
     }
     
     #burger i {
