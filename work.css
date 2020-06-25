@@ -17,6 +17,7 @@
     height: 100vh;
     padding-top: 30px;
     scroll-snap-align: start;
+    scroll-behavior: smooth;
 }
 
 .project__text {
