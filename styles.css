@@ -23,7 +23,7 @@
 html {
     background-color: var(--cream);
     height: 100%;
-    overflow-x: hidden;
+    overflow-x: scroll;
 }
 
 button {
@@ -69,7 +69,6 @@ body {
 
 section {
     height: 100vh;
-/*    scroll-snap-type: y mandatory;*/
 }
 
 article {
@@ -83,6 +82,7 @@ article {
     overflow: auto;
     width: auto;
     background-color: var(--olive);
+    scroll-snap-type: y mandatory;
 }
 
 .work__background-text {
@@ -182,6 +182,7 @@ a {
     line-height: 0.5px;
     width: 100%;
     height: 100%;
+    scroll-snap-type: y mandatory;
 }
 
 .content__text, .social-nav {
