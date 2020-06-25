@@ -1,6 +1,6 @@
 /*Work Page Styling*/
 .project-container {
-    width: 90vw;
+    width: 100vw;
     height: 40vh;
     overflow: hidden;
     border-radius: 3px;
@@ -8,7 +8,7 @@
 }
 
 .img-container {
-    width: 85%;
+    width: 90%;
 }
 
 .img-container img {
