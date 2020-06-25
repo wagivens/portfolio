@@ -19,6 +19,16 @@ function hideComponent(eventElement, eventType, reactionElement) {
     });
 }
 
+//When user clicks on clickElement, scroll the scrollElement into view
+function scrollAnElement(clickElement, scrollElement) {
+    'use strict';
+    document.querySelector(clickElement).addEventListener('click', function () {
+        document.querySelector(scrollElement).scrollIntoView({behavior: 'smooth'});
+    });
+}
+
 unhideComponent('burger', 'click', 'menu-overlay');
     
 hideComponent('exit', 'click', 'menu-overlay');
+
+scrollAnElement('.down', '.work');
