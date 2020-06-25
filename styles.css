@@ -24,6 +24,7 @@ html {
     background-color: var(--cream);
     height: 100%;
     overflow-x: scroll;
+    scroll-behavior: smooth;
 }
 
 button {
