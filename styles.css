@@ -23,7 +23,7 @@
 html {
     background-color: var(--cream);
     height: 100%;
-    overflow-x: scroll;
+    overflow-y: scroll;
     scroll-behavior: smooth;
 }
 
@@ -80,10 +80,12 @@ article {
 }
 
 .work {
+    display: flex;
+    flex-direction: row;
     overflow: auto;
     width: auto;
     background-color: var(--olive);
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: x mandatory;
 }
 
 .work__background-text {
