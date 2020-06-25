@@ -39,7 +39,7 @@
     letter-spacing: -0.05em;
 }
 
-.project-link, .project-description, .project-stack {
+.project-description, .project-stack {
     font-size: 2.2vh;
     font-weight: 400;
     text-align: left;
@@ -48,10 +48,6 @@
 .project-description {
     width: 70vw;
     line-height: 1.5em;
-}
-
-.project-link {
-    margin-top: 6vh;
 }
 
 @media (min-width: 750px) {
