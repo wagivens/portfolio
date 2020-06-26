@@ -46,12 +46,6 @@ a {
     cursor: pointer;
 }
 
-/*
-a:visited {
-    
-}
-*/
-
 /* Colors */
 .black {
     color: var(--olive);
@@ -86,19 +80,7 @@ section {
 
 article {
     display: block;
-    height: 100vh;
-}
-
-.home-role, .mobile-menu-role {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 700;
-    text-align: center;
-    line-height: 40px;
-}
-
-.home-role {
-    font-size: 1.8em;
-    margin-top: 20vh;
+    max-height: 100vh;
 }
 
 .navigation {
@@ -147,6 +129,7 @@ article {
     scroll-snap-type: y mandatory;
 }
 
+/* Main/Intro Section Styling */
 .main {
     margin: 0px auto 0px;
     height: 80vh;
@@ -157,12 +140,79 @@ article {
     flex-direction: column;
 }
 
+.home-role, .mobile-menu-role {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    line-height: 40px;
+}
+
+.home-role {
+    font-size: 1.8em;
+    margin-top: 20vh;
+}
+
+/*Work Page Styling*/
 .work {
     display: flex;
     flex-direction: row;
     overflow: auto;
     width: auto;
     background-color: var(--olive);
+}
+
+.project-container {
+    width: 100vw;
+    height: 40vh;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.img-container {
+    width: 90%;
+}
+
+.img-container img {
+    object-position: center;
+    width: 100%;
+    filter: grayscale(100%);
+}
+
+.project:hover img {
+    filter: grayscale(0%);
+}
+
+.project {
+    margin: 0px auto 0px;
+    width: 100%;
+    height: 100vh;
+    padding-top: 30px;
+}
+
+.project > * {
+    margin-left: 20px;
+}
+
+.project__text {
+    display: flex; 
+    flex-direction: column;
+}
+
+.project-title {
+    font-size: 5vh;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+}
+
+.project-description, .project-stack {
+    font-size: 2.2vh;
+    font-weight: 400;
+    text-align: left;
+}
+
+.project-description {
+    width: 70vw;
+    line-height: 1.5em;
 }
 
 /* Contact Section Styling */
@@ -207,6 +257,8 @@ article {
     letter-spacing: -1px;
     text-align: center;
     margin-top: auto;
+    grid-row: auto / -1;
+    grid-column: 1 /-1;
 }
 
 .portrait {
@@ -331,20 +383,13 @@ button:hover {
 }
 
 @media (min-width: 750px) {
-    .grid-fluid {
-        height: 100%;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(601px, 1fr));
-        grid-template-rows: repeat(auto-fit, 1fr);
-        grid-row-gap: 40px;
-        justify-items: center;
-    }
-    
-    .grid-regular {
-        height: 100%;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 300px 200px 50px;
+    /* Work Page */
+    .project-container {
+        width: 90vw;
+        height: 60vh;
+        overflow: hidden;
+        border-radius: 3px;
+        z-index: 1;
     }
     
     .menu__name {
@@ -355,10 +400,6 @@ button:hover {
         letter-spacing: -2px;
         margin-top: 30px;
         margin-left: 8%;
-    }
-    
-    .content {
-        width: calc(100% - 25px);
     }
     
     .page__title {
