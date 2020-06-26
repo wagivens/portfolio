@@ -23,7 +23,7 @@
 html {
     background-color: var(--cream);
     height: 100%;
-    overflow-y: scroll;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -39,6 +39,18 @@ h1, h2, h3 {
 p {
     font-family: 'Playfair Display', serif;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+/*
+a:visited {
+    
+}
+*/
 
 /* Colors */
 .black {
@@ -69,23 +81,12 @@ body {
 }
 
 section {
-    height: 100vh;
+    height: auto;
 }
 
 article {
     display: block;
     height: 100vh;
-    width: 100%;
-    scroll-snap-align: start;
-}
-
-.work {
-    display: flex;
-    flex-direction: row;
-    overflow: auto;
-    width: auto;
-    background-color: var(--olive);
-    scroll-snap-type: x mandatory;
 }
 
 .home-role, .mobile-menu-role {
@@ -138,14 +139,8 @@ article {
     font-size: 6vh;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-}
-
 .content {
-    margin: 0px auto 10px;
+    margin: 0px auto 0px;
     line-height: 0.5px;
     width: 100%;
     height: 100%;
@@ -160,6 +155,59 @@ a {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+}
+
+.work {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    width: auto;
+    background-color: var(--olive);
+    scroll-snap-type: x mandatory;
+}
+
+/* Contact Section Styling */
+.contact {
+    background-color: var(--ghost);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+}
+
+.contact > * {
+    margin: 0px auto 0px;
+    width: calc(100% - 5vw);
+}
+
+.portrait {
+    width: auto;
+    grid-column: 1 / 9;
+    grid-row: 1 / 2;
+}
+
+.contact__email {
+    font-size: 5vh;
+    grid-column: 11 / -1;
+    grid-row: 1 / 2;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: center;
+}
+
+.contact__pitch {
+    grid-column: 1 / -1;
+    grid-row: 3 / -1;
+    line-height: 30px;
+}
+
+.copyright {
+    font-weight: 700;
+    font-size: 2vh;
+    letter-spacing: -1px;
+    text-align: center;
+    margin-top: auto;
 }
 
 .portrait {
@@ -263,15 +311,6 @@ button:hover {
     
     .menu__name {
         margin: 20px auto 0px 0px;
-    }
-    
-    .copyright {
-        font-family: 'Oswald', sans-serif;
-        font-weight: 700;
-        font-size: 12px;
-        letter-spacing: -1px;
-        text-align: center;
-        margin-top: auto;
     }
     
     #exit {
