@@ -248,7 +248,7 @@ article {
 .contact__pitch {
     grid-column: 1 / -1;
     grid-row: 4 / -1;
-    line-height: 30px;
+    line-height: 20px;
 }
 
 .copyright {
