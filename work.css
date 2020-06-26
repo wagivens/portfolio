@@ -4,7 +4,6 @@
     height: 40vh;
     overflow: hidden;
     border-radius: 3px;
-    z-index: 1;
 }
 
 .img-container {
@@ -14,6 +13,11 @@
 .img-container img {
     object-position: center;
     width: 100%;
+    filter: grayscale(100%);
+}
+
+.project:hover img {
+    filter: grayscale(0%);
 }
 
 .project {
