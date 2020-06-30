@@ -418,7 +418,7 @@ button:hover {
         padding-left: 20px;
     }
     
-    #menu-overlay, #burger {
+    #menu-overlay, #burger, .down {
         display: none;
     }
 }
