@@ -163,25 +163,26 @@ article {
 }
 
 .project-container {
-    width: 100vw;
-    height: 40vh;
+    width: 60vw;
     overflow: hidden;
     border-radius: 3px;
 }
 
 .img-container {
-    width: 90%;
+    width: 100%;
 }
 
 .img-container img {
     object-position: center;
     width: 100%;
-    filter: grayscale(100%);
+/*    filter: grayscale(100%);*/
 }
 
+/*
 .project:hover img {
     filter: grayscale(0%);
 }
+*/
 
 .project {
     margin: 0px auto 0px;
@@ -212,7 +213,7 @@ article {
 }
 
 .project-description {
-    width: 70vw;
+    width: 80vw;
     line-height: 1.5em;
 }
 
@@ -379,11 +380,15 @@ button:hover {
 @media (min-width: 750px) {
     /* Work Page */
     .project-container {
-        width: 60vw;
-        height: 60vh;
+        width: 33vw;
         overflow: hidden;
         border-radius: 3px;
         z-index: 1;
+    }
+    
+    .project-description {
+    width: 40vw;
+    line-height: 1.5em;
     }
     
     .menu__name {
