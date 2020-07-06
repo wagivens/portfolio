@@ -163,7 +163,7 @@ article {
 }
 
 .project-container {
-    width: 60vw;
+    max-width: 60vw;
     overflow: hidden;
     border-radius: 3px;
 }
@@ -175,6 +175,7 @@ article {
 .img-container img {
     object-position: center;
     width: 100%;
+    max-width: 400px;
 /*    filter: grayscale(100%);*/
 }
 
@@ -234,7 +235,7 @@ article {
 
 .portrait {
     max-height: 100%;
-    max-width: 100%;
+    max-width: 300px;
     grid-column: 5 / 9;
     grid-row: 2 / 3;
 }
@@ -249,7 +250,8 @@ article {
 .contact__pitch {
     grid-column: 1 / -1;
     grid-row: 5 / -1;
-    line-height: 4vh;
+    line-height: 2;
+    max-width: 600px;
 }
 
 .copyright {
@@ -378,12 +380,9 @@ button:hover {
 }
 
 @media (min-width: 750px) {
-    /* Work Page */
-    .project-container {
-        width: 33vw;
-        overflow: hidden;
-        border-radius: 3px;
-        z-index: 1;
+    .home-role {
+    font-size: 1.8em;
+    margin-top: 30vh;
     }
     
     .project-description {
