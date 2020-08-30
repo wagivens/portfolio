@@ -10,81 +10,41 @@
         <script src="https://kit.fontawesome.com/5f1ac3920a.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <nav class="menu">
-            <ul class="navigation">
-                <li class="menu__name brown"><a href="index.html">WILLGIVENS</a></li>
-                <li id="link-1" class="navigation__link brown">WORK</li>
-                <li id="link-2" class="navigation__link brown">CONTACT</li>
-                <button id="burger" class="brown"><i class="fas fa-bars"></i></button>
-            </ul>
-        </nav>
-        <div id="menu-overlay">
-            <header>
-                <ul class="menu-overlay__head">
-                    <li class="menu-overlay__name offwhite"><a href="index.html">WILLGIVENS</a></li>
-                    <button id="exit"><i class="fas fa-times offwhite"></i></button>
-                </ul>
-            </header>
-            <h1 class="mobile-menu-role offwhite">FRONT-END DEVELOPER. UI/UX DESIGNER.</h1>
-            <nav>
-                <ul class="mobile-navigation">
-                    <ul class="mobile-navigation-link socials">
-                        <li>
-                            <a href="https://medium.com/@wagivens"><i class="fab fa-medium-m"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/willardgivensiv/"><i class="fab fa-linkedin-in"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/wagivens"><i class="fab fa-github"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://instagram.com/wagivens"><i class="fab fa-instagram"></i></a>
-                        </li>
-                    </ul>
-                </ul>
+        <header>
+            <nav class="navigation header__nav">
+                <h1 class="nav__title--main">WillardGivens</h1>
+                <h2 class="white">Front-End Developer &bullet; UI/UX Designer</h2>
             </nav>
-            <h1 class="copyright offwhite">© WILL GIVENS IV 2020</h1>
-        </div>
-        <section class="content">
-            <article class="main">
-                <h1 class="home-role orange">Will Givens IV is a Los Angeles-based Front End Developer and UI/UX Designer.</h1>
-                <button class="down"><i class="fas fa-angle-down brown"></i></button>
-            </article>
-            <article class="work">
-                <div class="project">
-                    <div class="project-container">
-                        <div class="img-container">
-                            <img class="project-image" src="portfolio-imgs/pride-legacy-thumbnail.png">
-                        </div>
-                    </div>
-                    <div class="project__text">
-                        <h1 class="project-title orange"><a href="https://wagivens.github.io/pride-legacy/index.html">PRIDE, LEGACY</a></h1>
-                        <p class="project-description white"><i>Pride, Legacy</i> is a project highlighting the history and legacy of the annual Pride Month. The site gives an overview of the history of Pride Month, a gallery of images from past Prides, and a collection of LGBTQIA+ organizations to get involved with.</p>
-                        <p class="project-stack white"><strong>Stack:</strong> HTML, CSS, Vanilla JavaScript</p>
-                    </div>
+        </header>
+        <main class="container">
+            <section class="intro">
+                <div class="row">
+                    <article class="row__column">
+                        <p class="white">Hi, I'm Will. I'm currently a Senior at the University of Southern California. 
+                            I briefly began my foray into web development in high school and decided to pick it up again in college, now pursuing it professionally. 
+                            I care a lot about the end-user experience: how things look, how things behave, and how the user feels. Check out some of my work below.</p>
+                        <ul class="list">
+                            <li class="list__item underlined white"><a href="#">Work</a></li>
+                            <li class="list__item underlined white"><a href="#">Projects</a></li>
+                            <li class="list__item underlined white"><a href="https://github.com/wagivens">GitHub</a></li>
+                        </ul>
+                    </article>
                 </div>
-<!--
-                <div class="project">
-                    <div class="project-container">
-                        <div class="img-container">
-                            <img class="project-image" src="portfolio-imgs/pride-legacy-thumbnail.png">
-                        </div>
-                    </div>
-                    <div class="project__text">
-                        <h1 class="project-title orange">PRIDE, LEGACY</h1>
-                        <p class="project-description white"><i>Pride, Legacy</i> is a project highlighting the history and legacy of the annual Pride Month. The site gives an overview of the history of Pride Month, a gallery of images from past Prides, and a collection of LGBTQIA+ organizations to get involved with.</p>
-                        <p class="project-stack white"><strong>Stack:</strong> HTML, CSS, Vanilla JavaScript</p>
-                    </div>
+            </section>
+            <section class="contact">
+                <h3 class="section__title white">Connect With Me</h3>
+                <div class="row">
+                    <article class="row__column">
+                        <ul class="list">
+                            <li class="list__item underlined white"><a href="#">Twitter</a></li>
+                            <li class="list__item underlined white"><a href="#">Facebook</a></li>
+                            <li class="list__item underlined white"><a href="#">Dribbble</a></li>
+                            <li class="list__item underlined white"><a href="#">Dev.io</a></li>
+                        </ul>
+                    </article>
                 </div>
--->
-            </article>
-            <article class="contact">
-                <img class="portrait" src="portfolio-imgs/ivy-park-portrait-bw-opt.jpeg" alt="Black and white, full-body photo of Will Givens IV posing with this hands in his pockets.">
-                <h1 class="contact__email orange"><a href="mailto:wagivens@usc.edu">wagivens@usc.edu</a></h1>
-                <p class="contact__pitch orange"><strong>I’m currently available for projects. Contact me if you are looking for design or development help. (I do not offer illustration/logo design services). My resume can be downloaded</strong> <a href="https://wagivens.github.io/resume.pdf"><span class="black">here.</span></a></p>
-            </article>
-        </section>
+            </section>
+        </main>
         <script src="script.js"></script>
     </body>
 </html>
