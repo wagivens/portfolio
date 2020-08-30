@@ -154,6 +154,10 @@ li:not(:first-child) {
 }
 
 @media (max-width: 720px) {
+    header > *, main {
+        padding-left: 0;
+    }
+
     p {
         font-size: 1.8rem;
         font-weight: 200;
@@ -169,10 +173,6 @@ li:not(:first-child) {
 
     .row__column {
         max-width: 100%;
-    }
-
-    .row__column:not(:last-child) {
-        padding-left: .5rem;
     }
 
     .list__item {
