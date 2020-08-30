@@ -154,6 +154,10 @@ li:not(:first-child) {
 }
 
 @media (max-width: 720px) {
+    .fadeIn {
+        animation: fadeIn 2s ease;
+    }
+    
     header > *, main {
         padding-left: 0;
     }
