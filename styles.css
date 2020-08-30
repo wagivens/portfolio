@@ -6,6 +6,7 @@
     --orange: #fa3e00d8;
 }
 
+/* Utility Classes */
 .white {
     color: white;
 }
@@ -14,19 +15,7 @@
     text-decoration: underline;
 }
 
-.fadeIn {
-    animation: fadeIn 2s ease;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
+/* Basic Styles */
 
 *, *::after, *::before {
     margin: 0;
@@ -41,13 +30,36 @@ body {
     width: calc(100% - 6rem);
 }
 
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 2.2rem;
+    font-weight: 200;
+    letter-spacing: .1rem;
+    padding: 1rem 0rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+   list-style: none;
+    font-weight: 200;
+}
+
+li:not(:first-child) {
+    margin-left: 2rem;
+}
+
 section {
     width: 100%;
     padding: 1.5rem 0rem;
-}
-
-.container {
-    width: 100%;
 }
 
 header {
@@ -60,6 +72,10 @@ header > * {
 
 main {
     padding: 1.5rem
+}
+
+.container {
+    width: 100%;
 }
 
 .navigation {
@@ -95,24 +111,6 @@ main {
     font-size: 1.8rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    text-transform: uppercase;
-    letter-spacing: .05rem;
-    font-weight: 600;
-}
-
-p {
-    font-size: 2.2rem;
-    font-weight: 200;
-    letter-spacing: .1rem;
-    padding: 1rem 0rem;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
 .btn {
     border: none;
     border-radius: .5rem;
@@ -126,15 +124,6 @@ a {
 
 .section__title {
     font-size: 2rem;
-}
-
-li {
-   list-style: none;
-    font-weight: 200;
-}
-
-li:not(:first-child) {
-    margin-left: 2rem;
 }
 
 .list {
@@ -153,21 +142,33 @@ li:not(:first-child) {
     color: var(--orange);
 }
 
+.project-title {
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: var(--orange);
+}
+
+/* Animation */
+
+.fadeIn {
+    animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 @media (max-width: 720px) {
     .fadeIn {
         animation: fadeIn 2s ease;
     }
-    
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
 
-        100% {
-            opacity: 1;
-        }
-    }
-    
     header > *, main {
         padding-left: 0;
     }
