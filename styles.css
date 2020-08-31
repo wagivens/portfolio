@@ -169,6 +169,10 @@ main {
 }
 
 @media (max-width: 720px) {
+    .orange {
+        color: var(--orange);
+    }
+    
     .fadeIn {
         animation: fadeIn 2s ease;
     }
