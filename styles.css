@@ -11,6 +11,10 @@
     color: white;
 }
 
+.orange {
+    color: var(--orange);
+}
+
 .underlined {
     text-decoration: underline;
 }
