@@ -4,6 +4,7 @@
     width: 100vw;
     --black: #212121;
     --orange: #fa3e00d8;
+    --green: #009a24;
 }
 
 /* Utility Classes */
@@ -15,8 +16,16 @@
     color: var(--orange);
 }
 
+.green {
+    color: var(--green);
+}
+
 .underlined {
     text-decoration: underline;
+}
+
+.bold {
+    font-weight: 400;
 }
 
 /* Basic Styles */
@@ -108,7 +117,7 @@ main {
 
 .nav__title--main {
     font-size: 4.1rem;
-    color: var(--orange);
+    color: var(--green);
 }
 
 .header__nav--item {
@@ -143,13 +152,14 @@ main {
 }
 
 .list__item:hover {
-    color: var(--orange);
+    color: var(--green);
 }
 
 .project-title {
     text-transform: uppercase;
-    text-decoration: underline;
-    color: var(--orange);
+    font-weight: 400;
+    /* text-decoration: underline; */
+    color: var(--green);
 }
 
 /* Animation */
@@ -172,7 +182,11 @@ main {
     .orange {
         color: var(--orange);
     }
-    
+
+    .green {
+        color: var(--green);
+    }
+
     .fadeIn {
         animation: fadeIn 2s ease;
     }
