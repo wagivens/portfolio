@@ -178,8 +178,7 @@ main {
 
 .fadeIn {
     -webkit-animation: fadeIn 2s ease;
-            -webkit-animation: fadeIn 2s ease;
-                    animation: fadeIn 2s ease;
+            animation: fadeIn 2s ease;
 }
 
 @-webkit-keyframes fadeIn {
@@ -209,8 +208,7 @@ main {
 
     .fadeIn {
         -webkit-animation: fadeIn 2s ease;
-                -webkit-animation: fadeIn 2s ease;
-                        animation: fadeIn 2s ease;
+                animation: fadeIn 2s ease;
     }
 
     header > *, main {
