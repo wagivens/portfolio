@@ -48,6 +48,7 @@ p {
     font-size: 2.2rem;
     font-weight: 200;
     letter-spacing: .1rem;
+    line-height: 3.5rem;
     padding: 1rem 0rem;
 }
 
@@ -114,7 +115,7 @@ main {
 }
 
 .header-nav__title--main {
-    font-size: 4.1rem;
+    font-size: 2.5rem;
 }
 
 .header-nav__list {
@@ -153,9 +154,14 @@ main {
     color: var(--orange);
 }
 
+.intro {
+    padding: 0;
+}
+
 .socials {
     font-size: 3rem;
     margin-left: .2rem;
+    text-decoration: underline;
 }
 
 .current-page {
@@ -165,7 +171,6 @@ main {
 .project-title {
     text-transform: uppercase;
     font-weight: 400;
-    /* text-decoration: underline; */
 }
 
 /* Animation */
@@ -198,8 +203,8 @@ main {
     }
 
     p {
-        font-size: 1.8rem;
-        font-weight: 200;
+        font-size: 2rem;
+        font-weight: 300;
         letter-spacing: .1rem;
         padding: 1rem 0rem;
     }
