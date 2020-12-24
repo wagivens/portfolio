@@ -53,8 +53,6 @@ body {
     margin: 0px auto;
     position: relative;
     width: calc(100% - 8rem);
-    display: flex;
-    flex-direction: column;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -119,7 +117,6 @@ main {
 
 footer {
     width: 100%;
-    margin-top: auto;
 }
 
 .copyright {
