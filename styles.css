@@ -156,6 +156,17 @@ footer {
 }
 
 @media (max-width: 719px) {
+    main {
+        margin-top: 15rem;
+        width: 100%;
+    }
+
+    p {
+        font-size: 2rem;
+        font-weight: 200;
+        letter-spacing: .1rem;
+    }
+
     .width-25, .width-50, .width-75 {
         width: 100%;
     }
@@ -168,11 +179,5 @@ footer {
     .fadeIn {
         -webkit-animation: fadeIn 2s ease;
                 animation: fadeIn 2s ease;
-    }
-
-    p {
-        font-size: 2rem;
-        font-weight: 200;
-        letter-spacing: .1rem;
     }
 }
