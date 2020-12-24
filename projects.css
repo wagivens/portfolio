@@ -1,0 +1,30 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.row__column {
+    max-width: 50%;
+}
+
+.row__column:not(:last-child) {
+    padding-left: .5rem;
+}
+
+.project-title {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+@media (max-width: 719px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .row__column {
+        max-width: 100%;
+    }
+}

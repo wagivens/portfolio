@@ -1,0 +1,19 @@
+/* About Page Styling */
+.about-heading {
+    font-size: 3rem;
+}
+
+.about-subheading {
+    font-size: 1.8rem;
+}
+
+@media (max-width: 719px) {
+    .about-heading {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    .about-subheading {
+        font-size: 1.6rem;
+    }
+}
