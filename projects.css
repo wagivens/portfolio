@@ -11,6 +11,7 @@
 .projects-listing {
     width: 62.5rem;
     height: 35rem;
+    position: relative;
 }
 
 .projects-listing__thumbnail {
