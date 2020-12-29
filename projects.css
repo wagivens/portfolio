@@ -12,6 +12,7 @@
     width: 62.5rem;
     height: 35rem;
     position: relative;
+    background-color: rgb(50, 50, 50);
 }
 
 .projects-listing__thumbnail {
