@@ -22,6 +22,55 @@
     object-position: center;
 }
 
+/* Project Pages */
+.project-introduction {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-introduction__text {
+    width: 100%;
+}
+
+.project-introduction__title {
+    font-size: 3rem;
+}
+
+.project-introduction__text > p {
+    font-size: 1.6rem;
+}
+
+.date-range {
+    color: var(--gray);
+    text-transform: uppercase;
+}
+
+.project-introduction__image {
+    align-self: center;
+    max-width: 25%;
+}
+
+.section-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.artifact {
+    width: 100%;
+}
+
+p + figure {
+    margin-top: 2rem;
+}
+
+figcaption {
+    font-size: 1.4rem;
+    color: var(--gray);
+    text-align: center;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
 @media (max-width: 1329px) {
     .projects-listing {
         width: 100%;
