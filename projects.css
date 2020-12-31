@@ -28,6 +28,10 @@
     flex-direction: column;
 }
 
+.project-introduction > * {
+    padding-top: 4rem;
+}
+
 .project-introduction__text {
     width: 100%;
 }

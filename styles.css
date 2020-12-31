@@ -4,7 +4,7 @@
     width: 100vw;
     --black: #212121;
     --orange: #fa3e00d8;
-    --gray: #808080;
+    --gray: hsl(0, 0%, 60%);
     --white: #e2e2e2;
 }
 
