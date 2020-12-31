@@ -33,7 +33,7 @@
 }
 
 .project-introduction__text * {
-    margin-top: -2rem;
+    margin-top: -1rem;
 }
 
 .project-introduction__title {
@@ -63,11 +63,11 @@
     width: 50%;
 }
 
-section + section {
+.case-study-section + .case-study-section {
     padding-top: 2rem;
 }
 
-section > * {
+.case-study-section > * {
     padding-top: 3rem;
 }
 
@@ -81,9 +81,9 @@ section > * {
     width: 100%;
 }
 
-figcaption {
+.case-study-figcap {
     font-size: 1.4rem;
-    color: var(--gray);
+    color: #a0a0a0;
     text-align: center;
     font-style: italic;
     margin-top: 0.5rem;
