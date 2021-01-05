@@ -33,7 +33,7 @@
 }
 
 .project-introduction__text {
-    width: 100%;
+    width: 50%;
 }
 
 .project-introduction__text * {
@@ -65,6 +65,7 @@
 .project-case-study p {
     font-size: 1.8rem;
     width: 50%;
+    color: var(--white);
 }
 
 .case-study-section + .case-study-section {
@@ -72,7 +73,7 @@
 }
 
 .case-study-section > * {
-    padding-top: 3rem;
+    margin-top: 3rem;
 }
 
 .section-title {
@@ -93,7 +94,21 @@
     margin-top: 0.5rem;
 }
 
+.quote-box {
+    border-left: .2rem solid var(--orange);
+}
+
+.quote-box p {
+    padding-left: 1rem;
+    color: var(--gray);
+    font-style: italic;
+}
+
 @media (max-width: 719px) {
+    .project-introduction__text {
+        width: 100%;
+    }
+
     .project-introduction__image {
         max-width: 50%;
     }
