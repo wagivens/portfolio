@@ -84,6 +84,8 @@ p {
 a {
     text-decoration: none;
     color: inherit;
+    height: inherit;
+    width: inherit;
 }
 
 li {
@@ -110,10 +112,13 @@ header {
     align-items: center;
 }
 
+.header-nav > a {
+    margin-right: auto;
+}
+
 .header-nav__memoji {
     max-height: 100%;
     margin-left: -1rem;
-    margin-right: auto;
 }
 
 .header-nav__item {
