@@ -68,6 +68,10 @@
     color: var(--white);
 }
 
+.project-container {
+    margin-top: 0;
+}
+
 .case-study-section + .case-study-section {
     padding-top: 2rem;
 }
