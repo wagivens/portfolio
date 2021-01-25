@@ -1,20 +1,21 @@
 :root {
     font-size: 62.5%;
-    background-color: #141414;
+    background-color: hsl(0, 0%, 97%);
     width: 100vw;
-    --black: #212121;
-    --orange: #fa3e00d8;
-    --gray: hsl(0, 0%, 60%);
+    --black: #080808;
+    --gray: #808080;
     --white: #e2e2e2;
+    --green: hsl(115, 75%, 40%);
+    --purple: hsl(273, 63%, 58%);
 }
 
 /* Utility Classes */
-.white {
-    color: var(--white);
+.green {
+    color: var(--green);
 }
 
-.orange {
-    color: var(--orange);
+.purple {
+    color: var(--purple);
 }
 
 .gray {
@@ -64,14 +65,10 @@
 }
 
 body {
-    font-family: 'Molengo', sans-serif;
+    font-family: 'Spartan', sans-serif;
     margin: 0px auto;
     position: relative;
     width: calc(100% - 8rem);
-}
-
-h1, h2, h3, h4, h5, h6 {
-    letter-spacing: .05rem;
 }
 
 p {
@@ -116,23 +113,56 @@ header {
     margin-right: auto;
 }
 
-.header-nav__memoji {
-    max-height: 100%;
-    margin-left: -1rem;
+.header-nav__name {
+    font-size: 1.8rem;
+    letter-spacing: -.1rem;
+    font-weight: 900;
 }
 
 .header-nav__item {
+    color: var(--gray);
     transition: color 250ms ease;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .header-nav__item:hover, .header-nav__item:focus {
-    color: var(--orange);
+    color: var(--purple);
 }
 
 main {
     margin-top: 20rem;
     width: 100%;
+}
+
+/* Project Gallery Styling */
+.projects-gallery {
+    margin-top: 20rem;
+}
+
+.project-box {
+    width: 100%;
+    letter-spacing: -.1rem;
+}
+
+.project-box + .project-box {
+    padding-top: 5rem;
+}
+
+.project-box__image {
+    width: 100%;
+}
+
+.project-box__title {
+    line-height: 3rem;
+}
+
+.project-box__summary {
+    line-height: 3rem;
+}
+
+.project-box__title, .project-box__summary {
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 footer {
@@ -191,6 +221,29 @@ footer {
     .header-nav__item {
         transition: color 250ms ease;
         font-size: 1.4rem;
+    }
+
+    .header-nav__name {
+        font-size: 1.6rem;
+    }
+
+    .contact {
+        font-size: 1.6rem;
+    }
+
+    /* Projects Gallery Section */
+
+    .project-box + .project-box {
+        padding-top: 5rem;
+    }
+
+    .project-box__summary {
+        line-height: 2.5rem;
+    }
+
+    .project-box__title, .project-box__summary {
+        font-size: 1.6rem;
+        font-weight: 700;
     }
 
     .fadeIn {

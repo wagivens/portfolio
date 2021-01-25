@@ -5,31 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Personal portfolio website of Willard Givens IV, a Front End Developer and UI/UX Designer.
     Will currently does freelance front-end development and product design out of Los Angeles, California.">
-    <link href="https://fonts.googleapis.com/css2?family=Molengo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
     <script src="https://kit.fontawesome.com/5f1ac3920a.js" crossorigin="anonymous"></script>
-    <title>Will Givens IV | Designer and Developer - About</title>
+    <title>Will Givens IV | Designer and Developer</title>
 </head>
 <body>
     <header>
         <nav class="navigation header-nav">
-            <a href="#">
-                <img class="header-nav__memoji" src="">
+            <a class="home-link" href="https://wagivens.github.io/index.html">
+                <p class="header-nav__name">Will Givens IV</p>
             </a>
-            <li class="header-nav__item orange"><a href="#">About</a></li>
-            <li class="header-nav__item white"><a href="https://wagivens.github.io/projects.html">Work</a></li>
-            <li class="header-nav__item white"><a href="https://github.com/wagivens">GitHub</a></li>
-            <li class="header-nav__item white"><a href="WillardGivens_Resume_122020.pdf">Resume</a></li>
+            <li class="header-nav__item"><a href="https://github.com/wagivens">GitHub</a></li>
+            <li class="header-nav__item"><a href="WillardGivens_Resume_122020.pdf">Resume</a></li>
         </nav>
     </header>
     <main class="container">
-        <section class="width-50">
-            <h1 class="orange about-heading">Will Givens is a product designer.</h1>
-            <p class="gray about-subheading">Currently doing freelance design and front-end development out of Los Angeles, CA. 
-            Check out some of his work, or email him at <a href="mailto:wagivens@usc.edu" class="orange">wagivens@usc.edu</a>!</p>
+        <section>
+            <div>
+                <h1 class="about-heading">Product Designer and Front-End Developer</h1>
+                <p class="gray about-subheading">Los Angeles, CA</p>
+            </div>
+            <p class="gray contact">Find me on 
+                <a href="" class="purple contact__link">LinkedIn</a>, 
+                <a href="" class="purple contact__link">Dribble</a>, 
+                or email me at <a href="mailto:wagivens@usc.edu" class="purple contact__link">wagivens@usc.edu</a>.</p>
+        </section>
+        <section class="projects-gallery">
+            <div class="project-box">
+                <img class="project-box__image" src="project_thumbnails/thumbnail-messages.png">
+                <h2 class="project-box__title">Messages Edit Feature</h2>
+                <h3 class="gray project-box__summary">A solution for user errors in Apple’s Messages application.</h3>
+            </div>
+            <div class="project-box">
+                <img class="project-box__image" src="project_thumbnails/thumbnail-tixby.png">
+                <h2 class="project-box__title">Tixby</h2>
+                <h3 class="gray project-box__summary">An interface for purchasing tickets to events.</h3>
+            </div>
+            <div class="project-box">
+                <img class="project-box__image" src="project_thumbnails/thumbnail-econia.png">
+                <h2 class="project-box__title">Econia</h2>
+                <h3 class="gray project-box__summary">Streamlining the recycling process for young adults.</h3>
+            </div>
+            <div class="project-box">
+                <img class="project-box__image" src="project_thumbnails/thumbnail-nglewud.png">
+                <h2 class="project-box__title">Nglewud - <em class="gray">Coming Soon</em></h2>
+                <h3 class="gray project-box__summary">A web application allowing Black creatives to collaborate more easily.</h3>
+            </div>
         </section>
     </main>
+    <footer>
+        <p class="copyright">&copy; Will Givens 2021</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
