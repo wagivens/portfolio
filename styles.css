@@ -103,13 +103,11 @@ header {
     display: flex;
     height: 6rem;
     align-items: center;
-}
-
-.header-nav > a {
-    margin-right: auto;
+    justify-content: flex-end;
 }
 
 .header-nav__name {
+    margin-right: auto;
     font-size: 1.8rem;
     letter-spacing: -.1rem;
     font-weight: 900;
@@ -200,7 +198,7 @@ footer {
 
 @media (max-width: 719px) {
     main {
-        margin-top: 5rem;
+        margin-top: 10rem;
         width: 100%;
     }
 
