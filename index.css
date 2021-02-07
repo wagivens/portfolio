@@ -1,34 +1,36 @@
 /* About Page Styling */
 .about-heading {
-    font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: -.2rem;
-    line-height: 4rem;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.2rem;
+  line-height: 4rem;
 }
 
 .about-subheading {
-    font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: -.2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.2rem;
+  margin-top: 1.5rem;
 }
 
 .contact {
-    font-size: 1.8rem;
-    letter-spacing: -.01rem;
+  font-size: 1.8rem;
+  letter-spacing: -0.01rem;
 }
 
 .contact__link {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 @media (max-width: 719px) {
-    .about-heading {
-        font-size: 2rem;
-        font-weight: 600;
-        line-height: 3rem;
-    }
+  .about-heading {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 3rem;
+  }
 
-    .about-subheading {
-        font-size: 2rem;
-    }
+  .about-subheading {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+  }
 }

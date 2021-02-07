@@ -1,3 +1,5 @@
 {
-    "git.autofetch": true
+    "git.autofetch": true,
+    "editor.formatOnSave": true,
+    "autoprefixer.formatOnSave": true
 }
