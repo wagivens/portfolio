@@ -160,16 +160,17 @@ main {
 }
 
 .project-listing__title {
-  font-family: "Ibarra Real Nova", serif;
+  font-family: "Crimson Text", serif;
   color: var(--white);
   font-size: 3.5rem;
-  letter-spacing: -0.25rem;
+  letter-spacing: -0.1rem;
 }
 
 .project-listing__description {
   color: var(--white);
   font-size: 1.6rem;
   font-weight: 300;
+  letter-spacing: -0.01rem;
 }
 
 .project-listing__link {
@@ -191,7 +192,7 @@ main {
 
 /* Project Image Container */
 .project-listing__image {
-  width: 100%;
+  width: 80%;
   align-self: center;
   transition: 300ms ease;
 }
@@ -254,6 +255,7 @@ footer {
   }
 
   .project-listing__image {
+    width: 65%;
     margin: 2rem 0;
   }
 }
@@ -295,8 +297,12 @@ footer {
     max-height: 50rem;
   }
 
+  .project-listing > * {
+    margin-top: 1.5rem;
+  }
+
   .project-listing__image {
-    margin: 2rem 0;
+    width: 70%;
   }
 
   .fadeIn {
