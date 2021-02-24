@@ -1,5 +1,5 @@
-'use strict';
+"use strict";
 
-window.addEventListener('load', function () {
-    document.body.classList.add('fadeIn');
+window.addEventListener("load", function () {
+  document.body.classList.add("fadeIn");
 });
