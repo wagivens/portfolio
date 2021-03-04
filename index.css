@@ -1,14 +1,14 @@
 /* About Page Styling */
 .about-heading {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: -0.2rem;
   line-height: 4rem;
 }
 
 .about-subheading {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: -0.2rem;
   margin-top: 1.5rem;
 }
@@ -19,13 +19,12 @@
 }
 
 .contact__link {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 @media (max-width: 719px) {
   .about-heading {
     font-size: 2rem;
-    font-weight: 600;
     line-height: 3rem;
   }
 

@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Personal portfolio website of Willard Givens IV, a Front End Developer and UI/UX Designer.
-    Will currently does freelance front-end development and product design out of Los Angeles, California."
+      content="Personal portfolio website of Willard Givens IV, a Front End Developer and UX Designer.
+    currently based out of Los Angeles, California."
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <!-- <link
@@ -14,7 +14,7 @@
       rel="stylesheet"
     /> -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Spartan&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600&family=Spartan:wght@200;400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="styles.css" />
@@ -28,7 +28,7 @@
 
   <body>
     <header>
-      <nav class="navigation header-nav">
+      <nav class="navigation header-nav flex-row">
         <p class="header-nav__name">
           <a href="https://wagivens.github.io">Will Givens IV</a>
         </p>
@@ -46,74 +46,74 @@
           <h1 class="about-heading">
             User Experience Designer and Front-End Developer
           </h1>
-          <p class="gray about-subheading">Los Angeles, CA</p>
+          <p class="light-gray about-subheading">Los Angeles, CA</p>
         </div>
-        <p class="gray contact">
+        <p class="light-gray contact">
           Find me on
           <a
             href="https://www.linkedin.com/in/willardgivensiv"
-            class="blue contact__link"
-            >LinkedIn</a
-          >, or email me at
+            class="blue contact__link">LinkedIn</a>, or email me at
           <a href="mailto:wagivens@usc.edu" class="blue contact__link"
             >wagivens@usc.edu</a
           >.
         </p>
       </article>
-      <article class="projects-gallery">
+      <article class="projects-gallery flex-row">
         <div class="project-listing">
-          <h2 class="project-listing__title">Apple Messages</h2>
-          <p class="project-listing__description">
-            A solution for user errors in Apple’s Messages application.
-          </p>
-          <a href="#" class="project-listing__link coming-soon"
-            >Case Study Coming Soon</a
-          >
-          <div class="project-listing__image">
-            <img src="project_thumbnails/thumbnail-messages.png" />
+          <div class="project-image-container">
+            <img class="project-listing__image" src="project_thumbnails/thumbnail-messages.png"/>
+          </div>
+          <div class="project-listing__info">
+            <div class="project-listing__headline flex-row">
+              <h2 class="project-listing__title">Apple Messages</h2>
+              <div class="project-badge-container">
+                <span class="project-listing__badge project-listing__badge--design">Design</span>
+                <!-- <span class="project-listing__badge project-listing__badge--dev">Development</span> -->
+              </div>
+            </div>
+            <p class="project-listing__description dark-gray">
+              A solution for user errors in Apple's Messages application.
+            </p>
           </div>
         </div>
+        <!-- Second Project -->
         <div class="project-listing">
-          <h2 class="project-listing__title">Nglewud</h2>
-          <p class="project-listing__description">
-            A web app to help Black creatives collaborate easier.
-          </p>
-          <a href="#" class="project-listing__link coming-soon"
-            >Case Study Coming Soon</a
-          >
-          <img
-            class="project-listing__image"
-            src="project_thumbnails/thumbnail-nglewud.png"
-          />
+          <div class="project-image-container">
+            <img class="project-listing__image" src="project_thumbnails/thumbnail-tixby.png"/>
+          </div>
+          <div class="project-listing__info">
+            <div class="project-listing__headline flex-row">
+              <h2 class="project-listing__title">Tixby</h2>
+              <div class="project-badge-container">
+                <span class="project-listing__badge project-listing__badge--design">Design</span>
+              </div>
+            </div>
+            <p class="project-listing__description dark-gray">
+              A user interface design exercise for simplified ticket buying.
+            </p>
+          </div>
         </div>
+        <!-- Third Project -->
         <div class="project-listing">
-          <h2 class="project-listing__title">Econia</h2>
-          <p class="project-listing__description">
-            Streamlining the recycling process for young adults.
-          </p>
-          <a href="#" class="project-listing__link coming-soon"
-            >Case Study Coming Soon</a
-          >
-          <img
-            class="project-listing__image"
-            src="project_thumbnails/thumbnail-econia.png"
-          />
-        </div>
-        <div class="project-listing">
-          <h2 class="project-listing__title">Tixby</h2>
-          <p class="project-listing__description">Improving ticket-buying.</p>
-          <a href="#" class="project-listing__link coming-soon"
-            >Case Study Coming Soon</a
-          >
-          <img
-            class="project-listing__image"
-            src="project_thumbnails/thumbnail-tixby.png"
-          />
+          <div class="project-image-container">
+            <img class="project-listing__image" src="project_thumbnails/thumbnail-econia.png"/>
+          </div>
+          <div class="project-listing__info">
+            <div class="project-listing__headline flex-row">
+              <h2 class="project-listing__title">Econia</h2>
+              <div class="project-badge-container">
+                <span class="project-listing__badge project-listing__badge--design">Design</span>
+              </div>
+            </div>
+            <p class="project-listing__description dark-gray">
+              Streamlining the recycling process for young adults.
+            </p>
+          </div>
         </div>
       </article>
     </main>
     <footer>
-      <p class="copyright">&copy; Will Givens IV 2021</p>
+      <p class="copyright">&copy; Will Givens IV 2021. All Rights Reserved</p>
     </footer>
     <script src="script.js"></script>
   </body>
