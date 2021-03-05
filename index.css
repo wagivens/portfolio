@@ -3,23 +3,24 @@
   margin-top: 20rem;
 }
 
-.about-heading {
+.about-heading, .about-subheading {
   font-size: 3rem;
   font-weight: 400;
-  letter-spacing: -0.2rem;
+  letter-spacing: -0.1rem;
+}
+
+.about-heading {
   line-height: 4rem;
 }
 
 .about-subheading {
-  font-size: 3rem;
-  font-weight: 400;
-  letter-spacing: -0.2rem;
   margin-top: 1.5rem;
 }
 
 .contact {
   font-size: 1.8rem;
   letter-spacing: -0.01rem;
+  margin-top: 1.5rem;
 }
 
 .contact__link {
@@ -34,8 +35,11 @@
 
   .about-subheading {
     font-size: 2rem;
-    margin-top: 0.5rem;
-    font-weight: 200;
-    letter-spacing: 0.1rem;
+    margin-top: 1.5rem;
+    font-weight: 400;
+  }
+
+  .contact {
+    line-height: 3rem;
   }
 }

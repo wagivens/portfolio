@@ -115,12 +115,6 @@ header {
   color: var(--blue);
 }
 
-main {
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 header, main {
   width: 85%;
   margin-left: auto;
@@ -180,7 +174,6 @@ header, main {
 }
 
 /* Project Listing Badges */
-
 .project-listing__badge {
   font-size: 1.4rem;
   font-weight: 600;
@@ -286,12 +279,6 @@ footer {
 @media (max-width: 719px) {
   .home-page-container {
     margin-top: 10rem;
-  }
-
-  .width-25,
-  .width-50,
-  .width-75 {
-    width: 100%;
   }
 
   .header-nav__item {
