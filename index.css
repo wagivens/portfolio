@@ -1,4 +1,8 @@
-/* About Page Styling */
+/* Home Page Styling */
+.home-page-container {
+  margin-top: 20rem;
+}
+
 .about-heading {
   font-size: 3rem;
   font-weight: 400;
@@ -31,5 +35,7 @@
   .about-subheading {
     font-size: 2rem;
     margin-top: 0.5rem;
+    font-weight: 200;
+    letter-spacing: 0.1rem;
   }
 }

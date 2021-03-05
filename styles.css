@@ -2,7 +2,7 @@
   font-size: 62.5%;
   background-color: hsl(0, 0%, 97%);
   width: 100vw;
-  --black: hsl(0, 0%, 7%);
+  --black: hsl(0, 0%, 3%);
   --light-gray: hsl(0, 0%, 50%);
   --dark-gray: hsl(0, 0%, 35%);
   --white: hsl(0, 0%, 89%);
@@ -24,22 +24,6 @@
 
 .underlined {
   text-decoration: underline;
-}
-
-.bold {
-  font-weight: 400;
-}
-
-.width-25 {
-  width: 25%;
-}
-
-.width-50 {
-  width: 50%;
-}
-
-.width-75 {
-  width: 75%;
 }
 
 .overlay {
@@ -79,14 +63,7 @@ body {
   font-family: "Spartan", sans-serif;
   margin: 0px auto;
   position: relative;
-  width: 85%;
-}
-
-p {
-  font-size: 2.3rem;
-  letter-spacing: 0.1rem;
-  line-height: 3.2rem;
-  padding: 1rem 0rem;
+  width: 100%;
 }
 
 a {
@@ -111,7 +88,6 @@ article {
 
 header {
   margin-top: 2.5rem;
-  width: 100%;
 }
 
 .header-nav {
@@ -140,8 +116,15 @@ header {
 }
 
 main {
-  margin-top: 20rem;
-  width: 100%;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header, main {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .projects-gallery {
@@ -301,15 +284,8 @@ footer {
 }
 
 @media (max-width: 719px) {
-  main {
+  .home-page-container {
     margin-top: 10rem;
-    width: 100%;
-  }
-
-  p {
-    font-size: 2rem;
-    font-weight: 200;
-    letter-spacing: 0.1rem;
   }
 
   .width-25,
