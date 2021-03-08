@@ -59,7 +59,7 @@ h1, h2, h3, h4 {
 }
 
 .process-step__description {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 400;
     letter-spacing: -5%;
     color: var(--dark-gray);
@@ -205,7 +205,7 @@ h1, h2, h3, h4 {
     }
 
     .process-step__title, .process-step__description, .process-step__image-caption {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
     
     .process-step__title, .process-step__description {
