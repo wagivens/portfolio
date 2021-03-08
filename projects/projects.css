@@ -48,9 +48,8 @@ h1, h2, h3, h4 {
 .main-paragraph {
     font-size: 2rem;
     font-weight: 400;
-    letter-spacing: -5%;
-    color: var(--dark-gray);
-    line-height: 4rem;
+    color: var(--black);
+    line-height: 3rem;
 }
 
 .process-step__title {
@@ -63,7 +62,7 @@ h1, h2, h3, h4 {
     font-weight: 400;
     letter-spacing: -5%;
     color: var(--dark-gray);
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .process-step__title, .process-step__description {
@@ -154,8 +153,9 @@ h1, h2, h3, h4 {
     }
     
     .summary-paragraph {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         padding: 0;
+        line-height: 3.5rem;
     }
 
     .summary-section:first-of-type {
@@ -209,6 +209,6 @@ h1, h2, h3, h4 {
     }
     
     .process-step__title, .process-step__description {
-        line-height: 2.5rem;
+        line-height: 3.2rem;
     }
 }
