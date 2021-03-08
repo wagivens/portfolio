@@ -61,7 +61,7 @@ h1, h2, h3, h4 {
     font-size: 1.6rem;
     font-weight: 400;
     letter-spacing: -5%;
-    color: var(--dark-gray);
+    color: var(--black);
     margin-top: 2rem;
 }
 
