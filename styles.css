@@ -7,6 +7,7 @@
   --dark-gray: hsl(0, 0%, 35%);
   --white: hsl(0, 0%, 89%);
   --blue: hsl(217, 67%, 54%);
+  --blue-light: hsl(215, 100%, 95%);
 }
 
 /* Utility Classes */
@@ -69,8 +70,6 @@ body {
 a {
   text-decoration: none;
   color: inherit;
-  height: inherit;
-  width: inherit;
 }
 
 li {
@@ -203,6 +202,7 @@ header, main {
   font-size: 1.6rem;
   font-weight: 400;
   letter-spacing: -0.01rem;
+  line-height: 3rem;
 }
 
 .coming-soon {

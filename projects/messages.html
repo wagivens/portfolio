@@ -1,81 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600&family=Spartan:wght@200;400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="/styles.css" />
-    <link rel="stylesheet" type="text/css" href="projects.css" />
-    <title>Will Givens IV | Designer and Developer - Messages</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600&family=Spartan:wght@200;400;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="/styles.css" />
+  <link rel="stylesheet" type="text/css" href="projects.css" />
+  <title>Will Givens IV | Designer and Developer - Messages</title>
 </head>
+
 <body>
-    <header>
-        <nav class="navigation header-nav flex-row">
-          <p class="header-nav__name">
-            <a href="https://wagivens.github.io">Will Givens IV</a>
+  <header>
+    <nav class="navigation header-nav flex-row">
+      <p class="header-nav__name">
+        <a href="https://wagivens.github.io">Will Givens IV</a>
+      </p>
+      <li class="header-nav__item">
+        <a href="https://github.com/wagivens">GitHub</a>
+      </li>
+      <li class="header-nav__item">
+        <a href="/WillardGivens_Resume_022021.pdf">Resume</a>
+      </li>
+    </nav>
+  </header>
+  <div class="project-banner">
+    <img class="project-banner__image" src="messages/project-banner-messages.png">
+  </div>
+  <main class="case-study">
+    <h1 class="project-title">Messages Editing Feature</h1>
+
+    <section class="case-study__section">
+      <p class="main-paragraph">
+        Chances are, if you have ever used a messaging application, you have sent a message
+        with mistakes and had to resend the corrections with an asterisk at the end (like this*).
+        Because most messaging interfaces do not offer the ability to directly edit
+        text bubbles, users must begrudgingly clutter their threads with re-sent messages instead.
+      </p>
+      <img src="https://i.giphy.com/media/ll7K8vFXP7f4cxuykh/giphy.webp"
+        alt="Gif of Gordon Ramsay saying 'Dear, oh dear.'" class="main-image">
+      <p class="main-paragraph">
+        The absence of an edit feature is particularly shocking for Apple’s Messages application
+        since users can already interact with texts in multiple other ways.
+        This made me curious as to what an edit feature in Messages would look like,
+        as well as how it would work, so I decided to create a potential solution.
+      </p>
+      <h2 class="section__title">The Rundown</h2>
+
+      <div class="summary-box flex-row">
+        <div class="summary-section">
+          <h3 class="summary-title">Summary</h3>
+          <p class="summary-paragraph">
+            Since this was not a large project,
+            I omitted many steps of the Design Process; I believed doing so would
+            also test my ability to design an effective solution with limited time and resources.
+            As such, my process consisted of:
+            <strong>1. completing a UX audit of the Messages application</strong>,
+            <strong>2. sketching my solution and later prototyping it</strong>, and
+            <strong>3. receiving feedback from users on the final implementation</strong>.
           </p>
-          <li class="header-nav__item">
-            <a href="https://github.com/wagivens">GitHub</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="/WillardGivens_Resume_022021.pdf">Resume</a>
-          </li>
-        </nav>
-      </header>
-      <div class="project-banner">
-        <img class="project-banner__image" src="messages/project-banner-messages.png">
+        </div>
+        <div class="summary-section">
+          <h3 class="summary-title">Timeline and Disciplines</h3>
+          <p class="summary-paragraph">January 22, 2021 - January 24, 2021</p>
+          <p class="summary-paragraph">UX Auditing, Sketching, Prototyping,
+            Figma
+          </p>
+        </div>
       </div>
-      <main class="case-study">
-        <h1 class="project-title">Messages Editing Feature</h1>
-        <section class="case-study__section">
-            <h2 class="section__title">The Rundown</h2>
-            <div class="summary-box flex-row">
-              <div class="summary-section">
-                <h3 class="summary-title">Summary</h3>
-                <p class="summary-paragraph">In order to gain a deep understanding of 
-                  our potential user base, we conducted a series of surveys and interviews. 
-                  We then synthesized our findings into a concise analysis. The management of the trip is very basic, however, 
-                  and customers today are demanding more digital experiences and more control over their purchases.
-                </p>
-              </div>
-              <div class="summary-section">
-                <h3 class="summary-title">Timeline and Disciplines</h3>
-                <p class="summary-paragraph">December 2020</p>
-                <p class="summary-paragraph">Design Thinking, Wireframing, Prototyping, Sketching</p>
-              </div>
-            </div>
-        </section>
-        <section class="case-study__section">
-          <h2 class="section__title">The Solution</h2>
-          <h3 class="subsection__title">Step 1: Empathizing</h3>
-          <p class="main-paragraph">In order to gain a deep understanding of 
-            our potential user base, we conducted a series of surveys and interviews. 
-            We then synthesized our findings into a concise analysis. The management of the trip is very basic, however, 
-            and customers today are demanding more digital experiences and more control over their purchases.
+    </section>
+    <section class="case-study__section">
+      <h2 class="section__title">The Solution</h2>
+
+      <h3 class="subsection__title">Step 1: UX Audit</h3>
+      <p class="main-paragraph">I began by referencing the Messages interface and how users are
+        already able to interact with texts. I wanted to see how Apple could theoretically
+        add this feature without their developers having to create new codebases;
+        as you will see, my solution is similar procedurally to other message interactions,
+        meaning Apple’s engineers would not need to change much of their code to implement this.
+      </p>
+
+      <div class="process-step flex-row">
+        <div class="process-step__info">
+          <h4 class="process-step__title">The Messages Application</h4>
+          <p class="process-step__description">The Tapback feature clearly indicates to the recipient
+            that a message has been interacted with (icon in the corner of the text).
+            I considered having an “Edited” icon at the bottom of any message that had been altered.
           </p>
-          <div class="process-step flex-row">
-            <div class="process-step__info">
-              <h4 class="process-step__title">User Research</h4>
-              <p class="process-step__description">From our user research, we discovered that young adults 
-                who are enrolled in college are more likely to drink alcohol on the weekends.</p>
-            </div>
-            <figure class="process-step__image-container">
-              <img class="process-step__image-image" src="messages/message-editing-mock-1.png">
-              <figcaption class="process-step__image-caption">
-                An example of an edited text message.
-              </figcaption>
-            </figure>
-          </div>
-      </section>
-      </main>
-      <footer>
-        <p class="copyright">&copy; Will Givens IV 2021. All Rights Reserved</p>
-      </footer>
-      <script src="/script.js"></script>
+          <p class="process-step__description">Apple also recently added the ability to reply to
+            individual texts. Clicking a reply blurs the interface while focusing
+            on the original message and its reply thread. I thought something similar could
+            be done for edited messages.
+          </p>
+          <p class="process-step__description">Both features can be accessed by long-pressing
+            a single message, so I believed the edit feature should be accessed the same way.</p>
+        </div>
+        <figure class="process-step__image-container">
+          <img class="process-step__image-image" src="messages/apple-messages-1.png"
+            alt="Photo of the Tapback feature in the Messages application.">
+          <img class="process-step__image-image" src="messages/apple-messages-2.png"
+            alt="Photo of the Reply feature in the Messages application.">
+          <figcaption class="process-step__image-caption">
+            Examples of existing message interactions in Messages.
+          </figcaption>
+        </figure>
+      </div>
+
+      <h3 class="subsection__title">Step 2: Sketching</h3>
+      <p class="main-paragraph">I then moved on to creating low-fidelity solution sketches.
+        My main goal here was to quickly generate a visual representation of what I envisioned.
+        It was helpful that my ideas were similar to Apple’s existing user interface,
+        so I only had to focus on drawing new features/components.</p>
+
+      <div class="process-step flex-row">
+        <div class="process-step__info">
+          <h4 class="process-step__title">Solution Sketches</h4>
+          <p class="process-step__description">I sketched three different screens, each one depicting
+            a different interaction with edited messages: long-pressing to start editing a message,
+            sending an edited message/an edited message thread, and viewing a message's edits.
+          </p>
+        </div>
+        <figure class="process-step__image-container">
+          <img class="process-step__image-image" src="messages/sketch-1.JPG"
+            alt="Sketch showing a list of message interactions next to a text message.">
+          <img class="process-step__image-image" src="messages/sketch-2.JPG"
+            alt="Sketch showing a regular, blue message bubble and a yellow, edited message bubble.">
+          <img class="process-step__image-image" src="messages/sketch-3.JPG" alt="Sketch showing a button with the text 'View Message Edits' and a message bubble with
+          an edit icon in the bottom right corner.">
+          <figcaption class="process-step__image-caption">
+            Sketches of my solution.
+          </figcaption>
+        </figure>
+      </div>
+
+      <h3 class="subsection__title">Step 3: Components and Prototyping</h3>
+      <p class="main-paragraph">Prior to prototyping, I thought about how I could
+        best represent the concept of “editing” without words/through iconography.
+        Ultimately, I decided on a pencil, which can already be found throughout iOS.
+      </p>
+
+      <div class="process-step flex-row">
+        <div class="process-step__info">
+          <h4 class="process-step__title">iOS Pencil Icon</h4>
+          <p class="process-step__description">The pencil icon is present throughout iOS
+            and is typically used to indicate that a new instance of something can be made
+            (ex: Mail app, Notes app, Messages app).
+          </p>
+        </div>
+        <figure class="process-step__image-container">
+          <img class="process-step__image-image" src="messages/pencil-icon-ios.png"
+            alt="Photo showing different screens throughout iOS that feature the pencil icon.">
+          <figcaption class="process-step__image-caption">
+            Examples of where the pencil icon is used in iOS currently.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="process-step flex-row">
+        <div class="process-step__info">
+          <h4 class="process-step__title">My Pencil Icon</h4>
+          <p class="process-step__description">I designed a pencil icon almost identical
+            to the one found in other places throughout iOS. The icon I created will be inside of
+            a circular container like all of the Tapback reactions.
+          </p>
+        </div>
+        <figure class="process-step__image-container">
+          <img class="process-step__image-image" src="messages/icon-edited.png" alt="Photo of Will's pencil icon.">
+        </figure>
+      </div>
+
+      <p class="main-paragraph">Color was important as well. I decided on Apple’s "System Yellow"
+        because Apple typically uses that color when something is being altered or created
+        (ex: in the Photos app while editing pictures, inside of the Notes application,
+        and in the Camera app). In the real world, yellow is often used to denote caution or
+        "work in progress."
+      </p>
+
+      <div class="process-step flex-row">
+        <div class="process-step__info">
+          <h4 class="process-step__title">System Yellow</h4>
+          <p class="process-step__description">System Yellow is found throughout Apple's
+            operating systems as indicative of something being edited or created.
+          </p>
+        </div>
+        <figure class="process-step__image-container">
+          <img class="process-step__image-image" src="messages/ios-system-yellow.png"
+            alt="Photo showing different screens across iOS that feature the System Yellow color.">
+        </figure>
+      </div>
+
+      <div class="process-step flex-row">
+        <div class="process-step__info">
+          <h4 class="process-step__title">Edited Text Bubble</h4>
+          <p class="process-step__description">Using System Yellow for edited messages would
+            help differentiate message edits from the original text.
+          </p>
+        </div>
+        <figure class="process-step__image-container">
+          <img class="process-step__image-image" src="messages/bubble-edited.png"
+            alt="Photo of an yellow, edited text bubble.">
+        </figure>
+      </div>
+
+      <p class="main-paragraph">I then put everything together.
+        As aforementioned, the two main actions I focused on were
+        <strong>editing a message</strong>
+        and <strong>viewing message edits</strong>. I wanted to make sure both processes would involve
+        similar steps to other message interactions to prevent unnecessarily increasing
+        cognitive load.
+      </p>
+
+      <p class="main-paragraph">To edit a message, users would simply select the edit feature
+        from the long-press dropdown and send their edits as they would a reply.</p>
+
+      <div class="process-step flex-row">
+        <div class="process-step__info">
+          <h4 class="process-step__title">Editing A Message</h4>
+          <p class="process-step__description">Showing the original message while
+            preparing edits prevents users from making any additional errors
+            (by being able to see what was written the first time).
+          </p>
+          <p class="process-step__description">The yellow "Send" button indicates to users that
+            they are about to send a message edit, not a reply.
+          </p>
+        </div>
+        <figure class="process-step__image-container">
+          <img class="process-step__image-image" src="messages/edit-feature-1.png"
+            alt="Photo of a Messages screen with the long-press popup modal and message interaction list.">
+          <img class="process-step__image-image" src="messages/edit-feature-2.png" alt="Photo of a Messages screen with an original message and its edited message in the 
+          text box alongside a yellow 'Send' button.">
+          <img class="process-step__image-image" src="messages/edit-feature-3.png"
+            alt="Photo of a Messages screen with a regular, blue message bubble and a yellow, edited message bubble.">
+        </figure>
+      </div>
+
+      <p class="main-paragraph">To view any edits made to a message, users would click on the
+        yellow “edited” icon in the bottom left corner of the message
+        (like clicking on a tapback response). They would then see the original
+        message as well as the edits made to it.</p>
+
+      <div class="process-step flex-row">
+        <div class="process-step__info">
+          <h4 class="process-step__title">Viewing Message Edits</h4>
+          <p class="process-step__description">Putting the "edited" indicator at the bottom corner
+            of the message separates it from tapback indicators, letting the users know that the
+            message received a different kind of interaction.
+          </p>
+        </div>
+        <figure class="process-step__image-container">
+          <img class="process-step__image-image" src="messages/edit-feature-4.png" alt="Photo of a Messages screen and a message bubble with
+          an edit icon in the bottom right corner.">
+          <img class="process-step__image-image" src="messages/edit-feature-5.png"
+            alt="Photo of a Messages screen with a button that says 'View Message Edits'.">
+          <img class="process-step__image-image" src="messages/edit-feature-6.png"
+            alt="Photo of a Messages screen with a regular, blue message bubble and a yellow, edited message bubble.">
+        </figure>
+      </div>
+    </section>
+    <section class="case-study__section">
+      <h2 class="section__title">Feedback</h2>
+      <p class="main-paragraph">Instead of conducting traditional usability testing,
+        I simply showed a few other Messages users my solution (in gif form) and asked
+        for their feedback. Generally, the response was positive, but they specifically
+        mentioned:
+        <strong>1. using a different color</strong> to delineate message types, and
+        <strong>2. preserving the original message</strong> to help compare with
+        the edited; keeping the original message could prevent users from
+        concealing/erasing negative evidence (trash talking, explicit photos, etc).
+      </p>
+    </section>
+    <section class="case-study__section">
+      <h2 class="section__title">Reflecting</h2>
+      <p class="main-paragraph">I suppose my next step for this would be to conduct proper
+        usability testing with five to six users and consider their feedback before
+        implementing new iterations. I would also optimize for accessibility;
+        some of my design decisions were rooted in the color of components, but many users may
+        not be able to interpret those colors. As such, it would be beneficial to figure out
+        how to convey the same ideas without relying on color.
+      </p>
+      <p class="main-paragraph">Overall, this was a great mini project to exercise my user interface
+        design skills, as well as some fundamental user experience design concepts.
+      </p>
+    </section>
+  </main>
+  <footer>
+    <p class="copyright">&copy; Will Givens IV 2021. All Rights Reserved</p>
+  </footer>
+  <script src="/script.js"></script>
 </body>
+
 </html>
