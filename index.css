@@ -1,6 +1,8 @@
 /* Home Page Styling */
 .home-page-container {
   margin-top: 20rem;
+  width: 85%;
+  max-width: 85%;
 }
 
 .about-heading, .about-subheading {

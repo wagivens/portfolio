@@ -1,11 +1,11 @@
 :root {
   font-size: 62.5%;
-  background-color: hsl(0, 0%, 93%);
+  background-color: hsl(0, 0%, 98%);
   width: 100vw;
-  --black: hsl(0, 0%, 3%);
+  --black: hsl(0, 0%, 15%);
   --light-gray: hsl(0, 0%, 50%);
   --dark-gray: hsl(0, 0%, 25%);
-  --white: hsl(0, 0%, 89%);
+  --white: hsl(0, 0%, 95%);
   --blue: hsl(217, 67%, 54%);
   --blue-light: hsl(215, 100%, 95%);
 }
@@ -86,7 +86,8 @@ article {
 }
 
 header {
-  margin-top: 2.5rem;
+  width: 85%;
+  margin: 2.5rem auto 0 auto;
 }
 
 .header-nav {
@@ -101,10 +102,11 @@ header {
   font-size: 1.8rem;
   letter-spacing: -0.1rem;
   font-weight: 400;
+  color: var(--black);
 }
 
 .header-nav__item {
-  color: var(--gray);
+  color: var(--black);
   transition: color 250ms ease;
   font-size: 1.8rem;
 }
@@ -114,8 +116,9 @@ header {
   color: var(--blue);
 }
 
-header, main {
-  width: 85%;
+main {
+  width: 90%;
+  max-width: 80rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -230,7 +233,9 @@ header, main {
 
 footer {
   width: 100%;
+  margin-top: 2rem;
   padding: 4rem 0;
+  background-color: var(--blue-light);
 }
 
 .copyright {

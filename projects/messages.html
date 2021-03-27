@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600&family=Spartan:wght@200;400;600&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600&family=Spartan:wght@200;400;600&family=Kalam&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="/styles.css" />
   <link rel="stylesheet" type="text/css" href="projects.css" />
@@ -23,13 +24,13 @@
         <a href="https://github.com/wagivens">GitHub</a>
       </li>
       <li class="header-nav__item">
-        <a href="/WillardGivens_Resume_022021.pdf">Resume</a>
+        <a href="/WillardGivens_Resume_032021.pdf">Resume</a>
       </li>
     </nav>
   </header>
-  <div class="project-banner">
+  <!-- <div class="project-banner">
     <img class="project-banner__image" src="messages/project-banner-messages.png">
-  </div>
+  </div> -->
   <main class="case-study">
     <h1 class="project-title">Messages Editing Feature</h1>
 
@@ -58,9 +59,9 @@
             I omitted many steps of the Design Process; I believed doing so would
             also test my ability to design an effective solution with limited time and resources.
             As such, my process consisted of:
-            <strong>1. completing a UX audit of the Messages application</strong>,
-            <strong>2. sketching my solution and later prototyping it</strong>, and
-            <strong>3. receiving feedback from users on the final implementation</strong>.
+            <strong class="emphasized">1. completing a UX audit of the Messages application</strong>,
+            <strong class="emphasized">2. sketching my solution and later prototyping it</strong>, and
+            <strong class="emphasized">3. receiving feedback from users on the final implementation</strong>.
           </p>
         </div>
         <div class="summary-section">
@@ -109,7 +110,7 @@
         </figure>
       </div>
 
-      <h3 class="subsection__title">Step 2: Sketching</h3>
+      <h3 class="subsection__title" id="step-2">Step 2: Sketching</h3>
       <p class="main-paragraph">I then moved on to creating low-fidelity solution sketches.
         My main goal here was to quickly generate a visual representation of what I envisioned.
         It was helpful that my ideas were similar to Apple’s existing user interface,
@@ -154,7 +155,7 @@
           <img class="process-step__image-image" src="messages/pencil-icon-ios.png"
             alt="Photo showing different screens throughout iOS that feature the pencil icon.">
           <figcaption class="process-step__image-caption">
-            Examples of where the pencil icon is used in iOS currently.
+            Examples of the pencil icon being used in iOS currently.
           </figcaption>
         </figure>
       </div>
@@ -207,8 +208,9 @@
 
       <p class="main-paragraph">I then put everything together.
         As aforementioned, the two main actions I focused on were
-        <strong>editing a message</strong>
-        and <strong>viewing message edits</strong>. I wanted to make sure both processes would involve
+        <strong class="emphasized">editing a message</strong>
+        and <strong class="emphasized">viewing message edits</strong>. I wanted to make sure both processes would
+        involve
         similar steps to other message interactions to prevent unnecessarily increasing
         cognitive load.
       </p>
@@ -262,12 +264,12 @@
     </section>
     <section class="case-study__section">
       <h2 class="section__title">Feedback</h2>
-      <p class="main-paragraph">Instead of conducting traditional usability testing,
-        I simply showed a few other Messages users my solution (in gif form) and asked
-        for their feedback. Generally, the response was positive, but they specifically
+      <p class="main-paragraph">I tested my solution with
+        a few other Messages users and asked for their feedback.
+        Generally, the response was positive, but they specifically
         liked:
-        <strong>1. using a different color</strong> to delineate message types, and
-        <strong>2. preserving the original message</strong> to help compare with
+        <strong class="emphasized">1. using a different color</strong> to delineate message types, and
+        <strong class="emphasized">2. preserving the original message</strong> to help compare with
         the edited; keeping the original message could prevent users from
         concealing/erasing negative evidence (trash talking, explicit photos, etc).
       </p>

@@ -2,6 +2,11 @@
     margin-top: 0;
 }
 
+.emphasized {
+    font-family: 'Kalam';
+    color: var(--blue);
+}
+
 /* Text */
 h1, h2, h3, h4 {
     font-weight: 600;
@@ -9,8 +14,7 @@ h1, h2, h3, h4 {
 }
 
 .project-title {
-    font-size: clamp(2rem, 3vw, 4rem);
-    text-decoration: underline;
+    font-size: 2.5rem;
     color: var(--black);
     margin-top: 5rem;
 }
@@ -37,8 +41,12 @@ h1, h2, h3, h4 {
     color: var(--black);
 }
 
-.project-title, .section__title {
+.project-title {
     text-align: center;
+}
+
+.section__title {
+    text-align: left;
 }
 
 .section__title, .subsection__title {
@@ -46,22 +54,22 @@ h1, h2, h3, h4 {
 }
 
 .main-paragraph {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 400;
     color: var(--black);
     line-height: 3.5rem;
 }
 
 .process-step__title {
-    font-size: 1.6rem;
-    color: var(--black);
+    font-size: 1.5rem;
+    color: var(--blue);
 }
 
 .process-step__description {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 400;
     letter-spacing: -5%;
-    color: var(--black);
+    color: var(--blue);
     margin-top: 2rem;
 }
 
@@ -73,7 +81,7 @@ h1, h2, h3, h4 {
     font-size: 1.6rem;
     font-weight: 400;
     font-style: italic;
-    color: var(--dark-gray);
+    color: var(--black);
     text-align: center;
     margin-top: 1rem;
 }
@@ -89,8 +97,8 @@ h1, h2, h3, h4 {
 }
 
 .main-image {
-    width: 50%;
-    transform: translateX(50%);
+    width: 100%;
+    /* transform: translateX(50%); */
 }
 
 .process-step__image-container {
@@ -99,18 +107,6 @@ h1, h2, h3, h4 {
 
 .process-step__image-image {
     width: 100%;
-}
-
-.gif {
-    width: 80%;
-    max-width: 70rem;
-}
-
-
-.mockup-gif {
-    background-image: url(/projects/messages/mockup-gif-background.png);
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 /* Elements */
@@ -139,11 +135,12 @@ h1, h2, h3, h4 {
 }
 
 .process-step__info {
-    width: 50%;
-}
-
-.process-step__info > * {
-    padding: 0 20%;
+    margin-right: 5%;
+    padding: 2rem;
+    width: 45%;
+    background-color: var(--blue-light);
+    border-radius: .5rem;
+    border: .1rem solid var(--blue);
 }
 
 @media (max-width: 749px) {
@@ -155,7 +152,7 @@ h1, h2, h3, h4 {
     .summary-paragraph {
         font-size: 1.6rem;
         padding: 0;
-        line-height: 3.5rem;
+        line-height: 3rem;
     }
 
     .summary-section:first-of-type {
@@ -164,7 +161,7 @@ h1, h2, h3, h4 {
 
     .main-paragraph {
         font-size: 1.6rem;
-        line-height: 3.5rem;
+        line-height: 3rem;
     }
 
     /* Media */
