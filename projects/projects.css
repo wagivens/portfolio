@@ -111,7 +111,6 @@ h1, h2, h3, h4 {
 
 .main-image {
     width: 100%;
-    /* transform: translateX(50%); */
 }
 
 .process-step__image-container {
@@ -177,7 +176,7 @@ h1, h2, h3, h4 {
     }
 
     .main-paragraph {
-        font-size: 1.6rem;
+        font-size: 1.45rem;
         line-height: 3rem;
     }
 
@@ -185,12 +184,6 @@ h1, h2, h3, h4 {
     .process-step__image-container {
         width: 100%;
         margin-top: 2rem;
-    }
-
-    .main-image {
-        width: 100%;
-        transform: none;
-        border-radius: .2rem;
     }
 
     /* Elements */
@@ -219,7 +212,7 @@ h1, h2, h3, h4 {
     }
 
     .process-step__title, .process-step__description, .process-step__image-caption {
-        font-size: 1.6rem;
+        font-size: 1.45rem;
     }
     
     .process-step__title, .process-step__description {
