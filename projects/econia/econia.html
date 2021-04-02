@@ -31,6 +31,21 @@
   <div class="project-banner">
     <img class="project-banner__image" src="./project-banner-econia.png">
   </div>
+
+  <!-- Intrapage Navigation -->
+  <nav class="intrapage-nav">
+    <ul class="intrapage-nav__link-list flex-row">
+      <li class="intrapage-nav__link">Summary</li>
+      <li class="intrapage-nav__link">Defining</li>
+      <li class="intrapage-nav__link">Empathizing</li>
+      <li class="intrapage-nav__link">Ideating</li>
+      <li class="intrapage-nav__link">Prototyping</li>
+      <li class="intrapage-nav__link">Testing</li>
+      <li class="intrapage-nav__link">Reflection</li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
   <main class="case-study">
     <h1 class="project-title">Econia</h1>
 
@@ -49,7 +64,7 @@
 
       <div class="summary-box flex-row">
         <div class="summary-section">
-          <h3 class="summary-title">Summary</h3>
+          <h3 class="summary-title" id="Summary">Summary</h3>
           <p class="summary-paragraph">
             [A team comprised of myself and 4 others utilized the Design Thinking Framework
             to design a new product aimed at young adults who recycle.]
@@ -72,12 +87,19 @@
 
       <img class="main-image" src="econia-process.png">
       <p class="main-paragraph">[Talk a bit about the overall process].</p>
+      <ol class="list" id="project-timeline">
+        <li class="emphasized">Defined the Product</li>
+        <li class="emphasized">Empathized With Target Users</li>
+        <li class="emphasized">Ideated Potential Solutions</li>
+        <li class="emphasized">Prototyped Solutions</li>
+        <li class="emphasized">Tested Final Designs for Usability</li>
+      </ol>
 
       <!-- Defining -->
       <!-- Include 
         1. Competitive Matrix and Findings
       -->
-      <h3 class="subsection__title">Defining the Product</h3>
+      <h3 class="subsection__title" id="Defining">Defining the Product</h3>
       <p class="main-paragraph">I began by referencing the Messages interface and how users are
         already able to interact with texts. I wanted to see how Apple could theoretically
         add this feature without their developers having to create new codebases;
@@ -96,7 +118,7 @@
         4. Personas
         5. Journey Map
       -->
-      <h3 class="subsection__title" id="step-2">Empathizing With Target Users</h3>
+      <h3 class="subsection__title" id="Empathizing">Empathizing With Target Users</h3>
       <p class="main-paragraph">I then moved on to creating low-fidelity solution sketches.
         It was helpful that my ideas were similar to Apple’s existing user interface,
         so I only had to focus on drawing a few new features/components.</p>
@@ -109,7 +131,7 @@
         1. Affinity Mapping w/ HMWs
         2. Crazy 8s Solution Sketches
       -->
-      <h3 class="subsection__title">Ideating Potential Solutions</h3>
+      <h3 class="subsection__title" id="Ideating">Ideating Potential Solutions</h3>
       <p class="main-paragraph">Prior to prototyping, I thought about how I could
         best represent the concept of “editing” without words.
         I believed a pencil icon would work perfectly.
@@ -129,7 +151,7 @@
       <!-- Include 1. Design System
           2. Final Mockups
        -->
-      <h3 class="subsection__title">Prototyping Final Solutions</h3>
+      <h3 class="subsection__title" id="Prototyping">Prototyping Final Solutions</h3>
       <p class="main-paragraph">Color was important as well.
         I tried to figure out which color(s) would best signify that a component had been
         changed or was being worked on. Ultimately, I decided on Apple’s “System Yellow.”
@@ -226,7 +248,7 @@
       </div>
     </section>
     <section class="case-study__section">
-      <h2 class="section__title">Feedback</h2>
+      <h2 class="section__title" id="Testing">Feedback</h2>
       <p class="main-paragraph">I tested my solution with
         a few other Messages users and asked for their feedback.
         Generally, the response was positive, but they specifically
@@ -238,7 +260,7 @@
       </p>
     </section>
     <section class="case-study__section">
-      <h2 class="section__title">Reflecting</h2>
+      <h2 class="section__title" id="Reflection">Reflecting</h2>
       <p class="main-paragraph">One of my next steps for this would be to optimize for accessibility.
         Some of my design decisions were rooted in the color of components, but many users may
         not be able to interpret them. As such, it would be beneficial to figure out

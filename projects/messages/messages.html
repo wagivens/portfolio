@@ -31,12 +31,25 @@
   <div class="project-banner">
     <img class="project-banner__image" src="./project-banner-messages.png">
   </div>
+
+  <!-- Intrapage Navigation -->
+  <nav class="intrapage-nav">
+    <ul class="intrapage-nav__link-list flex-row">
+      <li class="intrapage-nav__link">Summary</li>
+      <li class="intrapage-nav__link">UX Audit</li>
+      <li class="intrapage-nav__link">Sketching</li>
+      <li class="intrapage-nav__link">Prototyping</li>
+      <li class="intrapage-nav__link">Testing</li>
+      <li class="intrapage-nav__link">Reflection</li>
+    </ul>
+  </nav>
+
   <main class="case-study">
     <h1 class="project-title">Messages Editing Feature</h1>
 
     <section class="case-study__section">
       <p class="main-paragraph">
-        The absence of an edit feature is shocking for Apple’s Messages application
+        The absence of an edit feature is surprising for Apple’s Messages application
         since users can already interact with texts in multiple other ways.
         This made me curious as to what an edit feature in Messages would look like,
         as well as how it would work.
@@ -50,12 +63,10 @@
       </article>
       <div class="summary-box flex-row">
         <div class="summary-section">
-          <h3 class="summary-title">Summary</h3>
+          <h3 class="summary-title" id="Summary">Summary</h3>
           <p class="summary-paragraph">
-            Since this was not a large project,
-            I omitted many steps of the Design Process; I believed doing so would
-            also test my ability to design an effective solution with limited time and resources.
-            As such, my process consisted of:
+            I designed a message editing feature for Apple's Messages application.
+            My process consisted of:
             <strong class="emphasized">1. completing a UX audit of the Messages application</strong>,
             <strong class="emphasized">2. sketching my solution and later prototyping it</strong>, and
             <strong class="emphasized">3. receiving feedback from users on the final implementation</strong>.
@@ -73,7 +84,7 @@
     <section class="case-study__section">
       <h2 class="section__title">The Solution</h2>
 
-      <h3 class="subsection__title">Step 1: UX Audit</h3>
+      <h3 class="subsection__title" id="UX Audit">Step 1: UX Audit</h3>
       <p class="main-paragraph">I began by referencing the Messages interface and how users are
         already able to interact with texts. I wanted to see how Apple could theoretically
         add this feature without their developers having to create new codebases;
@@ -106,7 +117,7 @@
         </figure>
       </div>
 
-      <h3 class="subsection__title" id="step-2">Step 2: Sketching</h3>
+      <h3 class="subsection__title" id="Sketching">Step 2: Sketching</h3>
       <p class="main-paragraph">I then moved on to creating low-fidelity solution sketches.
         It was helpful that my ideas were similar to Apple’s existing user interface,
         so I only had to focus on drawing a few new features/components.</p>
@@ -132,7 +143,7 @@
         </figure>
       </div>
 
-      <h3 class="subsection__title">Step 3: Components and Prototyping</h3>
+      <h3 class="subsection__title" id="Prototyping">Step 3: Components and Prototyping</h3>
       <p class="main-paragraph">Prior to prototyping, I thought about how I could
         best represent the concept of “editing” without words.
         I believed a pencil icon would work perfectly.
@@ -257,7 +268,7 @@
       </div>
     </section>
     <section class="case-study__section">
-      <h2 class="section__title">Feedback</h2>
+      <h2 class="section__title" id="Testing">Feedback</h2>
       <p class="main-paragraph">I tested my solution with
         a few other Messages users and asked for their feedback.
         Generally, the response was positive, but they specifically
@@ -269,7 +280,7 @@
       </p>
     </section>
     <section class="case-study__section">
-      <h2 class="section__title">Reflecting</h2>
+      <h2 class="section__title" id="Reflection">Reflecting</h2>
       <p class="main-paragraph">One of my next steps for this would be to optimize for accessibility.
         Some of my design decisions were rooted in the color of components, but many users may
         not be able to interpret them. As such, it would be beneficial to figure out

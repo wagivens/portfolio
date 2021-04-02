@@ -85,14 +85,6 @@ a {
   color: inherit;
 }
 
-li {
-  list-style: none;
-}
-
-li:not(:first-child) {
-  margin-left: 2rem;
-}
-
 section,
 article {
   width: 100%;
@@ -122,6 +114,11 @@ header {
   color: var(--black);
   transition: color 250ms ease;
   font-size: 1.8rem;
+  list-style: none;
+}
+
+.header-nav__item:not(:first-of-type) {
+  margin-left: 2rem;
 }
 
 .header-nav__item:hover,
