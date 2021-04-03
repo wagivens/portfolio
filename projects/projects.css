@@ -6,6 +6,16 @@
     font-family: 'Kalam', cursive;
     color: var(--blue);
     font-weight: 600;
+    font-size: 1.7rem;
+}
+
+.list {
+    font-size: 1.6rem;
+    margin-left: 2.25rem;
+}
+
+.list-item {
+    margin-top: 1rem;
 }
 
 /* Intrapage Navigation */
@@ -85,11 +95,6 @@ h1, h2, h3, h4 {
 .subsection__title {
     text-align: left;
     color: var(--black);
-}
-
-#project-timeline {
-    margin: 1rem 0 0 2.5rem;
-    font-size: 1.6rem;
 }
 
 .section__title {
@@ -198,6 +203,7 @@ h1, h2, h3, h4 {
         content: "Scroll →";
         font-family: 'Kalam', cursive;
         font-size: 1.6rem;
+        font-weight: 600;
         color: var(--blue);
         margin: .5rem 1rem 0 0;
         float: right;

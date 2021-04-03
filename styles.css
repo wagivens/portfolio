@@ -80,6 +80,14 @@ body {
   width: 100%;
 }
 
+::-moz-selection {
+  background-color: var(--blue-light);
+}
+
+::selection {
+  background-color: var(--blue-light);
+}
+
 a {
   text-decoration: none;
   color: inherit;
