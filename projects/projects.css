@@ -9,6 +9,10 @@
     font-size: 1.7rem;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 .list {
     width: 100%;
     font-size: 1.6rem;
@@ -20,6 +24,26 @@
     margin-left: 3rem;
     line-height: 3rem;
     font-weight: 600;
+}
+
+.scroll-to-top {
+    text-align: center;
+    width: 4rem;
+    height: 4rem;
+    position: fixed;
+    top: 85vh;
+    right: 5%;
+    font-size: 3rem;
+    border: none;
+    border-radius: 50%;
+    background-color: hsla(217, 67%, 48%, 70%);
+    padding: 1rem;
+    box-shadow: 0 .2rem 1rem hsla(0, 0%, 15%, 20%);
+}
+
+.scroll-to-top:hover {
+    cursor: pointer;
+    color: var(--white);
 }
 
 /* Intrapage Navigation */
@@ -156,6 +180,7 @@ h1, h2, h3, h4 {
 .main-image {
     width: 100%;
     box-shadow: 0 .4rem 1rem var(--gray-light);
+    visibility: hidden;
 }
 
 .process-step__image-container {
