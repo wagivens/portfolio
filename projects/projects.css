@@ -11,6 +11,7 @@
 
 .hidden {
     visibility: hidden;
+    opacity: 0;
 }
 
 .list {
@@ -36,14 +37,14 @@
     font-size: 3rem;
     border: none;
     border-radius: 50%;
-    background-color: hsla(217, 67%, 48%, 70%);
+    background-color: hsla(217, 67%, 48%, 90%);
     padding: 1rem;
     box-shadow: 0 .2rem 1rem hsla(0, 0%, 15%, 20%);
 }
 
 .scroll-to-top:hover {
     cursor: pointer;
-    color: var(--white);
+    transform: translateY(-.5rem);
 }
 
 /* Intrapage Navigation */
