@@ -5,7 +5,7 @@ window.addEventListener("load", () => {
 });
 
 const DOMelements = {
-  caseStudySection: document.querySelector('.case-study__section:nth-of-type(2)'),
+  caseStudySection: document.querySelector('.case-study__section:first-of-type'),
   caseStudyImages: document.querySelectorAll('.main-image'),
   scrollToTop: document.querySelector('.scroll-to-top')
 }
@@ -49,19 +49,8 @@ const imageObserver = function(list) {
 }
 
 const sectionObserver = new IntersectionObserver(intersectionEntries => {
-  /* We will pass something into sectionObserver.observe() and an
-    intersectionObserverEntry will be created for each element and each will 
-    be stored inside of the first parameter of our callback function (intersectionEntries). 
-    If it's a node list or array, an intersectionObserverEntry will be created 
-    for each element in it. If it's just one element, we only get back one 
-    intersectionObserverEntry.
-   */
-
-  /* intersectionEntries will be an array, so if you want to access an element, you have to 
-    specify an index (ex: intersectionEntries[0]).
-  */
   intersectionEntries.forEach(entry => {
-    if (!entry.isIntersecting) {
+    if (entry.isIntersecting || window.pageYOffset < entry.boundingClientRect.y) {
       DOMelements.scrollToTop.classList.add("hidden");
     } else {
       DOMelements.scrollToTop.classList.remove("hidden");
