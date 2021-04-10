@@ -39,6 +39,7 @@
     background-color: hsla(217, 67%, 48%, 90%);
     padding: 1rem;
     box-shadow: 0 .2rem 1rem hsla(0, 0%, 15%, 20%);
+    z-index: 9999;
 }
 
 .scroll-to-top:hover {

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read the UX case study for Books N Bucks, a web application
+    aimed at motivating school children during online learning.">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600&family=Spartan:wght@200;400;600&family=Kalam&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../../styles.css" />
+    <link rel="stylesheet" type="text/css" href="../projects.css" />
+    <title>Will Givens IV • UX Designer and Front-End Developer | Books N Bucks</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation header-nav flex-row">
+            <p class="header-nav__name">
+                <a href="https://wagivens.github.io">Will Givens IV</a>
+            </p>
+            <li class="header-nav__item">
+                <a href="https://github.com/wagivens">GitHub</a>
+            </li>
+            <li class="header-nav__item">
+                <a href="../../WillardGivens_Resume_042021.pdf">Resume</a>
+            </li>
+        </nav>
+    </header>
+    <div class="project-banner">
+        <img class="project-banner__image" src="./project-banner-bnb.png"
+            alt="Case study banner showing 3 screens of the final designs.">
+    </div>
+
+    <!-- Intrapage Navigation -->
+    <nav class="intrapage-nav">
+        <ul class="intrapage-nav__link-list flex-row">
+            <li class="intrapage-nav__link">Personas</li>
+            <li class="intrapage-nav__link">Wireframes</li>
+            <li class="intrapage-nav__link">Wireframe Testing</li>
+            <li class="intrapage-nav__link">Prototyping</li>
+            <li class="intrapage-nav__link">Development</li>
+            <li class="intrapage-nav__link">Reflecting</li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="case-study">
+        <h1 class="project-title">Books N Bucks</h1>
+        <button class="scroll-to-top" type="button">&uarr;</button>
+        <section class="case-study__section">
+            <p class="main-paragraph">
+                Many people suspect the COVID-19 pandemic has had an adverse effect on young students in
+                particular, as
+                they were forced to attend classes online and could not receive the same level of attention as they
+                would
+                in-person. This led two USC students to partner with schools in the Los Angeles Unified School District
+                (LAUSD) to create a product that would
+                engage school children.
+            </p>
+            <h2 class="section__title">The Rundown</h2>
+            <article class="problem-statement">
+                <p class="problem-statement__text black"><strong>Problem:</strong>
+                    School children across the United States are attending
+                    classes online. Students, especially young ones, are showing declines in interest, focus, and
+                    academic performance; they need ways to stay motivated until in-person classes
+                    resume (and beyond).</p>
+            </article>
+
+            <div class="summary-box flex-row">
+                <div class="summary-section">
+                    <h3 class="summary-title" id="Summary">Summary</h3>
+                    <p class="summary-paragraph">
+                        As part of my Web Application Project course, five other students and I contributed to a product
+                        aimed at keeping young children excited about school during distance learning.
+                    </p>
+                </div>
+                <div class="summary-section">
+                    <h3 class="summary-title">Timeline and Disciplines</h3>
+                    <p class="summary-paragraph">January 2021 - April 2021</p>
+                    <p class="summary-paragraph">User Research, Sketching, Wireframing,
+                        Prototyping, Testing, SCSS, React,
+                        Google Firebase, Git, Agile/Scrum
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="case-study__section">
+            <h2 class="section__title">The Solution</h2>
+
+            <p class="main-paragraph">Books N Bucks is essentially
+                <span class="emphasized">a platform for teachers to incentivize students</span>
+                during distance learning. When students perform well (arriving on time, completing homework, helping
+                classmates, etc), they are awarded points, which can then be used to purchase various items. The product
+                owners had an existing site, but wanted us (the class) to revamp it. My team focused on the Student
+                Dashboard only.
+            </p>
+            <p class="main-paragraph">Our product owners encouraged us to come up with our own additions, but they also
+                had <span class="emphasized">non-negotiable features</span>: a store, a section for students to see
+                their points, somewhere for students
+                to check attendance, and a section for students to have a reward goal and see how many points away they
+                are from purchasing it.</p>
+
+            <h3 class="subsection__title" id="Personas">Crafting A Persona</h3>
+            <p class="main-paragraph">We began our Design phase by brainstorming miniature personas for target users,
+                which included a user and a brief problem statement.
+                <span class="emphasized">We generally agreed that our target user would be a
+                    student in need of positive reinforcement during distance learning.</span>
+            </p>
+            <img src="bnb-personas.png"
+                alt="Post-it saying 'Kenny needs positive reinforcement because online learning lacks engagement.'"
+                class="main-image">
+
+            <!-- Wireframes -->
+            <h3 class="subsection__title" id="Wireframes">Wireframes</h3>
+
+            <p class="main-paragraph">Taking our persona and target audience into consideration, we started constructing
+                our wireframes. Our designs focused on card-like elements and large content to appeal to young children
+                without overwhelming or confusing them. Our 5 main pages aligned with the product owners’ requirements,
+                and we found ways to enhance what they wanted.
+            </p>
+
+            <img src="./wireframe-home.png" alt="Home page showing the date, number of points, and an empty goal state."
+                class="main-image">
+            <img src="./wireframe-points.png"
+                alt="Points page showing the amount of points and the reason they were given." class="main-image">
+            <img src="./wireframe-store.png" alt="Store page showing multiple rewards items listed." class="main-image">
+            <img src="./wireframe-attendance.png"
+                alt="Attendance page showing a list of attendance status for multiple days." class="main-image">
+            <img src="./wireframe-wishlist.png" alt="Wishlist page showing 3 wishlist items." class="main-image">
+
+            <p class="main-paragraph">We believed the points and reward goal should be front-and-center, as that would
+                effectively motivate students each time they log in. We also thought students should be able to see
+                their points history and why they were given them (making them more likely to repeat those actions in
+                the future).
+            </p>
+
+            <p class="main-paragraph">On the Store page, I suggested that we use various colors and copy for the
+                purchase state of an item to differentiate between lack of points and out-of-stock. We liked allowing
+                users to save Store items and set them as their reward goal right from a wishlist.
+            </p>
+
+            <h3 class="subsection__title" id="Wireframe Testing">Testing Our Wireframes</h3>
+
+            <p class="main-paragraph">We then tested our wireframes over Zoom with 3 students at
+                an LAUSD school that was already using Books N Bucks. We noticed:</p>
+            <ul class="list">
+                <li class="list-item">Students enjoyed seeing their points and reward goal on the Home page.
+                </li>
+                <li class="list-item">Being able to save Store items to a wishlist was preferable to searching for it
+                    again in the Store.
+                </li>
+                <li class="list-item">Iconography on the Attendance page was confusing.
+                </li>
+            </ul>
+
+            <h3 class="subsection__title" id="Prototyping">Final Prototypes</h3>
+
+            <p class="main-paragraph">Prototyping and putting together final designs was our next step. The product
+                owners had their own color scheme of red, white, and black, so we adhered to those design guidelines. We
+                decided to use Montserrat as our primary font because it is simple but slightly playful. We also added
+                pagination to multiple pages to prevent overloading students with information and choices.
+            </p>
+
+            <img src="./final-mockup-home.png" alt="Home page showing the student's points, goal, and the weather."
+                class="main-image">
+            <img src="./final-mockup-points.png"
+                alt="Points page showing amount of points student received in one week, and why." class="main-image">
+            <img src="./final-mockup-store.png" alt="Store page with multiple items listed. Some are favorited."
+                class="main-image">
+            <img src="./final-mockup-wishlist.png"
+                alt="Wishlist page showing the user's favorited store items. Airpods is set as a goal."
+                class="main-image">
+
+            <p class="main-paragraph">I was responsible for incorporating feedback into the Attendance page design.
+                Since our testing participants told us the iconography was confusing,
+                <span class="emphasized">I decided we should switch to
+                    colored badge elements</span>; coloring them helps convey status, but using words instead of icons
+                makes it
+                accessible for those who can’t interpret the colors.
+            </p>
+
+            <img src="./final-mockup-attendance.png"
+                alt="Attendance page showing colored badges that represent attendance status for each class."
+                class="main-image">
+
+            <p class="main-paragraph">We tested the final prototypes as well with 3 more LAUSD students. We received
+                minimal negative feedback, so we were confident that we addressed all of the concerns from our wireframe
+                testing. From there, we moved on to developing the front and back ends of the dashboard.
+            </p>
+
+            <h3 class="subsection__title" id="Development">Development</h3>
+            <p class="main-paragraph">The front-end was a combination of React and SCSS, and we developed the front-end
+                over the course of 2 weeks. As with the prototypes, I was mostly responsible for implementing the
+                Attendance page. The back-end was done using Google Firebase and Google Cloud Functions, and was
+                developed over the course of 2 weeks as well.
+            </p>
+            <p class="main-paragraph">I implemented a function that would retrieve information about a user's reward
+                goal (such as the image and cost) from the database. Here is an image of the code:
+            </p>
+            <img src="./code-snippet.png" alt="" class="main-image">
+        </section>
+        <section class="case-study__section">
+            <h2 class="section__title" id="Reflecting">Reflecting</h2>
+
+            <p class="main-paragraph">This is one of the most rewarding projects I have ever worked on. The product’s
+                purpose was gratifying, and I felt grateful to contribute to a product that was going to motivate school
+                children to improve their academic performance.</p>
+            <p class="main-paragraph">I also had the luxury of working with a great team; the
+                other members were receptive to my ideas, but pushed back on suggestions that were not the best choices
+                for the product. This project’s mission, as well as the dynamic of my team, allowed me to expand my
+                skills and taught me a great amount about what I desire out of future opportunities.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p class="copyright">&copy; Will Givens IV 2021. All Rights Reserved</p>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+
+</html>

@@ -29,6 +29,15 @@
   font-weight: 400;
 }
 
+.small-projects {
+  margin-top: 6rem;
+}
+
+.small-projects > h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
 @media (max-width: 719px) {
   .about-heading {
     font-size: 2rem;
