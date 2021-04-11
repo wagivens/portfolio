@@ -53,7 +53,10 @@
     <button class="scroll-to-top" type="button">&uarr;</button>
     <section class="case-study__section">
       <p class="main-paragraph">
-        [Short introduction].
+        Living sustainably is becoming increasingly important as the effects of climate change become more apparent.
+        Young adults enjoy trying to live green, particularly by recycling, but the process can be confusing and the
+        benefits are not always clear. This prompted a team of myself and 4 others, as part of my “Design for User
+        Experience” course, to remedy those issues with a new digital product.
       </p>
       <h2 class="section__title">The Rundown</h2>
       <article class="problem-statement">
@@ -68,8 +71,9 @@
         <div class="summary-section">
           <h3 class="summary-title" id="Summary">Summary</h3>
           <p class="summary-paragraph">
-            A team of myself and four others crafted a native mobile application
-            targeted at college students/young adults who recycle.
+            A team of myself and four others crafted a native mobile application focused on simplifying the recycling
+            process for young adults while also educating them on sustainability and providing relevant incentives for
+            living green.
           </p>
         </div>
         <div class="summary-section">
@@ -100,7 +104,8 @@
       <h3 class="subsection__title" id="Defining">Defining the Product</h3>
       <p class="main-paragraph">To begin, our team conducted a
         <span class="emphasized">competitive analysis</span>
-        on recycling apps and sites. We discovered that existing products are
+        on recycling apps and sites. By comparing the features, strengths, and weaknesses of different products, we
+        discovered that many recycling apps/sites are
         great at educating users and providing local resources, as well as having
         enjoyable user experiences. However, they are purely educational and lack
         incentives to motivate users to apply their recycling knowledge.
@@ -166,10 +171,6 @@
       <img class="main-image" src="./persona-2.png" alt="Persona Profile for User 2">
 
       <!-- Ideating -->
-      <!-- Include 
-        1. Affinity Mapping w/ HMWs
-        2. Crazy 8s Solution Sketches
-      -->
       <h3 class="subsection__title" id="Ideating">Ideating Potential Solutions</h3>
       <p class="main-paragraph">Our ideation process started with us proposing "How Might We?"
         questions and dot-voting which ones we felt best about. Our most popular ones revolved around educating users,
@@ -186,96 +187,87 @@
       </p>
 
       <!-- Prototyping -->
-      <!-- Include 
-          1. Sitemap
-          2. Wireframes
-          3. Design System
-          4. Final Mockups
-       -->
       <h3 class="subsection__title" id="Prototyping">Prototyping Final Solutions</h3>
-      <p class="main-paragraph">Before prototying, we constructed a sitemap and
+      <p class="main-paragraph">Before prototyping, we constructed a sitemap and
         preliminary wireframes of our application.
       </p>
 
       <img src="sitemap.png" alt="Econia sitemap" class="main-image">
       <img src="wireframe.png" alt="3 screens in the Econia wireframe file" class="main-image">
 
-      <!-- Design System Here -->
-      <p class="main-paragraph">I then put everything together.
-        As aforementioned, the two main actions I focused on were
-        <strong class="emphasized">editing a message</strong>
-        and <strong class="emphasized">viewing message edits</strong>. I made sure both processes
-        involved
-        similar steps to other message interactions to prevent unnecessarily increasing
-        cognitive load.
+      <!-- Design System -->
+      <p class="main-paragraph">We also put together a design system for consistent styling and rapid prototyping.
+        Here is examples of our color palette, font, and logo.
       </p>
 
       <img class="main-image" src="./design-system-example.png" alt="">
 
+      <p class="main-paragraph">Econia’s color palette consisted mostly of blue and green Earth tones to represent
+        freshness and nature. Our primary font, Roboto, was chosen because of its simplicity, and our logo incorporated
+        a recycling icon to remind users of the product's purpose.
+      </p>
+
+      <!-- Hi-Fi Mockups -->
+      <p class="main-paragraph">Then, we put everything together to create our high-fidelity mockups.
+      </p>
+
       <div class="process-step flex-row">
         <div class="process-step__info">
-          <h4 class="process-step__title">Editing A Message</h4>
-          <p class="process-step__description">To edit a message, users would select the edit feature
-            from the long-press dropdown and send their edits as they would a reply.</p>
+          <h4 class="process-step__title">Scanning a Recyclable Product</h4>
+          <p class="process-step__description">The Home page shows users how other users in their area are using the
+            application. We thought presenting users with a list of other people’s recycling achievements would promote
+            healthy peer pressure.</p>
 
-          <p class="process-step__description">Showing the original message while
-            preparing edits prevents users from making any additional errors
-            (by being able to see what was written the first time).
-          </p>
-          <p class="process-step__description">Making the "Send" button yellow tells users that
-            they are about to edit a message, not reply to it.
+          <p class="process-step__description">Users would scan a recyclable item to start Econia’s recycling process.
+            They would earn a small number of points simply by scanning, after which they could save it to their list to
+            recycle later (if they couldn’t in the moment) or locate nearby bins to deposit the item.
           </p>
         </div>
         <figure class="process-step__image-container">
           <img class="process-step__image-image" src="./mockup-home.png"
-            alt="Photo of a Messages screen with the long-press popup modal and message interaction list.">
-          <img class="process-step__image-image" src="./mockup-scanner.png" alt="Photo of a Messages screen with an original message and its edited message in the 
-          text box alongside a yellow 'Send' button.">
+            alt="Econia's Home page, which shows a list of other users and their recent successful recycles.">
+          <img class="process-step__image-image" src="./mockup-scanner.png"
+            alt="Econia's scanner page, which tells users to take a photo of their recyclable item.">
           <img class="process-step__image-image" src="./mockup-postscan.png"
-            alt="Photo of a Messages screen with a regular, blue message bubble and a yellow, edited message bubble.">
+            alt="A popup modal shown after users scan an item, letting users save items to their list or locate nearby bins.">
         </figure>
       </div>
 
       <div class="process-step flex-row">
         <div class="process-step__info">
-          <h4 class="process-step__title">Viewing Message Edits</h4>
-          <p class="process-step__description">To view edits made to a message, users would click on the
-            yellow “edited” icon in the bottom left corner of the message
-            (like clicking on a tapback response). They would then see the original
-            message as well as the edits made to it.</p>
-          <p class="process-step__description">Putting the "edited" indicator in the bottom corner
-            lets users know it is something different than the Tapback reactions.
-          </p>
+          <h4 class="process-step__title">Locating Recycling Bins</h4>
+          <p class="process-step__description">When a user wants to successfully complete a full “recycle” in the Econia
+            app, they are given a map of nearby recycling bins. Once they have arrived at a recycling bin, they scan a
+            QR code (letting us know the item deposit was legitimate) and are then awarded more points.</p>
         </div>
         <figure class="process-step__image-container">
-          <img class="process-step__image-image" src="./mockup-map.png" alt="Photo of a Messages screen and a message bubble with
-          an edit icon in the bottom right corner.">
+          <img class="process-step__image-image" src="./mockup-map.png"
+            alt="Econia's Map view with trash can icons representing nearby recycling bins.">
           <img class="process-step__image-image" src="./mockup-bin-scan.png"
-            alt="Photo of a Messages screen with a button that says 'View Message Edits'.">
+            alt="Screen with an area for users to scan QR codes on recycling bins.">
           <img class="process-step__image-image" src="./mockup-points-popup.png"
-            alt="Photo of a Messages screen with a regular, blue message bubble and a yellow, edited message bubble.">
+            alt="Popup modal letting a user know their recycle was successful and they have been awarded 100 points.">
         </figure>
       </div>
 
       <div class="process-step flex-row">
         <div class="process-step__info">
-          <h4 class="process-step__title">Viewing Message Edits</h4>
-          <p class="process-step__description">To view edits made to a message, users would click on the
-            yellow “edited” icon in the bottom left corner of the message
-            (like clicking on a tapback response). They would then see the original
-            message as well as the edits made to it.</p>
-          <p class="process-step__description">Putting the "edited" indicator in the bottom corner
-            lets users know it is something different than the Tapback reactions.
+          <h4 class="process-step__title">Personalization and Incentives</h4>
+          <p class="process-step__description">Econia’s Profile page shows users their points and suggests
+            sustainable alternatives to products they recycle often (ex: water bottles).</p>
+          <p class="process-step__description">The Rewards page offers prizes relevant to our target audience (ex:
+            clothing discounts, restaurant coupons, etc), which users can buy with their recycling points.
           </p>
         </div>
         <figure class="process-step__image-container">
-          <img class="process-step__image-image" src="./mockup-profile.png" alt="Photo of a Messages screen and a message bubble with
-          an edit icon in the bottom right corner.">
+          <img class="process-step__image-image" src="./mockup-profile.png"
+            alt="Econia's User Profile page, showing a user photo, their points, and sustainable product alternatives.">
           <img class="process-step__image-image" src="./mockup-rewards.png"
-            alt="Photo of a Messages screen with a button that says 'View Message Edits'.">
+            alt="Econia's Rewards page with a list of items users can buy with their points.">
         </figure>
       </div>
 
+      <!-- Testing -->
       <h3 class="subsection__title" id="Testing">Testing Our Solutions</h2>
         <p class="main-paragraph">We conducted 5 <span class="emphasized">usability tests</span> through observation
           and interviewing, which ultimately taught us:
@@ -298,12 +290,12 @@
     </section>
     <section class="case-study__section">
       <h2 class="section__title" id="Reflection">Reflecting</h2>
-      <p class="main-paragraph">This project was an excellent exercise in utilizing the Design Thinking Framework, as
+      <p class="main-paragraph">This project was an excellent exercise in the Design Thinking Framework, as
         well as applying principles of user interface design and working on a team. I particularly enjoyed conducting
         user research to gain insights about target users and contributing to a design system.
       </p>
       <p class="main-paragraph">Although the product will not move into a development phase, I believe the entire team
-        gained valuable knowledge about young adults and our relationship to recycling.
+        gained valuable knowledge about young adults and our relationship to sustainability.
       </p>
     </section>
   </main>
