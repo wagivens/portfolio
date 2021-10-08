@@ -7,172 +7,81 @@
   <meta name="description" content="Willard Givens IV is a Front End Developer and UX Designer 
   currently based in Los Angeles, California. Check out his work!" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600&family=Spartan:wght@200;400;600&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Spartan:wght@200;400;500;600&family=DM+Serif+Display&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="styles.css" />
   <link rel="stylesheet" type="text/css" href="index.css" />
   <title>Will Givens IV • UX Designer and Front-End Developer | Home</title>
 </head>
 
-<body>
+<body class="fadeIn">
   <header>
     <nav class="navigation header-nav flex-row">
       <p class="header-nav__name">
         <a href="https://wagivens.github.io">Will Givens IV</a>
       </p>
-      <li class="header-nav__item">
-        <a href="https://github.com/wagivens">GitHub</a>
+      <!-- <li class="header-nav__item">
+        <a href="#selected_work">Work</a>
       </li>
       <li class="header-nav__item">
         <a href="WillardGivensResume_062021.pdf">Resume</a>
-      </li>
+      </li> -->
     </nav>
   </header>
   <main class="home-page-container">
-    <article>
-      <div>
-        <h1 class="about-heading">
-          User Experience Designer and Front-End Developer
-        </h1>
-        <p class="gray about-subheading">Los Angeles, CA</p>
-      </div>
-      <p class="gray contact">
-        Find me on
-        <a href="https://www.linkedin.com/in/willardgivensiv" class="blue contact__link">LinkedIn</a>, or email me at
-        <a href="mailto:wagivens@usc.edu" class="blue contact__link">wagivens@usc.edu</a>.
+    <article class="introduction flex-column">
+      <h1 class="about-heading flex-row">
+        <p>Hi! I'm Will</p>
+        <div class="handwave">
+          <span>👋🏾</span>
+        </div>
+      </h1>
+      <p>
+        I'm a designer and software engineer based in Los Angeles, CA.
       </p>
-    </article>
-    <article class="projects-gallery flex-row">
-      <!-- First Project -->
-      <div class="project-listing">
-        <a href="/projects/messages/messages.html">
-          <div class="project-image-container">
-            <img class="project-listing__image" src="project_thumbnails/thumbnail-messages.png"
-              alt="Project banner saying 'Econia' and showing multiple mockup screens." />
-          </div>
-          <div class="project-listing__info">
-            <div class="project-listing__headline flex-row">
-              <h2 class="project-listing__title">Apple Messages</h2>
-              <div class="project-badge-container">
-                <span class="project-listing__badge project-listing__badge--design">Design</span>
-                <!-- <span class="project-listing__badge project-listing__badge--dev">Development</span> -->
-              </div>
-            </div>
-            <p class="project-listing__description dark-gray">
-              A solution for user errors in Apple's Messages application.
-            </p>
-          </div>
-        </a>
-      </div>
-      <!-- Second Project -->
-      <div class="project-listing">
-        <a href="/projects/econia/econia.html">
-          <div class="project-image-container">
-            <img class="project-listing__image" src="project_thumbnails/thumbnail-econia.png" />
-          </div>
-          <div class="project-listing__info">
-            <div class="project-listing__headline flex-row">
-              <h2 class="project-listing__title">Econia</h2>
-              <div class="project-badge-container">
-                <span class="project-listing__badge project-listing__badge--design">Design</span>
-              </div>
-            </div>
-            <p class="project-listing__description dark-gray">
-              Streamlining the recycling process for young adults.
-            </p>
-          </div>
-        </a>
-      </div>
-      <!-- Third Project -->
-      <div class="project-listing">
-        <a href="projects/books-n-bucks/bnb.html">
-          <div class="project-image-container">
-            <img class="project-listing__image" src="project_thumbnails/thumbnail-bnb.png" />
-          </div>
-          <div class="project-listing__info">
-            <div class="project-listing__headline flex-row">
-              <h2 class="project-listing__title">Books N Bucks</h2>
-              <div class="project-badge-container">
-                <span class="project-listing__badge project-listing__badge--design">Design</span>
-                <span class="project-listing__badge project-listing__badge--dev">Development</span>
-              </div>
-            </div>
-            <p class="project-listing__description dark-gray">
-              Motivating grade-school students during online learning and beyond.
-            </p>
-          </div>
-        </a>
+      <p>
+        Get in touch at
+        <a href="mailto:wgivensiv@gmail.com" class="blue contact__link">wgivensiv@gmail.com</a>.
+      </p>
+      <div class="btn-container flex-row">
+        <a href="WillardGivensResume_062021.pdf" class="resume_btn">Download my resume</a>
+        <!-- <a href="#selected_work" class="selected_work_btn">View my selected work</a> -->
       </div>
     </article>
-    <!-- <article class="small-projects">
-      <h2>
-        Small Web Development Projects
-      </h2>
-      <details class="dropdown">
-        <summary class="dropdown__title">Basic PHP Form</summary>
-        <p class="dropdown__description">Form handling/validation using PHP.</p>
-        <a href="http://304.itpwebdev.com/~wagivens/assignment_04/form.php" class="dropdown__link">Link to
-          assignment.</a>
-      </details>
-      <details class="dropdown">
-        <summary class="dropdown__title">DVD Search Form</summary>
-        <p class="dropdown__description">Search for DVDs.</p>
-        <a href="http://304.itpwebdev.com/~wagivens/assignment_05/search_form.php" class="dropdown__link">Link to
-          assignment.</a>
-      </details>
-      <details class="dropdown">
-        <summary class="dropdown__title">Football Schedule Form</summary>
-        <p class="dropdown__description">Search for a college football game.</p>
-        <a href="http://304.itpwebdev.com/~wagivens/lab_06/search_form.php" class="dropdown__link">Link to project.</a>
-      </details>
-      <details class="dropdown">
-        <summary class="dropdown__title">Add a Football Game</summary>
-        <p class="dropdown__description">Add a football game to a college football schedule database.</p>
-        <a href="http://304.itpwebdev.com/~wagivens/lab_07/index.php" class="dropdown__link">Link to project.</a>
-      </details>
-      <details class="dropdown">
-        <summary class="dropdown__title">Dashboard Form w/ Session Storage</summary>
-        <p class="dropdown__description">Populating a form with user session information.</p>
-        <a href="http://304.itpwebdev.com/~wagivens/lab_10/dashboard.php" class="dropdown__link">Link to project.</a>
-      </details>
-      <details class="dropdown">
-        <summary class="dropdown__title">Contact Form w/ Email Confirmation</summary>
-        <p class="dropdown__description">Letting users submit an email message, and sending them a confirmation email
-          afterward.</p>
-        <a href="http://304.itpwebdev.com/~wagivens/lab_11/contact_form.php" class="dropdown__link">Link to project.</a>
-      </details>
-      <details class="dropdown">
-        <summary class="dropdown__title">Password Validation Using
-          RegEx</summary>
-        <p class="dropdown__description">Password validation simulator using Regular Expressions.</p>
-        <a href="https://viterbi-web.usc.edu/~wagivens/itp301/lab_06/lab_06.html" class="dropdown__link">Link to
-          project.</a>
-      </details>
-      <details class="dropdown">
-        <summary class="dropdown__title">TheMovieDb Movie Search</summary>
-        <p class="dropdown__description">Search for movies using TheMovieDb API</p>
-        <a href="https://viterbi-web.usc.edu/~wagivens/itp301/lab_09/lab_09.html" class="dropdown__link">Link to
-          project.</a>
-      </details>
-      <details class="dropdown">
-        <summary class="dropdown__title">Static Shopping Cart w/ Funds</summary>
-        <p class="dropdown__description">Static e-commerce page with "Add to Cart" and fund allocation.</p>
-        <a href="https://viterbi-web.usc.edu/~wagivens/itp301/lab_03/lab_03.html" class="dropdown__link">Link to
-          project.</a>
-      </details>
-      <details class="dropdown">
-        <summary class="dropdown__title">NASA Image Search</summary>
-        <p class="dropdown__description">Search space photos using NASA's image database.</p>
-        <a href="https://viterbi-web.usc.edu/~wagivens/itp301/final_project/final-project_home.html"
-          class="dropdown__link">Link to
-          project.</a>
-      </details>
+    <!-- <article class="selected-work">
+      <h2 class="article__heading selected-work-header" id="selected_work">Selected Work</h2>
+      <section class="project" data-project="messages">
+        <div class="project__info">
+          <h3 class="project__title">Messages Editing Feature</h3>
+          <p class="project__description">A solution for user errors in Apple's Messages application.
+          </p>
+          <div class="project__links flex-row">
+            <a href="/projects/messages/messages.html" class="project__link project__link--case">View case study</a>
+            <a href="#" class="project__link project__link--live">View live project</a>
+          </div>
+        </div>
+        <div class="project__thumbnail">
+          <img src="/project_thumbnails/messages-thumbnail.png">
+        </div>
+      </section>
+      <section class="project" data-project="econia">
+        <div class="project__info">
+          <h3 class="project__title">Econia</h3>
+          <p class="project__description">Streamlining the recycling process for young adults.
+          </p>
+          <div class="project__links flex-row">
+            <a href="/projects/messages/messages.html" class="project__link project__link--case">View case study</a>
+            <a href="#" class="project__link project__link--live">View live project</a>
+          </div>
+        </div>
+        <div class="project__thumbnail">
+          <img src="/project_thumbnails/econia-thumbnail.png">
+        </div>
+      </section>
     </article> -->
   </main>
-  <footer>
-    <p class="copyright">&copy; Will Givens IV 2021. All Rights Reserved</p>
-  </footer>
-  <script src="script.js"></script>
+  <script src="script.js" type="module"></script>
 </body>
 
 </html>
