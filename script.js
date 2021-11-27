@@ -1,5 +1,3 @@
-import CREDENTIALS from "./credentials.js";
-
 ("use strict");
 
 const DOMelements = {
@@ -9,7 +7,7 @@ const DOMelements = {
   ),
   caseStudyImages: document.querySelectorAll(".main-image"),
   scrollToTop: document.querySelector(".scroll-to-top"),
-};
+}
 
 function waveHand() {
   DOMelements.handEmoji.animate(
@@ -120,44 +118,3 @@ imageObserver(DOMelements.caseStudyImages);
 // We want to observe the second Case Study Section
 if (DOMelements.caseStudySection)
   sectionObserver.observe(DOMelements.caseStudySection);
-
-// async function getTwitterUserID() {
-//   try {
-//     const getUserInfo = await fetch(
-//       `${CREDENTIALS.API_URL}by/username/willgivensiv`,
-//       {
-//         headers: {
-//           Authorization:
-//             "Bearer AAAAAAAAAAAAAAAAAAAAAO%2FkQwEAAAAA3rQEpWBo%2Fnfzpybtk7kIZCyNxCg%3DCsSYVh93JLabK1ryWNijrf5p8P2rJw48LO7DCb0rUKDxMgDZw8",
-//         },
-//       }
-//     )
-//       .then((response) => response.json)
-//       .then((data) => console.log(data));
-//     if (getUserInfo.res.ok === "False") throw new Error(getUserInfo.error);
-//   } catch (error) {
-//     console.error(Error);
-//   }
-// }
-
-// getTwitterUserID();
-
-// console.log(CREDENTIALS);
-
-// const getTwitterFeed = async function () {
-//   let apiCall = await fetch(CREDENTIALS.API_URL);
-// };
-
-// function getUserInfo() {
-//   let apiCall = fetch(`${CREDENTIALS.API_URL}by/username/willgivensiv`, {
-//     headers: {
-//       Authorization:
-//         "Bearer AAAAAAAAAAAAAAAAAAAAAO%2FkQwEAAAAA3rQEpWBo%2Fnfzpybtk7kIZCyNxCg%3DCsSYVh93JLabK1ryWNijrf5p8P2rJw48LO7DCb0rUKDxMgDZw8",
-//     },
-//     method: "GET",
-//   });
-
-//   apiCall.then((response) => response.json).then((data) => console.log(data));
-// }
-
-// getUserInfo();
