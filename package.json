@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/wagivens/wagivens.github.io#readme",
   "devDependencies": {
-    "lit": "^2.0.2"
+    "lit": "^2.0.2",
+    "typescript": "^4.5.2"
   }
 }
