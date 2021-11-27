@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/wagivens/wagivens.github.io/issues"
   },
-  "homepage": "https://github.com/wagivens/wagivens.github.io#readme"
+  "homepage": "https://github.com/wagivens/wagivens.github.io#readme",
+  "devDependencies": {
+    "lit": "^2.0.2"
+  }
 }
