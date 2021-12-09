@@ -94,10 +94,11 @@ article + article {
   font-size: clamp(2.5rem, 2vw, 4rem);
   width: 100%;
   margin: 0 auto;
+  letter-spacing: -.05rem;
 }
 
 .repo-highlights {
-  margin-top: 20vh;
+  margin-top: 10vh;
   flex-direction: column;
 }
 
