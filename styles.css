@@ -80,9 +80,13 @@ a {
   color: inherit;
 }
 
-section,
-article {
+section {
   width: 100%;
+}
+
+article {
+  width: 85%;
+  margin: 0 auto;
 }
 
 /* ----- Header Styling ----- */

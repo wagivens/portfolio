@@ -1,6 +1,7 @@
 /* Home Page Styling */
 .home-page-container {
-  margin: 14rem auto 0;
+  padding: 14rem 0 5rem 0;
+  margin: 0 auto;
   max-width: 100%;
 }
 
@@ -90,9 +91,14 @@ article + article {
 
 .article__heading {
   font-family: "DM Serif Display", serif;
-  font-size: clamp(3.2rem, 3vw, 4.8rem);
-  width: 85%;
+  font-size: clamp(2.5rem, 2vw, 4rem);
+  width: 100%;
   margin: 0 auto;
+}
+
+.repo-highlights {
+  margin-top: 20vh;
+  flex-direction: column;
 }
 
 .selected-work {
