@@ -43,6 +43,12 @@
   line-height: 4rem;
 }
 
+@media (prefers-color-scheme: dark) {
+  .introduction p, .about-heading p, .article__heading {
+    color: var(--white);
+  }
+}
+
 .contact {
   line-height: 3rem;
 }
@@ -68,6 +74,14 @@
 
 .resume_btn:hover {
   background-color: hsl(0, 0%, 95%);
+}
+
+@media (prefers-color-scheme: dark) {
+  .resume_btn {
+    background-color: var(--white);
+    border: none;
+    font-weight: 500;
+  }
 }
 
 .selected_work_btn {

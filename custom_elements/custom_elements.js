@@ -73,13 +73,19 @@ class RepoHighlight extends HTMLElement {
             }
             
               .repo-highlight {
-                border: 1px solid var(--gray-light);
-                padding: 0 1rem .5rem 1rem;
+                padding: .1rem 1rem .5rem 1rem;
                 border-radius: .5rem;
                 width: 90%;
                 max-width: 30rem;
                 margin-top: 2rem;
                 font-size: 1.4rem;
+              }
+
+              @media (prefers-color-scheme: dark) {
+                .repo-highlight {
+                  border: none;
+                  background-color: hsl(216, 8%, 12%);
+                }
               }
               
               .repo-highlight > * {
@@ -94,17 +100,41 @@ class RepoHighlight extends HTMLElement {
                 color: var(--blue);
               }
 
+              @media (prefers-color-scheme: dark) {
+                .repo-link, .commit-link, .commits-link {
+                  color: var(--blue-dark-mode);
+                }
+              }
+
               .repo-description {
                 line-height: 2rem;
+              }
+
+              @media (prefers-color-scheme: dark) {
+                .repo-title, .repo-description {
+                  color: var(--light-gray-dark-mode);
+                }
               }
               
               .repo-highlight, .repo-commit {
                 border: .1rem solid lightgray;
                 border-radius: .2rem;
               }
+
+              @media (prefers-color-scheme: dark) {
+                .repo-highlight, .repo-commit {
+                  border: none;
+                }
+              }
               
               .repo-commit {
                 padding: 1rem;
+              }
+
+              @media (prefers-color-scheme: dark) {
+                .repo-commit {
+                  background-color: hsl(223, 7%, 19%);
+                }
               }
               
               .repo-commit > *:not(:first-child) {
@@ -122,6 +152,12 @@ class RepoHighlight extends HTMLElement {
               
               .commit-date {
                 color: var(--gray-dark);
+              }
+
+              @media(prefers-color-scheme: dark) {
+                .commit-date {
+                  color: var(--white);
+                }
               }
 
               @media(min-width: 720px) {
