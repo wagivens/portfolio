@@ -45,7 +45,7 @@
 
 @media (prefers-color-scheme: dark) {
   .introduction p, .about-heading p, .article__heading {
-    color: var(--white);
+    color: var(--light-gray-dark-mode);
   }
 }
 
@@ -78,7 +78,7 @@
 
 @media (prefers-color-scheme: dark) {
   .resume_btn {
-    background-color: var(--white);
+    background-color: var(--light-gray-dark-mode);
     border: none;
     font-weight: 500;
   }

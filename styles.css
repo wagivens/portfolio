@@ -13,7 +13,7 @@
   /* Dark Mode Styles */
   --blue-dark-mode: hsl(217, 64%, 57%);
   --light-gray-dark-mode: hsl(0, 0%, 70%);
-  --background-dark-mode: hsl(252, 16%, 6%);
+  --background-dark-mode: hsl(216, 16%, 6%);
 }
 
 html {
@@ -138,7 +138,7 @@ header {
 @media (prefers-color-scheme: dark) {
   .header-nav__name {
     color: var(--black);
-    background-color: var(--white);
+    background-color: var(--light-gray-dark-mode);
   }
 }
 
