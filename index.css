@@ -45,7 +45,7 @@
 
 @media (prefers-color-scheme: dark) {
   .introduction p, .about-heading p, .article__heading {
-    color: var(--light-gray-dark-mode);
+    color: var(--white);
   }
 }
 
@@ -78,7 +78,7 @@
 
 @media (prefers-color-scheme: dark) {
   .resume_btn {
-    background-color: var(--light-gray-dark-mode);
+    background-color: var(--white);
     border: none;
     font-weight: 500;
   }
@@ -113,6 +113,10 @@ article + article {
 
 .repo-highlights {
   margin-top: 10vh;
+}
+
+.repo-highlights > .flex {
+  display: flex;
   flex-direction: column;
 }
 
@@ -192,64 +196,6 @@ article + article {
   width: 100%;
 }
 
-.project[data-project="messages"] {
-  background-color: hsl(0, 0%, 0%);
-  /* -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 50%);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 50%); */
-}
-
-.project[data-project="econia"] {
-  background-color: hsl(123, 57%, 33%);
-  /* -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 50%);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 50%); */
-}
-
-.social-media__list {
-  width: 85%;
-  margin: 2rem auto 0;
-}
-
-.social-media__link {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 1.5rem 1rem;
-  border-radius: 0.5rem;
-  margin-bottom: 1.5rem;
-  /* background-color: indianred; */
-}
-
-.social-media__link:hover {
-  background-color: var(--gray-light);
-  cursor: pointer;
-}
-
-/* .social-media__link > * {
-  background-color: olivedrab;
-} */
-
-.product-icon {
-  max-height: 4rem;
-}
-
-.product-icon[data-icon="twitter"] {
-  color: rgb(70, 156, 240);
-}
-.product-icon[data-icon="linkedin"] {
-  color: rgb(45, 100, 188);
-}
-
-.sm-link__info {
-  margin-left: 1.5rem;
-  font-size: clamp(1.6rem, 1vw, 2.4rem);
-}
-
-.sm-link__info > *:not(:first-child) {
-  margin-top: 0.5rem;
-}
-
 @media (min-width: 720px) {
   .about-heading p {
     font-size: 6rem;
@@ -271,5 +217,9 @@ article + article {
 
   .project > * {
     max-width: 40%;
+  }
+
+  .repo-highlights > .flex {
+    flex-direction: row;
   }
 }

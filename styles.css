@@ -137,8 +137,8 @@ header {
 
 @media (prefers-color-scheme: dark) {
   .header-nav__name {
-    color: var(--black);
-    background-color: var(--light-gray-dark-mode);
+    color: var(--gray-dark);
+    background-color: var(--white);
   }
 }
 
