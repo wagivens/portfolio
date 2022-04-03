@@ -82,7 +82,7 @@ html {
 
 body {
   font-family: "Spartan", sans-serif;
-  margin: 0px auto;
+  margin: 0 auto;
   position: relative;
   width: 100%;
   max-width: 200rem;
@@ -105,15 +105,11 @@ section {
   width: 100%;
 }
 
-article {
-  width: 85%;
-  margin: 0 auto;
-}
-
 /* ----- Header Styling ----- */
 header {
   width: 85%;
-  margin: 2.5rem auto 0 auto;
+  margin: 0 auto;
+  /* padding: 3rem; */
 }
 
 .header-nav {
@@ -208,6 +204,11 @@ footer {
 }
 
 @media (min-width: 720px) {
+  header {
+    width: 85%;
+    margin: 0 auto;
+  }
+
   .header-nav__name {
     padding: 0.6rem 6rem;
   }

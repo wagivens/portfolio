@@ -74,18 +74,13 @@ class RepoHighlight extends HTMLElement {
             
               .repo-highlight {
                 padding: .1rem 1rem .5rem 1rem;
+                border: .1rem solid var(--blue);
                 border-radius: .5rem;
                 width: 90%;
                 max-width: 30rem;
                 margin-top: 2rem;
                 font-size: 1.4rem;
-              }
-
-              @media (prefers-color-scheme: dark) {
-                .repo-highlight {
-                  border: none;
-                  background-color: hsl(216, 8%, 12%);
-                }
+                background-color: var(--white);
               }
               
               .repo-highlight > * {
@@ -100,41 +95,17 @@ class RepoHighlight extends HTMLElement {
                 color: var(--blue);
               }
 
-              @media (prefers-color-scheme: dark) {
-                .repo-link, .commit-link, .commits-link {
-                  color: var(--blue-dark-mode);
-                }
-              }
-
               .repo-description {
                 line-height: 2rem;
               }
-
-              @media (prefers-color-scheme: dark) {
-                .repo-title, .repo-description {
-                  color: var(--light-gray-dark-mode);
-                }
-              }
               
-              .repo-highlight, .repo-commit {
-                border: .1rem solid lightgray;
+              .repo-commit {
                 border-radius: .2rem;
-              }
-
-              @media (prefers-color-scheme: dark) {
-                .repo-highlight, .repo-commit {
-                  border: none;
-                }
               }
               
               .repo-commit {
+                border: .05rem solid var(--gray);
                 padding: 1rem;
-              }
-
-              @media (prefers-color-scheme: dark) {
-                .repo-commit {
-                  background-color: hsl(223, 7%, 19%);
-                }
               }
               
               .repo-commit > *:not(:first-child) {
@@ -154,12 +125,6 @@ class RepoHighlight extends HTMLElement {
                 color: var(--gray-dark);
               }
 
-              @media(prefers-color-scheme: dark) {
-                .commit-date {
-                  color: var(--white);
-                }
-              }
-
               @media(min-width: 720px) {
                 .repo-highlight {
                   font-size: 1.6rem;
@@ -167,6 +132,32 @@ class RepoHighlight extends HTMLElement {
                 
                 .repo-title {
                   font-size: 2rem;
+                }
+              }
+
+              @media (prefers-color-scheme: dark) {
+                .repo-highlight {
+                  background-color: hsl(220, 8%, 15%);
+                }
+
+                .repo-link, .commit-link, .commits-link {
+                  color: var(--blue-dark-mode);
+                }
+
+                .repo-commit {
+                  background-color: hsl(223, 7%, 20%);
+                }
+                
+                .repo-highlight, .repo-commit {
+                  border: none;
+                }
+
+                .repo-title, .repo-description {
+                  color: var(--light-gray-dark-mode);
+                }
+
+                .commit-date {
+                  color: var(--white);
                 }
               }
       </style>
@@ -206,4 +197,131 @@ class RepoHighlight extends HTMLElement {
 	}
 }
 
+class ProjectHighlight extends HTMLElement
+{
+  constructor() {
+		super();
+		this.attachShadow({ mode: 'open' });
+	}
+
+  thumbnailName;
+  title;
+  blurb;
+
+  async connectedCallback()
+  {
+    this.thumbnailName = this.attributes.getNamedItem('thumbnail').value;
+    this.title = this.attributes.getNamedItem('title').value;
+    this.blurb = this.attributes.getNamedItem('blurb').value;
+    
+    const projectHighlightTemplate = document.createElement('template');
+    projectHighlightTemplate.innerHTML = 
+    `
+    <style>
+      *,
+      *::after,
+      *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+      }
+
+      a
+      {
+        text-decoration: none;
+        color: inherit;
+        display: inline-block;
+      }
+      
+      .project-highlight
+      {
+        width: fit-content;
+        max-width: 38.5rem;
+        height: 52.5rem;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .project-hightlight__thumbnail
+      {
+        height: 70%;
+        width: 100%;
+        overflow-y: hidden;
+        object-fit: fill;
+        border-top-left-radius: .2rem;
+        border-top-right-radius: .2rem;
+      }
+
+      .project-hightlight__thumbnail > img
+      {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .project-highlight__details
+      {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: hsl(0, 0%, 92%);
+        padding: 2rem 1.5rem;
+        flex-grow: 1;
+        border-bottom-left-radius: .2rem;
+        border-bottom-right-radius: .2rem;
+      }
+
+      .project-highlight__title, .project-highlight__blurb
+      {
+        font-size: clamp(1.6rem, 1.25vw, 3rem);
+      }
+
+      .project-highlight__title
+      {
+        font-weight: 600;
+      }
+
+      .project-highlight__blurb
+      {
+        font-weight: 500;
+        line-height: 3rem;
+        color: var(--gray);
+      }
+
+      @media(prefers-color-scheme: dark)
+      {
+        .project-highlight__details
+        {
+          background-color: hsl(0, 0%, 10%);
+        }
+
+        .project-highlight__title
+        {
+          color: var(--white);
+        }
+
+        .project-highlight__blurb
+        {
+          color: var(--gray);
+        }
+      }
+    </style>
+    <a href="/projects/messages/messages.html">
+      <div class="project-highlight">
+        <div class="project-hightlight__thumbnail">
+          <img src="../project_thumbnails/${this.thumbnailName}">
+        </div>
+        <div class="project-highlight__details">
+          <h2 class="project-highlight__title">${this.title}</h2>
+          <p class="project-highlight__blurb">${this.blurb}</p>
+        </div>
+      </div>
+    </a>
+    `;
+    this.shadowRoot.append(projectHighlightTemplate.content.cloneNode(true));
+  }
+  
+}
+
 customElements.define('repo-highlight', RepoHighlight);
+customElements.define('project-highlight', ProjectHighlight);

@@ -1,14 +1,44 @@
 /* Home Page Styling */
 .home-page-container {
-  padding: 14rem 0 5rem 0;
-  margin: 0 auto;
-  max-width: 100%;
+  margin: 10rem auto 0;
+  width: 100%;
 }
 
-.introduction {
-  width: 85%;
-  max-width: 85%;
+.home-page-section {
+  width: 100%;
   margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.home-page-section > * {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.home-page-section:first-of-type {
+  margin-bottom: 5rem;
+}
+
+.home-page-section:nth-child(2n){
+  background-color: hsl(215, 100%, 95%);
+}
+
+.home-page-section__content > * {
+  margin-top: 2rem;
+}
+
+.home-page-section__heading {
+  font-family: "DM Serif Display", serif;
+  font-size: clamp(2.5rem, 2.5vw, 5rem);
+  width: 100%;
+  letter-spacing: -.05rem;
+}
+
+.home-page-section__description {
+  font-family: "Spartan", sans-serif;
+  font-size: clamp(1.6rem, 1.4vw, 2rem);
+  line-height: 2.5rem;
+  max-width: 75%;
 }
 
 .introduction > *:not(:first-child) {
@@ -43,12 +73,6 @@
   line-height: 4rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  .introduction p, .about-heading p, .article__heading {
-    color: var(--white);
-  }
-}
-
 .contact {
   line-height: 3rem;
 }
@@ -73,15 +97,7 @@
 }
 
 .resume_btn:hover {
-  background-color: hsl(0, 0%, 95%);
-}
-
-@media (prefers-color-scheme: dark) {
-  .resume_btn {
-    background-color: var(--white);
-    border: none;
-    font-weight: 500;
-  }
+  background-color: var(--blue-light);
 }
 
 .selected_work_btn {
@@ -97,22 +113,6 @@
   width: -moz-fit-content;
   width: fit-content;
   margin-left: 1rem;
-}
-
-article + article {
-  margin-top: 2rem;
-}
-
-.article__heading {
-  font-family: "DM Serif Display", serif;
-  font-size: clamp(2.5rem, 2vw, 4rem);
-  width: 100%;
-  margin: 0 auto;
-  letter-spacing: -.05rem;
-}
-
-.repo-highlights {
-  margin-top: 10vh;
 }
 
 .repo-highlights > .flex {
@@ -197,6 +197,11 @@ article + article {
 }
 
 @media (min-width: 720px) {
+  .home-page-section__description {
+    line-height: 3rem;
+    max-width: 50%;
+  }
+  
   .about-heading p {
     font-size: 6rem;
   }
@@ -221,5 +226,26 @@ article + article {
 
   .repo-highlights > .flex {
     flex-direction: row;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .home-page-section:nth-child(2n){
+    background-color: hsl(240, 2%, 8%);
+  }
+
+  .introduction p, .about-heading p, 
+  .home-page-section__heading {
+    color: var(--white);
+  }
+
+  .home-page-section__description {
+    color: var(--gray);
+  }
+
+  .resume_btn {
+    background-color: var(--white);
+    border: none;
+    font-weight: 500;
   }
 }
