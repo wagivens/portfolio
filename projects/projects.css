@@ -302,6 +302,11 @@ h1, h2, h3, h4 {
         border: .1rem solid var(--blue);
     }
 
+    .process-step__image-caption {
+        font-weight: 400;
+        color: var(--gray-light);
+    }
+
     .main-image {
         box-shadow: none;
         border: .1rem solid var(--white);
