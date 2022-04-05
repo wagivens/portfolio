@@ -1,5 +1,6 @@
 .case-study {
-    margin-top: 0;
+    width: 65%;
+    margin: 0 auto;
 }
 
 .emphasized {
@@ -7,10 +8,6 @@
     color: var(--blue);
     font-weight: 600;
     font-size: 1.7rem;
-}
-
-.hidden {
-    display: none;
 }
 
 .list {
@@ -46,6 +43,7 @@
 .scroll-to-top:hover {
     cursor: pointer;
     transform: translateY(-.5rem);
+    transition: transform ease-in-out 200ms;
 }
 
 /* Intrapage Navigation */
@@ -72,6 +70,7 @@
     padding: 2rem;
     flex-grow: 1;
     text-align: center;
+    transition: all ease-in 150ms;
 }
 
 .intrapage-nav__link:hover {
@@ -182,7 +181,7 @@ h1, h2, h3, h4 {
 .main-image {
     width: 100%;
     box-shadow: 0 .4rem 1rem var(--gray-light);
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 .process-step__image-container {
@@ -231,7 +230,90 @@ h1, h2, h3, h4 {
     border: .1rem solid var(--blue);
 }
 
+@media (prefers-color-scheme: dark)
+{
+    .emphasized {
+        color: var(--blue-dark-mode);
+    }
+
+    .list-item {
+        color: var(--gray-light);
+    }
+    
+    .intrapage-nav {
+        border-bottom: 1px solid var(--gray-dark);
+    }
+
+    .intrapage-nav__link {
+        color: var(--gray-light);
+        background-color: var(--background-dark-mode);
+    }
+
+    .intrapage-nav__link:hover {
+        color: var(--blue-dark-mode);
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .project-title {
+        color: var(--white);
+    }
+
+    .section__title {
+        color: var(--blue-dark-mode);
+    }
+
+    .problem-statement {
+        background-color: transparent;
+        border: .1rem solid var(--gray);
+        color: var(--gray-light);
+    }
+
+    .summary-title {
+        color: var(--white);
+    }
+    
+    .summary-paragraph {
+        color: var(--gray-light);
+        font-weight: 500;
+    }
+    
+    .subsection__title {
+        text-align: left;
+        color: var(--white);
+    }
+
+    .main-paragraph {
+        color: var(--gray-light);
+        font-weight: 500;
+    }
+    
+    .process-step__title {
+        color: var(--blue-light);
+    }
+    
+    .process-step__description {
+        color: var(--blue-light);
+        font-weight: 500;
+    }
+
+    .process-step__info {
+        background-color: var(--blue);
+        border: .1rem solid var(--blue);
+    }
+
+    .main-image {
+        box-shadow: none;
+        border: .1rem solid var(--white);
+    }
+}
+
 @media (max-width: 749px) {
+    .case-study {
+        width: 90%;
+        margin: 0 auto;
+    }
+
     .intrapage-nav::after {
         content: "Scroll →";
         font-family: 'Kalam', cursive;

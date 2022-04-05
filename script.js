@@ -22,7 +22,10 @@ function waveHand() {
   );
 }
 
-setInterval(waveHand, 3000);
+if (DOMelements.handEmoji != null)
+{
+  setInterval(waveHand, 3000);
+}
 
 // Moving an image forward and backward based on scroll direction.
 let transformXIncrement = 0;
@@ -76,7 +79,11 @@ const imageObserver = function (list) {
   let elementObserver = new IntersectionObserver(
     (entries, observer) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) entry.target.style.visibility = "visible";
+        if (entry.isIntersecting)
+        {
+          entry.target.style.visibility = "visible";
+          console.log(entry.target, entry.target.style.visibility);
+        }
         observer.unobserve(entry.target);
       });
     },
@@ -113,7 +120,7 @@ const sectionObserver = new IntersectionObserver(
 );
 
 // Observer for Image Lazy Loading
-imageObserver(DOMelements.caseStudyImages);
+// imageObserver(DOMelements.caseStudyImages);
 
 // We want to observe the second Case Study Section
 if (DOMelements.caseStudySection)

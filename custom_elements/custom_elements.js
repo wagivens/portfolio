@@ -204,12 +204,14 @@ class ProjectHighlight extends HTMLElement
 		this.attachShadow({ mode: 'open' });
 	}
 
+  project;
   thumbnailName;
   title;
   blurb;
 
   async connectedCallback()
   {
+    this.project = this.attributes.getNamedItem('project').value;
     this.thumbnailName = this.attributes.getNamedItem('thumbnail').value;
     this.title = this.attributes.getNamedItem('title').value;
     this.blurb = this.attributes.getNamedItem('blurb').value;
@@ -257,6 +259,7 @@ class ProjectHighlight extends HTMLElement
         width: 100%;
         height: 100%;
         object-fit: cover;
+        object-position: center;
       }
       
       .project-highlight__details
@@ -273,7 +276,7 @@ class ProjectHighlight extends HTMLElement
 
       .project-highlight__title, .project-highlight__blurb
       {
-        font-size: clamp(1.6rem, 1.25vw, 3rem);
+        font-size: clamp(1.6rem, 1.25vw, 2rem);
       }
 
       .project-highlight__title
@@ -306,7 +309,7 @@ class ProjectHighlight extends HTMLElement
         }
       }
     </style>
-    <a href="/projects/messages/messages.html">
+    <a href="/projects/${this.project}/${this.project}.html">
       <div class="project-highlight">
         <div class="project-hightlight__thumbnail">
           <img src="../project_thumbnails/${this.thumbnailName}">
