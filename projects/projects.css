@@ -3,6 +3,10 @@
     margin: 0 auto;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 .emphasized {
     font-family: 'Kalam', cursive;
     color: var(--blue);
@@ -38,6 +42,7 @@
     padding: 1rem;
     box-shadow: 0 .2rem 1rem hsla(0, 0%, 15%, 20%);
     z-index: 9999;
+    transition: transform ease 200ms;
 }
 
 .scroll-to-top:hover {
@@ -97,7 +102,7 @@ h1, h2, h3, h4 {
 }
 
 .problem-statement {
-    background-color: var(--gray-light);
+    background-color: var(--blue-light);
     color: var(--black);
     border-radius: .5rem;
     margin: 0;
@@ -317,6 +322,10 @@ h1, h2, h3, h4 {
     .case-study {
         width: 90%;
         margin: 0 auto;
+    }
+
+    .scroll-to-top {
+        top: 75vh;
     }
 
     .intrapage-nav::after {
