@@ -13,7 +13,7 @@
   /* Dark Mode Styles */
   --blue-dark-mode: hsl(217, 64%, 60%);
   --light-gray-dark-mode: hsl(0, 0%, 70%);
-  --background-dark-mode: hsl(216, 10%, 8%);
+  --background-dark-mode: hsl(216, 16%, 6%);
 }
 
 html {
@@ -95,9 +95,9 @@ section {
 
 /* ----- Header Styling ----- */
 header {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
-  padding-top: 1.2rem; 
+  padding-top: 1.2rem;
 }
 
 .header-nav {
@@ -108,7 +108,7 @@ header {
 }
 
 .header-nav__name {
-  font-size: clamp(1.4rem, 2vw, 2rem);
+  font-size: clamp(1.6rem, 2vw, 2rem);
   letter-spacing: -0.1rem;
   font-weight: 600;
   color: var(--black);

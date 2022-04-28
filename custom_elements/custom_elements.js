@@ -72,27 +72,54 @@ class RepoHighlight extends HTMLElement {
               box-sizing: inherit;
             }
             
-              .repo-highlight {
-                padding: .1rem 1rem .5rem 1rem;
-                border: .1rem solid var(--blue);
-                border-radius: .5rem;
-                width: 90%;
-                max-width: 30rem;
-                margin-top: 2rem;
-                font-size: 1.4rem;
-                background-color: var(--white);
+            .repo-highlight {
+              display: flex;
+              column-gap: 1.2rem;
+              justify-content: center;
+              padding: 0 1.2rem 1.2rem;
+              border-radius: .5rem;
+              max-width: 30.38rem;
+              background:
+              linear-gradient(
+                105deg,
+                hsl(204.07, 75.7%, 58.04%) 0%,
+                hsl(203.93, 75.81%, 57.84%) 8.1%,
+                hsl(204.07, 76.96%, 57.45%) 15.5%,
+                hsl(203.93, 78.28%, 56.67%) 22.5%,
+                hsl(203.67, 79.65%, 55.69%) 29%,
+                hsl(203.81, 81.82%, 54.71%) 35.3%,
+                hsl(203.7, 84.03%, 53.33%) 41.2%,
+                hsl(203.6, 86.83%, 52.35%) 47.1%,
+                hsl(203.41, 88.84%, 50.78%) 52.9%,
+                hsl(203.38, 91.3%, 49.61%) 58.8%,
+                hsl(203.12, 93.52%, 48.43%) 64.7%,
+                hsl(203.12, 95.85%, 47.25%) 71%,
+                hsl(203.12, 97.47%, 46.47%) 77.5%,
+                hsl(203.12, 99.14%, 45.69%) 84.5%,
+                hsl(202.96, 100%, 45.1%) 91.9%,
+                hsl(202.96, 100%, 45.1%) 100%
+              );
+            }
+
+            .repo-highlight > * {
+              margin-top: 1.2rem;
+            }
+              
+              .repo-highlight__image {
+                width: 4rem;
+                height: 4rem;
+                box-shadow: 0 .4rem 1rem hsla(0, 0%, 0%, 0.2);
+                border-radius: .8rem;
+                object-fit: cover;
               }
               
-              .repo-highlight > * {
+              .repo-highlight__content > *:not(.repo-title) {
                 margin-top: 1rem;
               }
 
-              .repo-title {
-                font-size: 1.6rem;
-              }
-
-              .repo-link, .commit-link, .commits-link {
-                color: var(--blue);
+              .repo-title, .repo-link, .repo-description, .commit-link, .commit-date, .commits-link {
+                font-size: 1.4rem;
+                color: var(--white);
               }
 
               .repo-description {
@@ -101,15 +128,16 @@ class RepoHighlight extends HTMLElement {
               
               .repo-commit {
                 border-radius: .2rem;
-              }
-              
-              .repo-commit {
-                border: .05rem solid var(--gray);
+                border: .15rem dashed #D9D9D9;
                 padding: 1rem;
               }
               
               .repo-commit > *:not(:first-child) {
                 margin-top: 1rem;
+              }
+
+              .commit-date {
+                font-size: 1.4rem;
               }
 
               .all-commits {
@@ -120,77 +148,54 @@ class RepoHighlight extends HTMLElement {
                 text-decoration: none;
                 font-weight: 500;
               }
-              
-              .commit-date {
-                color: var(--gray-dark);
-              }
-
-              @media(min-width: 720px) {
-                .repo-highlight {
-                  font-size: 1.6rem;
-                }
-                
-                .repo-title {
-                  font-size: 2rem;
-                }
-              }
 
               @media (prefers-color-scheme: dark) {
                 .repo-highlight {
+                  background: none;
                   background-color: hsl(220, 8%, 15%);
                 }
 
-                .repo-link, .commit-link, .commits-link {
-                  color: var(--blue-dark-mode);
-                }
-
                 .repo-commit {
-                  background-color: hsl(223, 7%, 20%);
+                  border-color: hsla(0, 0%, 50%, 40%);
                 }
-                
-                .repo-highlight, .repo-commit {
-                  border: none;
-                }
+              }
 
-                .repo-title, .repo-description {
-                  color: var(--light-gray-dark-mode);
-                }
-
-                .commit-date {
-                  color: var(--white);
-                }
+              @media(min-width: 720px) {
               }
       </style>
         <div class="repo-highlight">
-            <h3 class="repo-title">${this.repoOwner} / 
-                <a class="repo-link" href="https://github.com/${this.repoOwner}/${this.repoName}">${this.repoName}</a>
-            </h3>
-            <p class="repo-description">
-              ${this.repoDescription}
-            </p>
-            <div class="repo-commit">
-              <h4 class="commit-msg">
-                <a class="commit-link" 
-                href="${this.commits[0].html_url}">
-                ${this.commits[0].commit.message}
+            <img class="repo-highlight__image" src="/custom_elements/image-placeholder-light.png" width="400px" height="400px">
+            <div class="repo-highlight__content">
+              <h3 class="repo-title">${this.repoOwner} / 
+                  <a class="repo-link" href="https://github.com/${this.repoOwner}/${this.repoName}">${this.repoName}</a>
+              </h3>
+              <p class="repo-description">
+                ${this.repoDescription}
+              </p>
+              <div class="repo-commit">
+                <h4 class="commit-msg">
+                  <a class="commit-link" 
+                  href="${this.commits[0].html_url}">
+                  ${this.commits[0].commit.message}
+                  </a>
+                </h4>
+                <p class="commit-date">committed on ${printCommitDate(this.commits[0].commit.author.date)}</p>
+              </div>
+              <div class="repo-commit">
+                <h4 class="commit-msg">
+                  <a class="commit-link" 
+                  href="${this.commits[1].html_url}">
+                  ${this.commits[1].commit.message}
+                  </a>
+                </h4>
+                <p class="commit-date">committed on ${printCommitDate(this.commits[1].commit.author.date)}</p>
+              </div>
+              <h3 class="all-commits">
+                <a class="commits-link" href="https://github.com/${this.repoOwner}/${this.repoName}/commits?author=wagivens">
+                  All of My Commits &#10142;
                 </a>
-              </h4>
-              <p class="commit-date">committed on ${printCommitDate(this.commits[0].commit.author.date)}</p>
+              </h3>
             </div>
-            <div class="repo-commit">
-              <h4 class="commit-msg">
-                <a class="commit-link" 
-                href="${this.commits[1].html_url}">
-                ${this.commits[1].commit.message}
-                </a>
-              </h4>
-              <p class="commit-date">committed on ${printCommitDate(this.commits[1].commit.author.date)}</p>
-            </div>
-            <h3 class="all-commits">
-              <a class="commits-link" href="https://github.com/${this.repoOwner}/${this.repoName}/commits?author=wagivens">
-                All of My Commits &#10142;
-              </a>
-            </h3>
         </div>
         `;
 		this.shadowRoot.append(repoHighlightTemplate.content.cloneNode(true));

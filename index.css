@@ -1,6 +1,6 @@
 /* Home Page Styling */
 .home-page-container {
-  margin: 10rem auto 0;
+  margin: auto 0;
   width: 100%;
 }
 
@@ -16,11 +16,7 @@
 }
 
 .home-page-section:first-of-type {
-  margin-bottom: 5rem;
-}
-
-.home-page-section:nth-child(2n){
-  background-color: hsl(215, 100%, 95%);
+  margin-bottom: 2rem;
 }
 
 .home-page-section__content > * {
@@ -46,7 +42,7 @@
 }
 
 .introduction p {
-  font-size: 2rem;
+  font-size: clamp(1.6rem, 2vw, 2rem);
   font-weight: 400;
   line-height: 3rem;
 }
@@ -82,7 +78,7 @@
 }
 
 .btn-container > a {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding: 1.5rem;
   border-radius: 0.5rem;
   display: flex;
@@ -104,14 +100,6 @@
   background-color: var(--blue);
   color: var(--white);
   font-weight: 500;
-  margin-left: 1rem;
-}
-
-.handwave {
-  will-change: transform;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   margin-left: 1rem;
 }
 
@@ -161,10 +149,6 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .home-page-section:nth-child(2n){
-    background-color: hsl(240, 2%, 8%);
-  }
-
   .introduction p, .about-heading p, 
   .home-page-section__heading {
     color: var(--white);
