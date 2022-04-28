@@ -27,77 +27,38 @@ if (DOMelements.handEmoji != null)
   setInterval(waveHand, 3000);
 }
 
-// Moving an image forward and backward based on scroll direction.
-let transformXIncrement = 0;
-let currentYPosition = window.pageYOffset;
-// window.addEventListener('scroll', () => {
-//   const image = DOMelements.msgsImage;
-//   let newYPosition = window.pageYOffset;
-
-//   // image.animate([
-//   //   {transform: `translateX(${transformXIncrement++}px)`}
-//   // ], 1);
-
-//   // transformXIncrement++;
-//   // currentYPosition = window.pageYOffset;
-
-//   if (newYPosition < currentYPosition) {
-//     image.style.transform = `translateX(${transformXIncrement--}px)`;
-//     transformXIncrement--;
-//     currentYPosition = window.pageYOffset;
-//   }
-
-//   if (newYPosition > currentYPosition) {
-//     image.style.transform = `translateX(${transformXIncrement++}px)`;
-//     transformXIncrement++;
-//     currentYPosition = window.pageYOffset;
-//   }
-// })
-
 /* Intrapage Navigation Functionality: 
 For each intrapage-nav__link, add a listener for a click event. When the
 link is clicked, grab its text content and set it as the variable sectionID.
 Lastly, use the sectionID to scroll the resepctive section into view. */
 let intranavLinks = document.querySelectorAll(".intrapage-nav__link");
 intranavLinks.forEach((link) => {
+  let sectionID = link.textContent;
   link.addEventListener("click", () => {
-    let sectionID = link.textContent;
     document.getElementById(sectionID).scrollIntoView({ behavior: "smooth" });
+  });
+  link.addEventListener("keypress", (e) => {
+    if(e.code == 'Enter')
+      document.getElementById(sectionID).scrollIntoView({ behavior: "smooth" });
   });
 });
 
 // Scroll-to-Top Button
-if (document.querySelector(".scroll-to-top"))
-  document.querySelector(".scroll-to-top").addEventListener("click", () => {
+if (DOMelements.scrollToTop)
+  DOMelements.scrollToTop.addEventListener("click", () => {
     document
       .querySelector(".intrapage-nav")
       .scrollIntoView({ behavior: "smooth" });
-  });
-
-// Setting up Intersection Observer for Image Lazy-Loading
-const imageObserver = function (list) {
-  let elementObserver = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting)
-        {
-          entry.target.style.visibility = "visible";
-          console.log(entry.target, entry.target.style.visibility);
-        }
-        observer.unobserve(entry.target);
-      });
-    },
+  DOMelements.scrollToTop.addEventListener('keypress', (e) => {
+    if (e.code == 'Enter')
     {
-      root: null,
-      threshold: 0.1,
-      rootMargin: "0px",
+      e.preventDefault();
+      document
+        .querySelector(".intrapage-nav")
+        .scrollIntoView({ behavior: "smooth" });
     }
-  );
-
-  list.forEach((item) => {
-    elementObserver.observe(item);
   });
-};
+});
 
 const sectionObserver = new IntersectionObserver(
   (intersectionEntries) => {
@@ -107,8 +68,10 @@ const sectionObserver = new IntersectionObserver(
         window.pageYOffset < entry.boundingClientRect.y
       ) {
         DOMelements.scrollToTop.classList.add("hidden");
+        intranavLinks.item(0).focus();
       } else {
         DOMelements.scrollToTop.classList.remove("hidden");
+        DOMelements.scrollToTop.focus();
       }
     });
   },
@@ -118,9 +81,6 @@ const sectionObserver = new IntersectionObserver(
     rootMargin: "0px",
   }
 );
-
-// Observer for Image Lazy Loading
-// imageObserver(DOMelements.caseStudyImages);
 
 // We want to observe the second Case Study Section
 if (DOMelements.caseStudySection)

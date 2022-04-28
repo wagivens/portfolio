@@ -13,7 +13,7 @@
   /* Dark Mode Styles */
   --blue-dark-mode: hsl(217, 64%, 60%);
   --light-gray-dark-mode: hsl(0, 0%, 70%);
-  --background-dark-mode: hsl(216, 16%, 8%);
+  --background-dark-mode: hsl(216, 10%, 8%);
 }
 
 html {
@@ -95,9 +95,9 @@ section {
 
 /* ----- Header Styling ----- */
 header {
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
-  /* padding: 3rem; */
+  padding-top: 1.2rem; 
 }
 
 .header-nav {
@@ -108,31 +108,31 @@ header {
 }
 
 .header-nav__name {
-  font-size: clamp(1.6rem, 2vw, 2rem);
+  font-size: clamp(1.4rem, 2vw, 2rem);
   letter-spacing: -0.1rem;
   font-weight: 600;
-  color: var(--white);
+  color: var(--black);
   margin-right: auto;
-  padding: 0.6rem 2rem;
-  background-color: hsl(0, 0%, 0%);
-  -webkit-clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 5% 100%);
-  clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 5% 100%);
+  padding: 0.6rem 0;
 }
 
 .header-nav__item {
   color: var(--black);
   transition: color 250ms ease;
-  font-size: clamp(1.6rem, 1.5vw, 2rem);
-  list-style: none;
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  font-weight: 400;
 }
 
 .header-nav__item:not(:first-of-type) {
   margin-left: 2rem;
 }
 
-.header-nav__item:hover,
-.header-nav__item:focus {
+.header-nav__item:hover {
   color: var(--blue);
+}
+
+.header-nav__item:focus {
+  border: .2rem dashed var(--blue);
 }
 
 main {
@@ -212,7 +212,7 @@ footer {
 @media (min-width: 720px) {
   header {
     width: 85%;
-    margin: 0 auto;
+    padding-top: 2rem; 
   }
 
   .header-nav__name {
