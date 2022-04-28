@@ -114,7 +114,7 @@ h1, h2, h3, h4 {
 }
 
 .subsection__title{
-    font-size: clamp(1.2rem, 2vw, 1.6rem);
+    font-size: clamp(1.2rem, 4vw, 2rem);
     font-weight: 600;
 }
 
@@ -140,7 +140,7 @@ h1, h2, h3, h4 {
 .figure-container {
     display: flex;
     column-gap: 1rem;
-    width: 70%;
+    width: 100%;
 }
 
 .figure-container > figure
@@ -158,13 +158,13 @@ h1, h2, h3, h4 {
 
 .figure-container > figure > figcaption
 {
-    font-size: clamp(1rem, 2vw, 1.4rem);
+    font-size: clamp(1.2rem, 2.2vw, 1.4rem);
     color: var(--black);
     text-align: center;
     margin: .8rem auto 0 auto;
     font-weight: 600;
-    line-height: 1.6rem;
-    width: 75%;
+    line-height: 175%;
+    width: 90%;
 }
 
 .figcap-title
@@ -261,7 +261,7 @@ h1, h2, h3, h4 {
     /* Text */
     .main-paragraph {
         font-size: 1.4rem;
-        line-height: 2.4rem;
+        line-height: 3rem;
     }
 
     /* Media */
