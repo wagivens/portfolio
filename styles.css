@@ -168,8 +168,7 @@ footer {
   }
 
   .header-nav__name {
-    color: var(--gray-dark);
-    background-color: var(--white);
+    color: var(--white);
   }
 
   .header-nav__item {
@@ -213,9 +212,5 @@ footer {
   header {
     width: 85%;
     padding-top: 2rem; 
-  }
-
-  .header-nav__name {
-    padding: 0.6rem 6rem;
   }
 }

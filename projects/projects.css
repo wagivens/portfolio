@@ -233,6 +233,10 @@ h1, h2, h3, h4 {
     }
 
     .figcap-title {
+        color: var(--blue-dark-mode);
+    }
+
+    .figure-container > figure > figcaption {
         color: var(--white);
     }
 }
