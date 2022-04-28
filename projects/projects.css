@@ -140,7 +140,7 @@ h1, h2, h3, h4 {
 .figure-container {
     display: flex;
     column-gap: 1rem;
-    width: 100%;
+    width: 70%;
 }
 
 .figure-container > figure
@@ -148,7 +148,9 @@ h1, h2, h3, h4 {
     flex-grow: 1;
 }
 
-.figure-container > figure > img, .figure-container > figure > picture, 
+.figure-container > figure,
+.figure-container > figure > img, 
+.figure-container > figure > picture, 
 .figure-container > figure > picture > img
 {
     width: 100%;
@@ -156,11 +158,11 @@ h1, h2, h3, h4 {
 
 .figure-container > figure > figcaption
 {
-    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-size: clamp(1rem, 2vw, 1.4rem);
     color: var(--black);
     text-align: center;
     margin: .8rem auto 0 auto;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1.6rem;
     width: 75%;
 }
@@ -168,6 +170,7 @@ h1, h2, h3, h4 {
 .figcap-title
 {
     font-weight: 600;
+    color: var(--blue);
 }
 
 /* Elements */

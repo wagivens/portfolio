@@ -68,10 +68,10 @@ const sectionObserver = new IntersectionObserver(
         window.pageYOffset < entry.boundingClientRect.y
       ) {
         DOMelements.scrollToTop.classList.add("hidden");
-        intranavLinks.item(0).focus();
+        intranavLinks.item(0).focus({preventScroll:true});
       } else {
         DOMelements.scrollToTop.classList.remove("hidden");
-        DOMelements.scrollToTop.focus();
+        DOMelements.scrollToTop.focus({preventScroll:true});
       }
     });
   },
