@@ -294,7 +294,7 @@ class ProjectHighlight extends HTMLElement
       {
         font-weight: 400;
         line-height: 2.8rem;
-        color: var(--gray);
+        color: var(--black);
         max-width: 20ch;
       }
 
