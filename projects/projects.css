@@ -127,14 +127,19 @@ h1, h2, h3, h4 {
 
 /* Media */
 .project-banner {
-    width: 100vw;
-    max-width: 200rem;
-    margin: 0 auto;
+    width: 85%;
+    max-width: 100rem;
+    margin: 0 auto 4rem;
+    border-radius: .8rem;
+    overflow: hidden;
+    max-height: 40rem;
 }
 
 .project-banner__image {
     width: 100%;
-    max-width: 200rem;
+    /* max-width: 200rem; */
+    object-fit: cover;
+    height: 40rem;
 }
 
 .figure-container {

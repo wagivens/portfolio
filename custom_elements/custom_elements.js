@@ -242,21 +242,20 @@ class ProjectHighlight extends HTMLElement
       
       .project-highlight
       {
-        width: fit-content;
-        max-width: 38.5rem;
-        height: 52.5rem;
+        width: 100%;
+        max-width: 50rem;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 2.8rem;
       }
 
       .project-hightlight__thumbnail
       {
-        height: 70%;
-        width: 100%;
-        overflow-y: hidden;
-        object-fit: fill;
-        border-top-left-radius: .2rem;
-        border-top-right-radius: .2rem;
+        width: 25%;
+        overflow: hidden;
+        border-radius: .8rem;
+        box-shadow: 0 .4rem 1rem hsla(0, 0%, 0%, 10%);
       }
 
       .project-hightlight__thumbnail > img
@@ -269,19 +268,21 @@ class ProjectHighlight extends HTMLElement
       
       .project-highlight__details
       {
+        width: 75%;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        background-color: hsl(0, 0%, 92%);
-        padding: 2rem 1.5rem;
+        align-content: flex-start;
         flex-grow: 1;
-        border-bottom-left-radius: .2rem;
-        border-bottom-right-radius: .2rem;
       }
 
-      .project-highlight__title, .project-highlight__blurb
+      .project-highlight__details > *:not(:first-child)
       {
-        font-size: clamp(1.6rem, 1.25vw, 2rem);
+        margin-top: 1.2rem;
+      }
+
+      .project-highlight__title, .project-highlight__blurb, .project-highlight__link
+      {
+        font-size: clamp(1.4rem, 1.075vw, 2rem);
       }
 
       .project-highlight__title
@@ -291,18 +292,43 @@ class ProjectHighlight extends HTMLElement
 
       .project-highlight__blurb
       {
-        font-weight: 500;
-        line-height: 3rem;
+        font-weight: 400;
+        line-height: 2.8rem;
         color: var(--gray);
+        max-width: 20ch;
+      }
+
+      .project-highlight__link
+      {
+        color: var(--blue);
+      }
+
+      @media (max-width: 749px)
+      {
+        .project-highlight
+        {
+          column-gap: 2rem;
+          align-items: flex-start;
+        }
+
+        .project-highlight__details > *:not(:first-child)
+        {
+          margin-top: .8rem;
+        }
+
+        .project-highlight__blurb
+        {
+          line-height: 2.4rem;
+        }
       }
 
       @media(prefers-color-scheme: dark)
       {
-        .project-highlight__details
+        .project-highlight__thumbnail
         {
-          background-color: hsl(0, 0%, 10%);
+          box-shadow: none;
         }
-
+        
         .project-highlight__title
         {
           color: var(--white);
@@ -310,21 +336,26 @@ class ProjectHighlight extends HTMLElement
 
         .project-highlight__blurb
         {
-          color: var(--gray);
+          color: var(--gray-light);
+        }
+
+        .project-highlight__link
+        {
+          color: var(--blue-dark-mode);
         }
       }
     </style>
-    <a href="/projects/${this.project}/${this.project}.html">
       <div class="project-highlight">
-        <div class="project-hightlight__thumbnail">
-          <img src="../project_thumbnails/${this.thumbnailName}">
-        </div>
+        <img class="project-hightlight__thumbnail" src="/projects/${this.project}/${this.thumbnailName}"
+        alt="Thumbnail for ${this.project} case study.">
         <div class="project-highlight__details">
           <h2 class="project-highlight__title">${this.title}</h2>
           <p class="project-highlight__blurb">${this.blurb}</p>
+          <a class="project-highlight__link" href="/projects/${this.project}/${this.project}.html">
+            View Case Study
+          </a>
         </div>
       </div>
-    </a>
     `;
     this.shadowRoot.append(projectHighlightTemplate.content.cloneNode(true));
   }
