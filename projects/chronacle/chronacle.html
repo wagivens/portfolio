@@ -13,7 +13,7 @@
         rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="../../styles.css" />
     <link rel="stylesheet" type="text/css" href="../projects.css" />
-    <title>Chronacle</title>
+    <title>Chronacle • Will Givens IV</title>
 </head>
 
 <body class="fadeIn">
@@ -35,12 +35,21 @@
             <li class="intrapage-nav__link" tabindex="0" role="link">Overview</li>
             <li class="intrapage-nav__link" tabindex="0" role="link">Research</li>
             <li class="intrapage-nav__link" tabindex="0" role="link">Prototyping</li>
-            <li class="intrapage-nav__link" tabindex="0" role="link">Reflection</li>
+            <li class="intrapage-nav__link" tabindex="0" role="link">Next Steps</li>
         </ul>
     </nav>
     <main class="case-study">
         <h1 class="project-title">Chronacle</h1>
         <button class="scroll-to-top" type="button">&uarr;</button>
+
+        <div class="info-tidbits">
+            <h3 class="tidbit-title"><span class="emphasized">Timeline and Disciplines</span></h3>
+            <p class="tidbit-paragraph"><strong>December 2021 - Ongoing</strong></p>
+            <p class="tidbit-paragraph">Visual Design, Interaction Design,
+                Wireframing, Prototyping, Product Thinking
+            </p>
+        </div>
+
         <section class="case-study__section" id="Overview">
             <h2 class="section__title">Overview</h2>
             <h3 class="subsection__title">Trip Planning on Notion</h3>
@@ -84,6 +93,28 @@
                 what does the design process look like with limited information about your
                 target users and their motivations?
             </p>
+            <h3 class="subsection__title">User Interview</h3>
+            <p class="main-paragraph">
+                At this point in the design process, you're likely
+                conducting interviews with folks you think are part
+                of your target user group. I decided I would do a short
+                interview with only one person to discover more about
+                their trip-planning process. This person:
+            </p>
+            <ul class="list">
+                <li class="list-item">Looks through trip planning applications (ex: TripAdvisor) beforehand for
+                    activities they can do while there.</li>
+                <li class="list-item">Considers the cost and safety of each activity, as well as the reviews.
+                    Reputation is important for places they have never been to.</li>
+                <li class="list-item">Tends to save plans (ex: sites they want to see) to their phone or a note-taking
+                    application online (like Notion).</li>
+            </ul>
+            <p class="main-paragraph">
+                These insights were great, but obviously not enough. I decided to also complete a competitive analysis,
+                reviewing applications from competitors (Trip Advisor, Wanderlog, and TripScout) and analyzing their
+                features/user flows.
+            </p>
+
             <h3 class="subsection__title">Competitive Analysis</h3>
             <p class="main-paragraph">
                 After examining the applications from the three competitors,
@@ -124,13 +155,17 @@
                   with the background blurred.">
                 </figure>
             </div>
+            <p class="main-paragraph">
+                These four flows were what I decided to primarily focus on
+                for Chronacle.
+            </p>
         </section>
         <section class="case-study__section" id="Ideating">
             <h2 class="section__title">Crafting the Solution</h2>
             <h3 class="subsection__title">Sketching</h3>
             <p class="main-paragraph">
-                After examining the applications from the three competitors,
-                I noted what I believed to be the most important user flows and screens shared among them:
+                I did a couple Crazy 8s ideation sessions to create some explorations of potential solutions.
+                (Unfortunately, photos of the mobile-view sketches are lost).
             </p>
             <div class="figure-container half-width">
                 <figure>
@@ -204,6 +239,17 @@
                 Even after completing the high-fidelity designs for Chronacle,
                 I noticed there were some elements of the product that could be refined.
             </p>
+            <p class="main-paragraph">Here is what I changed:</p>
+            <ul class="list">
+                <li class="list-item">For the main Trip page, I refined the itinerary date list to be cleaner, changed
+                    the activity rating to be more consistent with the Explore page, and moved all activity actions into
+                    their own menu.</li>
+                <li class="list-item">Within the Explore page, I made use of breadcrumbs instead of buttons. This lets
+                    the user know how far into the Explore section they are and provides easy backtracking.</li>
+                <li class="list-item">When a user is searching for activities, results are segmented using pagination. I
+                    decided on this instead of a “load more” button so users can know which page they found certain
+                    activities on.</li>
+            </ul>
             <div class="figure-container half-width">
                 <figure>
                     <img src="./refinements-trip_page.png" alt="Two separate Messages screens. The first screen shows a message
@@ -225,6 +271,30 @@
                   with the background blurred.">
                 </figure>
             </div>
+        </section>
+        <section class="case-study__section" id="Next Steps">
+            <h2 class="section__title">Next Steps</h2>
+            <p class="main-paragraph">Now that the designs for Chronacle are finished, my next tasks will be:</p>
+            <ul class="list">
+                <li class="list-item"><span class="emphasized">Usability testing.</span> This is of utmost importance
+                    since I can learn the most about
+                    my current designs by simply testing them, allowing me to iterate as needed.</li>
+                <li class="list-item">Putting together a <span class="emphasized">design system in Storybook.</span>
+                    Using Storybook to create a design
+                    system will allow me to have a single source of truth for various aspects of the product (visual,
+                    layout, components, etc).</li>
+                <li class="list-item">Development.
+                    I'm excited to make use of <span class="emphasized">Design Tokens and Web Components</span>
+                    when developing Chronacle.
+                    <span class="emphasized">Design Tokens</span> will allow me to easily incorporate design
+                    decisions into my development workflow;
+                    I'll only have to change design decisions in one place
+                    and it will cascade through the entire design system/product.
+                    <span class="emphasized">Web Components</span> are an exciting addition to the JavaScript language,
+                    and tooling for them is growing as they become more popular.
+                    I will specifically be using the Lit framework to develop Chronacle's components.
+                </li>
+            </ul>
         </section>
     </main>
     <footer>
