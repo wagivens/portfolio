@@ -8,29 +8,24 @@
   <meta name="description" content="Read the UX case study for Econia, a native mobile application
   targeted at college students/young adults who recycle.">
   <link
-    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600&family=Spartan:wght@200;400;600&family=Kalam&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600&family=Spartan:wght@200;400;500;600&family=Kalam&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../styles.css" />
   <link rel="stylesheet" type="text/css" href="../projects.css" />
-  <title>Will Givens IV • UX Designer and Front-End Developer | Econia</title>
+  <title>Econia • Will Givens IV</title>
 </head>
 
 <body class="fadeIn">
   <header>
     <nav class="navigation header-nav flex-row">
-      <p class="header-nav__name">
-        <a href="https://wagivens.github.io">Will Givens IV</a>
-      </p>
-      <li class="header-nav__item">
-        <a href="https://github.com/wagivens">GitHub</a>
-      </li>
-      <li class="header-nav__item">
-        <a href="../../WillardGivensResume_Apr2022.pdf">Resume</a>
-      </li>
+      <a href="https://wagivens.github.io" class="header-nav__name" role="link">Will Givens IV</a>
+      <a href="https://github.com/wagivens" class="header-nav__item" role="link">GitHub</a>
+      <a href="../../WillardGivensResume_Apr2022.pdf" class="header-nav__item" role="link">Resume</a>
     </nav>
   </header>
   <div class="project-banner">
-    <img class="project-banner__image" src="./project-banner-econia.png">
+    <img class="project-banner__image" src="./project-banner-econia.png"
+      alt="Large banner for Econia featuring a green background and multiple mockups.">
   </div>
 
   <!-- Intrapage Navigation -->
@@ -42,7 +37,7 @@
       <li class="intrapage-nav__link">Ideating</li>
       <li class="intrapage-nav__link">Prototyping</li>
       <li class="intrapage-nav__link">Testing</li>
-      <li class="intrapage-nav__link">Reflection</li>
+      <li class="intrapage-nav__link">Redesign</li>
     </ul>
   </nav>
 
@@ -54,54 +49,65 @@
       <p class="main-paragraph">
         Living sustainably is becoming increasingly important as the effects of climate change become more apparent.
         Young adults enjoy trying to live green, particularly by recycling, but the process can be confusing and the
-        benefits are not always clear. This prompted a team of myself and 4 others, as part of my “Design for User
-        Experience” course, to remedy those issues with a new digital product.
+        benefits are not always clear. This prompted a team of myself and 4 others, as part of a university
+        course, to remedy those issues with a new digital product: Econia.
       </p>
-      <h2 class="section__title">The Rundown</h2>
+
+      <div class="figure-container half-width">
+        <figure>
+          <img src="./redesign-flow-login.png" alt="Mockups of the Login and Home pages.">
+        </figure>
+        <figure>
+          <img src="./redesign-flow-scan.png" alt="Mockups of the Item Scanning flow.">
+        </figure>
+      </div>
+      <div class="figure-container half-width">
+        <figure>
+          <img src="./redesign-flow-list.png" alt="Mockups of the Scanned Items page.">
+        </figure>
+      </div>
+      <div class="figure-container half-width">
+        <figure>
+          <img src="./redesign-flow-recycle.png" alt="Mockups of the Recycling flow.">
+        </figure>
+      </div>
+      <div class="figure-container half-width">
+        <figure>
+          <img src="./redesign-flow-profile.png" alt="Mockups of the Profile page.">
+        </figure>
+        <figure>
+          <img src="./redesign-flow-rewards.png" alt="Mockups of the Rewards page.">
+        </figure>
+      </div>
+
+      <h2 class="section__title">Overview</h2>
       <article class="problem-statement">
-        <p class="problem-statement__text"><strong>Problem:</strong>
+        <p class="problem-statement__text"><span class="emphasized">Problem:</span>
           Young adults are often confused about which products to recycle and
           how to recycle them due to the wide range of recyclable materials
           and recycling parameters. As such, recyclable waste ends up in landfills
           instead of recycling centers. </p>
       </article>
 
-      <div class="summary-box flex-row">
-        <div class="summary-section">
-          <h3 class="summary-title" id="Summary">Summary</h3>
-          <p class="summary-paragraph">
-            A team of myself and four others crafted a native mobile application focused on simplifying the recycling
-            process for young adults while also educating them on sustainability and providing relevant incentives for
-            living green.
-          </p>
-        </div>
-        <div class="summary-section">
-          <h3 class="summary-title">Timeline and Disciplines</h3>
-          <p class="summary-paragraph">August 2020 - November 2020</p>
-          <p class="summary-paragraph">Design Thinking Framework, User Research,
-            Wireframing, Design System, Prototyping, Usability Testing
-          </p>
-        </div>
+      <div class="info-tidbits">
+        <h3 class="tidbit-title"><span class="emphasized">Timeline and Disciplines</span></h3>
+        <p class="tidbit-paragraph"><strong>August 2020 - November 2020</strong></p>
+        <p class="tidbit-paragraph">Design Thinking/Process, User Research,
+          Wireframing, Prototyping, Usability Testing, Interaction Design, Visual Design
+        </p>
       </div>
+
     </section>
     <section class="case-study__section">
-      <h2 class="section__title">The Solution</h2>
+      <h2 class="section__title">The Original Solution</h2>
 
       <p class="main-paragraph">My team and I utilized the Design Thinking Framework
         throughout the course of one semester to create a mobile application that would
-        simultaneously educate users and incentivize them to recycle.
-        As such, our process involved:</p>
-      <ol class="list" id="project-timeline">
-        <li class="list-item">Defining the Product</li>
-        <li class="list-item">Empathizing With Target Users</li>
-        <li class="list-item">Ideating Potential Solutions</li>
-        <li class="list-item">Prototyping Solutions</li>
-        <li class="list-item">Testing Final Designs for Usability</li>
-      </ol>
+        simultaneously educate users and incentivize them to recycle.</p>
 
       <!-- Defining -->
       <h3 class="subsection__title" id="Defining">Defining the Product</h3>
-      <p class="main-paragraph">To begin, our team conducted a
+      <p class="main-paragraph">We began with a
         <span class="emphasized">competitive analysis</span>
         on recycling apps and sites. By comparing the features, strengths, and weaknesses of different products, we
         discovered that many recycling apps/sites are
@@ -109,9 +115,11 @@
         enjoyable user experiences. However, they are purely educational and lack
         incentives to motivate users to apply their recycling knowledge.
       </p>
-
-      <img class="main-image" src="./competitive-matrix.png"
-        alt="Competitive matrix that was used to analyze the market.">
+      <div class="figure-container half-width">
+        <figure>
+          <img src="./highlight-competitive-analysis.png" alt="Competitive matrix that was used to analyze the market.">
+        </figure>
+      </div>
 
       <!-- Empathizing -->
       <h3 class="subsection__title" id="Empathizing">Empathizing With Target Users</h3>
@@ -124,11 +132,11 @@
       <p class="main-paragraph">Our survey revealed:</p>
       <ul class="list">
         <li class="list-item">71% of respondents reported
-          having a very positive attitude towards recycling,
+          feeling positive towards recycling,
           but only 28% felt like their knowledge of recycling was extensive.
         </li>
         <li class="list-item">92% reported receiving no compensation for
-          recycling, but a majority (69%) said they would recycle more if they
+          recycling, and a majority (69%) said they would recycle more if they
           received something in return.
         </li>
         <li class="list-item">Over half (57%) said they never pay attention to
@@ -136,7 +144,7 @@
         </li>
       </ul>
 
-      <p class="main-paragraph">Our one-on-one interviews taught us that
+      <p class="main-paragraph">Our interviews taught us that
         young adults are:</p>
       <ul class="list">
         <li class="list-item">Often influenced by
@@ -145,125 +153,109 @@
         <li class="list-item">Enthusiastic about
           sustainable/reusable alternatives to products they commonly recycle.
         </li>
-        <li class="list-item">Interested in lifestyle apps that help them with
-          their daily routines.
+        <li class="list-item">Interested in lifestyle apps they can easily integrate
+          into their daily routines.
         </li>
       </ul>
 
       <p class="main-paragraph">Using our competitive analysis and research, we decided it was
-        imperative for our product to further educate users on recyclable products and the recycling process.
-        We would also need to provide healthy peer pressure and relevant incentives for participating.
+        imperative for our product to further
+        <span class="emphasized">educate users on recyclable products and the recycling process</span>.
+        We would also need to
+        <span class="emphasized">provide healthy peer pressure and relevant incentives</span> for participating.
       </p>
 
       <p class="main-paragraph">
         From there, we completed
-        <span class="emphasized">empathy maps</span> and
-        <span class="emphasized">personas</span> for our two main types of users.
+        <span class="emphasized">empathy maps</span> for our two main types of users.
         Our primary user was a young adult who greatly favors recycling but believes the process
         is not streamlined enough. Our secondary user felt indifferent towards recycling
         but does it out of convenience and peer pressure.
       </p>
 
-      <img class="main-image" src="./empathy-map-1.png" alt="Empathy Map for User 1">
-      <img class="main-image" src="./empathy-map-2.png" alt="Empathy Map for User 2">
-      <img class="main-image" src="./persona-1.png" alt="Persona Profile for User 1">
-      <img class="main-image" src="./persona-2.png" alt="Persona Profile for User 2">
+      <div class="figure-container half-width">
+        <figure>
+          <img src="./highlight-empathy-maps.png" alt="Photo of two empathy maps, one for each user type.">
+        </figure>
+      </div>
 
       <!-- Ideating -->
       <h3 class="subsection__title" id="Ideating">Ideating Potential Solutions</h3>
       <p class="main-paragraph">Our ideation process started with us proposing
         <span class="emphasized">"How Might We?"</span>
-        questions and dot-voting which ones we felt best about. Our most popular ones revolved around educating users,
-        providing incentives, and integrating easily into users' lives.
+        questions and dot-voting which themes we felt best about. Our most popular ones revolved around educating users,
+        providing incentives, and integrating easily into users' lives, so we decided to primarily focus on those.
       </p>
+      <div class="figure-container half-width">
+        <figure>
+          <img src="./highlight-affinity-map.png" alt="Photo of our Affinity Map with dot mapping.">
+        </figure>
+      </div>
 
-      <img class="main-image" src="./affinity-map.png" alt="Affinity map with dot mapping.">
-
-      <p class="main-paragraph">From there, we conducted a Crazy 8s sketching session and
-        dot-voted those as well. <span class="emphasized">My team took very well to my
-          suggestions of a profile page and showing a user's reward status on the screen after
-          they complete a recycle.
-        </span>
+      <p class="main-paragraph">From there, we conducted a <span class="emphasized">Crazy 8s</span> sketching session
+        and
+        dot-voted those as well. Here are some of my early explorations of the application:
       </p>
+      <div class="figure-container half-width">
+        <figure>
+          <img src="./sketches.png" alt="Sketches of my early explorations for Econia.">
+        </figure>
+      </div>
+
 
       <!-- Prototyping -->
       <h3 class="subsection__title" id="Prototyping">Prototyping Final Solutions</h3>
       <p class="main-paragraph">Before prototyping, we constructed a sitemap and
-        preliminary wireframes of our application.
+        wireframes of our application.
       </p>
-
-      <img src="sitemap.png" alt="Econia sitemap" class="main-image">
-      <img src="wireframe.png" alt="3 screens in the Econia wireframe file" class="main-image">
-
-      <!-- Design System -->
-      <p class="main-paragraph">We also put together a design system for consistent styling and rapid prototyping.
-        Here are examples of our color palette, font, and logo.
-      </p>
-
-      <img class="main-image" src="./design-system-example.png" alt="">
-
-      <p class="main-paragraph">Econia's color palette consisted mostly of blue and green Earth tones to represent
-        freshness and nature. Our primary font, Roboto, was chosen because of its simplicity, and our logo incorporated
-        a recycling icon to remind users of the product's purpose.
-      </p>
-
-      <!-- Hi-Fi Mockups -->
-      <p class="main-paragraph">Then, we put everything together to create our high-fidelity mockups.
-      </p>
-
-      <div class="process-step flex-row">
-        <div class="process-step__info">
-          <h4 class="process-step__title">Scanning a Recyclable Product</h4>
-          <p class="process-step__description">The Home page shows users how other users in their area are using the
-            application. We thought presenting users with a list of other people's recycling achievements would promote
-            healthy peer pressure.</p>
-
-          <p class="process-step__description">Users would scan a recyclable item to start Econia's recycling process.
-            They would earn a small number of points simply by scanning, after which they could save it to their list to
-            recycle later (if they couldn't in the moment) or locate nearby bins to deposit the item.
-          </p>
-        </div>
-        <figure class="process-step__image-container">
-          <img class="process-step__image-image" src="./mockup-home.png"
-            alt="Econia's Home page, which shows a list of other users and their recent successful recycles.">
-          <img class="process-step__image-image" src="./mockup-scanner.png"
-            alt="Econia's scanner page, which tells users to take a photo of their recyclable item.">
-          <img class="process-step__image-image" src="./mockup-postscan.png"
-            alt="A popup modal shown after users scan an item, letting users save items to their list or locate nearby bins.">
+      <div class="figure-container half-width">
+        <figure>
+          <img src="./wireframes-1.png" alt="Photos of wireframes for the Login and Scanning pages.">
+        </figure>
+        <figure>
+          <img src="./wireframes-2.png" alt="Photos of wireframes for the Recycling and Profile pages.">
+        </figure>
+      </div>
+      <div class="figure-container half-width">
+        <figure>
+          <img src="./wireframes-3.png" alt="Photos of wireframes for the Rewards page.">
         </figure>
       </div>
 
-      <div class="process-step flex-row">
-        <div class="process-step__info">
-          <h4 class="process-step__title">Locating Recycling Bins</h4>
-          <p class="process-step__description">When a user wants to successfully complete a full “recycle” in the Econia
-            app, they are given a map of nearby recycling bins. Once they have arrived at a recycling bin, they scan a
-            QR code (letting us know the item deposit was legitimate) and are then awarded more points.</p>
-        </div>
-        <figure class="process-step__image-container">
-          <img class="process-step__image-image" src="./mockup-map.png"
-            alt="Econia's Map view with trash can icons representing nearby recycling bins.">
-          <img class="process-step__image-image" src="./mockup-bin-scan.png"
-            alt="Screen with an area for users to scan QR codes on recycling bins.">
-          <img class="process-step__image-image" src="./mockup-points-popup.png"
-            alt="Popup modal letting a user know their recycle was successful and they have been awarded 100 points.">
+      <p class="main-paragraph">Then, we put everything together to create our high-fidelity prototypes.
+        Here is a brief breakdown of the key features:
+      </p>
+      <ul class="list">
+        <li class="list-item">The Home screen presents users with a list of other people's
+          recycling activity to promote healthy peer pressure.
+        </li>
+        <li class="list-item">People would start the recycling process by
+          scanning a recyclable item, after which they could save it to their list to
+          recycle later (if they couldn't in the moment) or locate nearby bins to deposit the item.
+        </li>
+        <li class="list-item">To successfully complete a “recycle”,
+          people are given a map of nearby recycling bins. Upon arriving, they scan a
+          QR code (letting us know the item deposit was legitimate) and are then awarded points.
+        </li>
+        <li class="list-item">Econia's Profile page shows users their points and suggests
+          sustainable alternatives to products they recycle often (ex: water bottles).
+          The Rewards page offers prizes relevant to our target audience,
+          which users can buy with their recycling points.
+        </li>
+      </ul>
+      <div class="figure-container half-width">
+        <figure>
+          <img src="./previous-designs-1.png" alt="Mockups of the original Home and Scanning pages.">
         </figure>
       </div>
-
-      <div class="process-step flex-row">
-        <div class="process-step__info">
-          <h4 class="process-step__title">Personalization and Incentives</h4>
-          <p class="process-step__description">Econia's Profile page shows users their points and suggests
-            sustainable alternatives to products they recycle often (ex: water bottles).</p>
-          <p class="process-step__description">The Rewards page offers prizes relevant to our target audience (ex:
-            clothing discounts, restaurant coupons, etc), which users can buy with their recycling points.
-          </p>
-        </div>
-        <figure class="process-step__image-container">
-          <img class="process-step__image-image" src="./mockup-profile.png"
-            alt="Econia's User Profile page, showing a user photo, their points, and sustainable product alternatives.">
-          <img class="process-step__image-image" src="./mockup-rewards.png"
-            alt="Econia's Rewards page with a list of items users can buy with their points.">
+      <div class="figure-container half-width">
+        <figure>
+          <img src="./previous-designs-2.png" alt="Mockups of the original Recycling flow.">
+        </figure>
+      </div>
+      <div class="figure-container half-width">
+        <figure>
+          <img src="./previous-designs-3.png" alt="Mockups of the original Profile and Rewards pages.">
         </figure>
       </div>
 
@@ -274,33 +266,71 @@
         </p>
         <ul class="list">
           <li class="list-item">
-            Clear iconography is important.</span>
+            <span class="emphasized">Clear iconography</span> is important.
             3 of our participants thought our icons were confusing.
           </li>
           <li class="list-item">
-            User onboarding is highly valuable.</span>
-            Participants expressed they would have been more comfortable
+            <span class="emphasized">User onboarding</span> can be valuable.
+            Some interviewees expressed they would have been more comfortable
             navigating the application if they completed onboarding first.
           </li>
+          <li class="list-item">
+            The Rewards section of our app was well-received,
+            as were the educational tips and recyclable product recommendations.
+          </li>
         </ul>
-        <p class="main-paragraph">The Rewards section of our app was well-received,
-          as were the educational tips and recyclable product recommendations.
-          Overall, test users appreciated the mission behind the app and said they
-          would use it after further development.</p>
     </section>
+
+    <!-- My Redesign -->
     <section class="case-study__section">
-      <h2 class="section__title" id="Reflection">Reflecting</h2>
-      <p class="main-paragraph">This project was an excellent exercise in the Design Thinking Framework, as
-        well as applying principles of user interface design and working on a team. I particularly enjoyed conducting
-        user research to gain insights about target users and contributing to a design system.
+      <h2 class="section__title" id="Redesign">My Redesign</h2>
+      <p class="main-paragraph">Since Econia was never intended to go into production, I decided to
+        redesign it independently to see how I could improve it. I made many
+        purely aesthetic modifications, but I based most other refinements
+        on the experience as a whole.
       </p>
-      <p class="main-paragraph">Although the product will not move into a development phase, I believe the entire team
-        gained valuable knowledge about young adults and our relationship to sustainability.
+      <p class="main-paragraph">One change was
+        <span class="emphasized">placing the user's points at the top</span>,
+        making it always visible instead of only accessible on the
+        Profile and Rewards pages. I also
+        <span class="emphasized">moved the nav bar to the
+          bottom of the screen</span> both for better ergonomics and to be more consistent with
+        other applications (we, as users, are familiar with nav bars being at the bottom).
       </p>
+      <div class="figure-container half-width">
+        <figure>
+          <img src="./redesign-flow-profile.png" alt="Mockups of the re-designed Profile page.">
+        </figure>
+      </div>
+      <p class="main-paragraph">I made the
+        <span class="emphasized">home screen more of a leaderboard</span>instead of
+        a constant stream of activity from nearby users; the folks using
+        the app likely would only want to see a total number of points, not
+        every recycle another user is making. Additionally, I
+        <span class="emphasized">refined the visual design of the List page</span>
+        while retaining the ability for users to
+        learn more about what they are recycling.
+      </p>
+      <div class="figure-container half-width">
+        <figure>
+          <img src="./redesign-list-and-leaderboard.png"
+            alt="Mockups of the re-designed Scanned List and Leaderboard pages.">
+        </figure>
+      </div>
+      <p class="main-paragraph">I
+        <span class="emphasized">overhauled the Rewards page</span> to look
+        more aesthetically pleasing, as well as make it easier for
+        a user to save and redeem an offer.
+      </p>
+      <div class="figure-container half-width">
+        <figure>
+          <img src="./redesign-flow-rewards.png" alt="Mockups of the re-designed Rewards page.">
+        </figure>
+      </div>
     </section>
   </main>
   <footer>
-    <p class="copyright">&copy; Will Givens IV 2021. All Rights Reserved</p>
+    <p class="copyright">&copy; Will Givens IV 2022</p>
   </footer>
   <script src="/script.js"></script>
 </body>

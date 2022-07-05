@@ -149,17 +149,6 @@ class RepoHighlight extends HTMLElement {
                 font-weight: 500;
               }
 
-              @media (prefers-color-scheme: dark) {
-                .repo-highlight {
-                  background: none;
-                  background-color: hsl(220, 8%, 15%);
-                }
-
-                .repo-commit {
-                  border-color: hsla(0, 0%, 50%, 40%);
-                }
-              }
-
               @media(min-width: 720px) {
               }
       </style>
@@ -199,6 +188,19 @@ class RepoHighlight extends HTMLElement {
         </div>
         `;
 		this.shadowRoot.append(repoHighlightTemplate.content.cloneNode(true));
+        /*
+    Dark theme for component
+    @media (prefers-color-scheme: dark) {
+      .repo-highlight {
+        background: none;
+        background-color: hsl(220, 8%, 15%);
+      }
+
+      .repo-commit {
+        border-color: hsla(0, 0%, 50%, 40%);
+      }
+    }
+    */
 	}
 }
 
@@ -321,8 +323,24 @@ class ProjectHighlight extends HTMLElement
           line-height: 2.4rem;
         }
       }
+    </style>
+      <div class="project-highlight">
+        <img class="project-hightlight__thumbnail" src="/projects/${this.project}/${this.thumbnailName}"
+        alt="Thumbnail for ${this.project} case study.">
+        <div class="project-highlight__details">
+          <h2 class="project-highlight__title">${this.title}</h2>
+          <p class="project-highlight__blurb">${this.blurb}</p>
+          <a class="project-highlight__link" href="/projects/${this.project}/${this.project}.html">
+            View Case Study
+          </a>
+        </div>
+      </div>
+    `;
+    this.shadowRoot.append(projectHighlightTemplate.content.cloneNode(true));
 
-      @media(prefers-color-scheme: dark)
+    /*
+    Dark theme for component
+          @media(prefers-color-scheme: dark)
       {
         .project-highlight__thumbnail
         {
@@ -344,20 +362,7 @@ class ProjectHighlight extends HTMLElement
           color: var(--blue-dark-mode);
         }
       }
-    </style>
-      <div class="project-highlight">
-        <img class="project-hightlight__thumbnail" src="/projects/${this.project}/${this.thumbnailName}"
-        alt="Thumbnail for ${this.project} case study.">
-        <div class="project-highlight__details">
-          <h2 class="project-highlight__title">${this.title}</h2>
-          <p class="project-highlight__blurb">${this.blurb}</p>
-          <a class="project-highlight__link" href="/projects/${this.project}/${this.project}.html">
-            View Case Study
-          </a>
-        </div>
-      </div>
-    `;
-    this.shadowRoot.append(projectHighlightTemplate.content.cloneNode(true));
+    */
   }
   
 }

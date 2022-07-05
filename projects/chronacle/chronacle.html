@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="In-depth highlight of Chronacle, a progressive
+    web application for planning journeys around the world.">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600&family=Spartan:wght@200;400;500;600&family=Kalam&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../../styles.css" />
+    <link rel="stylesheet" type="text/css" href="../projects.css" />
+    <title>Chronacle</title>
+</head>
+
+<body class="fadeIn">
+    <header>
+        <nav class="navigation header-nav flex-row">
+            <a href="https://wagivens.github.io" class="header-nav__name" role="link">Will Givens IV</a>
+            <a href="https://github.com/wagivens" class="header-nav__item" role="link">GitHub</a>
+            <a href="../../WillardGivensResume_Apr2022.pdf" class="header-nav__item" role="link">Resume</a>
+        </nav>
+    </header>
+    <div class="project-banner">
+        <img class="project-banner__image" src="./splash-photo.png"
+            alt="iMesssage chat bubbles in both blue and yellow to indicate edited messages.">
+    </div>
+
+    <!-- Intrapage Navigation -->
+    <nav class="intrapage-nav">
+        <ul class="intrapage-nav__link-list flex-row">
+            <li class="intrapage-nav__link" tabindex="0" role="link">Overview</li>
+            <li class="intrapage-nav__link" tabindex="0" role="link">Research</li>
+            <li class="intrapage-nav__link" tabindex="0" role="link">Prototyping</li>
+            <li class="intrapage-nav__link" tabindex="0" role="link">Reflection</li>
+        </ul>
+    </nav>
+    <main class="case-study">
+        <h1 class="project-title">Chronacle</h1>
+        <button class="scroll-to-top" type="button">&uarr;</button>
+        <section class="case-study__section" id="Overview">
+            <h2 class="section__title">Overview</h2>
+            <h3 class="subsection__title">Trip Planning on Notion</h3>
+            <p class="main-paragraph">
+                I have never been able to travel outside of my home state,
+                so I have a lot of places I want to visit.
+                One day, I decided to start collating my trip ideas in Notion instead of
+                trying to keep them all in my head;
+                I listed out every location along with potential hotels to stay at,
+                sites to see, and restaurants to dine at.
+            </p>
+            <div class="figure-container half-width">
+                <figure>
+                    <img src="./highlight-notion-planning.png" alt="Two separate Messages screens. The first screen shows a message
+                  with the tapback icons above it. The second screen shows a message reply thread
+                  with the background blurred.">
+                </figure>
+            </div>
+            <p class="main-paragraph">
+                It became a bit cumbersome to use. After a while, I thought,
+                “This is probably how lots of people plan their trips,
+                but there might be a cleaner, more streamlined way.”
+                Thus, the task for me was to<span class="emphasized">create a simple, lightweight way
+                    for people to organize their plans
+                    for trips around the world</span>, and Chronacle was born.
+            </p>
+            <div class="figure-container half-width">
+                <figure>
+                    <img src="./final_solutions.png" alt="Two separate Messages screens. The first screen shows a message
+                  with the tapback icons above it. The second screen shows a message reply thread
+                  with the background blurred.">
+                </figure>
+            </div>
+        </section>
+        <section class="case-study__section" id="Research">
+            <h2 class="section__title">Working Through Ambiguity</h2>
+            <p class="main-paragraph">
+                In practice, you may not always have access to robust research and
+                user insights before designing something new or iterating on a design.
+                I wanted to challenge myself by designing something with ambiguous constraints;
+                what does the design process look like with limited information about your
+                target users and their motivations?
+            </p>
+            <h3 class="subsection__title">Competitive Analysis</h3>
+            <p class="main-paragraph">
+                After examining the applications from the three competitors,
+                I noted what I believed to be the most important user flows and features shared among them:
+            </p>
+            <ul class="list">
+                <li class="list-item">A primary “Trip” page that presents the user with an overview of their trip,
+                    as well as an itinerary section for users to organize their desired activities.</li>
+                <li class="list-item">A section including suggested or popular activities in location,
+                    allowing users to quickly add popular sites to their trip plans.</li>
+                <li class="list-item">An “Explore” page for users to search for various things to do in a particular
+                    location.</li>
+                <li class="list-item">A page essentially giving an overview of a specific business or activity.
+                    These pages typically include information such as a business's/activity's address,
+                    phone number, and operating hours, as well as photos.</li>
+            </ul>
+            <div class="figure-container half-width">
+                <figure>
+                    <img src="./highlight-competitors-1.png" alt="Two separate Messages screens. The first screen shows a message
+                  with the tapback icons above it. The second screen shows a message reply thread
+                  with the background blurred.">
+                </figure>
+                <figure>
+                    <img src="./highlight-competitors-2.png" alt="Two separate Messages screens. The first screen shows a message
+                  with the tapback icons above it. The second screen shows a message reply thread
+                  with the background blurred.">
+                </figure>
+            </div>
+            <div class="figure-container half-width">
+                <figure>
+                    <img src="./highlight-competitors-3.png" alt="Two separate Messages screens. The first screen shows a message
+                  with the tapback icons above it. The second screen shows a message reply thread
+                  with the background blurred.">
+                </figure>
+                <figure>
+                    <img src="./highlight-competitors-4.png" alt="Two separate Messages screens. The first screen shows a message
+                  with the tapback icons above it. The second screen shows a message reply thread
+                  with the background blurred.">
+                </figure>
+            </div>
+        </section>
+        <section class="case-study__section" id="Ideating">
+            <h2 class="section__title">Crafting the Solution</h2>
+            <h3 class="subsection__title">Sketching</h3>
+            <p class="main-paragraph">
+                After examining the applications from the three competitors,
+                I noted what I believed to be the most important user flows and screens shared among them:
+            </p>
+            <div class="figure-container half-width">
+                <figure>
+                    <img src="./crazy-eights_desktop.png" alt="Two separate Messages screens. The first screen shows a message
+                  with the tapback icons above it. The second screen shows a message reply thread
+                  with the background blurred.">
+                </figure>
+            </div>
+            <div class="figure-container half-width">
+                <figure>
+                    <img src="./crazy-eights_desktop-2.png" alt="Two separate Messages screens. The first screen shows a message
+                  with the tapback icons above it. The second screen shows a message reply thread
+                  with the background blurred.">
+                </figure>
+            </div>
+        </section>
+        <section class="case-study__section" id="Prototyping">
+            <h2 class="section__title">Bringing it to Life</h2>
+            <h3 class="subsection__title">High-Fidelity Designs</h3>
+            <p class="main-paragraph">
+                After examining the applications from the three competitors,
+                I noted what I believed to be the most important user flows and screens shared among them:
+            </p>
+            <div class="figure-container half-width">
+                <figure>
+                    <img src="./desktop-view-1.png" alt="Two separate Messages screens. The first screen shows a message
+                  with the tapback icons above it. The second screen shows a message reply thread
+                  with the background blurred.">
+                </figure>
+            </div>
+            <div class="figure-container half-width">
+                <figure>
+                    <img src="./AllTrips.png" alt="Two separate Messages screens. The first screen shows a message
+                  with the tapback icons above it. The second screen shows a message reply thread
+                  with the background blurred.">
+                </figure>
+            </div>
+            <div class="figure-container half-width">
+                <figure>
+                    <img src="./Flow-AddTrip.png" alt="Two separate Messages screens. The first screen shows a message
+                  with the tapback icons above it. The second screen shows a message reply thread
+                  with the background blurred.">
+                </figure>
+                <figure>
+                    <img src="./Flow-AddTrip_Dark.png" alt="Two separate Messages screens. The first screen shows a message
+                  with the tapback icons above it. The second screen shows a message reply thread
+                  with the background blurred.">
+                </figure>
+            </div>
+            <div class="figure-container half-width">
+                <figure>
+                    <img src="./desktop-view-2.png" alt="Two separate Messages screens. The first screen shows a message
+                  with the tapback icons above it. The second screen shows a message reply thread
+                  with the background blurred.">
+                </figure>
+            </div>
+            <div class="figure-container half-width">
+                <figure>
+                    <img src="./Flow-BusinessPage_Dark.png" alt="Two separate Messages screens. The first screen shows a message
+                  with the tapback icons above it. The second screen shows a message reply thread
+                  with the background blurred.">
+                </figure>
+            </div>
+        </section>
+        <section class="case-study__section" id="Refinements">
+            <h3 class="subsection__title">Refinements</h3>
+            <p class="main-paragraph">
+                Of course, your first solution(s) are hardly ever your best,
+                and there is always room to iterate and improve.
+                Even after completing the high-fidelity designs for Chronacle,
+                I noticed there were some elements of the product that could be refined.
+            </p>
+            <div class="figure-container half-width">
+                <figure>
+                    <img src="./refinements-trip_page.png" alt="Two separate Messages screens. The first screen shows a message
+                  with the tapback icons above it. The second screen shows a message reply thread
+                  with the background blurred.">
+                </figure>
+            </div>
+            <div class="figure-container half-width">
+                <figure>
+                    <img src="./refinements-business_page.png" alt="Two separate Messages screens. The first screen shows a message
+                  with the tapback icons above it. The second screen shows a message reply thread
+                  with the background blurred.">
+                </figure>
+            </div>
+            <div class="figure-container half-width">
+                <figure>
+                    <img src="./refinements-search_results.png" alt="Two separate Messages screens. The first screen shows a message
+                  with the tapback icons above it. The second screen shows a message reply thread
+                  with the background blurred.">
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="copyright">&copy; Will Givens IV 2022</p>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+
+</html>
