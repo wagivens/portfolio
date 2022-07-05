@@ -9,25 +9,19 @@
     aimed at motivating school children during online learning.">
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600&family=Spartan:wght@200;400;600&family=Kalam&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600&family=Spartan:wght@200;400;500;600&family=Kalam&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="../../styles.css" />
     <link rel="stylesheet" type="text/css" href="../projects.css" />
-    <title>Will Givens IV • UX Designer and Front-End Developer | Books N Bucks</title>
+    <title>Books N Bucks • Will Givens IV</title>
 </head>
 
 <body class="fadeIn">
     <header>
         <nav class="navigation header-nav flex-row">
-            <p class="header-nav__name">
-                <a href="https://wagivens.github.io">Will Givens IV</a>
-            </p>
-            <li class="header-nav__item">
-                <a href="https://github.com/wagivens">GitHub</a>
-            </li>
-            <li class="header-nav__item">
-                <a href="../../WillardGivensResume_Apr2022.pdf">Resume</a>
-            </li>
+            <a href="https://wagivens.github.io" class="header-nav__name" role="link">Will Givens IV</a>
+            <a href="https://github.com/wagivens" class="header-nav__item" role="link">GitHub</a>
+            <a href="../../WillardGivensResume_Apr2022.pdf" class="header-nav__item" role="link">Resume</a>
         </nav>
     </header>
     <div class="project-banner">
@@ -53,39 +47,32 @@
         <button class="scroll-to-top" type="button">&uarr;</button>
         <section class="case-study__section">
             <p class="main-paragraph">
-                Many people suspect the COVID-19 pandemic has had an adverse effect on young students in
+                Many people suspect the COVID-19 pandemic had an adverse effect on young students in
                 particular, as
                 they were forced to attend classes online and could not receive the same level of attention as they
                 would
                 in-person. This led two USC students to partner with schools in the Los Angeles Unified School District
                 (LAUSD) to create a product that would
-                engage school children.
+                engage school children. They recruited students in my university course
+                to help design and develop the website.
             </p>
-            <h2 class="section__title">The Rundown</h2>
+            <h2 class="section__title">Overview</h2>
             <article class="problem-statement">
-                <p class="problem-statement__text"><strong>Problem:</strong>
+                <p class="problem-statement__text"><span class="emphasized">Problem:</span>
                     School children across the United States are attending
                     classes online. Students, especially young ones, are showing declines in interest, focus, and
-                    academic performance; they need ways to stay motivated until in-person classes
-                    resume (and beyond).</p>
+                    academic performance; students need ways to stay motivated until in-person classes
+                    resume (and beyond). <span class="emphasized">How might we motivate young children stay engaged
+                        with school during distanced learning?</span></p>
             </article>
 
-            <div class="summary-box flex-row">
-                <div class="summary-section">
-                    <h3 class="summary-title" id="Summary">Summary</h3>
-                    <p class="summary-paragraph">
-                        As part of my Web Application Project course, five other students and I contributed to a product
-                        aimed at keeping young children excited about school during distance learning.
-                    </p>
-                </div>
-                <div class="summary-section">
-                    <h3 class="summary-title">Timeline and Disciplines</h3>
-                    <p class="summary-paragraph">January 2021 - April 2021</p>
-                    <p class="summary-paragraph">User Research, Sketching, Wireframing,
-                        Prototyping, Testing, SCSS, React,
-                        Google Firebase, Git, Agile/Scrum
-                    </p>
-                </div>
+            <div class="info-tidbits">
+                <h3 class="tidbit-title"><span class="emphasized">Timeline and Disciplines</span></h3>
+                <p class="tidbit-paragraph"><strong>January 2021 - April 2021</strong></p>
+                <p class="tidbit-paragraph">Design Thinking,
+                    User Research, Prototyping, Usability Testing, SCSS, React,
+                    Google Firebase, Git, Agile/Scrum
+                </p>
             </div>
         </section>
         <section class="case-study__section">
@@ -95,8 +82,9 @@
                 <span class="emphasized">a platform for teachers to incentivize students</span>
                 during distance learning. When students perform well (arriving on time, completing homework, helping
                 classmates, etc), they are awarded points, which can then be used to purchase various items. The product
-                owners had an existing site, but wanted us (the class) to revamp it. My team focused on the Student
-                Dashboard only.
+                owners had an existing site, but wanted us (the class) to revamp it.
+                <span class="emphasized">My team focused on the Student
+                    Dashboard only.</span>
             </p>
             <p class="main-paragraph">Our product owners encouraged us to come up with our own additions, but they also
                 had <span class="emphasized">non-negotiable features</span>: a store, a section for students to see
@@ -110,43 +98,74 @@
                 <span class="emphasized">We generally agreed that our target user would be a
                     student in need of positive reinforcement during distance learning.</span>
             </p>
-            <img src="bnb-personas.png"
-                alt="Post-it saying 'Kenny needs positive reinforcement because online learning lacks engagement.'"
-                class="main-image">
+            <div class="figure-container half-width">
+                <figure>
+                    <img src="./bnb-personas.png"
+                        alt="Post-it saying 'Kenneth needs positive reinforcement because online learning lacks engagement.'">
+                </figure>
+            </div>
 
             <!-- Wireframes -->
             <h3 class="subsection__title" id="Wireframes">Wireframes</h3>
 
             <p class="main-paragraph">Taking our persona and target audience into consideration, we started constructing
                 our wireframes. Our designs focused on card-like elements and large content to appeal to young children
-                without overwhelming or confusing them. Our 5 main pages aligned with the product owners’ requirements,
+                without overwhelming or confusing them. Our 5 main pages aligned with the product owners' requirements,
                 and we found ways to enhance what they wanted.
             </p>
 
-            <img src="./wireframe-home.png" alt="Home page showing the date, number of points, and an empty goal state."
-                class="main-image">
-            <img src="./wireframe-points.png"
-                alt="Points page showing the amount of points and the reason they were given." class="main-image">
-            <img src="./wireframe-store.png" alt="Store page showing multiple rewards items listed." class="main-image">
-            <img src="./wireframe-attendance.png"
-                alt="Attendance page showing a list of attendance status for multiple days." class="main-image">
-            <img src="./wireframe-wishlist.png" alt="Wishlist page showing 3 wishlist items." class="main-image">
+            <div class="figure-container half-width">
+                <figure>
+                    <img src="./wireframe-home.png"
+                        alt="Home page showing the date, number of points, and an empty goal state.">
+                </figure>
+                <figure>
+                    <img src="./wireframe-points.png"
+                        alt="Points page showing the amount of points and the reason they were given.">
+                </figure>
+            </div>
 
-            <p class="main-paragraph">We believed the points and reward goal should be front-and-center, as that would
-                effectively motivate students each time they log in. We also thought students should be able to see
-                their points history and why they were given them (making them more likely to repeat those actions in
-                the future).
-            </p>
+            <div class="figure-container half-width">
+                <figure>
+                    <img src="./wireframe-store.png" alt="Store page showing multiple rewards items listed.">
+                </figure>
+                <figure>
+                    <img src="./wireframe-attendance.png"
+                        alt="Attendance page showing a list of attendance status for multiple days.">
+                </figure>
+            </div>
 
-            <p class="main-paragraph">On the Store page, I suggested that we use various colors and copy for the
-                purchase state of an item to differentiate between lack of points and out-of-stock. We liked allowing
-                users to save Store items and set them as their reward goal right from a wishlist.
+            <div class="figure-container half-width">
+                <figure>
+                    <img src="./wireframe-wishlist.png" alt="Wishlist page showing 3 wishlist items.">
+                </figure>
+            </div>
+
+            <p class="main-paragraph">We believed:</p>
+            <ul class="list">
+                <li class="list-item">The points and reward goal should be front-and-center,
+                    motivating students each time they log in.
+                </li>
+                <li class="list-item">Students should be able to see
+                    their points history and why they were given them (making them more likely to repeat those actions
+                    in
+                    the future).
+                </li>
+                <li class="list-item">Students should be able to save
+                    Store items and set them as their reward goal right from a wishlist.
+                </li>
+            </ul>
+
+            <p class="main-paragraph">For the Store page, I suggested using various colors and copy for the
+                purchase state of an item to differentiate between lack of points and out-of-stock.
             </p>
 
             <h3 class="subsection__title" id="Wireframe Testing">Testing Our Wireframes</h3>
 
-            <p class="main-paragraph">We then tested our wireframes over Zoom with 3 students at
-                an LAUSD school that was already using Books N Bucks. We noticed:</p>
+            <p class="main-paragraph">We then
+                <span class="emphasized">tested our wireframes over Zoom with 3 students</span>
+                at an LAUSD school that was already using Books N Bucks. We noticed:
+            </p>
             <ul class="list">
                 <li class="list-item">Students enjoyed seeing their points and reward goal on the Home page.
                 </li>
@@ -165,30 +184,47 @@
                 pagination to multiple pages to prevent overloading students with information and choices.
             </p>
 
-            <img src="./final-mockup-home.png" alt="Home page showing the student's points, goal, and the weather."
-                class="main-image">
-            <img src="./final-mockup-points.png"
-                alt="Points page showing amount of points student received in one week, and why." class="main-image">
-            <img src="./final-mockup-store.png" alt="Store page with multiple items listed. Some are favorited."
-                class="main-image">
-            <img src="./final-mockup-wishlist.png"
-                alt="Wishlist page showing the user's favorited store items. Airpods is set as a goal."
-                class="main-image">
+            <div class="figure-container half-width">
+                <figure>
+                    <img src="./final-mockup-home.png"
+                        alt="Home page showing the student's points, goal, and the weather.">
+                </figure>
+            </div>
+            <div class="figure-container half-width">
+                <figure>
+                    <img src="./final-mockup-points.png"
+                        alt="Points page showing amount of points student received in one week, and why.">
+                </figure>
+            </div>
+            <div class="figure-container half-width">
+                <figure>
+                    <img src="./final-mockup-store.png"
+                        alt="Store page with multiple items listed. Some are favorited.">
+                </figure>
+            </div>
+            <div class="figure-container half-width">
+                <figure>
+                    <img src="./final-mockup-wishlist.png"
+                        alt="Wishlist page showing the user's favorited store items. Airpods is set as a goal.">
+                </figure>
+            </div>
 
             <p class="main-paragraph">I was responsible for incorporating feedback into the Attendance page design.
-                Since our testing participants told us the iconography was confusing,
-                <span class="emphasized">I decided we should switch to
-                    colored badge elements</span>; coloring them helps convey status, but using words instead of icons
-                makes it
-                accessible for those who can’t interpret the colors.
+                Since our testing participants told us the iconography was confusing, I decided we should switch to
+                colored badge elements; coloring them helps convey status, but
+                <span class="emphasized">using words instead of icons
+                    makes it accessible for those who can't interpret the colors.</span>
             </p>
 
-            <img src="./final-mockup-attendance.png"
-                alt="Attendance page showing colored badges that represent attendance status for each class."
-                class="main-image">
+            <div class="figure-container half-width">
+                <figure>
+                    <img src="./final-mockup-attendance.png"
+                        alt="Attendance page showing colored badges that represent attendance status for each class.">
+                </figure>
+            </div>
 
             <p class="main-paragraph">We tested the final prototypes as well with 3 more LAUSD students. We received
-                minimal negative feedback, so we were confident that we addressed all of the concerns from our wireframe
+                no negative feedback, so we were confident that we addressed all of the concerns from our wireframe
                 testing. From there, we moved on to developing the front and back ends of the dashboard.
             </p>
 
@@ -201,17 +237,23 @@
             <p class="main-paragraph">I implemented a function that would retrieve information about a user's reward
                 goal (such as the image and cost) from the database. Here is an image of the code:
             </p>
-            <img src="./code-snippet.png" alt="" class="main-image">
+
+            <div class="figure-container half-width">
+                <figure>
+                    <img src="./code-snippet.png">
+                </figure>
+            </div>
+
         </section>
         <section class="case-study__section">
             <h2 class="section__title" id="Reflecting">Reflecting</h2>
 
-            <p class="main-paragraph">This is one of the most rewarding projects I have ever worked on. The product’s
+            <p class="main-paragraph">This is one of the most rewarding projects I have ever worked on. The product's
                 purpose was gratifying, and I felt grateful to contribute to a product that was going to motivate school
                 children to improve their academic performance.</p>
             <p class="main-paragraph">I also had the luxury of working with a great team; the
                 other members were receptive to my ideas, but pushed back on suggestions that were not the best choices
-                for the product. This project’s mission, as well as the dynamic of my team, allowed me to expand my
+                for the product. This project's mission, as well as the dynamic of my team, allowed me to expand my
                 skills and taught me a great amount about what I desire out of future opportunities.
             </p>
         </section>
