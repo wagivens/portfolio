@@ -222,6 +222,11 @@ class ProjectHighlight extends HTMLElement
     this.thumbnailName = this.attributes.getNamedItem('thumbnail').value;
     this.title = this.attributes.getNamedItem('title').value;
     this.blurb = this.attributes.getNamedItem('blurb').value;
+    this.tagOne = this.dataset.tagOne;
+    this.tagTwo = this.dataset.tagTwo;
+
+    if (this.dataset.tagThree) 
+      this.tagThree = this.dataset.tagThree;
     
     const projectHighlightTemplate = document.createElement('template');
     projectHighlightTemplate.innerHTML = 
@@ -248,7 +253,7 @@ class ProjectHighlight extends HTMLElement
         max-width: 50rem;
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         column-gap: 2.8rem;
       }
 
@@ -292,6 +297,48 @@ class ProjectHighlight extends HTMLElement
         font-weight: 600;
       }
 
+      .project-hightlight__tags {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+      }
+
+      .tag {
+        padding: .6rem .8rem;
+        border-radius: 999rem;
+        border: .2rem solid;
+        font-size: 1.2rem;
+        font-weight: 600; 
+      }
+      
+      .tag + .tag {
+        margin-left: .4rem;
+      }
+
+      .tag[data-tagName="Visual Design"] {
+        color: #900909;
+        background-color: #FCCFCF;
+        border-color: #900909;
+      }
+
+      .tag[data-tagName="Interaction Design"] {
+        color: var(--blue-dark);
+        background-color: var(--blue-light);
+        border-color: var(--blue-dark);
+      }
+
+      .tag[data-tagName="Research"] {
+        color: #AB3AA7;
+        background-color: #F2D9F1;
+        border-color: #CB67C7;
+      }
+
+      .tag[data-tagName="Product Thinking"] {
+        background-color: #C5FCCA;
+        color: #077E11;
+        border-color: #077E11;
+      }
+
       .project-highlight__blurb
       {
         font-weight: 400;
@@ -329,6 +376,11 @@ class ProjectHighlight extends HTMLElement
         alt="Thumbnail for ${this.project} case study.">
         <div class="project-highlight__details">
           <h2 class="project-highlight__title">${this.title}</h2>
+          <div class="project-hightlight__tags">
+            <p class="tag" data-tagName="${this.tagOne}">${this.tagOne}</p>
+            <p class="tag" data-tagName="${this.tagTwo}">${this.tagTwo}</p>
+            </p>
+          </div>
           <p class="project-highlight__blurb">${this.blurb}</p>
           <a class="project-highlight__link" href="/projects/${this.project}/${this.project}.html">
             View Case Study

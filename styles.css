@@ -9,6 +9,7 @@
   --white: hsl(0, 0%, 95%);
   --blue: hsl(217, 67%, 48%);
   --blue-light: hsl(215, 100%, 95%);
+  --blue-dark: hsl(217, 67%, 35%);
   
   /* Dark Mode Styles */
   --blue-dark-mode: hsl(217, 64%, 60%);
