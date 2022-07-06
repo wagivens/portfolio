@@ -304,6 +304,7 @@ class ProjectHighlight extends HTMLElement
       }
 
       .tag {
+        width: fit-content;
         padding: .6rem .8rem;
         border-radius: 999rem;
         border: .2rem solid;
@@ -363,6 +364,15 @@ class ProjectHighlight extends HTMLElement
         .project-highlight__details > *:not(:first-child)
         {
           margin-top: .8rem;
+        }
+
+        .project-hightlight__tags {
+          flex-direction: column;
+        }
+
+        .tag + .tag {
+          margin-left: 0;
+          margin-top: .4rem;
         }
 
         .project-highlight__blurb
