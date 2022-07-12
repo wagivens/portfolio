@@ -25,7 +25,7 @@
 
 .home-page-section__heading {
   font-family: "DM Serif Display", serif;
-  font-size: clamp(2.5rem, 2.5vw, 5rem);
+  font-size: clamp(2.5rem, 2.5vw, 3rem);
   width: 100%;
   letter-spacing: -.05rem;
 }
@@ -96,6 +96,27 @@
 
 .resume_btn:hover {
   background-color: var(--blue-light);
+}
+
+.location-box {
+  max-width: 40rem;
+}
+
+.location-box img {
+  width: 100%;
+  border-radius: .4rem;
+}
+
+.location-box__info {
+  display: flex;
+  align-items: center;
+}
+
+.location-box__info p {
+  font-size: 1.4rem;
+  color: var(--gray);
+  font-weight: 500;
+  width: 100%;
 }
 
 .selected_work_btn {

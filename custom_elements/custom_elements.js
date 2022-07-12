@@ -259,7 +259,7 @@ class ProjectHighlight extends HTMLElement
 
       .project-hightlight__thumbnail
       {
-        width: 25%;
+        width: 50%;
         overflow: hidden;
         border-radius: .8rem;
         box-shadow: 0 .4rem 1rem hsla(0, 0%, 0%, 10%);

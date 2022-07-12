@@ -149,14 +149,15 @@ main {
 footer {
   width: 100%;
   margin-top: 2rem;
-  padding: 4rem 0;
-  background-color: var(--blue-light);
+  padding: 2rem 0;
+  border-top: .1rem solid var(--gray-light);
 }
 
 .copyright {
+  color: var(--gray);
   font-size: 1rem;
   text-align: center;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: -0.02rem;
 }
 
