@@ -9,24 +9,6 @@ const DOMelements = {
   scrollToTop: document.querySelector(".scroll-to-top"),
 }
 
-function waveHand() {
-  DOMelements.handEmoji.animate(
-    [
-      { transform: "rotateZ(0deg)" },
-      { transform: "rotateZ(30deg)" },
-      { transform: "rotateZ(0deg)" },
-      { transform: "rotateZ(30deg)" },
-      { transform: "rotateZ(0deg)" },
-    ],
-    1000
-  );
-}
-
-if (DOMelements.handEmoji != null)
-{
-  setInterval(waveHand, 3000);
-}
-
 /* Intrapage Navigation Functionality: 
 For each intrapage-nav__link, add a listener for a click event. When the
 link is clicked, grab its text content and set it as the variable sectionID.
