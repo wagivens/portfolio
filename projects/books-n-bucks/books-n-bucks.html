@@ -46,7 +46,7 @@
             <li class="intrapage-nav__link">Testing</li>
             <li class="intrapage-nav__link">Prototyping</li>
             <li class="intrapage-nav__link">Development</li>
-            <li class="intrapage-nav__link">Reflecting</li>
+            <li class="intrapage-nav__link">Redesign</li>
         </ul>
     </nav>
 
@@ -58,9 +58,9 @@
             <article class="problem-statement">
                 <p class="problem-statement__text"><span class="emphasized">Problem:</span>
                     School children across the United States are attending
-                    classes online. Students, especially young ones, are showing declines in interest, focus, and
+                    classes online. Young students in particular are showing declines in interest, focus, and
                     academic performance; students need ways to stay motivated until in-person classes
-                    resume (and beyond). <span class="emphasized">How might we motivate young children stay engaged
+                    resume. <span class="emphasized">How might we motivate young children stay engaged
                         with school during distanced learning?</span></p>
             </article>
 
@@ -100,12 +100,12 @@
             </article>
         </section>
         <section class="case-study__section">
-            <h2 class="section__title">The Solution</h2>
+            <h2 class="section__title">Original Solution</h2>
 
-            <p class="main-paragraph">Books N Bucks is essentially
-                <span class="emphasized">a platform for teachers to incentivize students</span>
-                during distance learning. When students perform well (arriving on time, completing homework, helping
-                classmates, etc), they are awarded points, which can then be used to purchase various items. The product
+            <p class="main-paragraph">Books N Bucks is
+                <span class="emphasized">a platform to incentivize students</span>
+                during distanced learning. When students perform well (arriving on time, completing homework, helping
+                classmates, etc), they are awarded points, which can be used to purchase various items. The product
                 owners had an existing site, but wanted us (my university course) to revamp it.
                 <span class="emphasized">My team focused on the Student
                     Dashboard only.</span>
@@ -115,9 +115,9 @@
                 their points, an attendance page, and a section for students to have a reward goal.</p>
 
             <h3 class="subsection__title" id="Personas">Crafting A Persona</h3>
-            <p class="main-paragraph">We began our Design phase by brainstorming miniature personas for target users.
+            <p class="main-paragraph">We began our Design phase by brainstorming mini personas for target users.
                 <span class="emphasized">We generally agreed the people using the dashboard would be
-                    grade-school students, many of whom are in need of positive reinforcement during distance
+                    grade-school students in need of positive reinforcement during distance
                     learning.</span>
             </p>
             <div class="figure-container half-width">
@@ -130,58 +130,30 @@
             <!-- Sketches -->
             <h3 class="subsection__title" id="Sketching">Sketching</h3>
             <p class="main-paragraph">Considering our personas and target audience, we completed a
-                session of Crazy 8s and came up some rudimentary explorations. Here are some of mine:
+                session of Crazy 8s and came up some rudimentary explorations. Here were some of mine:
             </p>
 
-            <div class="figure-container half-width">
-                <figure>
-                    <img src="./crazy-eights-1.png" alt="Photo of early sketches from a crazy eights session.">
-                </figure>
-                <figure>
-                    <img src="./crazy-eights-2.png" alt="Photo of early sketches from a crazy eights session.">
-                </figure>
-            </div>
+            <article class="idea-box">
+                <div class="idea-box__img-container">
+                    <img src="./crazy-eights.png" alt="Photo of early sketches from a crazy eights session.">
+                </div>
+            </article>
 
             <!-- Wireframes -->
             <h3 class="subsection__title" id="Wireframes">Wireframes</h3>
 
-            <p class="main-paragraph">We dot mapped our favorite ideas from everyone's sketches,
-                and then we incorporated them into some early wireframes.
-                Our designs focused on card-like elements and large content to appeal
+            <p class="main-paragraph">We dot mapped our favorite ideas
+                before incorporating them into some early wireframes.
+                We focused on card-like elements and large content to appeal
                 to young children
-                without overwhelming or confusing them. We met the product owners' requirements,
-                and we found ways to enhance what they wanted.
+                without overwhelming them.
             </p>
-
-            <div class="figure-container half-width">
-                <figure>
-                    <img src="./wireframe-home.png"
-                        alt="Home page showing the date, number of points, and an empty goal state.">
-                </figure>
-                <figure>
-                    <img src="./wireframe-points.png"
-                        alt="Points page showing the amount of points and the reason they were given.">
-                </figure>
-            </div>
-
-            <div class="figure-container half-width">
-                <figure>
-                    <img src="./wireframe-store.png" alt="Store page showing multiple rewards items listed.">
-                </figure>
-                <figure>
-                    <img src="./wireframe-attendance.png"
-                        alt="Attendance page showing a list of attendance status for multiple days.">
-                </figure>
-            </div>
-
-            <div class="figure-container half-width">
-                <figure>
-                    <img src="./wireframe-wishlist.png" alt="Wishlist page showing 3 wishlist items.">
-                </figure>
-            </div>
 
             <p class="main-paragraph">We believed:</p>
             <ul class="list">
+                <li class="list-item">Card-like elements and large content would appeal to young children
+                    without overwhelming them.
+                </li>
                 <li class="list-item">The points and reward goal should be front-and-center,
                     motivating students each time they log in.
                 </li>
@@ -195,9 +167,19 @@
                 </li>
             </ul>
 
-            <p class="main-paragraph">For the Store page, I suggested using various colors and copy for the
-                purchase state of an item to differentiate between lack of points and out-of-stock.
-            </p>
+            <article class="idea-box">
+                <div class="idea-box__img-container">
+                    <img src="./wireframes.png" alt="Photo with 5 different wireframe screens.
+                    The first screen is the Home page showing the student's points and the current date.
+                        The second screen is the Points page showing amount of points student received in one week, and why.
+                        The third screen is the Store page with multiple items listed. Each item has a button to buy
+                        and a star to save to wishlist.
+                        The fourth screen is the Wishlist page showing the user's favorited store items. Each item has
+                        a button that says 'Set As Goal'.
+                        The fifth screen is the Attendance page showing a matrix table with the date and the student's classes.
+                        Each cell has either a checkmark or an 'x' depending on if the student was absent or present.">
+                </div>
+            </article>
 
             <h3 class="subsection__title" id="Wireframe Testing">Testing Our Wireframes</h3>
 
@@ -217,76 +199,229 @@
 
             <h3 class="subsection__title" id="Prototyping">Final Prototypes</h3>
 
-            <p class="main-paragraph">Prototyping and putting together final designs was our next step. The product
-                owners had their own color scheme of red, white, and black, so we adhered to those design guidelines. We
-                decided to use Montserrat as our primary font because it is simple but slightly playful. We also added
-                pagination to multiple pages to prevent overloading students with information and choices.
+            <p class="main-paragraph">Finally, we moved on to prototyping.
+                The product owners gave us their specific brand colors (red, white, and black),
+                so we adhered to those design guidelines.
+                We used Montserrat as our primary font because of its simplicity and slight playfulness. We also added
+                pagination on multiple pages to prevent overloading students with information and choices.
+            </p>
+
+            <article class="idea-box">
+                <div class="idea-box__img-container">
+                    <img src="./original-solutions.png"
+                        alt="An image with five different mockup screens. 
+                        The first screen is the Home page showing the student's points, goal, and the weather.
+                        The second screen is the Points page showing amount of points student received in one week, and why.
+                        The third screen is the Store page with multiple items listed. Some are favorited.
+                        The fourth screen is the Wishlist page showing the user's favorited store items. Airpods is set as a goal.
+                        The fifth screen is the Attendance page showing colored badges that represent attendance status for each class.">
+                </div>
+            </article>
+
+            <p class="main-paragraph">
+                <span class="emphasized">We also tested the final prototypes with 3 more LAUSD students</span>
+                before moving on to developing the front and back ends of the dashboard.
+            </p>
+
+        </section>
+
+        <!-- My Redesign -->
+        <section class="case-study__section">
+            <h2 class="section__title" id="Redesign">My Redesign</h2>
+            <p class="main-paragraph">I appreciate the efforts my team and I made originally, but I thought the final
+                solution could be refined and made much better. I decided to challenge myself by independently
+                redesigning the
+                entire product. I made many changes I believed offered better user experience while also being more
+                aesthetically pleasing.
             </p>
 
             <div class="figure-container half-width">
                 <figure>
-                    <img src="./final-mockup-home.png"
-                        alt="Home page showing the student's points, goal, and the weather.">
-                </figure>
-            </div>
-            <div class="figure-container half-width">
-                <figure>
-                    <img src="./final-mockup-points.png"
-                        alt="Points page showing amount of points student received in one week, and why.">
-                </figure>
-            </div>
-            <div class="figure-container half-width">
-                <figure>
-                    <img src="./final-mockup-store.png"
-                        alt="Store page with multiple items listed. Some are favorited.">
-                </figure>
-            </div>
-            <div class="figure-container half-width">
-                <figure>
-                    <img src="./final-mockup-wishlist.png"
-                        alt="Wishlist page showing the user's favorited store items. Airpods is set as a goal.">
+                    <img src="./redesign-assets/mockups.png" alt="Five mockups
+                    of my redesign.">
                 </figure>
             </div>
 
-            <p class="main-paragraph">I was responsible for incorporating feedback into the Attendance page design.
-                Since our testing participants told us the iconography was confusing, I decided we should switch to
-                colored badge elements; coloring them helps convey status, but
-                <span class="emphasized">using words instead of icons
-                    makes it accessible for those who can't interpret the colors.</span>
+            <!-- 1. General Design Changes -->
+            <h3 class="subsection__title" id="Development">General Design Changes</h3>
+
+            <!-- 1a. Color Palette -->
+            <p class="main-paragraph">I
+                <span class="emphasized">made a color system based on the brand colors</span> the
+                product owners gave my team. I knew variations of the brand's primary and secondary
+                colors, as well as varying shades, tints, and tones would help my redesign feel cohesive.
             </p>
+            <article class="idea-box">
+                <div class="idea-box__img-container">
+                    <img src="./redesign-assets/color-palette.png" alt="Image showing
+                    the color palette of reds, blacks, grays, and whites I made
+                    for my redesign.">
+                </div>
+            </article>
 
-            <div class="figure-container half-width">
-                <figure>
-                    <img src="./final-mockup-attendance.png"
-                        alt="Attendance page showing colored badges that represent attendance status for each class.">
-                </figure>
-            </div>
-
-            <p class="main-paragraph">We tested the final prototypes as well with 3 more LAUSD students. We received
-                no negative feedback, so we were confident that we addressed all of the concerns from our wireframe
-                testing. From there, we moved on to developing the front and back ends of the dashboard.
+            <!-- 1b. Dashboard Layout -->
+            <p class="main-paragraph">I also changed the layout of the dashboard. Instead of panel-like elements,
+                <span class="emphasized">I created separation with faint gray borders.</span>
+                This makes better use of screen real estate while
+                still providing hierarchy and separation of content.
             </p>
+            <article class="idea-box">
+                <div class="idea-box__img-container">
+                    <img src="./redesign-assets/dashboard-layout.png" alt="Screenshot of 
+                    the redesigned Home page. It shows how the sidebar and main 
+                    content are separated by a faint gray-colored border.">
+                </div>
+            </article>
 
-            <h3 class="subsection__title" id="Development">Development</h3>
-            <p class="main-paragraph">The front-end was a combination of React and SCSS, and we developed the front-end
-                over the course of 2 weeks. As with the prototypes, I was mostly responsible for implementing the
-                Attendance page. The back-end was done using Google Firebase and Google Cloud Functions, and was
-                developed over the course of 2 weeks as well.
+            <!-- 1c. Header -->
+            <p class="main-paragraph">
+                <span class="emphasized">I added a header section</span> which includes a greeting or the page title, as
+                well as
+                the student's profile photo, notifications, and their point total. Since the points are here, they are
+                always visible to the student.
             </p>
-            <p class="main-paragraph">I implemented a function that would retrieve information about a user's reward
-                goal (such as the image and cost) from the database. Here is an image of the code:
-            </p>
+            <article class="idea-box">
+                <div class="idea-box__img-container">
+                    <img src="./redesign-assets/points-display.png" alt="Screenshot of the
+                    right half of the header for the redesigned product. The right half of the
+                    header shows the student's points (in this case, 315), followed by a bell
+                    icon for their notifications, and lastly a photo of them for access
+                    to their settings.">
+                </div>
+            </article>
 
-            <div class="figure-container half-width">
-                <figure>
-                    <img src="./code-snippet.png">
-                </figure>
-            </div>
+            <!-- 1d. Sidebar -->
+            <p class="main-paragraph">For the sidebar,
+                <span class="emphasized">I refined the spacing and icons for the sidebar links and
+                    included a “Teachers” section for students to have easy access to their instructors.</span>
+                The “chat” button
+                next to a teacher's name would let students quickly message or email their teachers with questions,
+                which is important for remote learning.
+            </p>
+            <article class="idea-box">
+                <div class="idea-box__img-container">
+                    <img src="./redesign-assets/sidebar.png" alt="Screenshot of the redesigned sidebar.
+                    There is a photo of a red owl at the top, followed by the sidebar links.
+                    The selected sidebar link is colored red to differentiate it from the rest, which
+                    are gray. Below the sidebar links is a section titled 'Teachers' with a list of the
+                    student's teachers; each row has the teacher's name and photo, and the class they
+                    teach underneath that.">
+                </div>
+                <div class="idea-box__caption">
+                    <svg width="40" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.0862 18.3153C13.6727 18.3153 15.2296 17.3862 15.2296 15.8356V12.4329C16.3157 11.4787 16.9497 9.95318 16.9497 8.26442C16.9497 4.34073 14.4072 1.72913 10.5902 1.72913C6.7921 1.72913 4.2621 4.28423 4.2621 8.12631C4.2621 8.33976 4.26838 8.52182 4.28721 8.6976L3.3832 10.3173C3.15091 10.7254 3.04419 11.1146 3.04419 11.4787C3.04419 12.1693 3.47736 12.728 4.2621 12.8912V14.1656C4.2621 15.4526 5.14729 16.093 6.37776 15.9611L7.00555 15.8921C7.04321 17.4113 8.56874 18.3153 11.0862 18.3153ZM11.0862 17.1037C9.25303 17.1037 8.1544 16.5387 8.1544 15.6284V14.7683C8.1544 14.6239 8.06651 14.5549 7.9284 14.5674L6.23336 14.7495C5.73741 14.806 5.47374 14.5925 5.47374 14.0715V12.0751C5.47374 11.9747 5.3984 11.9056 5.29168 11.9056H4.94639C4.54461 11.9056 4.31233 11.7047 4.31233 11.3908C4.31233 11.2276 4.36883 11.033 4.48183 10.8384L5.53652 8.94243C5.49257 8.65993 5.46746 8.3837 5.46746 8.10747C5.46746 5.00619 7.51406 2.94076 10.5902 2.94076C13.679 2.94076 15.7381 5.06897 15.7381 8.26442C15.7381 9.82134 15.0852 11.1711 14.0117 11.824V15.6284C14.0117 16.5387 12.9131 17.1037 11.0862 17.1037ZM6.44681 7.09673C6.44681 8.29581 7.2755 9.11194 8.51224 9.11194C8.68175 9.11194 8.83869 9.09938 8.98936 9.06799C9.36604 9.39444 9.90594 9.58278 10.4961 9.58278C10.7221 9.58278 10.9669 9.55767 11.2055 9.49489C11.444 9.73345 11.8019 9.87156 12.2225 9.87156H12.3794C12.4924 10.4994 12.9005 10.9263 13.4153 10.9263C14.1561 10.9263 14.6834 10.1038 14.6834 8.93616C14.6834 8.62854 14.6709 8.38998 14.652 8.17653C14.8655 7.9003 14.9848 7.53618 14.9848 7.11557C14.9848 6.2806 14.4323 5.6277 13.5911 5.44564C13.409 4.71113 12.7749 4.18379 12.0028 4.18379C11.9463 4.18379 11.8709 4.19634 11.7956 4.2089C11.5194 3.90128 11.105 3.71294 10.6593 3.71294C10.1696 3.71294 9.74271 3.895 9.44765 4.19634C9.22792 4.10845 9.00192 4.06451 8.76336 4.06451C7.92212 4.06451 7.28805 4.64207 7.28805 5.42681V5.43309C6.76698 5.80976 6.44681 6.43755 6.44681 7.09673ZM8.98936 5.33264C8.98308 5.53981 9.12748 5.69048 9.32837 5.69048C9.52926 5.69048 9.6611 5.55865 9.67365 5.35775C9.69249 4.79274 10.1006 4.39723 10.6593 4.39723C10.9857 4.39723 11.2808 4.57302 11.4001 4.84297C11.4503 4.93713 11.5507 4.94341 11.6951 4.90574C11.7705 4.88691 11.8521 4.87435 11.94 4.87435C12.5113 4.88063 12.9507 5.32009 12.9507 5.89765C12.9507 7.33529 10.8602 7.12184 10.8602 8.65993C10.8602 8.72899 10.8665 8.79804 10.879 8.8671C10.7723 8.88593 10.6593 8.89221 10.5526 8.89221C10.2889 8.89221 10.0315 8.83571 9.81805 8.74154C10.2826 8.42765 10.5588 7.91914 10.5588 7.29762C10.5588 7.25996 10.5526 7.22229 10.5526 7.18462C11.218 6.97745 11.5696 6.49405 11.5633 5.75326C11.5633 5.5712 11.4001 5.40798 11.2117 5.40798C11.0297 5.40798 10.8727 5.56492 10.879 5.75326C10.8853 6.17388 10.7221 6.41872 10.3642 6.52544C10.2952 6.41244 10.2136 6.31199 10.1131 6.23038C9.98127 6.11738 9.89338 6.07343 9.76782 6.07343C9.57321 6.07343 9.43509 6.20527 9.43509 6.38733C9.43509 6.58822 9.54182 6.64472 9.69249 6.78284C9.81177 6.89584 9.87455 7.07162 9.87455 7.28507C9.87455 7.96936 9.34092 8.42137 8.5248 8.42137C7.68356 8.42137 7.1311 7.9003 7.1311 7.09673C7.1311 6.74517 7.26294 6.41244 7.49522 6.1676C7.7275 6.51916 8.13557 6.72634 8.64408 6.72634C8.82614 6.72634 8.98936 6.56939 8.98936 6.38733C8.98936 6.19899 8.83241 6.04204 8.64408 6.04204C8.24229 6.04204 7.97862 5.79721 7.97862 5.42681C7.97862 5.0313 8.30507 4.7488 8.75708 4.7488C8.8638 4.7488 8.97681 4.76763 9.08353 4.79902C9.02703 4.96225 8.99564 5.13803 8.98936 5.33264ZM12.7435 8.45276C12.7435 8.63482 12.8817 8.77921 13.0763 8.79804C13.4153 8.82315 13.7229 8.77293 13.9866 8.67248C13.9928 8.74782 13.9928 8.83571 13.9928 8.92988C13.9928 9.68951 13.7292 10.242 13.4153 10.242C13.1391 10.242 12.9507 9.8904 12.9507 9.38817C12.9507 9.294 12.8817 9.24377 12.7938 9.24377C12.7122 9.24377 12.6117 9.25005 12.5175 9.25005C11.8835 9.25005 11.557 9.04288 11.557 8.6411C11.557 7.6178 13.4592 7.81869 13.635 6.14877C14.0431 6.26805 14.2942 6.62589 14.2942 7.11557C14.2942 7.76847 13.8171 8.17025 13.0888 8.11375C12.9005 8.1012 12.7435 8.26442 12.7435 8.45276Z"
+                            fill="#262626" />
+                    </svg>
+                    <p>The "Teachers" section allows students to easily contact
+                        their teachers with questions or comments.</p>
+                </div>
+            </article>
+
+            <!-- 2. Home Page -->
+            <h3 class="subsection__title">Home Page</h3>
+
+            <!-- 2a. Class Card -->
+            <p class="main-paragraph">
+                I changed the Home Screen to also include cards for a student's classes; this allows them to easily
+                access
+                their class resources (homework, quizzes, etc) as well as easily call in for actual class sessions. I
+                kept, but redesigned, the section for showing a student's goal item and their points since it is great
+                motivation for them. Students can also change their goal item from the Home page.
+            </p>
+            <article class="idea-box">
+                <div class="idea-box__img-container">
+                    <img src="./redesign-assets/classcard.png" alt="The bottom half of the class card
+                    element. It shows the name of the class in bold. Below that is the time of the 
+                    class in gray, and below that is the teacher for the class along with a photo. At
+                    the very bottom is a red button that says 'Join Class'.">
+                </div>
+                <div class="idea-box__caption">
+                    <svg width="40" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.0862 18.3153C13.6727 18.3153 15.2296 17.3862 15.2296 15.8356V12.4329C16.3157 11.4787 16.9497 9.95318 16.9497 8.26442C16.9497 4.34073 14.4072 1.72913 10.5902 1.72913C6.7921 1.72913 4.2621 4.28423 4.2621 8.12631C4.2621 8.33976 4.26838 8.52182 4.28721 8.6976L3.3832 10.3173C3.15091 10.7254 3.04419 11.1146 3.04419 11.4787C3.04419 12.1693 3.47736 12.728 4.2621 12.8912V14.1656C4.2621 15.4526 5.14729 16.093 6.37776 15.9611L7.00555 15.8921C7.04321 17.4113 8.56874 18.3153 11.0862 18.3153ZM11.0862 17.1037C9.25303 17.1037 8.1544 16.5387 8.1544 15.6284V14.7683C8.1544 14.6239 8.06651 14.5549 7.9284 14.5674L6.23336 14.7495C5.73741 14.806 5.47374 14.5925 5.47374 14.0715V12.0751C5.47374 11.9747 5.3984 11.9056 5.29168 11.9056H4.94639C4.54461 11.9056 4.31233 11.7047 4.31233 11.3908C4.31233 11.2276 4.36883 11.033 4.48183 10.8384L5.53652 8.94243C5.49257 8.65993 5.46746 8.3837 5.46746 8.10747C5.46746 5.00619 7.51406 2.94076 10.5902 2.94076C13.679 2.94076 15.7381 5.06897 15.7381 8.26442C15.7381 9.82134 15.0852 11.1711 14.0117 11.824V15.6284C14.0117 16.5387 12.9131 17.1037 11.0862 17.1037ZM6.44681 7.09673C6.44681 8.29581 7.2755 9.11194 8.51224 9.11194C8.68175 9.11194 8.83869 9.09938 8.98936 9.06799C9.36604 9.39444 9.90594 9.58278 10.4961 9.58278C10.7221 9.58278 10.9669 9.55767 11.2055 9.49489C11.444 9.73345 11.8019 9.87156 12.2225 9.87156H12.3794C12.4924 10.4994 12.9005 10.9263 13.4153 10.9263C14.1561 10.9263 14.6834 10.1038 14.6834 8.93616C14.6834 8.62854 14.6709 8.38998 14.652 8.17653C14.8655 7.9003 14.9848 7.53618 14.9848 7.11557C14.9848 6.2806 14.4323 5.6277 13.5911 5.44564C13.409 4.71113 12.7749 4.18379 12.0028 4.18379C11.9463 4.18379 11.8709 4.19634 11.7956 4.2089C11.5194 3.90128 11.105 3.71294 10.6593 3.71294C10.1696 3.71294 9.74271 3.895 9.44765 4.19634C9.22792 4.10845 9.00192 4.06451 8.76336 4.06451C7.92212 4.06451 7.28805 4.64207 7.28805 5.42681V5.43309C6.76698 5.80976 6.44681 6.43755 6.44681 7.09673ZM8.98936 5.33264C8.98308 5.53981 9.12748 5.69048 9.32837 5.69048C9.52926 5.69048 9.6611 5.55865 9.67365 5.35775C9.69249 4.79274 10.1006 4.39723 10.6593 4.39723C10.9857 4.39723 11.2808 4.57302 11.4001 4.84297C11.4503 4.93713 11.5507 4.94341 11.6951 4.90574C11.7705 4.88691 11.8521 4.87435 11.94 4.87435C12.5113 4.88063 12.9507 5.32009 12.9507 5.89765C12.9507 7.33529 10.8602 7.12184 10.8602 8.65993C10.8602 8.72899 10.8665 8.79804 10.879 8.8671C10.7723 8.88593 10.6593 8.89221 10.5526 8.89221C10.2889 8.89221 10.0315 8.83571 9.81805 8.74154C10.2826 8.42765 10.5588 7.91914 10.5588 7.29762C10.5588 7.25996 10.5526 7.22229 10.5526 7.18462C11.218 6.97745 11.5696 6.49405 11.5633 5.75326C11.5633 5.5712 11.4001 5.40798 11.2117 5.40798C11.0297 5.40798 10.8727 5.56492 10.879 5.75326C10.8853 6.17388 10.7221 6.41872 10.3642 6.52544C10.2952 6.41244 10.2136 6.31199 10.1131 6.23038C9.98127 6.11738 9.89338 6.07343 9.76782 6.07343C9.57321 6.07343 9.43509 6.20527 9.43509 6.38733C9.43509 6.58822 9.54182 6.64472 9.69249 6.78284C9.81177 6.89584 9.87455 7.07162 9.87455 7.28507C9.87455 7.96936 9.34092 8.42137 8.5248 8.42137C7.68356 8.42137 7.1311 7.9003 7.1311 7.09673C7.1311 6.74517 7.26294 6.41244 7.49522 6.1676C7.7275 6.51916 8.13557 6.72634 8.64408 6.72634C8.82614 6.72634 8.98936 6.56939 8.98936 6.38733C8.98936 6.19899 8.83241 6.04204 8.64408 6.04204C8.24229 6.04204 7.97862 5.79721 7.97862 5.42681C7.97862 5.0313 8.30507 4.7488 8.75708 4.7488C8.8638 4.7488 8.97681 4.76763 9.08353 4.79902C9.02703 4.96225 8.99564 5.13803 8.98936 5.33264ZM12.7435 8.45276C12.7435 8.63482 12.8817 8.77921 13.0763 8.79804C13.4153 8.82315 13.7229 8.77293 13.9866 8.67248C13.9928 8.74782 13.9928 8.83571 13.9928 8.92988C13.9928 9.68951 13.7292 10.242 13.4153 10.242C13.1391 10.242 12.9507 9.8904 12.9507 9.38817C12.9507 9.294 12.8817 9.24377 12.7938 9.24377C12.7122 9.24377 12.6117 9.25005 12.5175 9.25005C11.8835 9.25005 11.557 9.04288 11.557 8.6411C11.557 7.6178 13.4592 7.81869 13.635 6.14877C14.0431 6.26805 14.2942 6.62589 14.2942 7.11557C14.2942 7.76847 13.8171 8.17025 13.0888 8.11375C12.9005 8.1012 12.7435 8.26442 12.7435 8.45276Z"
+                            fill="#262626" />
+                    </svg>
+                    <p>I explored variations of button text for the class card.
+                        "Enter Class" is better copy than "Join Call" or "Join Class"</p>
+                </div>
+            </article>
+
+            <!-- 2b. Goal Change Menu -->
+            <article class="idea-box">
+                <div class="idea-box__img-container">
+                    <img src="./redesign-assets/change-goal-menu.png" alt="A side menu titled 'Wishlist' that
+                    has multiple items from the student's wishlist. The selected item has a red border
+                    around it to indicate it is selected. There is a red button at the bottom of the menu
+                    that says 'Set As Your Goal'.">
+                </div>
+            </article>
+
+            <!-- 3. Points Page -->
+            <h3 class="subsection__title">Points Page</h3>
+            <p class="main-paragraph">
+                I redesigned the Points page to resemble a bank account with various transactions. I determined the
+                important information was the award amount, the teacher who gave the award, and the reason for the
+                award.
+                Ultimately, I went with a “See More” button here instead of pagination since the content is organized
+                already (a student can easily check how many awards they got on a particular day).
+            </p>
+            <article class="idea-box">
+                <div class="idea-box__img-container">
+                    <img src="./redesign-assets/points-history.png" alt="Screenshot of the redesigned Points page.
+                    There are multiple rows of data, each with the number of points awarded to the student,
+                    the teacher who gave them the points, and the reason for awarding them. The rows
+                    are organized by date.">
+                </div>
+            </article>
+
+            <!-- 5. Store and Wishlist Pages -->
+            <h3 class="subsection__title">Store and Wishlist Pages</h3>
+            <p class="main-paragraph">
+                I only aesthetically changed the Store and Wishlist pages since I believe my team and I designed the
+                experience well initially. I mainly redesigned and resized the card elements for items in the
+                Store and Wishlist. I also decided on keeping pagination here instead of a “View More” button; students
+                should be able to go back to a page they saw a particular item on as opposed to scrolling endlessly to
+                find it again.
+            </p>
+            <article class="idea-box">
+                <div class="idea-box__img-container">
+                    <img src="./redesign-assets/pagination.png" alt="Two items in the student store.
+                    One item says '10 Min Early Recess' and the other says
+                    '20 Mins Free Time'. There is also a pill-shaped
+                    control bar below it that says 'Page 1' next to a right-pointing arrow for
+                    a student to switch pages.">
+                </div>
+            </article>
+
+            <!-- 6. Attendance Page -->
+            <h3 class="subsection__title">Attendance Page</h3>
+            <p class="main-paragraph">I focused on making the Attendance page a cleaner much cleaner presentation of the
+                student's attendance record.
+                <span class="emphasized">I went with a simpler table design with a list of items instead a
+                    matrix;</span>
+                each row only shows the student's class, the date, and their attendance status.
+            </p>
+            <article class="idea-box">
+                <div class="idea-box__img-container">
+                    <img src="./redesign-assets/attendance-1.png" alt="A table
+                    titled 'Attendance History' with multiple rows of data.
+                    Each row has a teacher name and class, a date, and the
+                    student's attendance status (for example, 'Present').">
+                </div>
+            </article>
+            <p class="main-paragraph">
+                <span class="emphasized">I made the status tags more accessible since the original
+                    design used red and green together.</span> “Present” would theoretically be the most common
+                status, so I made that a default gray. The “Absent” and “Tardy” tags are red and yellow, respectively,
+                to indicate different levels of severity. The new tags have clearer iconography and visual balance,
+                and are much more accessible for all students.
+            </p>
 
         </section>
     </main>
     <footer>
-        <p class="copyright">&copy; Will Givens IV 2021. All Rights Reserved</p>
+        <p class="copyright">&copy; Will Givens IV 2022. All Rights Reserved</p>
     </footer>
     <script src="/script.js"></script>
 </body>

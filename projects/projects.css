@@ -9,7 +9,9 @@
 
 .emphasized {
     color: var(--blue);
-    font-weight: 600;
+    /* text-decoration: var(--blue) underline .2rem;
+    text-underline-offset: .5rem;
+    font-weight: 600; */
 }
 
 .list {
@@ -123,17 +125,18 @@ h1, h2, h3, h4 {
     font-weight: 600;
     text-align: left;
     letter-spacing: -5%;
-    color: var(--black);
     margin: 0 auto;
     width: 50%;
 }
 
 .section__title {
     text-align: center;
+    text-transform: uppercase;
+    color: var(--black);
 }
 
 .subsection__title{
-    color: hsl(0, 0%, 40%);
+    color: var(--blue);
 }
 
 .main-paragraph {
@@ -171,7 +174,7 @@ h1, h2, h3, h4 {
     align-items: center;
     border: .1rem solid #E6E6E6;
     border-radius: .4rem;
-    padding: 2rem 7.2rem;
+    padding: 2rem 4rem;
 }
 
 .idea-box__img-container img {
@@ -182,8 +185,8 @@ h1, h2, h3, h4 {
     display: flex;
     align-items: flex-start;
     font-size: clamp(1.2rem, 2vw, 1.4rem);
-    color: var(--blue);
-    font-weight: 500;
+    color: var(--black);
+    font-weight: 600;
     line-height: clamp(1.75 * 1.2rem, 1.75 * 2vw, 1.75 * 1.4rem);
     letter-spacing: -5%;
     margin-top: .8rem;
