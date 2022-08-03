@@ -25,7 +25,7 @@
     margin-top: 1.5rem;
     margin-left: 3rem;
     line-height: 2.8rem;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .scroll-to-top {
@@ -121,32 +121,37 @@ h1, h2, h3, h4 {
 }
 
 .section__title, .subsection__title {
-    font-size: 1.6rem;
-    font-weight: 600;
+    font-size: 1.8rem;
+    font-weight: 700;
     text-align: left;
     letter-spacing: -5%;
-    margin: 0 auto;
     width: 50%;
+    color: var(--black)
 }
 
 .section__title {
+    margin: 2.4rem auto;
     text-align: center;
     text-transform: uppercase;
-    color: var(--black);
 }
 
 .subsection__title{
-    color: var(--blue);
+    margin: 4rem auto 1.6rem;
 }
 
 .main-paragraph {
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--black);
     line-height: 3rem;
     width: 50%;
     max-width: 70ch;
     margin: 0 auto;
+    letter-spacing: -.02rem;
+}
+
+.main-paragraph + .main-paragraph {
+    margin-top: 1.6rem;
 }
 
 /* Media */
@@ -165,7 +170,8 @@ h1, h2, h3, h4 {
 }
 
 .idea-box {
-    width: 40%;
+    width: 50%;
+    margin: 2.4rem auto;
 }
 
 .idea-box__img-container {
@@ -205,11 +211,12 @@ h1, h2, h3, h4 {
     display: flex;
     column-gap: 1rem;
     width: 100%;
+    margin: 2.4rem auto;
 }
 
 .figure-container.half-width {
-    width: 65%;
-    margin: 0 auto;
+    width: 50%;
+    margin: 2.4rem auto;
 }
 
 .figure-container > figure
@@ -246,7 +253,7 @@ h1, h2, h3, h4 {
 /* Elements */
 .project-info {
     width: 35%;
-    margin: 0 auto;
+    margin: 1.6rem auto 0;
     background-color: hsla(216, 10%, 90%, .5);
     border-radius: .4rem;
 }
@@ -276,13 +283,9 @@ h1, h2, h3, h4 {
     margin-top: 4rem;
 }
 
-.case-study__section > *:not(:first-child) {
-    margin: 2.4rem auto 0;
-}
-
 .problem-statement, .info-tidbits {
     width: 50%;
-    margin: 0 auto;
+    margin: 2.4rem auto 0;
 }
 
 .problem-statement__text {
@@ -379,18 +382,19 @@ h1, h2, h3, h4 {
     
     /* Text */
     .list {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         width: 100%;
     }
 
     .section__title, .subsection__title {
+        font-size: 1.6rem;
         width: 100%;
     }
 
     .main-paragraph {
         width: 100%;
-        font-size: 1.4rem;
-        line-height: 2.6rem;
+        font-size: 1.6rem;
+        line-height: 3.2rem;
     }
 
     .problem-statement, .info-tidbits {
