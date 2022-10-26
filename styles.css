@@ -1,7 +1,7 @@
 :root {
   font-size: 62.5%;
   width: 100vw;
-  --background-light-mode: hsl(0, 0%, 98%);
+  --background-light-mode: hsl(0, 0%, 99%);
   --black: hsl(0, 0%, 15%);
   --gray: hsl(0, 0%, 50%);
   --gray-light: hsl(0, 0%, 75%);
@@ -10,7 +10,7 @@
   --blue: hsl(217, 67%, 48%);
   --blue-light: hsl(215, 100%, 95%);
   --blue-dark: hsl(217, 67%, 35%);
-  
+
   /* Dark Mode Styles */
   --blue-dark-mode: hsl(217, 64%, 60%);
   --light-gray-dark-mode: hsl(0, 0%, 70%);
@@ -70,7 +70,7 @@ html {
 }
 
 body {
-  font-family: "Spartan", sans-serif;
+  font-family: 'Spartan', sans-serif;
   margin: 0 auto;
   position: relative;
   width: 100%;
@@ -134,7 +134,7 @@ header {
 }
 
 .header-nav__item:focus {
-  border: .2rem dashed var(--blue);
+  border: 0.2rem dashed var(--blue);
 }
 
 main {
@@ -150,7 +150,7 @@ footer {
   width: 100%;
   margin-top: 2rem;
   padding: 2rem 0;
-  border-top: .1rem solid var(--gray-light);
+  border-top: 0.1rem solid var(--gray-light);
 }
 
 .copyright {
@@ -214,6 +214,6 @@ footer {
 @media (min-width: 720px) {
   header {
     width: 85%;
-    padding-top: 2rem; 
+    padding-top: 2rem;
   }
 }
