@@ -417,7 +417,7 @@ h4 {
     }
 } */
 
-@media (max-width: 749px) {
+@media (max-width: 999px) {
   .case-study {
     width: 90%;
     margin: 0 auto;
@@ -457,7 +457,8 @@ h4 {
   }
 
   .problem-statement,
-  .info-tidbits {
+  .info-tidbits,
+  .citation {
     width: 100%;
   }
 
