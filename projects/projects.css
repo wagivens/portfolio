@@ -16,13 +16,13 @@
 
 .list {
   width: 50%;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin: 0 auto 1.6rem;
 }
 
 .list-item {
   margin-top: 1.5rem;
-  line-height: 2.8rem;
+  line-height: 3.6rem;
   font-weight: 400;
   list-style-position: inside;
 }
@@ -305,7 +305,7 @@ h4 {
   line-height: 2.8rem;
 }
 
-.research-plan-box,
+.explanation-box,
 .research-finding {
   border-radius: 0.4rem;
   padding: 2rem;
@@ -313,20 +313,20 @@ h4 {
   margin: 2rem auto;
 }
 
-.research-plan-box {
+.explanation-box {
   background-color: hsl(215, 10%, 98%);
   border: 0.2rem solid hsl(215, 5%, 60%);
   font-weight: 600;
 }
 
-.research-plan-box .box-list {
+.explanation-box .box-list {
   color: hsl(215, 5%, 30%);
   margin-top: 2rem;
   list-style-position: inside;
   font-style: italic;
 }
 
-.research-plan-box .box-list li + li {
+.explanation-box .box-list li + li {
   margin-top: 2rem;
 }
 
@@ -335,7 +335,7 @@ h4 {
   border: 0.2rem solid var(--blue);
 }
 
-.research-plan-box > *,
+.explanation-box > *,
 .research-data,
 .research-takeaway {
   font-size: clamp(1.4rem, 2vw, 1.6rem);
@@ -346,6 +346,9 @@ h4 {
   font-style: italic;
   font-weight: 600;
   color: var(--blue);
+}
+
+.research-data + .research-takeaway {
   margin-top: 2rem;
 }
 
@@ -489,7 +492,7 @@ h4 {
     padding: 0;
   }
 
-  .research-plan-box,
+  .explanation-box,
   .research-finding {
     width: 75%;
   }

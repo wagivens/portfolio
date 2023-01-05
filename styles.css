@@ -78,11 +78,11 @@ body {
 }
 
 ::-moz-selection {
-  background-color: var(--blue-light);
+  background-color: hsl(63, 87%, 88%);
 }
 
 ::selection {
-  background-color: var(--blue-light);
+  background-color: hsl(63, 87%, 88%);
 }
 
 a {
