@@ -21,6 +21,10 @@ html {
   background-color: var(--background-light-mode);
 }
 
+svg {
+  transform: translate(0px, 0px);
+}
+
 /* Utility Classes */
 .blue {
   color: var(--blue);
@@ -147,6 +151,8 @@ main {
 /* -------------------------Footer Styling---------------------------------- */
 
 footer {
+  display: flex;
+  justify-content: center;
   width: 100%;
   margin-top: 2rem;
   padding: 2rem 0;
@@ -154,6 +160,7 @@ footer {
 }
 
 .copyright {
+  width: 100%;
   color: var(--gray);
   font-size: 1rem;
   text-align: center;
