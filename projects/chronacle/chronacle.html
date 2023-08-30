@@ -8,373 +8,69 @@
     <meta name="description" content="In-depth highlight of Chronacle, a progressive
     web application for planning journeys around the world.">
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@200;400;500;600;700&family=Kalam&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Spartan:wght@200;400;500;600;700&Spectral:ital,wght@1,600&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="../../styles.css" />
     <link rel="stylesheet" type="text/css" href="../projects.css" />
     <title>Chronacle • Will Givens IV</title>
 </head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2XH636PP1Q"></script>
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-2XH636PP1Q"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-2XH636PP1Q');
-</script>
+</script> -->
 
-<body class="fadeIn">
+<body class="fadeIn project">
     <header>
         <nav class="navigation header-nav flex-row">
-            <a href="https://wagivens.github.io" class="header-nav__name" role="link">Will Givens IV</a>
-            <a href="https://github.com/wagivens" class="header-nav__item" role="link">GitHub</a>
+            <a href="https://wagivens.github.io/" class="back-btn flex-row">
+                <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12.8114 9.71597C12.8114 7.71708 11.4654 6.33594 9.18527 6.33594H6.03125L4.87109 6.39119L5.75 5.64789L7.02567 4.40235C7.12612 4.30693 7.19141 4.18137 7.19141 4.01563C7.19141 3.69923 6.97042 3.47322 6.64397 3.47322C6.50335 3.47322 6.34766 3.53851 6.23716 3.64398L3.35937 6.48159C3.24386 6.59208 3.18359 6.74275 3.18359 6.89844C3.18359 7.04911 3.24386 7.19978 3.35937 7.31028L6.23716 10.1479C6.34766 10.2534 6.50335 10.3186 6.64397 10.3186C6.97042 10.3186 7.19141 10.0926 7.19141 9.77624C7.19141 9.6105 7.12612 9.48996 7.02567 9.38952L5.75 8.14398L4.87109 7.4057L6.03125 7.45592H9.21038C10.8175 7.45592 11.7065 8.36999 11.7065 9.67579C11.7065 10.9816 10.8175 11.9358 9.21038 11.9358H8.03516C7.70368 11.9358 7.46763 12.1869 7.46763 12.4933C7.46763 12.7997 7.70368 13.0508 8.04018 13.0508H9.25056C11.4905 13.0508 12.8114 11.7299 12.8114 9.71597Z"
+                        fill="black" />
+                </svg>
+                Back
+            </a>
             <!-- <a href="../../WillardGivensResume_2022.pdf" class="header-nav__item" role="link">Resume</a> -->
         </nav>
     </header>
-    <h1 class="project-title">Chronacle</h1>
-    <div class="home-backlink">
-        <svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M4.05469 9.74665C4.05469 9.93499 4.1363 10.1233 4.28069 10.2614L8.42411 14.3986C8.57478 14.543 8.738 14.612 8.92006 14.612C9.31557 14.612 9.60435 14.3295 9.60435 13.9466C9.60435 13.7457 9.52902 13.5762 9.39718 13.4506L7.98465 12.0193L6.16406 10.3556L7.62681 10.4435H15.2356C15.65 10.4435 15.9388 10.1547 15.9388 9.74665C15.9388 9.33231 15.65 9.04353 15.2356 9.04353H7.62681L6.17034 9.13142L7.98465 7.46777L9.39718 6.03641C9.52902 5.91085 9.60435 5.74135 9.60435 5.54046C9.60435 5.15751 9.31557 4.875 8.92006 4.875C8.738 4.875 8.5685 4.94406 8.40527 5.101L4.28069 9.22559C4.1363 9.3637 4.05469 9.55204 4.05469 9.74665Z"
-                fill="#2867cc" />
-        </svg>
-        <a href="../../index.html">back to Home</a>
-    </div>
-    <div class="project-banner">
-        <img class="project-banner__image" src="./splash-photo.png"
-            alt="Large banner photo with a blue background. Says 'Chronacle' and includes multiple mockups.">
-    </div>
-
     <!-- Intrapage Navigation -->
-    <nav class="intrapage-nav">
+    <!-- <nav class="intrapage-nav">
         <ul class="intrapage-nav__link-list flex-row">
             <li class="intrapage-nav__link" tabindex="0" role="link">Overview</li>
             <li class="intrapage-nav__link" tabindex="0" role="link">Research</li>
             <li class="intrapage-nav__link" tabindex="0" role="link">Prototyping</li>
             <li class="intrapage-nav__link" tabindex="0" role="link">Next Steps</li>
         </ul>
-    </nav>
+    </nav> -->
     <main class="case-study">
-        <button class="scroll-to-top" type="button">&uarr;</button>
+        <h1 class="project-title">Building Chronacle</h1>
 
         <section class="case-study__section" id="Overview">
-            <h2 class="section__title">Overview</h2>
-            <article class="project-info">
-                <div class="info-line">
-                    <svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M9.99379 16.757C13.5534 16.757 16.4914 13.8189 16.4914 10.2594C16.4914 6.70606 13.5471 3.76801 9.98751 3.76801C6.43422 3.76801 3.50244 6.70606 3.50244 10.2594C3.50244 13.8189 6.4405 16.757 9.99379 16.757ZM9.99379 10.0396C9.07722 10.0396 8.33643 9.26745 8.33643 8.23159C8.33643 7.27107 9.07722 6.4675 9.99379 6.4675C10.9041 6.4675 11.6449 7.27107 11.6449 8.23159C11.6449 9.26745 10.9041 10.0459 9.99379 10.0396ZM7.11851 13.5301C6.82345 13.5301 6.68534 13.3355 6.68534 13.0719C6.68534 12.3687 7.72747 10.5544 9.99379 10.5544C12.2538 10.5544 13.296 12.3687 13.296 13.0719C13.296 13.3355 13.1579 13.5301 12.8691 13.5301H7.11851Z"
-                            fill="#595959" />
-                    </svg>
-                    <p>I am the designer and developer for this project</p>
-                </div>
-                <div class="info-line">
-                    <svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M9.99379 16.7444C13.5534 16.7444 16.4914 13.8064 16.4914 10.2531C16.4914 6.69978 13.5471 3.76172 9.98751 3.76172C6.43422 3.76172 3.50244 6.69978 3.50244 10.2531C3.50244 13.8064 6.4405 16.7444 9.99379 16.7444ZM6.82973 11.0441C6.54722 11.0441 6.3275 10.8244 6.3275 10.5419C6.3275 10.2593 6.54722 10.0396 6.82973 10.0396H9.49156V6.4361C9.49156 6.1536 9.71129 5.93387 9.98751 5.93387C10.2763 5.93387 10.496 6.1536 10.496 6.4361V10.5419C10.496 10.8244 10.2763 11.0441 9.98751 11.0441H6.82973Z"
-                            fill="#595959" />
-                    </svg>
-                    <p>May 2021 - Ongoing</p>
-                </div>
-                <div class="info-line">
-                    <svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M4.47754 10.5021C5.54688 10.5021 6.44531 9.55481 6.44531 8.32922C6.44531 7.13293 5.53711 6.21985 4.47754 6.21985C3.41797 6.21985 2.50488 7.14758 2.50977 8.33899C2.50977 9.55481 3.41309 10.5021 4.47754 10.5021ZM10.0049 10.5021C11.0693 10.5021 11.9727 9.55481 11.9727 8.32922C11.9727 7.13293 11.0645 6.21985 10.0049 6.21985C8.94043 6.21985 8.03223 7.14758 8.03711 8.33899C8.03711 9.55481 8.93555 10.5021 10.0049 10.5021ZM15.5225 10.5021C16.5869 10.5021 17.4902 9.55481 17.4902 8.32922C17.4902 7.13293 16.582 6.21985 15.5225 6.21985C14.4629 6.21985 13.5498 7.14758 13.5547 8.33899C13.5547 9.55481 14.458 10.5021 15.5225 10.5021ZM1.43066 15.0431H7.51953C8.3252 15.0431 8.60352 14.799 8.60352 14.3546C8.60352 13.0948 7.00684 11.3663 4.47754 11.3663C1.94336 11.3663 0.351562 13.0948 0.351562 14.3546C0.351562 14.799 0.629883 15.0431 1.43066 15.0431ZM10 11.3663C9.18457 11.3663 8.4668 11.5519 7.87109 11.84C8.72559 12.5089 9.27246 13.4025 9.27246 14.3546C9.27246 14.6232 9.21387 14.8527 9.09668 15.0431H13.0469C13.8477 15.0431 14.126 14.799 14.126 14.3546C14.126 13.0948 12.5342 11.3663 10 11.3663ZM15.5225 11.3663C14.707 11.3663 13.9893 11.5519 13.3936 11.84C14.248 12.504 14.7949 13.4025 14.7949 14.3546C14.7949 14.6232 14.7363 14.8527 14.624 15.0431H18.5645C19.3652 15.0431 19.6436 14.799 19.6436 14.3546C19.6436 13.0948 18.0518 11.3663 15.5225 11.3663Z"
-                            fill="#595959" />
-                    </svg>
-                    <p>Just me!</p>
-                </div>
-                <div class="info-line">
-                    <svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M7.74618 8.77148C7.41345 9.1042 7.40717 9.54993 7.74618 9.88894L10.4268 12.5759C10.7658 12.9149 11.2116 12.8961 11.5443 12.5633L12.3039 11.7911C12.0842 11.4521 12.1093 11.019 12.4044 10.7239C12.7057 10.4288 13.1326 10.3975 13.4779 10.636L17.1003 7.00738C18.0419 6.05314 18.0419 5.03612 17.1128 4.11327L16.2025 3.20298C15.2671 2.27385 14.2501 2.27385 13.3021 3.21553L9.67977 6.8316C9.91833 7.17061 9.88694 7.61006 9.59188 7.9114C9.29682 8.20019 8.86365 8.23158 8.51208 8.00557L7.74618 8.77148ZM11.3309 7.42173L14.2752 4.47111C14.3882 4.35183 14.5891 4.37067 14.7084 4.47739C14.8402 4.58411 14.8214 4.78501 14.7084 4.89801L11.7578 7.84862C11.6322 7.9679 11.4501 7.96163 11.3434 7.84862C11.2179 7.72307 11.2116 7.54101 11.3309 7.42173ZM12.4797 8.54547L15.4115 5.61997C15.5371 5.50069 15.7317 5.49441 15.8447 5.61997C15.9514 5.74553 15.9514 5.92759 15.8447 6.04059L12.9003 8.9912C12.7811 9.11676 12.5927 9.09793 12.4797 8.9912C12.3416 8.85309 12.3416 8.68358 12.4797 8.54547ZM3.48976 14.5346L2.2844 16.6565C2.16512 16.8762 2.14001 17.0709 2.2844 17.2215L3.08797 18.0251C3.24492 18.1758 3.43954 18.1444 3.64671 18.0314L5.78119 16.8197C6.0072 16.6942 6.15787 16.4556 6.17042 16.2422L6.20809 15.5956L9.21521 12.5884L7.72734 11.1006L4.72023 14.1014L4.07361 14.1454C3.85388 14.1579 3.61532 14.3023 3.48976 14.5346Z"
-                            fill="#595959" />
-                    </svg>
-                    <p>This project is currently being built</p>
-                </div>
-            </article>
-            <h3 class="subsection__title">Trip Planning on Notion</h3>
             <p class="main-paragraph">
-                I have never been able to travel outside of my home state,
-                so I have a lot of places I want to visit.
-                One day, I decided to start collating my trip ideas in Notion instead of
-                trying to keep them all in my head;
-                I listed out every location along with potential hotels to stay at,
-                sites to see, and restaurants to dine at.
-            </p>
-            <article class="idea-box">
-                <div class="idea-box__img-container">
-                    <img src="./notion-planning.png" alt="Two screenshots of a Notion page.
-                  One screenshot has city names on it, and the other has names of restaurants in
-                  the city.">
-                </div>
-            </article>
-            <p class="main-paragraph">
-                It became a bit cumbersome to use. After a while, I thought,
-                “This is probably how lots of people plan their trips,
-                but there might be a cleaner, more streamlined way.”
-                Thus, the task for me was to<span class="emphasized"> create a simple, lightweight way
-                    for people to organize their plans
-                    for trips around the world</span>, and Chronacle was born.
+                Up until July 2023, at the age of 24, I had never owned a passport.
+                Having never been on a plane (or even inside an airport),
+                I spent many years listing out places I wanted to visit,
+                as well as everything I wanted to do when I got there.
+                Over time, this list became clunky and cumbersome to use,
+                and I longed for something more engaging or personalized;
+                I also figured this is the way many people plan their trips,
+                so a solution for this would be interesting to put together.
+                In 2021, I set out to craft a fun,
+                easy way to document one's journeys around the world.
             </p>
             <div class="figure-container">
                 <figure>
-                    <img src="./hifi_showcase.png" alt="Multiple mockups of the final designs for Chronacle
-                    put together.">
+                    <img src="./splash-photo.png" alt="Large banner photo with a blue background. 
+                        Says 'Chronacle' and includes multiple mockups.">
                 </figure>
             </div>
-        </section>
-        <section class="case-study__section" id="Research">
-            <h2 class="section__title">Exploratory Research</h2>
-            <p class="main-paragraph">
-                In this stage of early, generative research,
-                <span class="emphasized">I mostly focused on attitudinal methods and analyzing how people feel about
-                    trip planning and their
-                    resulting trips</span>;
-                I thought this would give me a great sense of what
-                people care about when planning trips and their
-                reception to existing tools. Also, <span class="emphasized">behavioral methods would
-                    have been impractical</span> because I wasn't able
-                to observe people while they were planning or taking their trips.
-            </p>
-
-            <div class="explanation-box">
-                <p class="box-title">What I want to know (research objectives):</p>
-                <ol class="box-list">
-                    <li>Determine how people are already planning trips, and how they feel about it.</li>
-                    <li>Understand the typical structure of people's trips (location, length, budget, activities, etc).
-                    </li>
-                    <li>Discover people's typical motivations behind taking trips and how they feel about recent trips
-                        they've taken.</li>
-                </ol>
-            </div>
-            <div class="explanation-box">
-                <p class="box-title">Some questions I need to answer to reach objectives:</p>
-                <ol class="box-list">
-                    <li>How far in advance are people planning?</li>
-                    <li>How important is cost when trip planning?</li>
-                    <li>What is the average length of people's trips?</li>
-                    <li>Where are people making trips to (local, national, international)?
-                    <li>What kinds of activities, restaurants, sights, etc. are people saving before traveling? Where do
-                        they save them?
-                    </li>
-                    <li>How many trips are people planning each year?</li>
-                </ol>
-            </div>
-
-            <h3 class="subsection__title">Secondary Research</h3>
-            <p class="main-paragraph">
-                As the sole designer, I figured I could first
-                <span class="emphasized">leverage some secondary research from a reputable consumer
-                    research organization like Mintel</span>. This gave me the attitudinal data I was looking for, but
-                also
-                insights into people's behavior regarding their trips. Here's what I learned:
-            </p>
-            <!-- Research Findings -->
-            <div class="research-finding">
-                <p class="research-data">
-                    <strong>People are taking fewer trips post-pandemic, and trips are shorter.</strong>
-                    Most people planned to take between 1 and 3 trips throughout 2021, and nearly half of the people
-                    surveyed
-                    (46%) planned for trips to be between 1 and 3 days long. The next largest group (38%)
-                    planned for their trips to be between 4 and 7 days. Lower-income households (less than $75k income)
-                    had shorter trips, only
-                    planning for trips between 1 and 3 days.
-                </p>
-                <p class="research-takeaway">My Takeaway: The small number of trips and the limited time spent away
-                    might mean people will want to maximize their trip schedules. Also, since lower-income homes are
-                    staying for shorter periods, they will need to be able to easily see the cost of food and
-                    activities, and maybe even the average time activities require</p>
-            </div>
-            <div class="research-finding">
-                <p class="research-data">
-                    <strong>Folks are staying in their countries and taking vacations to familiar places</strong>;
-                    68% of people surveyed said recent trips were to visit family, and 58% said trips were to elsewhere
-                    in the U.S. Only 17% went somewhere new, and even fewer (13%) to a place outside of the U.S.
-                </p>
-                <p class="research-takeaway">My Takeaway: People are reluctant to visit places they know nothing about,
-                    so I could give suggestions for things like landmarks, restaurants, and entertainment instead of
-                    leaving them to find and list things out. This gives them some pre-trip comfort and allows them to
-                    freely change plans without consequence</p>
-            </div>
-            <div class="research-finding">
-                <p class="research-data">
-                    <strong>People are increasingly using their mobile devices to plan trips, and are increasingly
-                        booking accommodations through brand apps instead of online travel agencies like TripAdvisor.
-                        They are more likely to use online travel agencies for activities instead of for
-                        accommodations.</strong>
-                </p>
-                <p class="research-takeaway">My Takeaway: I don't need to focus on providing ways to book accommodations
-                    like hotels, flights, rental cars, etc. since people will use their preferred brands' apps to do so.
-                    Chronacle should focus on activities/experiences you can't reserve in advance and things you
-                    wouldn't reserve on an app, such as restaurant reservations</p>
-            </div>
-            <div class="research-finding">
-                <p class="research-data">
-                    <strong>People want flexibility in their trips.</strong> 53% of people surveyed wanted travel
-                    booking apps to show lower-cost alternatives to their dates and times. The same amount of people
-                    said they wanted a flexible booking calendar. Safety ratings and personalizations were desired
-                    features as well, with 36% and 31% of people saying they wanted them, respectively.
-                </p>
-                <p class="research-takeaway">My Takeaway: People care about flexibility and cost, so Chronacle should
-                    provide the price
-                    of activities, entertainment, food, etc. and present all options. It should also give people a sense
-                    of freedom by allowing them to freely add, remove, and rearrange the things they add to their trip.
-                    Since personalization is important, Chronacle should let people both search for things they want to
-                    see/do as well as add them to a personal “trip” they can keep referencing and changing.</p>
-            </div>
-            <div class="research-finding">
-                <p class="research-data">
-                    <strong>People are planning closer to trip dates--sometimes not until days or weeks beforehand--to
-                        take advantage of deals and discounts. However, things like flights and hotels are often first
-                        booked about a month in advance.</strong>
-                </p>
-                <p class="research-takeaway">My Takeaway: This is more evidence that flexibility is very important for
-                    people when planning trips. Chronacle should aim to allow as much freedom and flexibility for users
-                    as possible</p>
-            </div>
-            <p class="citation">Source: Mintel. (2022). Travel Booking: Direct Vs OTAs US, 2022 -- March 2022.
-                Retrieved April 28, 2022 from Mintel Reports database.
-            </p>
-
-            <h3 class="subsection__title">Competitive Analysis</h3>
-            <p class="main-paragraph">
-                The Mintel study gave insight into which platforms people are using to outline their trips, so <span
-                    class="emphasized">I used
-                    that information to conduct a competitive analysis</span>; I was able to pinpoint common features
-                and user
-                flows as well as identify opportunities for differentiation. <span class="emphasized">This competitive
-                    analysis was largely for
-                    generative reasons and to explore crucial features</span>; I only
-                focused on particular heuristics like Flexibility and Efficiency since
-                they directly related to my secondary research findings.
-            </p>
-            <p class="main-paragraph">
-                <span class="emphasized">The four key players in this space are Booking
-                    Holdings (creator of
-                    booking.com), Expedia Group, Airbnb, and TripAdvisor</span>. Since Booking Holdings and Airbnb's
-                products are
-                more centered on accommodations, I decided to review Expedia and TripAdvisor's products along with other
-                direct competitors TripScout and Wanderlog.
-            </p>
-
-            <div class="figure-container half-width">
-                <figure>
-                    <img src="./highlight-competitors-1.png"
-                        alt="Screenshots of trip itinerary pages from competitors.">
-                </figure>
-            </div>
-            <div class="figure-container half-width">
-                <figure>
-                    <img src="./highlight-competitors-2.png" alt="Screenshots of Explore pages from competitors.">
-                </figure>
-            </div>
-            <div class="figure-container half-width">
-                <figure>
-                    <img src="./highlight-competitors-3.png" alt="Screenshots of business pages from competitors.">
-                </figure>
-            </div>
-            <div class="figure-container half-width">
-                <figure>
-                    <img src="./highlight-competitors-4.png"
-                        alt="Screenshots of suggested activities from competitors.">
-                </figure>
-            </div>
-            <!-- Competitive Analysis Findings -->
-            <div class="research-finding">
-                <p class="research-data">
-                    <strong>Many of them were efficient, particularly in helping me find popular activities and
-                        businesses</strong>; they presented suggested activities immediately and allowed me to tap to
-                    save individual ones for my trip.
-                </p>
-            </div>
-            <div class="research-finding">
-                <p class="research-data">
-                    <strong>Expedia could improve flexibility.</strong> Unlike other competitors, I wasn't able to
-                    search for specific businesses or sights in cities; instead, I could only see events and activities
-                    within a certain time period.
-                </p>
-            </div>
-
-            <div class="explanation-box">
-                <p class="box-title">After examining the applications from competitors,
-                    there were four essential features and flows that I encountered and wanted to focus on for
-                    Chronacle:</p>
-                <ol class="box-list">
-                    <li>A primary “Trip” page that presents the user with an overview of their trip,
-                        as well as an itinerary section for users to organize their desired activities.</li>
-                    <li>A section including suggested or popular activities in location,
-                        allowing users to quickly add popular sites to their trip plans.</li>
-                    <li>An “Explore” page for users to search for various things to do in a particular
-                        location.</li>
-                    <li>A page essentially giving an overview of a specific business or activity.
-                        These pages typically include information such as a business's/activity's address,
-                        phone number, and operating hours, as well as photos.</li>
-                </ol>
-            </div>
-
-        </section>
-        <section class="case-study__section" id="Ideating">
-            <h2 class="section__title">Crafting the Solution</h2>
-            <h3 class="subsection__title">Sketching</h3>
-            <p class="main-paragraph">
-                I did a couple Crazy 8s ideation sessions to create some explorations of potential solutions.
-                (Unfortunately, photos of the mobile-view sketches are lost).
-            </p>
-            <article class="idea-box">
-                <div class="idea-box__img-container">
-                    <img src="./crazy-eights_desktop.png"
-                        alt="Examples of sketches I made during a crazy eights session.">
-                </div>
-            </article>
-            <article class="idea-box">
-                <div class="idea-box__img-container">
-                    <img src="./crazy-eights_desktop-2.png"
-                        alt="Sketch explorations of the desktop view for Chronacle.">
-                </div>
-            </article>
-        </section>
-        <section class="case-study__section" id="Prototyping">
-            <h2 class="section__title">Bringing it to Life</h2>
-            <h3 class="subsection__title">High-Fidelity Designs</h3>
-            <p class="main-paragraph">
-                After having done some explorations of potential solutions
-                informed by the research I conducted prior, I
-                put together the final designs:
-            </p>
-            <div class="figure-container half-width">
-                <figure>
-                    <img src="./desktop-view-1.png" alt="Mockup of the desktop login page for Chronacle. On one side
-                    it has a login form. The other side says 'where will you go next?' with thumbnails for
-                    different cities.">
-                </figure>
-            </div>
-            <div class="figure-container half-width">
-                <figure>
-                    <img src="./AllTrips.png" alt="Mockups of the screen showing all of a user's trips
-                    for the mobile view of Chronacle. Each trip has a thumbnail, title, and date.">
-                </figure>
-            </div>
-            <div class="figure-container half-width">
-                <figure>
-                    <img src="./Flow-AddTrip.png" alt="Mockups of the user flow for adding a trip
-                    in the mobile view for Chronacle. Light mode view.">
-                </figure>
-                <figure>
-                    <img src="./Flow-AddTrip_Dark.png" alt="Mockups of the user flow for adding a trip
-                    in the mobile view for Chronacle. Dark mode view.">
-                </figure>
-            </div>
-            <div class="figure-container half-width">
-                <figure>
-                    <img src="./desktop-view-2.png" alt="Both light and dark mode desktop
-                    mockups for a Trip page in Chronacle. One side of the screen has the
-                    location image, title, dates, and added activities. The other side has
-                    the Explore section.">
-                </figure>
-            </div>
-            <div class="figure-container half-width">
+            <div class="figure-container">
                 <figure>
                     <img src="./Flow-BusinessPage_Dark.png" alt="Mockups of the Business Page 
                     on mobile. One shows the business's photo and name, another shows the 
@@ -382,95 +78,141 @@
                     add the business to your itinerary.">
                 </figure>
             </div>
-        </section>
-        <section class="case-study__section" id="Refinements">
-            <h3 class="subsection__title">Refinements</h3>
             <p class="main-paragraph">
-                Of course, your first solution(s) are hardly ever your best,
-                and there is always room to iterate and improve.
-                Even after completing the high-fidelity designs for Chronacle,
-                I noticed there were some elements of the product that could be refined.
+                Generative research showed me folks are taking fewer,
+                shorter trips post-pandemic and only traveling to familiar places.
+                Travelers are reluctant to visit new places but need helpful
+                starting points when they <span class="emphasized">do</span> go somewhere new; they want to see
+                as many options as possible for things to do.
+                People plan trips mere days or weeks before leaving,
+                and use their preferred brands' sites (ex: Marriott Hotels)
+                to book accommodations like hotels/flights/rental cars instead
+                of using travel agency sites (ex: TripAdvisor).
             </p>
-
-            <div class="explanation-box">
-                <p class="box-title">Here is what I changed:</p>
-                <ol class="box-list">
-                    <li>For the main Trip page, I refined the itinerary date list to be cleaner, changed
-                        the activity rating to be more consistent with the Explore page, and moved all activity actions
-                        into
-                        their own menu.</li>
-                    <li>Within the Explore page, I made use of breadcrumbs instead of buttons. This lets
-                        the user know how far into the Explore section they are and provides easy backtracking.</li>
-                    <li>When a user is searching for activities, results are segmented using pagination. I
-                        decided on this instead of a “load more” button so users can know which page they found certain
-                        activities on.</li>
-                </ol>
-            </div>
-
-            <div class="figure-container half-width">
+            <article class="idea-box">
+                <div class="idea-box__img-container">
+                    <video src="./videos/flow_Create-Account.mp4" autoplay loop muted></video>
+                </div>
+            </article>
+            <article class="idea-box">
+                <div class="idea-box__img-container">
+                    <video src="./videos/flow_AllTrips-1.mp4" autoplay loop muted></video>
+                </div>
+                <div class="idea-box__caption">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.0862 18.3153C13.6727 18.3153 15.2296 17.3862 15.2296 15.8356V12.4329C16.3157 11.4787 16.9497 9.95318 16.9497 8.26442C16.9497 4.34073 14.4072 1.72913 10.5902 1.72913C6.7921 1.72913 4.2621 4.28423 4.2621 8.12631C4.2621 8.33976 4.26838 8.52182 4.28721 8.6976L3.3832 10.3173C3.15091 10.7254 3.04419 11.1146 3.04419 11.4787C3.04419 12.1693 3.47736 12.728 4.2621 12.8912V14.1656C4.2621 15.4526 5.14729 16.093 6.37776 15.9611L7.00555 15.8921C7.04321 17.4113 8.56874 18.3153 11.0862 18.3153ZM11.0862 17.1037C9.25303 17.1037 8.1544 16.5387 8.1544 15.6284V14.7683C8.1544 14.6239 8.06651 14.5549 7.9284 14.5674L6.23336 14.7495C5.73741 14.806 5.47374 14.5925 5.47374 14.0715V12.0751C5.47374 11.9747 5.3984 11.9056 5.29168 11.9056H4.94639C4.54461 11.9056 4.31233 11.7047 4.31233 11.3908C4.31233 11.2276 4.36883 11.033 4.48183 10.8384L5.53652 8.94243C5.49257 8.65993 5.46746 8.3837 5.46746 8.10747C5.46746 5.00619 7.51406 2.94076 10.5902 2.94076C13.679 2.94076 15.7381 5.06897 15.7381 8.26442C15.7381 9.82134 15.0852 11.1711 14.0117 11.824V15.6284C14.0117 16.5387 12.9131 17.1037 11.0862 17.1037ZM6.44681 7.09673C6.44681 8.29581 7.2755 9.11194 8.51224 9.11194C8.68175 9.11194 8.83869 9.09938 8.98936 9.06799C9.36604 9.39444 9.90594 9.58278 10.4961 9.58278C10.7221 9.58278 10.9669 9.55767 11.2055 9.49489C11.444 9.73345 11.8019 9.87156 12.2225 9.87156H12.3794C12.4924 10.4994 12.9005 10.9263 13.4153 10.9263C14.1561 10.9263 14.6834 10.1038 14.6834 8.93616C14.6834 8.62854 14.6709 8.38998 14.652 8.17653C14.8655 7.9003 14.9848 7.53618 14.9848 7.11557C14.9848 6.2806 14.4323 5.6277 13.5911 5.44564C13.409 4.71113 12.7749 4.18379 12.0028 4.18379C11.9463 4.18379 11.8709 4.19634 11.7956 4.2089C11.5194 3.90128 11.105 3.71294 10.6593 3.71294C10.1696 3.71294 9.74271 3.895 9.44765 4.19634C9.22792 4.10845 9.00192 4.06451 8.76336 4.06451C7.92212 4.06451 7.28805 4.64207 7.28805 5.42681V5.43309C6.76698 5.80976 6.44681 6.43755 6.44681 7.09673ZM8.98936 5.33264C8.98308 5.53981 9.12748 5.69048 9.32837 5.69048C9.52926 5.69048 9.6611 5.55865 9.67365 5.35775C9.69249 4.79274 10.1006 4.39723 10.6593 4.39723C10.9857 4.39723 11.2808 4.57302 11.4001 4.84297C11.4503 4.93713 11.5507 4.94341 11.6951 4.90574C11.7705 4.88691 11.8521 4.87435 11.94 4.87435C12.5113 4.88063 12.9507 5.32009 12.9507 5.89765C12.9507 7.33529 10.8602 7.12184 10.8602 8.65993C10.8602 8.72899 10.8665 8.79804 10.879 8.8671C10.7723 8.88593 10.6593 8.89221 10.5526 8.89221C10.2889 8.89221 10.0315 8.83571 9.81805 8.74154C10.2826 8.42765 10.5588 7.91914 10.5588 7.29762C10.5588 7.25996 10.5526 7.22229 10.5526 7.18462C11.218 6.97745 11.5696 6.49405 11.5633 5.75326C11.5633 5.5712 11.4001 5.40798 11.2117 5.40798C11.0297 5.40798 10.8727 5.56492 10.879 5.75326C10.8853 6.17388 10.7221 6.41872 10.3642 6.52544C10.2952 6.41244 10.2136 6.31199 10.1131 6.23038C9.98127 6.11738 9.89338 6.07343 9.76782 6.07343C9.57321 6.07343 9.43509 6.20527 9.43509 6.38733C9.43509 6.58822 9.54182 6.64472 9.69249 6.78284C9.81177 6.89584 9.87455 7.07162 9.87455 7.28507C9.87455 7.96936 9.34092 8.42137 8.5248 8.42137C7.68356 8.42137 7.1311 7.9003 7.1311 7.09673C7.1311 6.74517 7.26294 6.41244 7.49522 6.1676C7.7275 6.51916 8.13557 6.72634 8.64408 6.72634C8.82614 6.72634 8.98936 6.56939 8.98936 6.38733C8.98936 6.19899 8.83241 6.04204 8.64408 6.04204C8.24229 6.04204 7.97862 5.79721 7.97862 5.42681C7.97862 5.0313 8.30507 4.7488 8.75708 4.7488C8.8638 4.7488 8.97681 4.76763 9.08353 4.79902C9.02703 4.96225 8.99564 5.13803 8.98936 5.33264ZM12.7435 8.45276C12.7435 8.63482 12.8817 8.77921 13.0763 8.79804C13.4153 8.82315 13.7229 8.77293 13.9866 8.67248C13.9928 8.74782 13.9928 8.83571 13.9928 8.92988C13.9928 9.68951 13.7292 10.242 13.4153 10.242C13.1391 10.242 12.9507 9.8904 12.9507 9.38817C12.9507 9.294 12.8817 9.24377 12.7938 9.24377C12.7122 9.24377 12.6117 9.25005 12.5175 9.25005C11.8835 9.25005 11.557 9.04288 11.557 8.6411C11.557 7.6178 13.4592 7.81869 13.635 6.14877C14.0431 6.26805 14.2942 6.62589 14.2942 7.11557C14.2942 7.76847 13.8171 8.17025 13.0888 8.11375C12.9005 8.1012 12.7435 8.26442 12.7435 8.45276Z"
+                            fill="#808080" />
+                    </svg>
+                    <p>Splash Screen into a list of trips.</p>
+                </div>
+            </article>
+            <p class="main-paragraph">
+                I decided the focus for Chronacle should be on
+                <span class="emphasized">activities
+                    and experiences you might not reserve in advance</span>, or for
+                things you wouldn't know about unless you lived in that place;
+                Chronacle would provide ample suggestions for
+                amenities, venues, restaurants, landmarks, and more.
+                People want flexibility, so Chronacle should be about
+                helping folks easily map out their trips, as well as
+                provide the freedom to add/remove/rearrange things on their itineraries.
+            </p>
+            <article class="idea-box">
+                <div class="idea-box__img-container">
+                    <video src="./videos/flow_ViewActivity.mp4" autoplay loop muted></video>
+                </div>
+                <div class="idea-box__caption">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.0862 18.3153C13.6727 18.3153 15.2296 17.3862 15.2296 15.8356V12.4329C16.3157 11.4787 16.9497 9.95318 16.9497 8.26442C16.9497 4.34073 14.4072 1.72913 10.5902 1.72913C6.7921 1.72913 4.2621 4.28423 4.2621 8.12631C4.2621 8.33976 4.26838 8.52182 4.28721 8.6976L3.3832 10.3173C3.15091 10.7254 3.04419 11.1146 3.04419 11.4787C3.04419 12.1693 3.47736 12.728 4.2621 12.8912V14.1656C4.2621 15.4526 5.14729 16.093 6.37776 15.9611L7.00555 15.8921C7.04321 17.4113 8.56874 18.3153 11.0862 18.3153ZM11.0862 17.1037C9.25303 17.1037 8.1544 16.5387 8.1544 15.6284V14.7683C8.1544 14.6239 8.06651 14.5549 7.9284 14.5674L6.23336 14.7495C5.73741 14.806 5.47374 14.5925 5.47374 14.0715V12.0751C5.47374 11.9747 5.3984 11.9056 5.29168 11.9056H4.94639C4.54461 11.9056 4.31233 11.7047 4.31233 11.3908C4.31233 11.2276 4.36883 11.033 4.48183 10.8384L5.53652 8.94243C5.49257 8.65993 5.46746 8.3837 5.46746 8.10747C5.46746 5.00619 7.51406 2.94076 10.5902 2.94076C13.679 2.94076 15.7381 5.06897 15.7381 8.26442C15.7381 9.82134 15.0852 11.1711 14.0117 11.824V15.6284C14.0117 16.5387 12.9131 17.1037 11.0862 17.1037ZM6.44681 7.09673C6.44681 8.29581 7.2755 9.11194 8.51224 9.11194C8.68175 9.11194 8.83869 9.09938 8.98936 9.06799C9.36604 9.39444 9.90594 9.58278 10.4961 9.58278C10.7221 9.58278 10.9669 9.55767 11.2055 9.49489C11.444 9.73345 11.8019 9.87156 12.2225 9.87156H12.3794C12.4924 10.4994 12.9005 10.9263 13.4153 10.9263C14.1561 10.9263 14.6834 10.1038 14.6834 8.93616C14.6834 8.62854 14.6709 8.38998 14.652 8.17653C14.8655 7.9003 14.9848 7.53618 14.9848 7.11557C14.9848 6.2806 14.4323 5.6277 13.5911 5.44564C13.409 4.71113 12.7749 4.18379 12.0028 4.18379C11.9463 4.18379 11.8709 4.19634 11.7956 4.2089C11.5194 3.90128 11.105 3.71294 10.6593 3.71294C10.1696 3.71294 9.74271 3.895 9.44765 4.19634C9.22792 4.10845 9.00192 4.06451 8.76336 4.06451C7.92212 4.06451 7.28805 4.64207 7.28805 5.42681V5.43309C6.76698 5.80976 6.44681 6.43755 6.44681 7.09673ZM8.98936 5.33264C8.98308 5.53981 9.12748 5.69048 9.32837 5.69048C9.52926 5.69048 9.6611 5.55865 9.67365 5.35775C9.69249 4.79274 10.1006 4.39723 10.6593 4.39723C10.9857 4.39723 11.2808 4.57302 11.4001 4.84297C11.4503 4.93713 11.5507 4.94341 11.6951 4.90574C11.7705 4.88691 11.8521 4.87435 11.94 4.87435C12.5113 4.88063 12.9507 5.32009 12.9507 5.89765C12.9507 7.33529 10.8602 7.12184 10.8602 8.65993C10.8602 8.72899 10.8665 8.79804 10.879 8.8671C10.7723 8.88593 10.6593 8.89221 10.5526 8.89221C10.2889 8.89221 10.0315 8.83571 9.81805 8.74154C10.2826 8.42765 10.5588 7.91914 10.5588 7.29762C10.5588 7.25996 10.5526 7.22229 10.5526 7.18462C11.218 6.97745 11.5696 6.49405 11.5633 5.75326C11.5633 5.5712 11.4001 5.40798 11.2117 5.40798C11.0297 5.40798 10.8727 5.56492 10.879 5.75326C10.8853 6.17388 10.7221 6.41872 10.3642 6.52544C10.2952 6.41244 10.2136 6.31199 10.1131 6.23038C9.98127 6.11738 9.89338 6.07343 9.76782 6.07343C9.57321 6.07343 9.43509 6.20527 9.43509 6.38733C9.43509 6.58822 9.54182 6.64472 9.69249 6.78284C9.81177 6.89584 9.87455 7.07162 9.87455 7.28507C9.87455 7.96936 9.34092 8.42137 8.5248 8.42137C7.68356 8.42137 7.1311 7.9003 7.1311 7.09673C7.1311 6.74517 7.26294 6.41244 7.49522 6.1676C7.7275 6.51916 8.13557 6.72634 8.64408 6.72634C8.82614 6.72634 8.98936 6.56939 8.98936 6.38733C8.98936 6.19899 8.83241 6.04204 8.64408 6.04204C8.24229 6.04204 7.97862 5.79721 7.97862 5.42681C7.97862 5.0313 8.30507 4.7488 8.75708 4.7488C8.8638 4.7488 8.97681 4.76763 9.08353 4.79902C9.02703 4.96225 8.99564 5.13803 8.98936 5.33264ZM12.7435 8.45276C12.7435 8.63482 12.8817 8.77921 13.0763 8.79804C13.4153 8.82315 13.7229 8.77293 13.9866 8.67248C13.9928 8.74782 13.9928 8.83571 13.9928 8.92988C13.9928 9.68951 13.7292 10.242 13.4153 10.242C13.1391 10.242 12.9507 9.8904 12.9507 9.38817C12.9507 9.294 12.8817 9.24377 12.7938 9.24377C12.7122 9.24377 12.6117 9.25005 12.5175 9.25005C11.8835 9.25005 11.557 9.04288 11.557 8.6411C11.557 7.6178 13.4592 7.81869 13.635 6.14877C14.0431 6.26805 14.2942 6.62589 14.2942 7.11557C14.2942 7.76847 13.8171 8.17025 13.0888 8.11375C12.9005 8.1012 12.7435 8.26442 12.7435 8.45276Z"
+                            fill="#808080" />
+                    </svg>
+                    <p>Searching for a restaurant to add.</p>
+                </div>
+            </article>
+            <article class="idea-box">
+                <div class="idea-box__img-container">
+                    <video src="./videos/flow_AddActivity.mp4" autoplay loop muted></video>
+                </div>
+                <div class="idea-box__caption">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.0862 18.3153C13.6727 18.3153 15.2296 17.3862 15.2296 15.8356V12.4329C16.3157 11.4787 16.9497 9.95318 16.9497 8.26442C16.9497 4.34073 14.4072 1.72913 10.5902 1.72913C6.7921 1.72913 4.2621 4.28423 4.2621 8.12631C4.2621 8.33976 4.26838 8.52182 4.28721 8.6976L3.3832 10.3173C3.15091 10.7254 3.04419 11.1146 3.04419 11.4787C3.04419 12.1693 3.47736 12.728 4.2621 12.8912V14.1656C4.2621 15.4526 5.14729 16.093 6.37776 15.9611L7.00555 15.8921C7.04321 17.4113 8.56874 18.3153 11.0862 18.3153ZM11.0862 17.1037C9.25303 17.1037 8.1544 16.5387 8.1544 15.6284V14.7683C8.1544 14.6239 8.06651 14.5549 7.9284 14.5674L6.23336 14.7495C5.73741 14.806 5.47374 14.5925 5.47374 14.0715V12.0751C5.47374 11.9747 5.3984 11.9056 5.29168 11.9056H4.94639C4.54461 11.9056 4.31233 11.7047 4.31233 11.3908C4.31233 11.2276 4.36883 11.033 4.48183 10.8384L5.53652 8.94243C5.49257 8.65993 5.46746 8.3837 5.46746 8.10747C5.46746 5.00619 7.51406 2.94076 10.5902 2.94076C13.679 2.94076 15.7381 5.06897 15.7381 8.26442C15.7381 9.82134 15.0852 11.1711 14.0117 11.824V15.6284C14.0117 16.5387 12.9131 17.1037 11.0862 17.1037ZM6.44681 7.09673C6.44681 8.29581 7.2755 9.11194 8.51224 9.11194C8.68175 9.11194 8.83869 9.09938 8.98936 9.06799C9.36604 9.39444 9.90594 9.58278 10.4961 9.58278C10.7221 9.58278 10.9669 9.55767 11.2055 9.49489C11.444 9.73345 11.8019 9.87156 12.2225 9.87156H12.3794C12.4924 10.4994 12.9005 10.9263 13.4153 10.9263C14.1561 10.9263 14.6834 10.1038 14.6834 8.93616C14.6834 8.62854 14.6709 8.38998 14.652 8.17653C14.8655 7.9003 14.9848 7.53618 14.9848 7.11557C14.9848 6.2806 14.4323 5.6277 13.5911 5.44564C13.409 4.71113 12.7749 4.18379 12.0028 4.18379C11.9463 4.18379 11.8709 4.19634 11.7956 4.2089C11.5194 3.90128 11.105 3.71294 10.6593 3.71294C10.1696 3.71294 9.74271 3.895 9.44765 4.19634C9.22792 4.10845 9.00192 4.06451 8.76336 4.06451C7.92212 4.06451 7.28805 4.64207 7.28805 5.42681V5.43309C6.76698 5.80976 6.44681 6.43755 6.44681 7.09673ZM8.98936 5.33264C8.98308 5.53981 9.12748 5.69048 9.32837 5.69048C9.52926 5.69048 9.6611 5.55865 9.67365 5.35775C9.69249 4.79274 10.1006 4.39723 10.6593 4.39723C10.9857 4.39723 11.2808 4.57302 11.4001 4.84297C11.4503 4.93713 11.5507 4.94341 11.6951 4.90574C11.7705 4.88691 11.8521 4.87435 11.94 4.87435C12.5113 4.88063 12.9507 5.32009 12.9507 5.89765C12.9507 7.33529 10.8602 7.12184 10.8602 8.65993C10.8602 8.72899 10.8665 8.79804 10.879 8.8671C10.7723 8.88593 10.6593 8.89221 10.5526 8.89221C10.2889 8.89221 10.0315 8.83571 9.81805 8.74154C10.2826 8.42765 10.5588 7.91914 10.5588 7.29762C10.5588 7.25996 10.5526 7.22229 10.5526 7.18462C11.218 6.97745 11.5696 6.49405 11.5633 5.75326C11.5633 5.5712 11.4001 5.40798 11.2117 5.40798C11.0297 5.40798 10.8727 5.56492 10.879 5.75326C10.8853 6.17388 10.7221 6.41872 10.3642 6.52544C10.2952 6.41244 10.2136 6.31199 10.1131 6.23038C9.98127 6.11738 9.89338 6.07343 9.76782 6.07343C9.57321 6.07343 9.43509 6.20527 9.43509 6.38733C9.43509 6.58822 9.54182 6.64472 9.69249 6.78284C9.81177 6.89584 9.87455 7.07162 9.87455 7.28507C9.87455 7.96936 9.34092 8.42137 8.5248 8.42137C7.68356 8.42137 7.1311 7.9003 7.1311 7.09673C7.1311 6.74517 7.26294 6.41244 7.49522 6.1676C7.7275 6.51916 8.13557 6.72634 8.64408 6.72634C8.82614 6.72634 8.98936 6.56939 8.98936 6.38733C8.98936 6.19899 8.83241 6.04204 8.64408 6.04204C8.24229 6.04204 7.97862 5.79721 7.97862 5.42681C7.97862 5.0313 8.30507 4.7488 8.75708 4.7488C8.8638 4.7488 8.97681 4.76763 9.08353 4.79902C9.02703 4.96225 8.99564 5.13803 8.98936 5.33264ZM12.7435 8.45276C12.7435 8.63482 12.8817 8.77921 13.0763 8.79804C13.4153 8.82315 13.7229 8.77293 13.9866 8.67248C13.9928 8.74782 13.9928 8.83571 13.9928 8.92988C13.9928 9.68951 13.7292 10.242 13.4153 10.242C13.1391 10.242 12.9507 9.8904 12.9507 9.38817C12.9507 9.294 12.8817 9.24377 12.7938 9.24377C12.7122 9.24377 12.6117 9.25005 12.5175 9.25005C11.8835 9.25005 11.557 9.04288 11.557 8.6411C11.557 7.6178 13.4592 7.81869 13.635 6.14877C14.0431 6.26805 14.2942 6.62589 14.2942 7.11557C14.2942 7.76847 13.8171 8.17025 13.0888 8.11375C12.9005 8.1012 12.7435 8.26442 12.7435 8.45276Z"
+                            fill="#808080" />
+                    </svg>
+                    <p>Adding a restaurant to one's trip.</p>
+                </div>
+            </article>
+            <p class="main-paragraph">
+                The goal with Chronacle's flow was to make it super easy
+                to jump right into planning a trip. Once someone puts in a location,
+                Chronacle generates a trip page with a hero photo,
+                activity suggestions, and an itinerary.
+            </p>
+            <article class="idea-box">
+                <div class="idea-box__img-container">
+                    <video src="./videos/flow_InsideTrip.mp4" autoplay loop muted></video>
+                </div>
+            </article>
+            <p class="main-paragraph">
+                For the desktop view, I wanted Chronacle to feel like a canvas.
+                Much of the design for the desktop view is about using the
+                canvas itself to communicate information,
+                as well as find ways to provide fun microinteractions
+                that make use of space/areas web applications typically don't use.
+            </p>
+            <div class="figure-container">
                 <figure>
-                    <img src="./refinements-trip_page.png" alt="Photo showing changes made to the trip
-                    page for Chronacle.">
+                    <img src="./desktop-view-2.png" alt="Both light and dark mode desktop
+                    mockups for a Trip page in Chronacle. One side of the screen has the
+                    location image, title, dates, and added activities. The other side has
+                    the Explore section.">
                 </figure>
             </div>
-            <div class="figure-container half-width">
-                <figure>
-                    <img src="./refinements-business_page.png" alt="Photo showing changes made to the
-                    Business page for Chronacle.">
-                </figure>
-            </div>
-            <div class="figure-container half-width">
-                <figure>
-                    <img src="./refinements-search_results.png" alt="Photo showing changes made
-                    to the search results page for Chronacle.">
-                </figure>
-            </div>
-        </section>
-        <section class="case-study__section" id="Next Steps">
-            <h2 class="section__title">Next Steps</h2>
-
-            <div class="explanation-box">
-                <p class="box-title">Now that the designs for Chronacle are mostly finished, I am working on:</p>
-                <ol class="box-list">
-                    <!-- <li><span class="emphasized">Usability testing.</span> This is of utmost importance
-                        since I can learn the most about
-                        my current designs by simply testing them, allowing me to iterate as needed.</li> -->
-                    <li>Putting together a <span class="emphasized">design system in Storybook.</span>
-                        Using Storybook to create a design
-                        system will allow me to have a single source of truth for various aspects of the product
-                        (visual,
-                        layout, components, etc).</li>
-                    <li>Development.
-                        I'm excited to make use of <span class="emphasized">Design Tokens and Web Components</span>
-                        when developing Chronacle.
-                        <span class="emphasized">Design Tokens</span> will allow me to easily incorporate design
-                        decisions into my development workflow;
-                        I'll only have to change design decisions in one place
-                        and it will cascade through the entire design system/product.
-                        <span class="emphasized">Web Components</span> are an exciting addition to the JavaScript
-                        language,
-                        and tooling for them is growing as they become more popular.
-                        I will specifically be using the Lit framework to develop Chronacle's components.
-                    </li>
-                </ol>
-            </div>
-
-            <div class="figure-container half-width">
+            <article class="idea-box">
+                <div class="idea-box__img-container">
+                    <video src="./videos/flow_desktop-loading-to-populated-2.mp4" autoplay loop muted></video>
+                </div>
+                <div class="idea-box__caption">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.0862 18.3153C13.6727 18.3153 15.2296 17.3862 15.2296 15.8356V12.4329C16.3157 11.4787 16.9497 9.95318 16.9497 8.26442C16.9497 4.34073 14.4072 1.72913 10.5902 1.72913C6.7921 1.72913 4.2621 4.28423 4.2621 8.12631C4.2621 8.33976 4.26838 8.52182 4.28721 8.6976L3.3832 10.3173C3.15091 10.7254 3.04419 11.1146 3.04419 11.4787C3.04419 12.1693 3.47736 12.728 4.2621 12.8912V14.1656C4.2621 15.4526 5.14729 16.093 6.37776 15.9611L7.00555 15.8921C7.04321 17.4113 8.56874 18.3153 11.0862 18.3153ZM11.0862 17.1037C9.25303 17.1037 8.1544 16.5387 8.1544 15.6284V14.7683C8.1544 14.6239 8.06651 14.5549 7.9284 14.5674L6.23336 14.7495C5.73741 14.806 5.47374 14.5925 5.47374 14.0715V12.0751C5.47374 11.9747 5.3984 11.9056 5.29168 11.9056H4.94639C4.54461 11.9056 4.31233 11.7047 4.31233 11.3908C4.31233 11.2276 4.36883 11.033 4.48183 10.8384L5.53652 8.94243C5.49257 8.65993 5.46746 8.3837 5.46746 8.10747C5.46746 5.00619 7.51406 2.94076 10.5902 2.94076C13.679 2.94076 15.7381 5.06897 15.7381 8.26442C15.7381 9.82134 15.0852 11.1711 14.0117 11.824V15.6284C14.0117 16.5387 12.9131 17.1037 11.0862 17.1037ZM6.44681 7.09673C6.44681 8.29581 7.2755 9.11194 8.51224 9.11194C8.68175 9.11194 8.83869 9.09938 8.98936 9.06799C9.36604 9.39444 9.90594 9.58278 10.4961 9.58278C10.7221 9.58278 10.9669 9.55767 11.2055 9.49489C11.444 9.73345 11.8019 9.87156 12.2225 9.87156H12.3794C12.4924 10.4994 12.9005 10.9263 13.4153 10.9263C14.1561 10.9263 14.6834 10.1038 14.6834 8.93616C14.6834 8.62854 14.6709 8.38998 14.652 8.17653C14.8655 7.9003 14.9848 7.53618 14.9848 7.11557C14.9848 6.2806 14.4323 5.6277 13.5911 5.44564C13.409 4.71113 12.7749 4.18379 12.0028 4.18379C11.9463 4.18379 11.8709 4.19634 11.7956 4.2089C11.5194 3.90128 11.105 3.71294 10.6593 3.71294C10.1696 3.71294 9.74271 3.895 9.44765 4.19634C9.22792 4.10845 9.00192 4.06451 8.76336 4.06451C7.92212 4.06451 7.28805 4.64207 7.28805 5.42681V5.43309C6.76698 5.80976 6.44681 6.43755 6.44681 7.09673ZM8.98936 5.33264C8.98308 5.53981 9.12748 5.69048 9.32837 5.69048C9.52926 5.69048 9.6611 5.55865 9.67365 5.35775C9.69249 4.79274 10.1006 4.39723 10.6593 4.39723C10.9857 4.39723 11.2808 4.57302 11.4001 4.84297C11.4503 4.93713 11.5507 4.94341 11.6951 4.90574C11.7705 4.88691 11.8521 4.87435 11.94 4.87435C12.5113 4.88063 12.9507 5.32009 12.9507 5.89765C12.9507 7.33529 10.8602 7.12184 10.8602 8.65993C10.8602 8.72899 10.8665 8.79804 10.879 8.8671C10.7723 8.88593 10.6593 8.89221 10.5526 8.89221C10.2889 8.89221 10.0315 8.83571 9.81805 8.74154C10.2826 8.42765 10.5588 7.91914 10.5588 7.29762C10.5588 7.25996 10.5526 7.22229 10.5526 7.18462C11.218 6.97745 11.5696 6.49405 11.5633 5.75326C11.5633 5.5712 11.4001 5.40798 11.2117 5.40798C11.0297 5.40798 10.8727 5.56492 10.879 5.75326C10.8853 6.17388 10.7221 6.41872 10.3642 6.52544C10.2952 6.41244 10.2136 6.31199 10.1131 6.23038C9.98127 6.11738 9.89338 6.07343 9.76782 6.07343C9.57321 6.07343 9.43509 6.20527 9.43509 6.38733C9.43509 6.58822 9.54182 6.64472 9.69249 6.78284C9.81177 6.89584 9.87455 7.07162 9.87455 7.28507C9.87455 7.96936 9.34092 8.42137 8.5248 8.42137C7.68356 8.42137 7.1311 7.9003 7.1311 7.09673C7.1311 6.74517 7.26294 6.41244 7.49522 6.1676C7.7275 6.51916 8.13557 6.72634 8.64408 6.72634C8.82614 6.72634 8.98936 6.56939 8.98936 6.38733C8.98936 6.19899 8.83241 6.04204 8.64408 6.04204C8.24229 6.04204 7.97862 5.79721 7.97862 5.42681C7.97862 5.0313 8.30507 4.7488 8.75708 4.7488C8.8638 4.7488 8.97681 4.76763 9.08353 4.79902C9.02703 4.96225 8.99564 5.13803 8.98936 5.33264ZM12.7435 8.45276C12.7435 8.63482 12.8817 8.77921 13.0763 8.79804C13.4153 8.82315 13.7229 8.77293 13.9866 8.67248C13.9928 8.74782 13.9928 8.83571 13.9928 8.92988C13.9928 9.68951 13.7292 10.242 13.4153 10.242C13.1391 10.242 12.9507 9.8904 12.9507 9.38817C12.9507 9.294 12.8817 9.24377 12.7938 9.24377C12.7122 9.24377 12.6117 9.25005 12.5175 9.25005C11.8835 9.25005 11.557 9.04288 11.557 8.6411C11.557 7.6178 13.4592 7.81869 13.635 6.14877C14.0431 6.26805 14.2942 6.62589 14.2942 7.11557C14.2942 7.76847 13.8171 8.17025 13.0888 8.11375C12.9005 8.1012 12.7435 8.26442 12.7435 8.45276Z"
+                            fill="#808080" />
+                    </svg>
+                    <p>Experimenting with using the canvas as a loading indicator.</p>
+                </div>
+            </article>
+            <p class="main-paragraph">
+                In regards to development, I wanted Chronacle
+                to be a progressive web application (PWA) so that it would
+                be available to as many people as possible and not
+                tethered to a particular operating system. PWAs are
+                also installable, providing a native look and feel while
+                allowing me to leverage newer web and design
+                technologies like web components and design tokens.</p>
+            <p class="main-paragraph">
+                Chronacle's design system is being made with Storybook,
+                allowing me to keep future designs consistent,
+                as well as make development simple and seamless.
+            </p>
+            <div class="figure-container">
                 <figure>
                     <img src="./highlight-design-tokens.png" alt="Screenshots showing 
                     some design tokens I have created for Chronacle">
                 </figure>
             </div>
-            <div class="figure-container half-width">
+            <div class="figure-container">
                 <figure>
-                    <img src="./SuggestedActivitySnippet.png" alt="Code snippet of
-                    one of the Suggested Activity component for Chronacle">
+                    <img src="./design-system-comp.png" alt="The word Chronacle
+                    in the center, surrounded by a collection of components I've created
+                    for the app.">
                 </figure>
             </div>
         </section>
     </main>
     <footer>
-        <p class="copyright">&copy; Will Givens IV 2022</p>
+        <p class="copyright">&copy; Will Givens IV 2023</p>
     </footer>
     <script src="/script.js"></script>
 </body>
