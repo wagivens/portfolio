@@ -100,15 +100,15 @@ section {
 
 /* ----- Header Styling ----- */
 header {
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
-  padding-top: 1.2rem;
+  padding: 1.2rem 2.4rem 0;
 }
 
 .header-nav {
   height: 6rem;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   font-weight: 500;
 }
 
@@ -119,22 +119,6 @@ header {
   color: var(--black);
   margin-right: auto;
   padding: 0.6rem 0;
-}
-
-.header-nav__item {
-  color: var(--black);
-  transition: color 250ms ease;
-  font-size: clamp(1.2rem, 1.7vw, 1.4rem);
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.header-nav__item:not(:first-of-type) {
-  margin-left: 2rem;
-}
-
-.header-nav__item:hover {
-  color: var(--blue);
 }
 
 .header-nav__item:focus {
@@ -156,7 +140,6 @@ footer {
   width: 100%;
   margin-top: 2rem;
   padding: 2rem 0;
-  border-top: 0.1rem solid var(--gray-light);
 }
 
 .copyright {
@@ -166,6 +149,7 @@ footer {
   text-align: center;
   font-weight: 500;
   letter-spacing: -0.02rem;
+  margin: 0 auto;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -218,9 +202,18 @@ footer {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 700px) and (max-width: 999px) {
   header {
     width: 85%;
-    padding-top: 2rem;
+    padding: 2rem 0 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  header {
+    width: 100%;
+    padding: 2rem 0 0;
+    margin: 0;
   }
 }

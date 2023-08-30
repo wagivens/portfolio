@@ -1,69 +1,66 @@
-("use strict");
+('use strict');
 
 const DOMelements = {
-  handEmoji: document.querySelector(".handwave"),
-  caseStudySection: document.querySelector(
-    ".case-study__section:first-of-type"
-  ),
-  caseStudyImages: document.querySelectorAll(".main-image"),
-  scrollToTop: document.querySelector(".scroll-to-top"),
-}
+  caseStudyVideos: document.querySelectorAll('.idea-box'),
+};
 
 /* Intrapage Navigation Functionality: 
 For each intrapage-nav__link, add a listener for a click event. When the
 link is clicked, grab its text content and set it as the variable sectionID.
 Lastly, use the sectionID to scroll the resepctive section into view. */
-let intranavLinks = document.querySelectorAll(".intrapage-nav__link");
+let intranavLinks = document.querySelectorAll('.intrapage-nav__link');
 intranavLinks.forEach((link) => {
   let sectionID = link.textContent;
-  link.addEventListener("click", () => {
-    document.getElementById(sectionID).scrollIntoView({ behavior: "smooth" });
+  link.addEventListener('click', () => {
+    document.getElementById(sectionID).scrollIntoView({ behavior: 'smooth' });
   });
-  link.addEventListener("keypress", (e) => {
-    if(e.code == 'Enter')
-      document.getElementById(sectionID).scrollIntoView({ behavior: "smooth" });
+  link.addEventListener('keypress', (e) => {
+    if (e.code == 'Enter')
+      document.getElementById(sectionID).scrollIntoView({ behavior: 'smooth' });
   });
 });
 
 // Scroll-to-Top Button
-if (DOMelements.scrollToTop)
-  DOMelements.scrollToTop.addEventListener("click", () => {
-    document
-      .querySelector(".intrapage-nav")
-      .scrollIntoView({ behavior: "smooth" });
-  DOMelements.scrollToTop.addEventListener('keypress', (e) => {
-    if (e.code == 'Enter')
-    {
-      e.preventDefault();
-      document
-        .querySelector(".intrapage-nav")
-        .scrollIntoView({ behavior: "smooth" });
-    }
-  });
-});
+// if (DOMelements.scrollToTop)
+//   DOMelements.scrollToTop.addEventListener('click', () => {
+//     document
+//       .querySelector('.intrapage-nav')
+//       .scrollIntoView({ behavior: 'smooth' });
+//     DOMelements.scrollToTop.addEventListener('keypress', (e) => {
+//       if (e.code == 'Enter') {
+//         e.preventDefault();
+//         document
+//           .querySelector('.intrapage-nav')
+//           .scrollIntoView({ behavior: 'smooth' });
+//       }
+//     });
+//   });
 
-const sectionObserver = new IntersectionObserver(
+const caseStudyVidObserver = new IntersectionObserver(
   (intersectionEntries) => {
     intersectionEntries.forEach((entry) => {
+      let DOMElement = entry.target;
+      let container = DOMElement.firstElementChild;
+      let video = container.firstElementChild;
       if (
-        entry.isIntersecting ||
-        window.pageYOffset < entry.boundingClientRect.y
+        entry.isIntersecting
+        // window.scrollY < entry.boundingClientRect.y
       ) {
-        DOMelements.scrollToTop.classList.add("hidden");
-        intranavLinks.item(0).focus({preventScroll:true});
+        container.classList.remove('idea-box-blurred');
+        video.play();
       } else {
-        DOMelements.scrollToTop.classList.remove("hidden");
-        DOMelements.scrollToTop.focus({preventScroll:true});
+        container.classList.add('idea-box-blurred');
+        video.pause();
       }
     });
   },
   {
     root: null,
-    threshold: 0,
-    rootMargin: "0px",
+    threshold: 0.65,
+    rootMargin: '0px',
   }
 );
 
-// We want to observe the second Case Study Section
-if (DOMelements.caseStudySection)
-  sectionObserver.observe(DOMelements.caseStudySection);
+DOMelements.caseStudyVideos.forEach((vid) => {
+  caseStudyVidObserver.observe(vid);
+});
