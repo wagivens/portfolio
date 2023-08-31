@@ -325,21 +325,21 @@ h4 {
 
 @media (min-width: 700px) and (max-width: 999px) {
   .project {
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
   }
 }
 
 @media (max-width: 699px) {
   .project {
-    width: 100%;
+    width: 88%;
     margin: 0 auto;
   }
 
   .case-study {
     width: 100%;
     margin: 0.8rem auto 0;
-    padding: 0 2.4rem;
+    /* padding: 0 2.4rem; */
   }
 
   .intrapage-nav::after {

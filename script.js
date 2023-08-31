@@ -47,7 +47,6 @@ const caseStudyVidObserver = new IntersectionObserver(
         // window.scrollY < entry.boundingClientRect.y
       ) {
         container.classList.remove('idea-box-blurred');
-        video.play();
       } else {
         container.classList.add('idea-box-blurred');
         video.pause();
@@ -56,7 +55,7 @@ const caseStudyVidObserver = new IntersectionObserver(
   },
   {
     root: null,
-    threshold: 0.65,
+    threshold: 0.75,
     rootMargin: '0px',
   }
 );
