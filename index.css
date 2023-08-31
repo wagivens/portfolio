@@ -129,13 +129,21 @@ h1 {
   transition: all 200ms ease;
 }
 
-.project-card__button:hover {
+.project-card__button:not(.disabled):hover {
   background-color: hsl(0, 0%, 16%);
 }
 
 .project-card__button > svg {
   margin-left: 0.4rem;
   margin-bottom: 0.2rem;
+}
+
+.project-card__button.disabled {
+  background-color: hsl(0, 0%, 40%);
+}
+
+.project-card__button.disabled:hover {
+  cursor: not-allowed;
 }
 
 .project-description {
