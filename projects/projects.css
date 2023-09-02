@@ -16,8 +16,8 @@
 
 .emphasized {
   font-family: 'Spectral', serif;
-  font-weight: 600;
-  font-size: 1.6rem;
+  font-weight: 800;
+  font-size: 1.2em;
   font-style: italic;
   letter-spacing: normal;
 }
@@ -132,52 +132,35 @@ h4 {
   letter-spacing: -0.06rem;
 }
 
-.project-title {
+.case-study__section {
   width: 100%;
-  font-size: clamp(1.6rem, 3vw, 2rem);
+}
+
+.case-study__section + .case-study__section {
+  margin-top: 6.4rem;
+}
+
+.project-title,
+.section-title {
   color: var(--black);
+  width: 100%;
+}
+
+.project-title {
+  font-size: clamp(1.6rem, 3vw, 2rem);
   margin: 4rem auto 2rem;
 }
 
-.home-backlink {
-  font-size: clamp(1.4rem, 2.4vw, 2rem);
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--blue);
-}
-
-.home-backlink a {
-  font-weight: 600;
-}
-
-.section__title,
-.subsection__title {
-  font-size: 1.8rem;
-  font-weight: 700;
-  text-align: left;
-  letter-spacing: -5%;
-  width: 50%;
-  color: var(--black);
-}
-
-.section__title {
-  margin: 2.4rem auto;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.subsection__title {
-  margin: 4rem auto 1.6rem;
+.section-title {
+  font-size: clamp(1.4rem, 2.64vw, 1.8rem);
+  margin: 0 auto 2rem;
 }
 
 .main-paragraph {
-  font-size: clamp(1.4rem, 1.26vh, 2rem);
+  font-size: clamp(1.48rem, 1.26vh, 2rem);
   font-weight: 500;
   color: var(--black);
-  line-height: clamp(2.06 * 1.4rem, 2 * 1.2vh, 2.4 * 2rem);
+  line-height: clamp(2.06 * 1.48rem, 2 * 1.2vh, 2.4 * 2rem);
   width: 100%;
   max-width: 65ch;
   letter-spacing: -0.04rem;
@@ -188,20 +171,6 @@ h4 {
 }
 
 /* Media */
-.project-banner {
-  width: 100%;
-  max-width: 200rem;
-  margin: 2rem auto 0;
-  border-radius: 0.2rem;
-  overflow: hidden;
-}
-
-.project-banner__image {
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
 .idea-box {
   /* background-color: rgba(227, 229, 232, 50%); */
   width: 100%;
@@ -259,14 +228,6 @@ h4 {
 
 .figure-container img {
   width: 100%;
-}
-
-.case-study__section {
-  width: 100%;
-}
-
-.case-study__section + .case-study__section {
-  margin-top: 10rem;
 }
 
 /* @media (prefers-color-scheme: dark)
