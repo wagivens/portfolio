@@ -46,10 +46,11 @@ const caseStudyVidObserver = new IntersectionObserver(
         entry.isIntersecting
         // window.scrollY < entry.boundingClientRect.y
       ) {
-        video.setAttribute('controls', '');
+        video.play();
+        // video.setAttribute('controls', '');
         container.classList.remove('idea-box-blurred');
       } else {
-        video.removeAttribute('controls', '');
+        // video.removeAttribute('controls', '');
         container.classList.add('idea-box-blurred');
         video.pause();
       }

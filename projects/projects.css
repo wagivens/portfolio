@@ -157,10 +157,10 @@ h4 {
 }
 
 .main-paragraph {
-  font-size: clamp(1.48rem, 1.26vh, 2rem);
+  font-size: clamp(1.42rem, 1.26vh, 2rem);
   font-weight: 500;
   color: var(--black);
-  line-height: clamp(2.06 * 1.48rem, 2 * 1.2vh, 2.4 * 2rem);
+  line-height: clamp(2.06 * 1.42rem, 2 * 1.2vh, 2.4 * 2rem);
   width: 100%;
   max-width: 65ch;
   letter-spacing: -0.04rem;
@@ -192,6 +192,7 @@ h4 {
   border: 0.1rem solid hsl(0, 0%, 90%);
   height: fit-content;
   overflow: hidden;
+  transition-delay: 200ms;
   transition: filter 200ms ease;
 }
 
