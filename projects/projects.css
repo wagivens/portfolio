@@ -70,7 +70,7 @@
   justify-content: center;
   align-items: center;
   padding: 0.6rem 0.8rem;
-  border: 0.1rem solid hsl(0, 0%, 84%);
+  border: 0.1rem solid hsl(0, 0%, 90%);
   border-radius: 0.4rem;
   letter-spacing: -0.06rem;
   font-weight: 600;
@@ -192,7 +192,6 @@ h4 {
   border: 0.1rem solid hsl(0, 0%, 90%);
   height: fit-content;
   overflow: hidden;
-  transition-delay: 200ms;
   transition: filter 200ms ease;
 }
 
@@ -301,18 +300,6 @@ h4 {
   .case-study {
     width: 100%;
     margin: 0.8rem auto 0;
-    /* padding: 0 2.4rem; */
-  }
-
-  .intrapage-nav::after {
-    content: 'Scroll →';
-    font-family: 'Kalam', cursive;
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: var(--blue);
-    margin: 0.5rem 1rem 0 0;
-    float: right;
-    clear: both;
   }
 
   /* Text */
@@ -328,34 +315,7 @@ h4 {
     margin: 4rem auto 2rem;
   }
 
-  .section__title,
-  .subsection__title {
-    font-size: 1.6rem;
-    width: 100%;
-  }
-
-  .main-paragraph {
-    width: 100%;
-    /* font-size: 1.4rem;
-    line-height: 2.8rem; */
-  }
-
-  .problem-statement,
-  .info-tidbits,
-  .citation {
-    width: 100%;
-  }
-
   /* Media */
-  .idea-box {
-    width: 100%;
-    height: fit-content;
-  }
-
-  .idea-box__img-container {
-    height: 100%;
-  }
-
   .idea-box__caption {
     display: none;
   }
