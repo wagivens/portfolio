@@ -46,13 +46,9 @@ const caseStudyVidObserver = new IntersectionObserver(
         entry.isIntersecting
         // window.scrollY < entry.boundingClientRect.y
       ) {
-        container.classList.remove('idea-box-blurred');
-        video.play();
-        // video.setAttribute('controls', '');
+        video.classList.remove('idea-box-blurred');
       } else {
-        // video.removeAttribute('controls', '');
-        container.classList.add('idea-box-blurred');
-        video.pause();
+        video.classList.add('idea-box-blurred');
       }
     });
   },

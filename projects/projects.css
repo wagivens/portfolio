@@ -192,11 +192,11 @@ h4 {
   border: 0.1rem solid hsl(0, 0%, 90%);
   height: fit-content;
   overflow: hidden;
-  transition: filter 200ms ease;
 }
 
 .idea-box__img-container * {
   /* border-radius: 0.4rem; */
+  transition: filter 200ms ease;
   object-position: center;
   width: 100%;
 }
