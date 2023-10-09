@@ -1,10 +1,10 @@
 async function getRepo(repoOwner, repoName) {
   const githubAPIEndpoint = `https://api.github.com`;
-  
+
   let fetchRepo = await fetch(`
     ${githubAPIEndpoint}/repos/${repoOwner}/${repoName}
   `);
-  
+
   let repoData = await fetchRepo.json();
 
   return repoData;
@@ -16,7 +16,7 @@ async function getRepoCommits(repoOwner, repoName, commitAuthor) {
     ${githubAPIEndpoint}/repos/${repoOwner}/${repoName}/commits?author=${commitAuthor}
   `);
   let repoData = await fetchRepo.json();
-  
+
   let recentCommits = [repoData[0], repoData[1]];
 
   return recentCommits;
@@ -24,10 +24,20 @@ async function getRepoCommits(repoOwner, repoName, commitAuthor) {
 
 function printCommitDate(utc_date) {
   const Months = [
-    'January', 'February', 'March', 'April', 'May', 'June',
-    'July', 'August', 'September', 'October', 'November', 'December'
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
   ];
-  
+
   let date = new Date(utc_date);
   let month = date.getMonth();
   let dayOfMonth = date.getDate();
@@ -36,25 +46,25 @@ function printCommitDate(utc_date) {
 }
 
 class RepoHighlight extends HTMLElement {
-	constructor() {
-		super();
-		this.attachShadow({ mode: 'open' });
-	}
+  constructor() {
+    super();
+    this.attachShadow({ mode: 'open' });
+  }
 
   repoOwner;
   repoName;
   repoDescription;
   commits;
-	
+
   async connectedCallback() {
-    this.repoOwner = this.attributes.getNamedItem('repo-owner').value
-    this.repoName = this.attributes.getNamedItem('repo-name').value
-    
+    this.repoOwner = this.attributes.getNamedItem('repo-owner').value;
+    this.repoName = this.attributes.getNamedItem('repo-name').value;
+
     // Fetch the repo for the repo description:
     let repo = getRepo(this.repoOwner, this.repoName);
     let repoInfo = await repo;
     this.repoDescription = repoInfo.description;
-    
+
     // // Fetch the repo commits
     let repoCommits = getRepoCommits(this.repoOwner, this.repoName, 'wagivens');
     let commitInfo = await repoCommits;
@@ -62,8 +72,7 @@ class RepoHighlight extends HTMLElement {
 
     // Set the properties with the information
     const repoHighlightTemplate = document.createElement('template');
-    repoHighlightTemplate.innerHTML = 
-      `<style>
+    repoHighlightTemplate.innerHTML = `<style>
             *,
             *::after,
             *::before {
@@ -156,7 +165,9 @@ class RepoHighlight extends HTMLElement {
             <img class="repo-highlight__image" src="/custom_elements/image-placeholder-light.png" width="400px" height="400px">
             <div class="repo-highlight__content">
               <h3 class="repo-title">${this.repoOwner} / 
-                  <a class="repo-link" href="https://github.com/${this.repoOwner}/${this.repoName}">${this.repoName}</a>
+                  <a class="repo-link" href="https://github.com/${
+                    this.repoOwner
+                  }/${this.repoName}">${this.repoName}</a>
               </h3>
               <p class="repo-description">
                 ${this.repoDescription}
@@ -168,7 +179,9 @@ class RepoHighlight extends HTMLElement {
                   ${this.commits[0].commit.message}
                   </a>
                 </h4>
-                <p class="commit-date">committed on ${printCommitDate(this.commits[0].commit.author.date)}</p>
+                <p class="commit-date">committed on ${printCommitDate(
+                  this.commits[0].commit.author.date
+                )}</p>
               </div>
               <div class="repo-commit">
                 <h4 class="commit-msg">
@@ -177,18 +190,22 @@ class RepoHighlight extends HTMLElement {
                   ${this.commits[1].commit.message}
                   </a>
                 </h4>
-                <p class="commit-date">committed on ${printCommitDate(this.commits[1].commit.author.date)}</p>
+                <p class="commit-date">committed on ${printCommitDate(
+                  this.commits[1].commit.author.date
+                )}</p>
               </div>
               <h3 class="all-commits">
-                <a class="commits-link" href="https://github.com/${this.repoOwner}/${this.repoName}/commits?author=wagivens">
+                <a class="commits-link" href="https://github.com/${
+                  this.repoOwner
+                }/${this.repoName}/commits?author=wagivens">
                   All of My Commits &#10142;
                 </a>
               </h3>
             </div>
         </div>
         `;
-		this.shadowRoot.append(repoHighlightTemplate.content.cloneNode(true));
-        /*
+    this.shadowRoot.append(repoHighlightTemplate.content.cloneNode(true));
+    /*
     Dark theme for component
     @media (prefers-color-scheme: dark) {
       .repo-highlight {
@@ -201,233 +218,7 @@ class RepoHighlight extends HTMLElement {
       }
     }
     */
-	}
-}
-
-class ProjectHighlight extends HTMLElement
-{
-  constructor() {
-		super();
-		this.attachShadow({ mode: 'open' });
-	}
-
-  project;
-  thumbnailName;
-  title;
-  blurb;
-
-  async connectedCallback()
-  {
-    this.project = this.attributes.getNamedItem('project').value;
-    this.thumbnailName = this.attributes.getNamedItem('thumbnail').value;
-    this.title = this.attributes.getNamedItem('title').value;
-    this.blurb = this.attributes.getNamedItem('blurb').value;
-    this.tagOne = this.dataset.tagOne;
-    this.tagTwo = this.dataset.tagTwo;
-
-    if (this.dataset.tagThree) 
-      this.tagThree = this.dataset.tagThree;
-    
-    const projectHighlightTemplate = document.createElement('template');
-    projectHighlightTemplate.innerHTML = 
-    `
-    <style>
-      *,
-      *::after,
-      *::before {
-        margin: 0;
-        padding: 0;
-        box-sizing: inherit;
-      }
-
-      a
-      {
-        text-decoration: none;
-        color: inherit;
-        display: inline-block;
-      }
-      
-      .project-highlight
-      {
-        width: 100%;
-        max-width: 50rem;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        column-gap: 2.8rem;
-      }
-
-      .project-hightlight__thumbnail
-      {
-        width: 50%;
-        overflow: hidden;
-        border-radius: .8rem;
-        box-shadow: 0 .4rem 1rem hsla(0, 0%, 0%, 10%);
-      }
-
-      .project-hightlight__thumbnail > img
-      {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-      }
-      
-      .project-highlight__details
-      {
-        width: 75%;
-        display: flex;
-        flex-direction: column;
-        align-content: flex-start;
-        flex-grow: 1;
-      }
-
-      .project-highlight__details > *:not(:first-child)
-      {
-        margin-top: 1.2rem;
-      }
-
-      .project-highlight__title, .project-highlight__blurb, .project-highlight__link
-      {
-        font-size: clamp(1.4rem, 1.075vw, 2rem);
-      }
-
-      .project-highlight__title
-      {
-        font-weight: 600;
-      }
-
-      .project-hightlight__tags {
-        display: flex;
-        width: 100%;
-        flex-wrap: wrap;
-      }
-
-      .tag {
-        width: fit-content;
-        padding: .6rem .8rem;
-        border-radius: 999rem;
-        border: .2rem solid;
-        font-size: 1.2rem;
-        font-weight: 600; 
-      }
-      
-      .tag + .tag {
-        margin-left: .4rem;
-      }
-
-      .tag[data-tagName="Visual Design"] {
-        color: #900909;
-        background-color: #FCCFCF;
-        border-color: #900909;
-      }
-
-      .tag[data-tagName="Interaction Design"] {
-        color: var(--blue-dark);
-        background-color: var(--blue-light);
-        border-color: var(--blue-dark);
-      }
-
-      .tag[data-tagName="Research"] {
-        color: #AB3AA7;
-        background-color: #F2D9F1;
-        border-color: #CB67C7;
-      }
-
-      .tag[data-tagName="Product Thinking"] {
-        background-color: #C5FCCA;
-        color: #077E11;
-        border-color: #077E11;
-      }
-
-      .project-highlight__blurb
-      {
-        font-weight: 400;
-        line-height: 2.8rem;
-        color: var(--black);
-        max-width: 20ch;
-      }
-
-      .project-highlight__link
-      {
-        color: var(--blue);
-      }
-
-      @media (max-width: 749px)
-      {
-        .project-highlight
-        {
-          column-gap: 2rem;
-          align-items: flex-start;
-        }
-
-        .project-highlight__details > *:not(:first-child)
-        {
-          margin-top: .8rem;
-        }
-
-        .project-hightlight__tags {
-          flex-direction: column;
-        }
-
-        .tag + .tag {
-          margin-left: 0;
-          margin-top: .4rem;
-        }
-
-        .project-highlight__blurb
-        {
-          line-height: 2.4rem;
-        }
-      }
-    </style>
-      <div class="project-highlight">
-        <img class="project-hightlight__thumbnail" src="/projects/${this.project}/${this.thumbnailName}"
-        alt="Thumbnail for ${this.project} case study.">
-        <div class="project-highlight__details">
-          <h2 class="project-highlight__title">${this.title}</h2>
-          <div class="project-hightlight__tags">
-            <p class="tag" data-tagName="${this.tagOne}">${this.tagOne}</p>
-            <p class="tag" data-tagName="${this.tagTwo}">${this.tagTwo}</p>
-            </p>
-          </div>
-          <p class="project-highlight__blurb">${this.blurb}</p>
-          <a class="project-highlight__link" href="/projects/${this.project}/${this.project}.html">
-            View Case Study
-          </a>
-        </div>
-      </div>
-    `;
-    this.shadowRoot.append(projectHighlightTemplate.content.cloneNode(true));
-
-    /*
-    Dark theme for component
-          @media(prefers-color-scheme: dark)
-      {
-        .project-highlight__thumbnail
-        {
-          box-shadow: none;
-        }
-        
-        .project-highlight__title
-        {
-          color: var(--white);
-        }
-
-        .project-highlight__blurb
-        {
-          color: var(--gray-light);
-        }
-
-        .project-highlight__link
-        {
-          color: var(--blue-dark-mode);
-        }
-      }
-    */
   }
-  
 }
 
 customElements.define('repo-highlight', RepoHighlight);
-customElements.define('project-highlight', ProjectHighlight);
