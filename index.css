@@ -261,7 +261,7 @@ h2 {
     margin-top: 1.2rem;
   }
 
-  .project-card__images img {
+  .project-card__images > * {
     height: 40rem;
   }
 
