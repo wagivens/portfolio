@@ -8,7 +8,7 @@
   --gray-dark: hsl(0, 0%, 25%);
   --white: hsl(0, 0%, 95%);
   --blue: hsl(217, 67%, 48%);
-  --blue-light: hsl(215, 100%, 95%);
+  --blue-light: hsl(217, 87%, 62%);
   --blue-dark: hsl(217, 67%, 35%);
 
   /* Dark Mode Styles */
@@ -82,11 +82,11 @@ body {
 }
 
 ::-moz-selection {
-  background-color: hsl(63, 87%, 88%);
+  background-color: var(--blue-light);
 }
 
 ::selection {
-  background-color: hsl(63, 87%, 88%);
+  background-color: var(--blue-light);
 }
 
 a {
@@ -152,29 +152,28 @@ footer {
   margin: 0 auto;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  html {
-    background-color: var(--background-dark-mode);
-  }
+/* ------ Masonry Grid ------ */
+.grid-parent {
+  width: 100%;
+}
 
-  .blue {
-    color: var(--blue-dark-mode);
-  }
+.grid-row:not(:first-of-type) {
+  margin-top: 0.8rem;
+}
 
-  .header-nav__name {
-    color: var(--white);
-  }
+.grid-row {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.8rem;
+  width: 100%;
+}
 
-  .header-nav__item {
-    color: var(--gray-light);
-  }
-
-  footer {
-     color: var(--gray-light);
-     font-weight: 500;
-     background-color: var(--gray-dark);
-  }
-} */
+.grid-child {
+  flex-grow: 1;
+  flex-shrink: 50%;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
 
 /* Animation */
 .fadeIn {

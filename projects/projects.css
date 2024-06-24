@@ -1,5 +1,5 @@
 .project {
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -15,10 +15,10 @@
 }
 
 .emphasized {
-  font-family: 'Spectral', serif;
+  /* font-family: 'Spectral', serif; */
+  /* color: var(--blue-light); */
   font-weight: 800;
-  font-size: 1.2em;
-  font-style: italic;
+  /* font-style: italic; */
   letter-spacing: normal;
 }
 
@@ -137,10 +137,14 @@ h4 {
 }
 
 .case-study__section + .case-study__section {
-  margin-top: 6.4rem;
-  border-top: 0.1rem solid var(--black);
-  border-top-style: dotted;
+  margin-top: 5.2rem;
+  /* border-top: 0.1rem solid var(--black);
+  border-top-style: dotted; */
   padding-top: 6rem;
+}
+
+.case-study__section > :not(:first-child) {
+  margin-top: 2rem;
 }
 
 .project-title,
@@ -151,6 +155,11 @@ h4 {
 .project-title {
   color: var(--black);
   font-size: clamp(1.6rem, 3vw, 2rem);
+  line-height: clamp(
+    calc(1.75 * 1.64rem),
+    calc(1.75 * 1.36vw),
+    calc(1.85 * 2.2rem)
+  );
   margin: 4rem auto 2rem;
 }
 
@@ -162,17 +171,21 @@ h4 {
 }
 
 .main-paragraph {
-  font-size: clamp(1.52rem, 1.8vw, 1.72rem);
+  font-size: clamp(1.52rem, 1.8vw, 1.68rem);
   font-weight: 500;
   color: var(--black);
-  line-height: clamp(calc(1.75 * 1.6rem), calc(1.75 * 2vw), calc(1.85 * 2rem));
+  line-height: clamp(
+    calc(1.75 * 1.64rem),
+    calc(1.75 * 1.36vw),
+    calc(1.85 * 2.2rem)
+  );
   width: 100%;
   max-width: 65ch;
   letter-spacing: -0.04rem;
 }
 
 .main-paragraph + .main-paragraph {
-  margin-top: 1.6rem;
+  margin-top: 2.4rem;
 }
 
 /* Media */
@@ -180,21 +193,21 @@ h4 {
   /* background-color: rgba(227, 229, 232, 50%); */
   width: 100%;
   margin: 2.4rem auto;
-  border-radius: 0.4rem;
+  /* border-radius: 0.4rem; */
   max-height: 50rem;
   overflow: hidden;
 }
 
 .idea-box-blurred {
-  filter: blur(2.8rem);
+  filter: blur(0.8rem);
 }
 
 .idea-box__img-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 0.8rem;
-  border: 0.1rem solid hsl(0, 0%, 90%);
+  /* border-radius: 0.8rem; */
+  /* border: 0.1rem solid hsl(0, 0%, 90%); */
   height: fit-content;
   overflow: hidden;
 }
@@ -227,188 +240,34 @@ h4 {
 }
 
 .figure-container {
-  margin: 2.4rem auto;
+  /* margin: 2.4rem auto; */
   width: 100%;
 }
 
-.figure-container img {
+.figure-container figure {
+  overflow: hidden;
   width: 100%;
 }
 
-.mastodon-status-list {
-  margin-top: 4rem;
-}
-
-.mastodon-status-list > :not(:first-child) {
-  margin-top: 2rem;
-  border-top: 0.1rem solid hsl(0, 0%, 92%);
-  padding-top: 2.8rem;
-}
-
-.mastodon-status {
-  display: flex;
-  /* gap: 1.6rem; */
+.figure-container figure > img {
   width: 100%;
-  /* max-width: 44rem; */
-  /* border: 0.1rem solid hsl(0, 0%, 92%); */
-  /* border-radius: 0.8rem; */
-  padding: 0 1.2rem 1.2rem;
+  object-fit: cover;
+  object-position: center;
 }
 
-.mastodon-avatar {
-  background-color: hsl(0, 0%, 90%);
-  border: 0.1rem solid hsl(0, 0%, 84%);
-  border-radius: 99.9rem;
-  height: 4.8rem;
+.figure-container + .main-paragraph,
+.main-paragraph + .figure-container {
+  margin-top: 6rem;
 }
 
-.status__content {
-  display: flex;
-  flex-direction: column;
-  margin-left: 1.6rem;
-  margin-top: 0.4rem;
-  /* align-items: flex-end; */
-}
-
-.status__content > :not(:first-child) {
-  margin-top: 1.6rem;
-}
-
-.status__content > .status__headline {
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
-  width: 100%;
-}
-
-.mastodon-name,
-.mastodon-username,
-.status-timestamp,
-.mastodon-link {
-  font-size: clamp(1.36rem, 1.22vh, 1.8rem);
-  font-weight: 500;
-}
-
-.mastodon-account-details {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  vertical-align: middle;
-  flex-wrap: wrap;
-}
-
-.mastodon-account-details > :not(:first-of-type) {
-  margin-left: 0.4rem;
-  color: var(--gray);
-}
-
-.mastodon-username {
-  vertical-align: top;
-}
-
-.at-symbol {
-  font-size: 1em;
-  margin-bottom: 8rem;
-}
-
-.status__text p {
-  font-size: clamp(1.42rem, 1.26vh, 2rem);
-  font-weight: 500;
-  color: var(--black);
-  line-height: clamp(2.06 * 1.24rem, 2 * 1.08vh, 2.4 * 1.8rem);
-  width: 100%;
-  max-width: 65ch;
-  letter-spacing: -0.04rem;
-}
-
-.status__text p + p {
-  margin-top: 1.2rem;
-}
-
-.status__media {
-  gap: 0.8rem;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.status__image {
-  width: 100%;
-  /* flex-basis: auto;
-  flex-shrink: 1;
-  flex-grow: 1; */
-  border-radius: 0.4rem;
-}
-
-.mastodon-link {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  color: hsl(240, 100%, 69%);
-  letter-spacing: -0.04rem;
-}
-
-/* @media (prefers-color-scheme: dark)
-{
-    .emphasized {
-        background-color: transparent;
-        color: var(--blue-dark-mode);
-        padding: 0;
-    }
-
-    .list-item {
-        color: var(--gray-light);
-    }
-    
-    .intrapage-nav {
-        border-bottom: 1px solid var(--gray-dark);
-    }
-
-    .intrapage-nav__link {
-        color: var(--gray-light);
-        background-color: var(--background-dark-mode);
-    }
-
-    .intrapage-nav__link:hover {
-        color: var(--blue-dark-mode);
-        background-color: transparent;
-        cursor: pointer;
-    }
-
-    .project-title {
-        color: var(--white);
-    }
-
-    .section__title {
-        color: var(--blue-dark-mode);
-    }
-    
-    .subsection__title {
-        text-align: left;
-        color: var(--white);
-    }
-
-    .main-paragraph {
-        color: var(--gray-light);
-        font-weight: 500;
-    }
-
-    .figcap-title {
-        color: var(--blue-dark-mode);
-    }
-
-    .figure-container > figure > figcaption {
-        color: var(--white);
-    }
-} */
-
-@media (min-width: 700px) and (max-width: 999px) {
+/* @media (min-width: 700px) and (max-width: 999px) {
   .project {
     width: 80%;
     margin: 0 auto;
   }
-}
+} */
 
-@media (max-width: 699px) {
+@media (max-width: 999px) {
   .project {
     width: 88%;
     margin: 0 auto;
@@ -441,8 +300,8 @@ h4 {
     display: none;
   }
 
-  .mastodon-status {
-    border: none;
-    padding: 0;
+  .figure-container + .main-paragraph,
+  .main-paragraph + .figure-container {
+    margin-top: 4rem;
   }
 }

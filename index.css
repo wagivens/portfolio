@@ -107,26 +107,6 @@ h2 {
   color: #2967cc;
 }
 
-/* .project-card__info#proj-card_chronacle {
-  background-size: 17.2rem;
-  background-image: url('./projects/chronacle/logo_black.png');
-}
-
-.project-card__info#proj-card_sda {
-  background-size: 6.4rem;
-  background-image: url('./projects/sda/chillah_black.png');
-}
-
-.project-card__info#proj-card_bnb {
-  background-size: 8.4rem;
-  background-image: url('./projects/books-n-bucks/bnb_logo_black.png');
-}
-
-.project-card__info#proj-card_msgs {
-  background-size: 20rem;
-  background-image: url('./projects/messages/view_edits_button.png');
-} */
-
 .project-card__button {
   background-color: hsl(0, 0%, 3%);
   color: hsl(0, 0%, 95%);

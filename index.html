@@ -5,7 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Will Givens IV</title>
-  <meta name="description" content="Will Givens is a Product Designer.">
+  <meta name="description" content="Los Angeles-based software designer and developer.">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="./favicon_io/site.webmanifest">
 
   <!-- Google / Search Engine Tags -->
   <meta itemprop="name" content="Will Givens IV">
@@ -46,19 +52,6 @@
 </script>
 
 <body class="fadeIn">
-  <!-- <header>
-    <nav class="navigation header-nav flex-row">
-      <p class="header-nav__name">
-        <a href="https://wagivens.github.io">Will Givens IV</a>
-      </p>
-      <li class="header-nav__item">
-        <a href="#selected_work">Work</a>
-      </li>
-      <li class="header-nav__item">
-        <a href="WillardGivensResume_Apr2022.pdf">Resume</a>
-      </li>
-    </nav>
-  </header> -->
   <main class="home-page-container">
     <section class="home-page-section">
       <div class="introduction flex-column">
@@ -77,25 +70,95 @@
         </div>
       </div>
     </section>
-    <!-- <section class="home-page-section">
-      <div class="home-page-section__content repo-highlights">
-        <h2 class="home-page-section__heading">What I'm Working On</h2>
-        <p class="home-page-section__description">My most recent commits to
-          repositories I own or am contributing to.
-        </p>
-        <div class="repositories">
-          <repo-highlight repo-owner="wagivens" repo-name="chronacle"></repo-highlight>
-        </div>
-      </div>
-    </section> -->
     <section class="home-page-section">
       <div class="home-page-section__content">
         <div class="project-highlights">
+          <!-- Snap Design Academy Solo Project -->
+          <article class="project-card">
+            <div class="project-card__info">
+              <h2 class="project-title">Snap Inc.</h2>
+              <p class="project-date">Summer 2023</p>
+              <p><a class="project-link" href="./projects/snap-metro/snap-metro.html">(View Case Study)</a></p>
+              <p class="project-description">As a Design Intern at Snap Inc., I crafted a
+                potential partnership with LA Metro that included a Snapchat feature aimed at
+                incentivizing public transit usage.
+              </p>
+            </div>
+            <div class="project-card__images">
+              <img loading="lazy" src="./projects/snap-metro/highlights/highlight-sc-1.png"
+                alt="A mockup of a chat screen inside Snapchat. The screen shows the user receiving messages from Team Snapchat about a new feature called Transit Score made in collaboration with Metro. The message says users can use Snapchat to show themselves using transit around LA and receive special rewards from Metro. There is an image of a snap code placed on a wall with a person standing in front of it, and the user is informed about special Snapchat QR codes at transit stations.">
+              <img loading="lazy" src="./projects/snap-metro/highlights/highlight-sc-2.png"
+                alt="Two iPhone screens showing a Snapchat user's profile. The first screen shows that user Ashley Long has a Transit Score of 28. The second screen shows a modal that opens when the Transit Score is clicked; the modal simply shows the user how many Metro-branded snaps they've sent, as well as their transit score.">
+              <img loading="lazy" src="./projects/snap-metro/highlights/highlight-sc-3.png"
+                alt="iPhone screen showing an advertisement on Snapchat. The ad has a yellow background with a Snapchat-branded Metro card in the center of it. It has text saying, 'Order your limited edition Snap x Metro Tap Card and add 300 points to your Transit Score.' At the bottom, there is a link to a Snap and Metro collaboration website.">
+              <img loading="lazy" src="./projects/snap-metro/highlights/highlight-sc-4.png"
+                alt="A mockup of a Metro transit card in collaboration with Snapchat. The card is Snap's company yellow color, with the company's ghost logo in the center. Inside the ghost is a black and white collage of photos that represent Metro, like bus stop signs and a transit map.">
+            </div>
+          </article>
+          <!-- Snap Design Academy Product Sprint -->
+          <article class="project-card">
+            <div class="project-card__info">
+              <h2 class="project-title">Snap Inc.</h2>
+              <p class="project-date">Summer 2023</p>
+              <p><a class="project-link" href="./projects/sda/sda.html">(View Case Study)</a></p>
+              <p class="project-description">As a Design Intern at Snap Inc., I
+                helped imagine a Snapchat feature addressing the unique challenges faced by
+                underprivileged teens and young adults in their academic journeys.
+              </p>
+            </div>
+            <div class="project-card__images">
+              <img src="./projects/sda/final-showcase-deck_3.jpg"
+                alt="Slide with mockups of Achieve AI and Pods. The Achieve AI mockup shows a prompt component that allows a user to choose something the AI can help them with. The Pods one shows a Pomodoro Timer within the Pods chat screen."
+                loading="lazy">
+              <img loading="lazy" src="./projects/sda/highlights/highlight-1.png"
+                alt="iPhone screen showing the chat portion of a Pod. Multiple users are talking about studying, and one of them starts a study timer within the chat for everyone to follow while studying.">
+              <img loading="lazy" src="./projects/sda/highlights/highlight-2.png"
+                alt="iPhone screen showing the video portion of a Pod. The members of the pod are on a break, and there is 4 minutes and 48 seconds of time left in the break. Two users are present on video on the screen speaking to each other.">
+              <img loading="lazy" src="./projects/sda/highlights/highlight-3.png"
+                alt="iPhone screen showing an active chat with AchieveAI. The user, Wendy, asks the AI to help her build a study schedule. The AI asks for her class and study schedule before giving her an ICS file that she can import into her device's calendar.">
+            </div>
+          </article>
+          <!-- Chronacle -->
+          <article class="project-card">
+            <div class="project-card__info" id="proj-card_chronacle">
+              <h2 class="project-title">Chronacle</h2>
+              <p class="project-date">Since Summer 2021</p>
+              <p><a class="project-link" href="./projects/chronacle/chronacle.html">(View Case Study)</a></p>
+              <p class="project-description">A trip planning app born from my desire for a more engaging
+                experience organizing my
+                future trips around the world.
+              </p>
+            </div>
+            <div class="project-card__images">
+              <img loading="lazy" src="./projects/chronacle/highlights/highlight-1.png"
+                alt="iPhone screen showing a Trip page within Chronacle. The user has planned a trip for New York City, and the trip dates are below the city title. There are three tilted hero images of New York City arranged in a row that the user can scroll through. Below that, there are two selectable tabs: one says Itinerary, and the other says Things to Do; the second one is currently selected. In the bottom half of the screen, there are image cards representing activities in New York the user can save for their trip.">
+              <img loading="lazy" src="./projects/chronacle/highlights/highlight-2.png"
+                alt="A modal / app drawer that says 'dates' at the top of it. The modal contains a calendar view including the month and selected dates; the user can choose the beginning and end dates of the respective trip. At the bottom, there is a blue button that says 'Looks Good' with an icon of a thumbs up.">
+              <img loading="lazy" src="./projects/chronacle/highlights/highlight-3.png"
+                alt="Bottom half of an iPhone screen showing a cutoff image card representing a user's upcoming trip. The card says the user is visiting Los Angeles from June 10th to June 15th. There is a black bar below the card; the left side of the bar has multiple dots representing which image card the user is currently viewing, and the right side of the bar has clickable text that says 'Add a Trip.' The bottom of the phone contains an app bar that has an airplane icon and a person icon for account settings.">
+              <img loading="lazy" src="./projects/chronacle/highlights/highlight-4.png"
+                alt="Bottom half of a Trip Page within the Chronacle app. There are two tabs, with one saying 'Itinerary' and the other saying 'Things to Do.' The user currently has the second one selected and there is a gallery of image cards beneath the tabs; each card has a location, like One World Trade Center, and image, along with a calendar icon to add it to the itinerary.">
+              <img loading="lazy" src="./projects/chronacle/highlights/highlight-5.png"
+                alt="An iPhone screen showing a modal with a form input inside of it. The modal has the word 'trip' at the top of it, and the user is inputting the name of the city they want to add to their list of upcoming trips. As the user has typed half of the word 'Tokyo' into the text field, the modal provides an autocomplete suggestion for Tokyo, Japan. At the bottom of the modal, there is a greyed-out, disabled button that says 'Let's Go' with an accompanying greyed-out icon of a thumbs up.">
+              <!-- <img loading="lazy" src="./projects/chronacle/highlights/highlight-2.png"
+                alt="The image shows an example of the image and title of an upcoming trip within the Chronacle app. The photo of the location is made to resemble a sticker, and next to it are the words 'Amsterdam, Netherlands.' Under that, there is the date, which is Oct 8 - Oct 20.">
+              <img loading="lazy" src="./projects/chronacle/highlights/highlight-3.png"
+                alt="The image shows three iPhone screens. The first shows a Business Page inside Chronacle, which includes a hero photo of the business. In this case, the business is Balthazar, and under that is a description of the restaurant. The second screen shows the business details of Balthazar, including the address, phone number, and hours of operation. The third screen gives another example with One World Trade Center."> -->
+            </div>
+            <!-- <a href="./projects/chronacle/chronacle.html" class="project-card__button">
+                        Read the case study
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10.8349 15.5978C11.1802 15.5978 11.4501 15.4659 11.7829 15.152L16.755 10.4876C16.9998 10.2553 17.094 9.98533 17.094 9.75305C17.094 9.51449 16.9998 9.25082 16.755 9.01854L11.7829 4.38545C11.4187 4.04644 11.1802 3.90833 10.8474 3.90833C10.3452 3.90833 9.98737 4.29756 9.98737 4.78723V7.02216H9.83043C5.49867 7.02216 3.48975 9.80328 3.48975 14.361C3.48975 15.1583 3.82875 15.5727 4.26821 15.5727C4.60093 15.5727 4.90855 15.4659 5.15339 15.0077C6.13902 13.1745 7.53899 12.5028 9.83043 12.5028H9.98737V14.7503C9.98737 15.2399 10.3452 15.5978 10.8349 15.5978ZM11.2367 13.9781C11.1802 13.9781 11.1425 13.9404 11.1425 13.8776V11.5611C11.1425 11.4167 11.0797 11.3539 10.9353 11.3539H10.1318C7.25649 11.3539 5.42334 12.2642 4.66999 13.8337C4.65116 13.8714 4.63232 13.8902 4.60721 13.8902C4.5821 13.8902 4.56327 13.8714 4.56327 13.8274C4.66371 10.8329 6.0888 8.16474 10.1318 8.16474H10.9353C11.0797 8.16474 11.1425 8.10196 11.1425 7.95757V5.58452C11.1425 5.52802 11.1802 5.49036 11.2367 5.49036C11.2743 5.49036 11.312 5.50919 11.3434 5.54058L15.6312 9.63377C15.6752 9.68399 15.694 9.71538 15.694 9.75305C15.694 9.79072 15.6814 9.82211 15.6312 9.87233L11.3371 13.9279C11.3057 13.9592 11.2681 13.9781 11.2367 13.9781Z"
+                            fill="#F2F2F2" />
+                        </svg>
+                      </a> -->
+          </article>
           <!-- Garnish -->
           <article class="project-card">
             <div class="project-card__info">
               <h2 class="project-title">Garnish</h2>
-              <p class="project-date">Nov 2023 - Ongoing</p>
+              <p class="project-date">Since Fall 2023</p>
               <p class="project-description">A mess-free recipe finding app.
               </p>
             </div>
@@ -125,11 +188,11 @@
                 a book for the recipe list, a calendar for the meal planner, 
                 and a gear for settings. The text 'See all' appears in the upper right corner, 
                 indicating there are more recipes to view.">
-              <video playsinline preload="none" src="./projects/garnish/videos/search-menu.mp4" autoplay loop muted
+              <!-- <video playsinline preload="none" src="./projects/garnish/videos/search-menu.mp4" autoplay loop muted
                 loading="lazy" poster="./projects/garnish/videos/poster_search-menu.jpg" alt="The video shows the user clicking on the search bar on the Discover page,
                 which brings up a search modal in the center of the screen. After typing in the
                 letter P, the user gets suggestions for recipes and recipe authors beginning
-                with the letter P, some of which include Pumpkin Soup and an author named Preppy Kitchen."></video>
+                with the letter P, some of which include Pumpkin Soup and an author named Preppy Kitchen."></video> -->
               <img loading="lazy" src="./projects/garnish/highlights/highlight-4.png"
                 alt="The image shows mockups of two iPhone screens. The first screen is a blank loading screen for an in-app browser. The second screen is a loaded webpage; the website is Bon Apetit and shows a recipe for Fusilli Alla Vodka with Basil and Parmesan. Text on the screen includes, “Bon Appétit. Fusilli Alla Vodka with Basil and Parmesan. By Jon & Vinny's, Los Angeles. Photography by Peden Munk. 4.8 star rating out of five stars based on 160 reviews.”">
               <video playsinline preload="none" src="./projects/garnish/videos/in-app-browser_1.mp4" autoplay loop muted
@@ -148,133 +211,6 @@
               </svg>
             </a> -->
           </article>
-          <!-- Chronacle -->
-          <article class="project-card">
-            <div class="project-card__info" id="proj-card_chronacle">
-              <h2 class="project-title">Chronacle</h2>
-              <p><a class="project-link" href="./projects/chronacle/chronacle.html">(View Case Study)</a></p>
-              <p class="project-date">May 2021 - Ongoing</p>
-              <p class="project-description">A trip planning app born from my longing for a more fun way to organize my
-                future trips around the world.
-              </p>
-            </div>
-            <div class="project-card__images">
-              <img loading="lazy" src="./projects/chronacle/highlights/highlight-1.png"
-                alt="The image shows four iPhone screens. The first shows upcoming trips for a user named Will. At the bottom, there is a modal that lets the user put in the location of a new trip. The second and third screens show intermediate steps of a user putting in Los Angeles, and the last screen shows the text 'Los Angeles' in the text bar along with an active button that says 'Let's Go.'">
-              <img loading="lazy" src="./projects/chronacle/highlights/highlight-2.png"
-                alt="The image shows an example of the image and title of an upcoming trip within the Chronacle app. The photo of the location is made to resemble a sticker, and next to it are the words 'Amsterdam, Netherlands.' Under that, there is the date, which is Oct 8 - Oct 20.">
-              <img loading="lazy" src="./projects/chronacle/highlights/highlight-3.png"
-                alt="The image shows three iPhone screens. The first shows a Business Page inside Chronacle, which includes a hero photo of the business. In this case, the business is Balthazar, and under that is a description of the restaurant. The second screen shows the business details of Balthazar, including the address, phone number, and hours of operation. The third screen gives another example with One World Trade Center.">
-            </div>
-            <!-- <a href="./projects/chronacle/chronacle.html" class="project-card__button">
-                        Read the case study
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M10.8349 15.5978C11.1802 15.5978 11.4501 15.4659 11.7829 15.152L16.755 10.4876C16.9998 10.2553 17.094 9.98533 17.094 9.75305C17.094 9.51449 16.9998 9.25082 16.755 9.01854L11.7829 4.38545C11.4187 4.04644 11.1802 3.90833 10.8474 3.90833C10.3452 3.90833 9.98737 4.29756 9.98737 4.78723V7.02216H9.83043C5.49867 7.02216 3.48975 9.80328 3.48975 14.361C3.48975 15.1583 3.82875 15.5727 4.26821 15.5727C4.60093 15.5727 4.90855 15.4659 5.15339 15.0077C6.13902 13.1745 7.53899 12.5028 9.83043 12.5028H9.98737V14.7503C9.98737 15.2399 10.3452 15.5978 10.8349 15.5978ZM11.2367 13.9781C11.1802 13.9781 11.1425 13.9404 11.1425 13.8776V11.5611C11.1425 11.4167 11.0797 11.3539 10.9353 11.3539H10.1318C7.25649 11.3539 5.42334 12.2642 4.66999 13.8337C4.65116 13.8714 4.63232 13.8902 4.60721 13.8902C4.5821 13.8902 4.56327 13.8714 4.56327 13.8274C4.66371 10.8329 6.0888 8.16474 10.1318 8.16474H10.9353C11.0797 8.16474 11.1425 8.10196 11.1425 7.95757V5.58452C11.1425 5.52802 11.1802 5.49036 11.2367 5.49036C11.2743 5.49036 11.312 5.50919 11.3434 5.54058L15.6312 9.63377C15.6752 9.68399 15.694 9.71538 15.694 9.75305C15.694 9.79072 15.6814 9.82211 15.6312 9.87233L11.3371 13.9279C11.3057 13.9592 11.2681 13.9781 11.2367 13.9781Z"
-                            fill="#F2F2F2" />
-                        </svg>
-                      </a> -->
-          </article>
-          <!-- Snap Design Academy -->
-          <article class="project-card">
-            <div class="project-card__info">
-              <h2 class="project-title">Snap, Inc. - Snap Academies Final Showcase</h2>
-              <p><a class="project-link" href="./projects/sda/sda.html">(Read the Post)</a></p>
-              <p class="project-date">Jun 2023 - Aug 2023</p>
-              <p class="project-description">A 2-week product sprint to create a Snapchat feature that would address
-                the inaccessibility of higher education for low-socioeconomic populations, particularly first-generation
-                students.
-              </p>
-            </div>
-            <div class="project-card__images">
-              <img loading="lazy" src="./projects/sda/highlights/highlight-3.png"
-                alt="A mockup of an iPhone screen. The screen shows a list of chats in the Snapchat app. All of them are blurred except for one, which says 'Pod (Adam, Sana, Eunice).' Under that says 'Active call • 124' indicating something called a Study Streak and that it has been going for 124 days for this group.">
-              <img loading="lazy" src="./projects/sda/highlights/highlight-1.png"
-                alt="Three iPhone mockups. The first is the start of a chat with Achieve AI, and the user is presented with starter options including 'Build a Study Schedule' and 'Create a Pomodoro Timer for Studying.' The second shows the user has selected to create a timer, and there is a countdown element at 4:58 minutes under that. The last screen shows the user has selected 'Build a study schedule;' the AI responds by asking for the user's class times.">
-              <img loading="lazy" src="./projects/sda/highlights/highlight-2.png"
-                alt="Three iPhone mockups. The first screen shows two people in a video call with each other, and the chat is titled 'Pod' to indicate it is meant to be within a Study Pod. The second screen shows the actual text group chat titled 'Pod.' The members are discussing their intentions to begin studying for an upcoming exam, and there is a pomodoro timer started within the chat. The last screen shows a model that shows the user the other users within the chat, and gives them options to start a timer or close the group to new members.">
-              <img loading="lazy" src="./projects/sda/highlights/highlight-4.jpeg"
-                alt="Three people standing on a stage giving a presentation to an audience. The leftmost one is holding a microphone. They are all wearing white tops with black pants.">
-            </div>
-            <!-- <a href="./projects/chronacle/chronacle.html" class="project-card__button">
-                                  Read the case study
-                                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                      d="M10.8349 15.5978C11.1802 15.5978 11.4501 15.4659 11.7829 15.152L16.755 10.4876C16.9998 10.2553 17.094 9.98533 17.094 9.75305C17.094 9.51449 16.9998 9.25082 16.755 9.01854L11.7829 4.38545C11.4187 4.04644 11.1802 3.90833 10.8474 3.90833C10.3452 3.90833 9.98737 4.29756 9.98737 4.78723V7.02216H9.83043C5.49867 7.02216 3.48975 9.80328 3.48975 14.361C3.48975 15.1583 3.82875 15.5727 4.26821 15.5727C4.60093 15.5727 4.90855 15.4659 5.15339 15.0077C6.13902 13.1745 7.53899 12.5028 9.83043 12.5028H9.98737V14.7503C9.98737 15.2399 10.3452 15.5978 10.8349 15.5978ZM11.2367 13.9781C11.1802 13.9781 11.1425 13.9404 11.1425 13.8776V11.5611C11.1425 11.4167 11.0797 11.3539 10.9353 11.3539H10.1318C7.25649 11.3539 5.42334 12.2642 4.66999 13.8337C4.65116 13.8714 4.63232 13.8902 4.60721 13.8902C4.5821 13.8902 4.56327 13.8714 4.56327 13.8274C4.66371 10.8329 6.0888 8.16474 10.1318 8.16474H10.9353C11.0797 8.16474 11.1425 8.10196 11.1425 7.95757V5.58452C11.1425 5.52802 11.1802 5.49036 11.2367 5.49036C11.2743 5.49036 11.312 5.50919 11.3434 5.54058L15.6312 9.63377C15.6752 9.68399 15.694 9.71538 15.694 9.75305C15.694 9.79072 15.6814 9.82211 15.6312 9.87233L11.3371 13.9279C11.3057 13.9592 11.2681 13.9781 11.2367 13.9781Z"
-                                      fill="#F2F2F2" />
-                                  </svg>
-                                </a> -->
-          </article>
-
-          <!-- SDA Social Campaign -->
-          <article class="project-card">
-            <div class="project-card__info">
-              <h2 class="project-title">Snap, Inc. - Campaign and Integrated Snapchat Feature</h2>
-              <p class="project-date">Jun 2023 - Aug 2023</p>
-              <p class="project-description">Social campaign educating the public on the physical cost of cars, as well
-                as an integrated Snapchat feature.
-              </p>
-            </div>
-            <div class="project-card__images">
-              <img loading="lazy" src="./projects/sda/highlights/highlight-sc-4.png"
-                alt="A mockup of a Metro transit card in collaboration with Snapchat. The card is Snap's company yellow color, with the company's ghost logo in the center. Inside the ghost is a black and white collage of photos that represent Metro, like bus stop signs and a transit map.">
-              <img loading="lazy" src="./projects/sda/highlights/highlight-sc-5.png"
-                alt="A mockup of a chat screen inside Snapchat. The screen shows the user receiving messages from Team Snapchat about a new feature called Transit Score made in collaboration with Metro. The message says users can user Snapchat to show themselves using transit around LA and receive special rewards from Metro. There is an image of promotional posters placed at a bus stop, and the user is informed about special Snapchat QR codes at transit stations.">
-              <img loading="lazy" src="./projects/sda/highlights/highlight-sc-1.png"
-                alt="Mockup of three different informational posters put onto a public brick wall. All three are mostly in black and white. The first shows a photo of Dodger Stadium in LA and says “LA can fit 10 Dodger Stadiums in the parking lot of Dodger Stadium. Make space for humans, not cars.” The second shows people standing in a parking lot with no vehicles to emphasize the difference in size between humans and cars, as well as a scaled top-down map view of Central Park; the text reads 'NYC has 12 Central Parks' worth of on-street parking. Make space for humans, not cars.' The last image features the same words, but with just with plain images of empty parking lots.">
-              <img loading="lazy" src="./projects/sda/highlights/highlight-sc-2.png"
-                alt="An informational poster displayed in a public space, on a large billboard above a building. The poster features a black and white collage of empty parking spaces at a parking lot. There is also a scaled top-down map view of Central Park among it. Text on the poster reads, 'NYC has 12 Central Parks' worth of on-street parking. Make space for humans, not cars.'">
-              <img loading="lazy" src="./projects/sda/highlights/highlight-sc-3.png"
-                alt="An informational poster displayed in a public space, on something like a mall directory. The poster features a collage of people standing in parking spaces at a parking lot, but without vehicles to emphasize the amount of space cars take up. There is also a scaled top-down map view of Central Park alongside it. Text on the poster reads, 'NYC has 12 Central Parks' worth of on-street parking. Make space for humans, not cars.'">
-            </div>
-            <!-- <a href="./projects/chronacle/chronacle.html" class="project-card__button">
-                                  Read the case study
-                                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                      d="M10.8349 15.5978C11.1802 15.5978 11.4501 15.4659 11.7829 15.152L16.755 10.4876C16.9998 10.2553 17.094 9.98533 17.094 9.75305C17.094 9.51449 16.9998 9.25082 16.755 9.01854L11.7829 4.38545C11.4187 4.04644 11.1802 3.90833 10.8474 3.90833C10.3452 3.90833 9.98737 4.29756 9.98737 4.78723V7.02216H9.83043C5.49867 7.02216 3.48975 9.80328 3.48975 14.361C3.48975 15.1583 3.82875 15.5727 4.26821 15.5727C4.60093 15.5727 4.90855 15.4659 5.15339 15.0077C6.13902 13.1745 7.53899 12.5028 9.83043 12.5028H9.98737V14.7503C9.98737 15.2399 10.3452 15.5978 10.8349 15.5978ZM11.2367 13.9781C11.1802 13.9781 11.1425 13.9404 11.1425 13.8776V11.5611C11.1425 11.4167 11.0797 11.3539 10.9353 11.3539H10.1318C7.25649 11.3539 5.42334 12.2642 4.66999 13.8337C4.65116 13.8714 4.63232 13.8902 4.60721 13.8902C4.5821 13.8902 4.56327 13.8714 4.56327 13.8274C4.66371 10.8329 6.0888 8.16474 10.1318 8.16474H10.9353C11.0797 8.16474 11.1425 8.10196 11.1425 7.95757V5.58452C11.1425 5.52802 11.1802 5.49036 11.2367 5.49036C11.2743 5.49036 11.312 5.50919 11.3434 5.54058L15.6312 9.63377C15.6752 9.68399 15.694 9.71538 15.694 9.75305C15.694 9.79072 15.6814 9.82211 15.6312 9.87233L11.3371 13.9279C11.3057 13.9592 11.2681 13.9781 11.2367 13.9781Z"
-                                      fill="#F2F2F2" />
-                                  </svg>
-                                </a> -->
-          </article>
-
-          <!-- Books N Bucks -->
-          <article class="project-card">
-            <div class="project-card__info">
-              <h2 class="project-title">Books N Bucks</h2>
-              <p class="project-date">Aug 2020 - May 2021</p>
-              <p class="project-description">As a volunteer designer, I helped redesign a dashboard for grade-school
-                students to stay motivated and accountable during COVID remote learning.
-              </p>
-            </div>
-            <div class="project-card__images">
-              <img loading="lazy" src="./projects/books-n-bucks/highlights/highlight-1.png"
-                alt="Mockup of the Dashboard Home Screen. The screen features a sidebar that has links to five pages: Home, Points, Store, Wishlist, and Attendance, with Home currently selected. Under that is a section that includes a list of the users teachers. For example, one of their teachers is Mr. Ventura, who teaches Mathematics. To the right are card elements that represent each class a student is meant to be in on the current day; each card has a hero image, the class title, the class time, the teacher, and a button that says 'Enter Class.'">
-              <img loading="lazy" src="./projects/books-n-bucks/highlights/highlight-2.png" alt="The bottom half of the class card
-              element. It shows the name of the class in bold. Below that is the time of the 
-              class in gray, and below that is the teacher for the class along with a photo. At
-              the very bottom is a red button that says 'Enter Class'.">
-              <img loading="lazy" src="./projects/books-n-bucks/highlights/highlight-3.png"
-                alt="A mockup of the Attendance page. The screen features a list of attendance records for the given student. Each record includes the class and teacher, the date, and the attendance status for that class. Possible attendance statuses are 'Present,' Absent,' and 'Tardy.'">
-              <img loading="lazy" src="./projects/books-n-bucks/highlights/highlight-4.png" alt="Screenshot of the redesigned Points page.
-              There are multiple rows of data, each with the number of points awarded to the student,
-              the teacher who gave them the points, and the reason for awarding them. The rows
-              are organized by date.">
-              <img loading="lazy" src="./projects/books-n-bucks/highlights/highlight-5.png" alt="Two items in the student store.
-              One item says '10 Min Early Recess' and the other says
-              '20 Mins Free Time'. There is also a pill-shaped
-              control bar below it that says 'Page 1' next to a right-pointing arrow for
-              a student to switch pages.">
-            </div>
-            <!-- <a href="./projects/chronacle/chronacle.html" class="project-card__button">
-                                  Read the case study
-                                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                      d="M10.8349 15.5978C11.1802 15.5978 11.4501 15.4659 11.7829 15.152L16.755 10.4876C16.9998 10.2553 17.094 9.98533 17.094 9.75305C17.094 9.51449 16.9998 9.25082 16.755 9.01854L11.7829 4.38545C11.4187 4.04644 11.1802 3.90833 10.8474 3.90833C10.3452 3.90833 9.98737 4.29756 9.98737 4.78723V7.02216H9.83043C5.49867 7.02216 3.48975 9.80328 3.48975 14.361C3.48975 15.1583 3.82875 15.5727 4.26821 15.5727C4.60093 15.5727 4.90855 15.4659 5.15339 15.0077C6.13902 13.1745 7.53899 12.5028 9.83043 12.5028H9.98737V14.7503C9.98737 15.2399 10.3452 15.5978 10.8349 15.5978ZM11.2367 13.9781C11.1802 13.9781 11.1425 13.9404 11.1425 13.8776V11.5611C11.1425 11.4167 11.0797 11.3539 10.9353 11.3539H10.1318C7.25649 11.3539 5.42334 12.2642 4.66999 13.8337C4.65116 13.8714 4.63232 13.8902 4.60721 13.8902C4.5821 13.8902 4.56327 13.8714 4.56327 13.8274C4.66371 10.8329 6.0888 8.16474 10.1318 8.16474H10.9353C11.0797 8.16474 11.1425 8.10196 11.1425 7.95757V5.58452C11.1425 5.52802 11.1802 5.49036 11.2367 5.49036C11.2743 5.49036 11.312 5.50919 11.3434 5.54058L15.6312 9.63377C15.6752 9.68399 15.694 9.71538 15.694 9.75305C15.694 9.79072 15.6814 9.82211 15.6312 9.87233L11.3371 13.9279C11.3057 13.9592 11.2681 13.9781 11.2367 13.9781Z"
-                                      fill="#F2F2F2" />
-                                  </svg>
-                                </a> -->
-          </article>
-          <!--  -->
         </div>
       </div>
     </section>
