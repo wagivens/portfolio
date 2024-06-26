@@ -172,7 +172,7 @@ h4 {
   color: var(--black);
   line-height: clamp(
     calc(1.75 * 1.48rem),
-    calc(1.75 * 1.24vw),
+    calc(1.75 * 1.32vw),
     calc(1.85 * 2rem)
   );
   width: 100%;
