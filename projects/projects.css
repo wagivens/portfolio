@@ -161,7 +161,7 @@ h4 {
 
 .paragraph-heading {
   font-weight: 600;
-  color: var(--blue);
+  color: var(--blue-dark);
   font-size: clamp(1.4rem, 2.64vw, 1.8rem);
   margin: 0 auto 2rem;
 }

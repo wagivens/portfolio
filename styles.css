@@ -5,9 +5,9 @@
   --black: hsl(0, 0%, 15%);
   --gray: hsl(0, 0%, 50%);
   --gray-light: hsl(0, 0%, 75%);
-  --gray-dark: hsl(0, 0%, 25%);
+  --gray-dark: hsl(0, 0%, 40%);
   --white: hsl(0, 0%, 95%);
-  --blue: hsl(217, 92%, 53%);
+  --blue: hsl(217, 76%, 42%);
   --blue-light: hsl(217, 87%, 62%);
   --blue-dark: hsl(217, 67%, 35%);
   --highlight-color: hsl(217, 76%, 84%);
