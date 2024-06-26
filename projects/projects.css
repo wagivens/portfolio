@@ -147,12 +147,8 @@ h4 {
   margin-top: 2rem;
 }
 
-.project-title,
-.section-title {
-  width: 100%;
-}
-
 .project-title {
+  width: 100%;
   color: var(--black);
   font-size: clamp(1.6rem, 3vw, 2rem);
   line-height: clamp(
@@ -163,9 +159,9 @@ h4 {
   margin: 4rem auto 2rem;
 }
 
-.section-title {
-  font-weight: 500;
-  /* color: var(--); */
+.paragraph-heading {
+  font-weight: 600;
+  color: var(--blue);
   font-size: clamp(1.4rem, 2.64vw, 1.8rem);
   margin: 0 auto 2rem;
 }
@@ -175,13 +171,14 @@ h4 {
   font-weight: 500;
   color: var(--black);
   line-height: clamp(
-    calc(1.75 * 1.64rem),
-    calc(1.75 * 1.36vw),
-    calc(1.85 * 2.2rem)
+    calc(1.75 * 1.48rem),
+    calc(1.75 * 1.24vw),
+    calc(1.85 * 2rem)
   );
   width: 100%;
-  max-width: 65ch;
+  max-width: 50ch;
   letter-spacing: -0.04rem;
+  /* margin: 0 auto; */
 }
 
 .main-paragraph + .main-paragraph {
@@ -256,6 +253,7 @@ h4 {
 }
 
 .figure-container + .main-paragraph,
+.figure-container + .paragraph-heading,
 .main-paragraph + .figure-container {
   margin-top: 6rem;
 }
@@ -291,7 +289,7 @@ h4 {
     margin: 4rem auto 2rem;
   }
 
-  .section-title {
+  .paragraph-heading {
     font-size: clamp(1.6rem, 2.72vw, 1.84rem);
   }
 
