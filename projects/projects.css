@@ -273,6 +273,7 @@ h4 {
   border: 0.1rem solid rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   padding: 2px;
+  overflow-x: scroll;
 }
 
 .code-editor > .header {
