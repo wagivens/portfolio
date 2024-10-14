@@ -25,10 +25,10 @@
 }
 
 .home-page-section__heading {
-  font-family: 'Spartan', sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-size: clamp(1.6rem, 2vw, 1.8rem);
   width: 100%;
-  letter-spacing: -0.05rem;
+  letter-spacing: 0.02rem;
   font-weight: 700;
 }
 
@@ -45,10 +45,10 @@ p,
 h1,
 h2 {
   font-size: clamp(1.6rem, 2vw, 1.8rem);
-  font-weight: 400;
-  line-height: clamp(calc(1.75 * 1.6rem), calc(1.75 * 2vw), calc(1.75 * 2rem));
+  font-weight: 500;
+  line-height: 2.8rem;
   max-width: 50ch;
-  letter-spacing: -0.05rem;
+  letter-spacing: 0.02rem;
 }
 
 .location {
@@ -85,14 +85,12 @@ h2 {
 }
 
 .project-card::after {
-  width: 100%;
   float: right;
-  font-size: clamp(1.6rem, 2vw, 1.8rem);
+  font-size: clamp(1.52rem, 2vw, 1.8rem);
   font-weight: 600;
   letter-spacing: -0.05rem;
-  font-style: italic;
   margin-top: 0.8rem;
-  content: 'Scroll →';
+  content: 'Scroll ⇢';
 }
 
 .project-card__info {
@@ -107,36 +105,6 @@ h2 {
   color: #2967cc;
 }
 
-.project-card__button {
-  background-color: hsl(0, 0%, 3%);
-  color: hsl(0, 0%, 95%);
-  border: none;
-  width: 100%;
-  height: 4rem;
-  margin-top: 0.4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 200ms ease;
-}
-
-.project-card__button:not(.disabled):hover {
-  background-color: hsl(0, 0%, 16%);
-}
-
-.project-card__button > svg {
-  margin-left: 0.4rem;
-  margin-bottom: 0.2rem;
-}
-
-.project-card__button.disabled {
-  background-color: hsl(0, 0%, 40%);
-}
-
-.project-card__button.disabled:hover {
-  cursor: not-allowed;
-}
-
 .project-description {
   display: flex;
   align-items: center;
@@ -149,11 +117,20 @@ h2 {
 .project-link,
 .project-description,
 .project-card__button {
-  font-family: 'Spartan', sans-serif;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.52rem;
+  letter-spacing: 0.02rem;
+}
+
+.project-title {
+  font-weight: 600;
+}
+
+.project-date,
+.project-link,
+.project-description,
+.project-card__button {
   font-weight: 500;
-  font-size: clamp(1.52rem, 1.8vw, 1.72rem);
-  /* font-size: 1.4rem; */
-  letter-spacing: -0.06rem;
 }
 
 .project-date {
@@ -192,8 +169,9 @@ h2 {
   margin-top: 4rem;
 }
 
+/* Footer/About Section */
 #about p {
-  font-size: clamp(1.6rem, 2vw, 1.8rem);
+  font-size: clamp(1.52rem, 2vw, 1.8rem);
   justify-content: flex-start;
 }
 
@@ -208,7 +186,7 @@ h2 {
 #links li {
   width: fit-content;
   font-weight: 500;
-  font-size: clamp(1.6rem, 2vw, 1.8rem);
+  font-size: clamp(1.52rem, 2vw, 1.8rem);
   list-style: none;
   color: var(--gray);
   transition: all 150ms ease;
@@ -235,6 +213,23 @@ h2 {
 
   .project-card {
     max-width: 100%;
+  }
+
+  .project-card__info > * + * {
+    margin-top: 0.48rem;
+  }
+
+  .project-title,
+  .project-date,
+  .project-link,
+  .project-description,
+  .project-card__button {
+    font-size: 1.8rem;
+  }
+
+  .project-description,
+  #about p {
+    line-height: 3.12rem;
   }
 
   .project-card__images {

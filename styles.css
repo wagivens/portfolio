@@ -75,7 +75,9 @@ svg {
 }
 
 body {
-  font-family: 'Spartan', sans-serif;
+  font-family: 'Manrope', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   margin: 0 auto;
   position: relative;
   width: 100%;

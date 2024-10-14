@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An overview of 
+    building the frontend for Chronacle, a progressive
+    web application for planning trips around the world.">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../../favicon_io/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" type="text/css" href="../../styles.css" />
+    <link rel="stylesheet" type="text/css" href="../projects.css" />
+    <title>Developing Chronacle | Will Givens IV</title>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2XH636PP1Q"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-2XH636PP1Q');
+</script>
+
+<body class="fadeIn project"></body>
+<header>
+    <nav class="navigation header-nav flex-row">
+        <a href="../../index.html" class="back-btn flex-row">
+            <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M12.8114 9.71597C12.8114 7.71708 11.4654 6.33594 9.18527 6.33594H6.03125L4.87109 6.39119L5.75 5.64789L7.02567 4.40235C7.12612 4.30693 7.19141 4.18137 7.19141 4.01563C7.19141 3.69923 6.97042 3.47322 6.64397 3.47322C6.50335 3.47322 6.34766 3.53851 6.23716 3.64398L3.35937 6.48159C3.24386 6.59208 3.18359 6.74275 3.18359 6.89844C3.18359 7.04911 3.24386 7.19978 3.35937 7.31028L6.23716 10.1479C6.34766 10.2534 6.50335 10.3186 6.64397 10.3186C6.97042 10.3186 7.19141 10.0926 7.19141 9.77624C7.19141 9.6105 7.12612 9.48996 7.02567 9.38952L5.75 8.14398L4.87109 7.4057L6.03125 7.45592H9.21038C10.8175 7.45592 11.7065 8.36999 11.7065 9.67579C11.7065 10.9816 10.8175 11.9358 9.21038 11.9358H8.03516C7.70368 11.9358 7.46763 12.1869 7.46763 12.4933C7.46763 12.7997 7.70368 13.0508 8.04018 13.0508H9.25056C11.4905 13.0508 12.8114 11.7299 12.8114 9.71597Z"
+                    fill="black" />
+            </svg>
+            Back
+        </a>
+        <!-- <a href="../../WillardGivensResume_2022.pdf" class="header-nav__item" role="link">Resume</a> -->
+    </nav>
+</header>
+<main class="case-study">
+    <h1 class="project-title">Developing Chronacle</h1>
+    <section class="case-study__section">
+        <p class="main-paragraph">
+            <span class="emphasized">Chronacle's design system is being maintained in Figma</span>,
+            allowing me to keep future designs consistent
+            by using things like design tokens,
+            as well as make development flows simple and seamless.
+        </p>
+        <div class="figure-container">
+            <figure>
+                <img loading="lazy" src="./highlights/highlight-2.png"
+                    alt="A modal / app drawer that says 'dates' at the top of it. The modal contains a calendar view including the month and selected dates; the user can choose the beginning and end dates of the respective trip. At the bottom, there is a blue button that says 'Looks Good' with an icon of a thumbs up.">
+            </figure>
+        </div>
+        <div class="figure-container">
+            <figure>
+                <img loading="lazy" src="./highlights/highlight-component.png"
+                    alt="Screenshot of a component in the Chronacle design system on Figma. Various parts of the component are selected and have dotted green lines leading out to annotations on the side. Each annotation contains various attributes for its respective part, such as the color fill, the font size, the padding, etc.">
+            </figure>
+            <figcaption>Example component, its underlying structure, and the various tokens/decisions used.</figcaption>
+        </div>
+        <p class="main-paragraph">
+            My design decisions are informed by my
+            understanding of modern web's possibilities and limitations.
+            I wanted to make my development process as
+            streamlined as possible, so I thought a lot
+            about tools that would help make
+            that happen. In terms of front-end specifically,
+            some tools I'm using are:
+        </p>
+        <ul class="list">
+            <li class="list-item">
+                <strong>Next.js:</strong>
+                I decided on Next.js as my framework
+                since it supports a variety of useful
+                front-end tech natively
+                (Typescript/TSX, Postcss, CSS Modules, Web Vitals, etc).
+            </li>
+            <li class="list-item">
+                <strong>Style Dictionary:</strong>
+                I'm using Style Dictionary to incorporate
+                design tokens into my development flow;
+                this helps keep design decisions
+                consistent across all environments
+                and reduces development time.
+            </li>
+            <li class="list-item">
+                <strong>CSS Modules:</strong>
+                CSS Modules help me easily
+                import CSS styling for multiple
+                components and layouts without namespace collisions.
+            </li>
+            <li class="list-item">
+                <strong>Class Variance Authority:</strong>
+                CVA lets me define variants of
+                each component and generate class
+                names based on which variant is invoked.
+                Generated class names match those
+                imported from the CSS module for
+                any respective component.
+            </li>
+            <li class="list-item">
+                <strong>Storybook:</strong>
+                While static components are being
+                maintained in Figma, I also build
+                out each one and store them in Storybook.
+                This helps make development much easier
+                since I can modify components as needed
+                and see how they interact with each other
+                before publishing.
+            </li>
+        </ul>
+        <!-- Code Block: styledictionary.config.js -->
+        <div class="code-editor">
+            <div class="header">
+                <span class="title">styledictionary.config.js</span>
+            </div>
+            <div class="editor-content">
+                <code class="code">
+                    <p class="level-0">
+                        <span class="color-purple">modules.exports</span> = { 
+                    </p>
+                    <p class="level-1">
+                        <span class="color-green">source</span>: [<span class="color-red">'src/tokens/**/*.tokens.json'</span>],
+                    </p>
+                    <p class="level-1">
+                        <span class="color-green">platforms</span>: { 
+                    </p>
+                    <p class="level-2">
+                        <span class="color-green">scss</span>: { 
+                    </p>
+                    <p class="level-3">
+                        <span class="color-green">transforms</span>: [<span class="color-red">'attribute/cti'</span>, <span class="color-red">'name/ti/camel'</span>],
+                    </p>
+                    <p class="level-3">
+                        <span class="color-green">transformGroup</span>: <span class="color-red">'scss'</span>,
+                    </p>
+                    <p class="level-3">
+                        <span class="color-green">buildPath</span>: <span class="color-red">'src/styles/scss/'</span>,
+                    </p>
+                    <p class="level-3">
+                        <span class="color-green">files</span>: <span class="color-purple">tokenFileGenerator.baseTokens.map</span>((<span class="color-blue">tokenCategory</span>)
+                        => ({
+                    </p>
+                    <p class="level-4">
+                        <span class="color-green">destination</span>: <span class="color-red">`_${</span><span class="color-blue">tokenCategory</span><span class="color-red">}.module.scss`</span>,
+                    </p>
+                    <p class="level-4">
+                        <span class="color-green">format</span>: <span class="color-red">'scss/variables'</span>,
+                    </p>
+                    <p class="level-4">
+                        <span class="color-green">filter</span>: <span class="color-purple">tokenFilter</span>(<span class="color-red">`${</span><span class="color-blue">tokenCategory</span><span class="color-red">}`</span>),
+                    </p>
+                    <p class="level-3">})),</p>
+                    <p class="level-2">},</p>
+                    <p class="level-1">},</p>
+                    <p class="level-0">};</p>
+                </code>
+            </div>
+        </div>
+        <!-- Code Block: tokens.json -->
+        <div class="code-editor">
+            <div class="header">
+                <span class="title">tokens.json (Snippet)</span>
+            </div>
+            <div class="editor-content">
+                <code class="code">
+                    <p class="level-0">{</p>
+                    <p class="level-1">
+                        <span class="color-blue">"color"</span>: {
+                    </p>
+                    <p class="level-2">
+                        <span class="color-blue">"blue-100"</span>: {
+                    </p>
+                    <p class="level-3">
+                        <span class="color-blue">"value"</span>: <span class="color-green">"#99C7F2"</span>,
+                    </p>
+                    <p class="level-3">
+                        <span class="color-blue">"category"</span>: <span class="color-green">"color"</span>
+                    </p>
+                    <p class="level-3">
+                        <span class="comment">// becomes $blue100 in _color.module.scss</span>
+                    </p>
+                    <p class="level-2">},</p>
+                    <p class="level-1">},</p>
+                    <p class="level-0">}</p>
+                </code>
+            </div>
+        </div>
+        <p class="main-paragraph"><strong>Here's an example of my workflow
+                using my <i>Tilted Image Card</i> component:</strong>
+        </p>
+        <div class="figure-container">
+            <figure>
+                <img loading="lazy" src="./highlights/highlight-component-2.png" alt="The Tilted Image Card component with
+                annotations in Figma Dev Mode.">
+            </figure>
+            <figcaption>The Tilted Image Card component with
+                annotations in Figma Dev Mode.
+            </figcaption>
+        </div>
+        <!-- Code Block: TitledImageCard.module.scss -->
+        <div class="code-editor">
+            <div class="header">
+                <span class="title">TiltedImageCard.module.scss</span>
+            </div>
+            <div class="editor-content">
+                <code class="code">
+                    <p class="selector"><span class="color-blue">.TiltedImageCard</span> <span>{</span></p>
+                    <p class="level-1">
+                    <span class="color-red">@include</span>
+                    <span class="color-purple">main.flex-column</span>;
+                    </p>
+                    <p class="level-1">
+                    <span class="color-green">justify-content</span><span>:</span>
+                    <!-- <span class="color-preview-1"></span> -->
+                    <span class="color-purple">flex-end</span>;
+                    </p>
+                    <p class="level-1">
+                    <span class="color-green">align-items</span><span>:</span>
+                    <span class="color-purple">flex-start</span>;
+                    </p>
+                    <p class="level-1">
+                    <span class="color-green">overflow</span><span>:</span>
+                    <span class="color-purple">hidden</span>;
+                    </p>
+                    <p class="level-1">
+                    <span class="color-green">border-radius</span><span>:</span>
+                    <span class="color-purple">1.2rem</span>;
+                    </p>
+                    <p class="level-1">
+                    <span class="color-green">box-shadow</span><span>:</span>
+                    <span class="color-purple">0px 0px 10px 0px 
+                        <span class="color-red">rgba(</span>184, 184, 184, 0.64<span class="color-red">)</span></span>;
+                    </p>
+                    <span>}</span>
+
+                    <p class="selector"><span class="color-blue">.small</span> <span>{</span></p>
+                    <p class="level-1">
+                    <span class="color-green">width</span><span>:</span>
+                    <span class="color-purple">9.8125rem</span>;
+                    </p>
+                    <p class="level-1">
+                    <span class="color-green">max-width</span><span>:</span>
+                    <span class="color-purple">9.8125rem</span>;
+                    </p>
+                    <p class="level-1">
+                    <span class="color-green">height</span><span>:</span>
+                    <span class="color-purple">7.75rem</span>;
+                    </p>
+                    <span>}</span>
+                    
+                    <p class="selector"><span class="color-blue">.small > .cardTitle</span> <span>{</span></p>
+                    <p class="level-1">
+                    <span class="color-green">font-size</span><span>:</span>
+                    <!-- <span class="color-preview-1"></span> -->
+                    <span class="color-yellow">typography.</span><span class="color-red">$fontSize16</span>;
+                    </p>
+                    <span>}</span>
+
+                    <p class="selector"><span class="color-blue">.large</span> <span>{</span></p>
+                    <p class="level-1">
+                    <span class="color-green">width</span><span>:</span>
+                    <span class="color-purple">11.775rem</span>;
+                    </p>
+                    <p class="level-1">
+                    <span class="color-green">max-width</span><span>:</span>
+                    <span class="color-purple">11.775rem</span>;
+                    </p>
+                    <p class="level-1">
+                    <span class="color-green">height</span><span>:</span>
+                    <span class="color-purple">9.3rem</span>;
+                    </p>
+                    <span>}</span>
+                    
+                    <p class="selector"><span class="color-blue">.large > .cardTitle</span> <span>{</span></p>
+                    <p class="level-1">
+                    <span class="color-green">font-size</span><span>:</span>
+                    <!-- <span class="color-preview-1"></span> -->
+                    <span class="color-yellow">typography.</span><span class="color-red">$fontSize18</span>;
+                    </p>
+                    <span>}</span>
+
+                    <p class="selector"><span class="color-blue">.cardTitle</span> <span>{</span></p>
+                    <p class="level-1">
+                    <span class="color-green">font-family</span>:
+                    <span class="color-yellow">typography.</span><span class="color-red">$fontFamilyMain</span>;
+                    </p>
+                    <p class="level-1">
+                    <span class="color-green">font-weight</span><span>:</span>
+                    <span class="color-yellow">typography.</span><span class="color-red">$fontWeightBold</span>;
+                    </p>
+                    <p class="level-1">
+                    <span class="color-green">letter-spacing</span><span>:</span>
+                    <span class="color-yellow">typography.</span><span class="color-red">$letterSpacingRegular</span>;
+                    </p>
+                    <p class="level-1">
+                    <span class="color-green">color</span><span>:</span>
+                    <span class="color-red">$white300</span>;
+                    </p>
+                    <p class="level-1">
+                    <span class="color-green">padding</span><span>:</span>
+                    <span class="color-purple">1.2rem</span>;
+                    </p>
+                    <p class="level-1">
+                    <span class="color-green">position</span><span>:</span>
+                    <span class="color-purple">absolute</span>;
+                    </p>
+                    <p class="level-1">
+                    <span class="color-green">line-height</span><span>:</span>
+                    <span class="color-purple">normal</span>;
+                    </p>
+                    <p class="level-1">
+                    <span class="color-green">align-self</span><span>:</span>
+                    <span class="color-purple">stretch</span>;
+                    </p>
+                    <span>}</span>
+                </code>
+            </div>
+        </div>
+        <!-- Code Block: TitledImageCard.tsx -->
+        <div class="code-editor">
+            <div class="header">
+                <span class="title">TiltedImageCard.tsx (Component File)</span>
+            </div>
+            <div class="editor-content">
+                <code class="code">
+                    <p class="level-0">
+                    <span class="color-purple">import</span> 
+                    <span class="color-blue">styles</span> 
+                    <span class="color-purple">from</span> 
+                    <span class="color-red">'./TiltedImageCard.module.scss'</span><span class="color-purple">;</span>
+                    </p>
+
+                    <p class="newline level-0">
+                        <span class="comment">// Using Class Variance Authority to declare</span>
+                    </p>
+                    <p class="level-0">
+                        <span class="comment">// component variants and their associated class names:</span>
+                    </p>
+                    
+                    <p class="level-0">
+                        <span class="color-purple">const</span> <span class="color-green">tiltedImageClasses</span> = 
+                        <span class="color-purple">cva</span>(<span class="color-blue">styles.TiltedImageCard</span>,
+                        {
+                    </p>
+
+                    <p class="level-1">
+                        <span class="comment">// Class names for this variant will</span>
+                    </p>
+                    <p class="level-1">
+                        <span class="comment">// include ".TiltedImageCard .small"</span>
+                    </p>
+                    <p class="level-1">
+                        <span class="color-green">variants:</span> {
+                    </p>
+                    <p class="level-2">
+                        <span class="color-green">size:</span>{
+                    </p>
+                    <p class="level-3">
+                        <span class="color-green">small:</span> 
+                        <span class="color-blue">styles<span class="color-green">.</span>small</span>,
+                    </p>
+                    <p class="level-3">
+                        <span class="color-green">large:</span> 
+                        <span class="color-blue">styles<span class="color-green">.</span>large</span>,
+                    </p>
+                    <p class="level-2">},</p>
+                    
+                    <p class="level-2">
+                        <span class="color-green">tiltDirection:</span> {
+                    </p>
+                    <p class="level-3">
+                        <span class="color-green">left:</span> 
+                        <span class="color-blue">styles<span class="color-green">.</span>leftTilted</span>,
+                    </p>
+                    <p class="level-3">
+                        <span class="color-green">right:</span> 
+                        <span class="color-blue">styles<span class="color-green">.</span>rightTilted</span>,
+                    </p>
+                    <p class="level-2">},</p>
+
+                    <p class="level-1">},</p>
+                    <p class="level-1">
+                        <span class="color-green">defaultVariants:</span> {
+                    </p>
+                    <p class="level-2">
+                        <span class="color-green">size:</span> <span class="color-red">'small'</span><span class="color-green">,</span>
+                    </p>
+                    <p class="level-1">},</p>
+                    <p class="level-0">
+                        })<span class="color-purple">;</span>
+                    </p>
+
+                    <p class="newline level-0">
+                        <span class="comment">// Defining my variant categories as component</span>
+                    </p>
+                    <p class="level-0">
+                        <span class="comment">// props, along with the props 'title' and 'mediaSource':</span>
+                    </p>
+                    <p class="level-0">
+                        <span class="color-purple">interface</span> <span class="color-green">TiltedImageCardProps</span> 
+                        <span class="color-purple">extends</span>
+                        <span class="color-green">VariantProps</span><<span class="color-purple">typeof</span>
+                        <span class="color-green">tiltedImageClasses</span>> {
+                    </p>
+                    <p class="level-1">
+                        <span class="color-green">title?:</span> <span class="color-blue">String</span>;
+                    </p>
+                    <p class="level-1">
+                        <span class="color-green">mediaSource:</span> <span class="color-blue">StaticImageData</span>;
+                    </p>
+                    <p class="level-0">}</p>
+
+
+                    <p class="newline level-0"></p>
+                        <span class="comment">// The component with props being passed in:</span>
+                    </p>
+                    <p class="level-0">
+                        <span class="color-purple">export default function TiltedImageCard</span>({
+                    </p>
+                    <p class="level-1">
+                        <span class="color-green">size</span>, 
+                    </p>
+                    <p class="level-1">
+                        <span class="color-green">tiltDirection</span>, 
+                    </p>
+                    <p class="level-1">
+                        <span class="color-green">title</span>, 
+                    </p>
+                    <p class="level-1">
+                        <span class="color-green">mediaSource</span>, 
+                    </p>
+                    <p class="level-0">
+                    }: <span class="color-purple">TiltedImageCardProps</span>) {
+                    </p>
+                    <p class="level-1">
+                        <span class="color-purple">return</span> ( 
+                    </p>
+                    <p class="level-2">
+                        <<span class="color-yellow">article</span> className={<span class="color-purple">tiltedImageClasses</span>({ 
+                            <span class="color-green">tiltDirection</span>, <span class="color-green">size</span> 
+                        })}></span> 
+                    </p>
+                    <p class="level-3">
+                        <<span class="color-yellow">div</span> className={<span class="color-green">styles.cardGradient</span>}><<span class="color-yellow">/div</span>>
+                    </p>
+                    <p class="level-3">
+                        <<span class="color-yellow">img</span> className={<span class="color-green">styles.cardMedia</span>} 
+                        src={<span class="color-green">mediaSource.src</span>}><<span class="color-yellow">/img</span>>
+                    </p>
+                    <p class="level-3">
+                        <<span class="color-yellow">p</span> className={<span class="color-green">styles.cardTitle</span>}>{<span class="color-green">title</span>}<<span class="color-yellow">/p</span>>
+                    </p>
+                    <p class="level-2">
+                        <<span class="color-yellow">/article</span>>
+                    </p>
+                    <p class="level-1">
+                        ); 
+                    </p>
+                    <p class="level-0">}</p>
+                </code>
+            </div>
+        </div>
+        <!-- Code Block: TitledImageCard.stories.tsx -->
+        <div class="code-editor">
+            <div class="header">
+                <span class="title">TiltedImageCard.stories.tsx (Component Storybook File)</span>
+            </div>
+            <div class="editor-content">
+                <code class="code">
+                    <p class="level-0">
+                    <span class="color-purple">export const</span> 
+                    <span class="color-blue">TiltedImages</span>: 
+                    <span class="color-blue">Story</span> = {
+                    </p>
+
+                    <p class="level-1">
+                        <span class="color-purple">render</span>: () => (
+                    </p>
+                    <p class="level-2">
+                        <<span class="color-yellow">TiltedImageCard</span>
+                    </p>
+                    <!-- New York City card -->
+                    <p class="level-3">
+                        tiltDirection={<span class="color-red">'right'</span>}
+                    </p>
+                    <p class="level-3">
+                        title={<span class="color-red">'New York City'</span>}
+                    </p>
+                    <p class="level-3">
+                        mediaSource={<span class="color-green">photoNewYork</span>}
+                    </p>
+                    <p class="level-2">
+                        <<span class="color-yellow">/TiltedImageCard</span>>
+                    </p>
+
+                    <!-- Los Angeles card -->
+                    <p class="newline level-2">
+                        <<span class="color-yellow">TiltedImageCard</span>
+                    </p>
+                    <p class="level-3">
+                        tiltDirection={<span class="color-red">'left'</span>}
+                    </p>
+                    <p class="level-3">
+                        title={<span class="color-red">'Los Angeles'</span>}
+                    </p>
+                    <p class="level-3">
+                        mediaSource={<span class="color-green">photoLosAngeles</span>}
+                    </p>
+                    <p class="level-2">
+                        <<span class="color-yellow">/TiltedImageCard</span>>
+                    </p>
+
+                    <!-- London card -->
+                    <p class="newline level-2">
+                        <<span class="color-yellow">TiltedImageCard</span>
+                    </p>
+                    <p class="level-3">
+                        tiltDirection={<span class="color-red">'right'</span>}
+                    </p>
+                    <p class="level-3">
+                        title={<span class="color-red">'London'</span>}
+                    </p>
+                    <p class="level-3">
+                        mediaSource={<span class="color-green">photoLondon</span>}
+                    </p>
+                    <p class="level-2">
+                        <<span class="color-yellow">/TiltedImageCard</span>>
+                    </p>
+
+                    <!-- Vesuvio Bakery card -->
+                    <p class="newline level-2">
+                        <<span class="color-yellow">TiltedImageCard</span>
+                    </p>
+                    <p class="level-3">
+                        tiltDirection={<span class="color-red">'left'</span>}
+                    </p>
+                    <p class="level-3">
+                        mediaSource={<span class="color-green">photoVesuvio</span>}
+                    </p>
+                    <p class="level-2">
+                        <<span class="color-yellow">/TiltedImageCard</span>>
+                    </p>
+
+                    <p class="level-1">
+                        ),
+                    </p>
+                    <p class="level-1">
+                        <span class="color-green">args</span>: {},
+                    </p>
+                    <p class="level-0">};</p>
+                </code>
+            </div>
+        </div>
+        <p class="main-paragraph"><span class="emphasized">...and all of that
+                ultimately becomes 🪄</span>
+        </p>
+        <div class="figure-container">
+            <figure>
+                <img loading="lazy" src="./highlights/highlight-component-3.png" alt="The Tilted Image Card
+                component within Storybook
+                with multiple variants.">
+            </figure>
+            <figcaption>The Tilted Image Card
+                component within Storybook
+                with multiple variants.
+            </figcaption>
+        </div>
+
+    </section>
+</main>
+<footer>
+    <p class="copyright">&copy; Will Givens IV 2024</p>
+</footer>
+<script src="/script.js"></script>
+</body>
+
+</html>

@@ -16,7 +16,7 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Spartan:wght@200;400;500;600;700&Spectral:ital,wght@1,600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,19 +59,22 @@
         </ul>
     </nav> -->
     <main class="case-study">
-        <h1 class="project-title">Chronacle</h1>
+        <h1 class="project-title">Helping others (and myself) explore the
+            world easily with Chronacle
+        </h1>
         <section class="case-study__section">
             <p class="main-paragraph">
-                Until 2023, I had never owned a passport;
-                I had never even flown despite
-                having many places I wanted to visit.</p>
+                <span class="emphasized">Until 2023, I had never owned a passport</span>;
+                I still have never even been on an airplane
+                despite having many places I'd like to visit.
+            </p>
             <p class="main-paragraph">
-                For a few years,
-                I used a spreadsheet in Notion to list destinations,
-                sights, and interesting restaurants, but eventually,
+                For a few years, I used a spreadsheet in
+                Notion to list destinations, sights, and
+                interesting restaurants, but eventually,
                 I decided I wanted a better way to plan my
-                future trips; I imagined others might have as well, given the boom
-                in travel following the COVID-19 pandemic.
+                future trips; I imagined others might have as
+                well, given the boom in travel following the COVID-19 pandemic.
             </p>
             <!-- Notion Trip Planning Photo -->
             <div class="figure-container">
@@ -79,12 +82,13 @@
                     <img src="./highlight-notion-planning.png"
                         alt="Two screenshot panels placed side by side. The left panels shows a list of cities and the county or U.S. state they are located in. The first panel shows another side of the spreadsheet, which includes a list of places to see and restaurants to try for each city.">
                 </figure>
+                <figcaption>Example of trip planning in Notion.</figcaption>
             </div>
             <p class="main-paragraph">
-                I saw that as an opportunity to grow and reinforce my
-                design skills by creating a tool for myself and
-                others to use. It is named Chronacle since it is
-                meant to help you chronicle your journeys around the world.
+                <span class="emphasized">I saw that as an opportunity to grow and reinforce my
+                    design skills by creating a tool for myself and
+                    others to use. It is named Chronacle since it is
+                    meant to help you chronicle your journeys around the world.</span>
             </p>
             <!-- Explore Page Photo -->
             <div class="figure-container">
@@ -92,26 +96,38 @@
                     <img src="./highlights/highlight-5.png"
                         alt="Photo of the Explore screen in Chronacle. In its empty state, there is a grid of tilted photos of different cities. Each photo has a hero image of the respective city and its name at the bottom. There is a header bar at the top that says Explore, and says 'Add a destination' in grey underneath it.">
                 </figure>
+                <figcaption>The Explore screen in Chronacle.</figcaption>
+            </div>
+            <div class="figure-container">
+                <figure>
+                    <img src="./highlights/highlight-9.png"
+                        alt="Two iPhone screens side by side, the first of which says New York City and provides an overview of New York alongside a small photo of the skyline. The second screen has a list of New York landmarks, each with a photo and rating out of 5.">
+                </figure>
+                <figcaption>The Overview screen for New York City.</figcaption>
             </div>
             <h2 class="paragraph-heading">Research</h2>
             <p class="main-paragraph">
-                As the sole designer for Chronacle, I needed
-                to be crafty when conducting research;
-                <span class="emphasized">in addition
-                    to doing heuristic analyses on existing travel aggregators
-                    (Expedia, TripAdvisor, etc), a large part of my generative
-                    research involved leveraging data from a 2021 study by
-                    market research leader Mintel.</span>
+                As the sole designer for Chronacle,
+                I needed to be crafty when doing needfinding
+                and figuring out which problems needed
+                addressing or which parts of the travel planning
+                process could be improved;
+                <span class="emphasized">in addition to doing
+                    heuristic analyses on existing travel aggregators
+                    (Expedia, TripAdvisor, etc), a large part of my
+                    generative research involved leveraging data from
+                    a 2021 study by market research leader Mintel.</span>
             </p>
             <p class="main-paragraph">
-                Of the 1,300+ travelers surveyed in the study,
-                <span class="emphasized">people overwhelmingly booked reservations through
-                    their preferred brand's platforms</span>, with 76% using
-                a brand's website or mobile app (ex: Marriott Hotels)
-                vs. an aggregator. The study mentions
-                <span class="emphasized">travel
-                    aggregators are “most competitive in activities booking,”
-                    not accommodations.</span>
+                Of the 1,300+ travelers surveyed,
+                <span class="emphasized">people overwhelmingly reported booking
+                    reservations through their preferred brands' platforms</span>,
+                with 76% using a brand's website or mobile app
+                (ex: Marriott Hotels) vs. an aggregator.
+                The study mentions
+                <span class="emphasized">travel aggregators are
+                    “most competitive in activities booking,”
+                    <i>not accommodations.</i></span>
             </p>
             <p class="main-paragraph">
                 Mintel also discovered folks are taking fewer,
@@ -128,25 +144,29 @@
                     <img src="./highlights/highlight-research.png"
                         alt="Screenshot of my research document. This part of the document includes a list of research questions I wanted to answer during my generative research phase of designing Chronacle. Some questions are highlighted to indicate priority, such as, 'How far in advance are people planning their trips?,' 'What is the average length of people's trips?,' 'Where are people making trips to?,' and 'How many trips are people planning each year?.'">
                 </figure>
+                <figcaption>Some questions I wanted to answer during my generative research.</figcaption>
             </div>
             <h2 class="paragraph-heading">Designs</h2>
             <p class="main-paragraph">
-                <span class="emphasized">I decided Chronacle would not handle
-                    things like flight reservations,
-                    hotel accommodations, car rentals, etc.</span>
-                The reduced scope is better for
-                engineering purposes (no need to integrate
-                various airline/hotel platforms), but
-                users also get a more focused and
-                predictable experience with
+                As such, I decided
+                <span class="emphasized"><i>Chronacle
+                        would not handle things like
+                        flight reservations, hotel accommodations,
+                        car rentals, etc.</i></span> The reduced scope
+                is better for engineering purposes
+                (no need to integrate various airline/hotel platforms),
+                but users also get a more focused
+                and predictable experience with
                 fewer potential failure points.
             </p>
             <p class="main-paragraph">
-                Ultimately, the focus for Chronacle would be
-                <span class="emphasized">simply
-                    helping people check out places they're interested in</span>
-                and save activities / experiences they want
-                to make plans for (ex: shopping, places in nature, landmarks, etc).
+                Ultimately, the main focus for Chronacle
+                would just be
+                <span class="emphasized"><i>helping people check out
+                        new places they're interested in visiting</i></span> and
+                save activities / experiences they want to
+                make plans for (ex: shopping,
+                places in nature, landmarks, etc).
             </p>
             <!-- Sketches Photo -->
             <div class="figure-container">
@@ -154,6 +174,7 @@
                     <img src="./highlights/highlight-sketches.png"
                         alt="Collection of sketches I completed when ideating on the user experience for Chronacle. There are 4 panels. The top left panel shows my ideas for a user's trips list. The top right shows sketches for the interface when inside of a trip's page. The bottom left shows the interface when the user is searching businesses in a city, and the bottom right shows what it looks like when a user clicks on a business or activity.">
                 </figure>
+                <figcaption>Some ideation sketches.</figcaption>
             </div>
             <!-- Other Photos -->
             <div class="figure-container">
@@ -161,24 +182,28 @@
                     <img src="./highlights/showcase-1.png"
                         alt="Three iPhone mockups. The first shows an example of a location card, which has a photo and the trip dates. The second shows a list of small location cards representing the user's previous trips. The third shows New Trip modal, and the user has Tokyo, Japan in the search field.">
                 </figure>
+                <figcaption>Example of a user's Trips List.</figcaption>
             </div>
             <div class="figure-container">
                 <figure>
                     <img src="./highlights/showcase-2.png"
                         alt="Three iPhone mockups. The first shows an example of a Trip Page; each page has the location, the trip dates, popular attractions, and the user's itinerary. The second mockup shows an Add to Trip modal for activities, which includes a small photo of the place being added and selectable trip dates. The third mockup shows an itinerary, which has a list of places for each selectable date.">
                 </figure>
+                <figcaption>The UI of a specific Trip page.</figcaption>
             </div>
-            <div class="figure-container">
+            <!-- <div class="figure-container">
                 <figure>
                     <img src="./highlights/showcase-3.png"
                         alt="Three iPhone mockups. The first shows a grid of tilted photos of different cities, each with a hero image of the city and its name. The second shows an example of the Explore page for New York City, which includes small photos of New York, a short blurb, and some suggestions for activities. The third mockup shows a list of places users can select to learn more about.">
                 </figure>
-            </div>
+                <figcaption>The Explore page and example Overview page for New York City.</figcaption>
+            </div> -->
             <div class="figure-container">
                 <figure>
                     <img src="./highlights/showcase-4.png"
                         alt="Three iPhone mockups. The first and second mockups show the Search page for places in a given location; the results include a list of places users can select to learn more about, and multiple filters for refinement. The last mockup is an example of a specific establishment's info page; the page includes a description, address, contact info, and photos.">
                 </figure>
+                <figcaption>Example of the Place Search screens/flow for New York City.</figcaption>
             </div>
             <!-- <div class="figure-container">
                 <figure>
@@ -210,31 +235,6 @@
                         alt="Two iPhone mockups, with one sitting above the other. The top mockup shows a view of a user searching for bakeries in New York City. There are 32 results based on the selected filters, like the rating score and which days they are open. The second mockup shows an example of a listing returned as part of the search results; each result has the category (like Dining), the name, the rating, and a photo. There is a floating search bar on the screen that says 'Search New York City.'">
                 </figure>
             </div> -->
-            <h2 class="paragraph-heading">Design System</h2>
-            <p class="main-paragraph">
-                <span class="emphasized">Chronacle's design system is being maintained in Figma</span>,
-                allowing me to keep future designs consistent
-                by using things like design tokens,
-                as well as make development flows simple and seamless.
-            </p>
-            <div class="figure-container">
-                <figure>
-                    <img src="./highlights/highlight-2.png"
-                        alt="A modal / app drawer that says 'dates' at the top of it. The modal contains a calendar view including the month and selected dates; the user can choose the beginning and end dates of the respective trip. At the bottom, there is a blue button that says 'Looks Good' with an icon of a thumbs up.">
-                </figure>
-            </div>
-            <div class="figure-container">
-                <figure>
-                    <img src="./highlights/highlight-component.png"
-                        alt="Screenshot of a component in the Chronacle design system on Figma. Various parts of the component are selected and have dotted green lines leading out to annotations on the side. Each annotation contains various attributes for its respective part, such as the color fill, the font size, the padding, etc.">
-                </figure>
-            </div>
-            <div class="figure-container">
-                <figure>
-                    <img src="./highlight-design-tokens.png"
-                        alt="Screenshots showing some design tokens I have created for Chronacle.">
-                </figure>
-            </div>
         </section>
     </main>
     <footer>
