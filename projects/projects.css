@@ -290,6 +290,7 @@ h4 {
 }
 
 .editor-content {
+  width: 100%;
   margin: 0 1rem 1rem;
   color: var(--black);
 }
@@ -304,6 +305,7 @@ h4 {
   font-weight: 400;
   line-height: 2.32rem;
   letter-spacing: -0.025rem;
+  width: 100%;
 }
 
 .editor-content .code > .selector:not(:first-of-type) {
